@@ -1,0 +1,675 @@
+{
+  "authorized_now": 0,
+  "baseline": "3a6784ab7b7969361288a484542e18e6b6577a50",
+  "constitution": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "frozen_repeatability": {
+    "paired_runs": {
+      "antigravity": 5,
+      "codex": 5,
+      "grok": 5
+    },
+    "session_counts": {
+      "all_three_routes_if_qualified": 30,
+      "authorized_now": 0,
+      "historically_matched_routes_if_qualified": 20,
+      "includes_qualification_sessions": false
+    },
+    "sha256": "2655c6732c919abdd7624d36cd12296234f20443e09b78f5f354e5bf29003224"
+  },
+  "future_sessions_if_all_authorized": 6,
+  "live_inference_authorized": false,
+  "live_provider_sessions_started": 0,
+  "native_provider_qualification_started": false,
+  "routes": {
+    "antigravity": {
+      "authorized_sessions": 0,
+      "historical_mode": "one headless driver with one stdio ACP session and session-scoped stdio MCP",
+      "isolation": {
+        "blocker": "No documented version-matched guarantee that the relative state option excludes ordinary settings or keeps cached sign-in unmodified.",
+        "future": "Use a disposable driver, synthetic workspace, one per-session server, exact allow-once scope, no default customization and narrowly scoped host methods.",
+        "historical": "Session-local stdio registration and disposable relative state, but the historical runner checked ordinary settings.",
+        "status": "partial_historical"
+      },
+      "layers": [
+        {
+          "descendants": "Starts only the owned controller.",
+          "eof": "Requires a recorded actor read plus its causal close.",
+          "escape": "No intentional breakaway.",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "observer",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "Outside every job under test.",
+          "kind": "observer",
+          "launch_owner": "Director-approved run controller would start the independent witness.",
+          "parent": null,
+          "pipe_closer": "Controlled endpoint owners only.",
+          "receipt_risk": "Final ledger is independent of any in-band receipt.",
+          "role": "proposed",
+          "stdio": "Separate witness ledger. No private provider pipes by inheritance."
+        },
+        {
+          "descendants": "Starts the verified provider root and any independent server owner.",
+          "eof": "Can close an owned writer and wait for a trusted read event.",
+          "escape": "Abort if containment or handle retention fails.",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "owner",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "Outside the provider job. Use separate server job for the split design.",
+          "kind": "external_owner",
+          "launch_owner": "Witness starts a separate controller with minimal job rights.",
+          "parent": "observer",
+          "pipe_closer": "A separately authorized force controller can terminate only its intended job.",
+          "receipt_risk": "Loss of owner or witness must fail closed.",
+          "role": "proposed",
+          "stdio": "Owns only the explicitly created control endpoints."
+        },
+        {
+          "descendants": "Launches the ACP-serving executable.",
+          "eof": "Driver EOF is evidence for ACP only.",
+          "escape": "No intentional breakaway in proposed harness.",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "acp_driver",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "Controller boundary is separate from the agent job in the proposed design.",
+          "kind": "control_client",
+          "launch_owner": "The benchmark harness acted as the ACP client. An editor was not in the historical launch.",
+          "parent": "owner",
+          "pipe_closer": "Driver or serving process can close ACP.",
+          "receipt_risk": "An ACP response cannot supply a server receipt.",
+          "role": "historically_observed",
+          "stdio": "ACP JSON-RPC over driver-owned stdio."
+        },
+        {
+          "descendants": "An optional session worker is documented in rolling editor guidance.",
+          "eof": "ACP channel closure does not expose inner MCP EOF.",
+          "escape": "UNKNOWN",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "client",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "UNKNOWN",
+          "kind": "provider_client",
+          "launch_owner": "Headless ACP driver directly spawned agy.exe.",
+          "parent": "acp_driver",
+          "pipe_closer": "Driver or serving process.",
+          "receipt_risk": "Exit may precede private server receipt.",
+          "role": "historically_observed",
+          "stdio": "Driver can capture the ACP transport."
+        },
+        {
+          "descendants": "UNKNOWN",
+          "eof": "UNKNOWN",
+          "escape": "UNKNOWN",
+          "exit": "UNKNOWN",
+          "id": "acp_worker",
+          "identity": "Identify a newly created worker by retained handle if present.",
+          "job": "UNKNOWN",
+          "kind": "acp_session",
+          "launch_owner": "Session creation observed. Separate worker creation and launcher PID UNKNOWN in the pinned route.",
+          "parent": "UNKNOWN",
+          "pipe_closer": "UNKNOWN",
+          "receipt_risk": "Do not assume per-session containment or receipt survivability.",
+          "role": "not_established",
+          "stdio": "UNKNOWN"
+        },
+        {
+          "descendants": "UNKNOWN",
+          "eof": "UNKNOWN",
+          "escape": "UNKNOWN",
+          "exit": "UNKNOWN",
+          "id": "launcher",
+          "identity": "Bind actual owner to a job and retained process observation.",
+          "job": "UNKNOWN",
+          "kind": "mcp_launcher",
+          "launch_owner": "ACP new-session request supplied a single stdio server command. Owning process UNKNOWN.",
+          "parent": "UNKNOWN",
+          "pipe_closer": "UNKNOWN",
+          "receipt_risk": "In-band receipt exposure UNKNOWN.",
+          "role": "not_established",
+          "stdio": "Private MCP descriptors lie below the ACP transport."
+        },
+        {
+          "descendants": "Fixed fixture only.",
+          "eof": "Stage 1.2 reported clean EOF; its stop event does not identify the cause independently.",
+          "escape": "UNKNOWN",
+          "exit": "Historical fixture application stop code zero; independent OS exit code UNKNOWN.",
+          "id": "server",
+          "identity": "Retain actual server handle and check creation identity.",
+          "job": "UNKNOWN",
+          "kind": "synthetic_mcp_server",
+          "launch_owner": "Pinned fixture came from the session-scoped stdio registration.",
+          "parent": "launcher",
+          "pipe_closer": "UNKNOWN",
+          "receipt_risk": "Retain independent observations even if receipt is absent.",
+          "role": "historically_observed",
+          "stdio": "Inner MCP streams were not exposed by the ACP transport."
+        }
+      ],
+      "native_qualified": false,
+      "observations": {
+        "actual_exit_codes": {
+          "class": "not_established",
+          "limit": "ACP exit and historical server application exit do not supply the OS server code."
+        },
+        "client_to_server_pipe": {
+          "class": "proxy",
+          "limit": "Observe raw MCP direction separately from ACP messages."
+        },
+        "descendant_inventory": {
+          "class": "not_established",
+          "limit": "Session worker, reuse and escape behavior are unknown for the tested Windows route."
+        },
+        "genuine_eof": {
+          "class": "independently_owned_launcher",
+          "limit": "Require a trusted actual server read and corroborating writer closure."
+        },
+        "job_accounting": {
+          "class": "not_established",
+          "limit": "Need observed membership and owned job scope before relying on counts."
+        },
+        "observer_survival": {
+          "class": "direct",
+          "limit": "Move the witness and records outside the controlled agent and server jobs."
+        },
+        "process_creation_identity": {
+          "class": "direct",
+          "limit": "Owned ACP root has creation identity; potential worker and server still require proof."
+        },
+        "provider_termination": {
+          "class": "direct",
+          "limit": "Own the ACP-serving executable launch separately from client driver."
+        },
+        "server_termination": {
+          "class": "not_established",
+          "limit": "Attach only after exact worker-to-server binding and creation checks."
+        },
+        "server_to_client_pipe": {
+          "class": "proxy",
+          "limit": "Separate MCP result transport from ACP display events; result bytes were unavailable historically."
+        }
+      },
+      "product": "Google Antigravity CLI",
+      "protocol": {
+        "acp": 1,
+        "mcp": "2026-07-28"
+      },
+      "readiness": "NO-GO",
+      "reason": "Per-session MCP and scratch state were observed historically, but exclusive settings isolation, safe auth reuse and actual worker ownership are unverified.",
+      "recovery": "End only the owned session and close the driver pipes. After retained handles and job accounting settle, remove only the recorded temporary state.",
+      "stops": [
+        "Unknown worker or inherited ordinary MCP settings",
+        "Unexpected auth request, host method or permission expansion",
+        "Missing retained identity or actual EOF",
+        "Unapproved state or quota change"
+      ],
+      "trials": [
+        {
+          "client_version": "1.5.18",
+          "expected": "Direct-route clean closure must prove ACP completion and separate server EOF and exit.",
+          "fixture": "repo_health_v1",
+          "id": "normal",
+          "mode": "one headless driver with one stdio ACP session and session-scoped stdio MCP",
+          "required_evidence": [
+            "Pin binary, synthetic package, protocol and exact tool allowlist.",
+            "Observe exact verified synthetic reply and normal provider root completion.",
+            "Record actor read EOF, actual output terminal read, retained-handle exit codes and independent job accounting.",
+            "Require the witness to survive, finish and verify its ledger.",
+            "Record whether a separate session worker exists and distinguish ACP EOF and MCP EOF."
+          ],
+          "sessions": 1,
+          "subscription_usage": "expected_if_authorized"
+        },
+        {
+          "client_version": "1.5.18",
+          "expected": "Known force boundary, with ACP closure and MCP closure independently attributed.",
+          "fixture": "repo_health_v1",
+          "id": "external_termination",
+          "mode": "one headless driver with one stdio ACP session and session-scoped stdio MCP",
+          "required_evidence": [
+            "Observe one fixed synthetic reply before the separate owner records and issues the force request.",
+            "Retain and wait on each subject handle; obtain actual exit codes and scope job accounting to the selected job.",
+            "Attribute the observed closure, record inaccessible endpoints, and confirm observer finalization and receipt state.",
+            "Classify the forced lifecycle as failure; a confirmed forced case can still qualify as a test.",
+            "Capture the exact worker and server membership or report the case unavailable."
+          ],
+          "sessions": 1,
+          "subscription_usage": "expected_if_authorized"
+        }
+      ],
+      "version": {
+        "artifact": "https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/windows_amd64.json",
+        "digest": "53605db7013dfed51e8c416d51e0c17a3b5ad0750c13da5669954ba4a281318746be0cf8cde2b256cfdb4bfbdade4badad1a0503931f8458416184549afa06b6",
+        "digest_algorithm": "sha512",
+        "executable": "agy.exe",
+        "identity_method": "official_artifact_bytes",
+        "installed": "1.5.18",
+        "matched_source": "UNKNOWN",
+        "rolling_docs_limit": "Rolling editor docs list opt-in process-per-session, including HTTP MCP needs. That option was absent from the tested stdio invocation.",
+        "stage0": "1.5.18 in Stage 0B",
+        "stage_1_2": "1.5.18"
+      }
+    },
+    "codex": {
+      "authorized_sessions": 0,
+      "historical_mode": "noninteractive ephemeral execution with embedded app-server",
+      "isolation": {
+        "blocker": "Skipping the user config still uses Codex home for authentication. The file auth backend can write in place. A reference to ordinary auth is unsafe for this plan.",
+        "future": "Use a blank workspace, private state root and version-matched inline configuration or scratch home. Preserve managed policy.",
+        "historical": "Disposable Codex home restricted MCP and tools, with a reference to existing auth material.",
+        "status": "configuration_only"
+      },
+      "layers": [
+        {
+          "descendants": "Starts only the owned controller.",
+          "eof": "Requires a recorded actor read plus its causal close.",
+          "escape": "No intentional breakaway.",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "observer",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "Outside every job under test.",
+          "kind": "observer",
+          "launch_owner": "Director-approved run controller would start the independent witness.",
+          "parent": null,
+          "pipe_closer": "Controlled endpoint owners only.",
+          "receipt_risk": "Final ledger is independent of any in-band receipt.",
+          "role": "proposed",
+          "stdio": "Separate witness ledger. No private provider pipes by inheritance."
+        },
+        {
+          "descendants": "Starts the verified provider root and any independent server owner.",
+          "eof": "Can close an owned writer and wait for a trusted read event.",
+          "escape": "Abort if containment or handle retention fails.",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "owner",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "Outside the provider job. Use separate server job for the split design.",
+          "kind": "external_owner",
+          "launch_owner": "Witness starts a separate controller with minimal job rights.",
+          "parent": "observer",
+          "pipe_closer": "A separately authorized force controller can terminate only its intended job.",
+          "receipt_risk": "Loss of owner or witness must fail closed.",
+          "role": "proposed",
+          "stdio": "Owns only the explicitly created control endpoints."
+        },
+        {
+          "descendants": "The archived configuration selects directly launched local MCP. Other configurations can select executors.",
+          "eof": "Root pipe EOF is client output only.",
+          "escape": "UNKNOWN",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "client",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "UNKNOWN",
+          "kind": "provider_client",
+          "launch_owner": "Stage 1.2 runner launched the terminal binary. The proposed independent controller would own launch.",
+          "parent": "owner",
+          "pipe_closer": "Root or controller can close its endpoint.",
+          "receipt_risk": "Client exit cannot supply a server receipt.",
+          "role": "historically_observed",
+          "stdio": "Root JSONL stdout when explicitly captured."
+        },
+        {
+          "descendants": "Runtime can request a local or executor-backed MCP launch.",
+          "eof": "Unavailable as a separate pipe.",
+          "escape": "No independent process for the embedded runtime.",
+          "exit": "Same OS exit as client.",
+          "id": "app_runtime",
+          "identity": "Same identity as client.",
+          "job": "Shares the client process and any job assigned to it.",
+          "kind": "control_runtime",
+          "launch_owner": "Pinned execution entry point starts the app-server client in-process.",
+          "parent": "client",
+          "pipe_closer": "Runtime teardown closes its internal transport.",
+          "receipt_risk": "Process termination can interrupt internal shutdown.",
+          "role": "matched_in_process",
+          "stdio": "Internal channel, no separate OS stdio for this layer."
+        },
+        {
+          "descendants": "Configured child can create descendants within applicable limits.",
+          "eof": "Inner read endpoints unavailable to current witness.",
+          "escape": "Local job disallows breakaway when assigned; actual Stage 1.2 assignment or process-handle fallback is UNKNOWN.",
+          "exit": "Actual case code UNKNOWN.",
+          "id": "launcher",
+          "identity": "Retain registered child handle before shutdown; actual containment must be witnessed.",
+          "job": "Local Windows code attempts a no-breakaway job and can fall back to a process handle.",
+          "kind": "mcp_launcher",
+          "launch_owner": "Archived config omits environment ID. Pinned source defaults to local and starts the configured command directly.",
+          "parent": "app_runtime",
+          "pipe_closer": "Local transport can terminate the MCP process before closing protocol pipes.",
+          "receipt_risk": "Provider can kill a registered in-band wrapper before receipt.",
+          "role": "matched_source_branch",
+          "stdio": "Owned by Codex on direct route."
+        },
+        {
+          "descendants": "Current fixture has no unrelated acquisition subprocesses.",
+          "eof": "Historical receipt absent; clean server EOF UNKNOWN.",
+          "escape": "UNKNOWN",
+          "exit": "Stage 1.2 fixture OS exit code UNKNOWN.",
+          "id": "server",
+          "identity": "Confirm exact child identity and job before the tool request.",
+          "job": "UNKNOWN",
+          "kind": "synthetic_mcp_server",
+          "launch_owner": "Stage 1.2 named the pinned Python fixture as the configured command.",
+          "parent": "launcher",
+          "pipe_closer": "Codex launcher or external controller when separately authorized.",
+          "receipt_risk": "Possible receipt loss on forced teardown.",
+          "role": "historically_observed",
+          "stdio": "MCP bytes are private to the launched stdio pair on the direct route."
+        }
+      ],
+      "native_qualified": false,
+      "observations": {
+        "actual_exit_codes": {
+          "class": "independently_owned_launcher",
+          "limit": "Acquire distinct root, relay and server codes; no inference from PID loss."
+        },
+        "client_to_server_pipe": {
+          "class": "proxy",
+          "limit": "Byte-transparent relay can log the two segments separately."
+        },
+        "descendant_inventory": {
+          "class": "not_established",
+          "limit": "Source selects local stdio for the archived config. Full historical native descendants are unverified."
+        },
+        "genuine_eof": {
+          "class": "independently_owned_launcher",
+          "limit": "Observe explicit writer close and a true server read EOF independently."
+        },
+        "job_accounting": {
+          "class": "not_established",
+          "limit": "Outer job can be measured after containment succeeds; inner job access is unknown."
+        },
+        "observer_survival": {
+          "class": "direct",
+          "limit": "Place the witness outside the test jobs; verify role and terminal record."
+        },
+        "process_creation_identity": {
+          "class": "direct",
+          "limit": "Owned root has creation identity. Child registration must also bind identity before teardown."
+        },
+        "provider_termination": {
+          "class": "direct",
+          "limit": "Future owned root launch exposes the terminal process handle."
+        },
+        "server_termination": {
+          "class": "independently_owned_launcher",
+          "limit": "Controlled fixture launch can retain the server handle before provider teardown."
+        },
+        "server_to_client_pipe": {
+          "class": "proxy",
+          "limit": "Return path stays separate from the client JSONL stream."
+        }
+      },
+      "product": "Codex CLI",
+      "protocol": {
+        "acp": null,
+        "mcp": "2025-06-18"
+      },
+      "readiness": "NO-GO",
+      "reason": "No verified nonmutating subscription isolation. The pinned local MCP termination path can kill before EOF.",
+      "recovery": "Close only owned endpoints and drain the controlled job; remove only the newly created scratch state after independent finalization.",
+      "stops": [
+        "Auth reuse or state mutation cannot be excluded",
+        "Unexpected server, executable or executor branch",
+        "Identity, ownership, EOF or witness evidence missing",
+        "Provider permission or quota boundary reached"
+      ],
+      "trials": [
+        {
+          "client_version": "0.166.0",
+          "expected": "A split route would test server EOF after relay closure. Direct provider-managed shutdown can end as a witnessed failure.",
+          "fixture": "repo_health_v1",
+          "id": "normal",
+          "mode": "noninteractive ephemeral execution with embedded app-server",
+          "required_evidence": [
+            "Pin binary, synthetic package, protocol and exact tool allowlist.",
+            "Observe exact verified synthetic reply and normal provider root completion.",
+            "Record actor read EOF, actual output terminal read, retained-handle exit codes and independent job accounting.",
+            "Require the witness to survive, finish and verify its ledger.",
+            "Prove which local launcher branch ran and label split-route results."
+          ],
+          "sessions": 1,
+          "subscription_usage": "expected_if_authorized"
+        },
+        {
+          "client_version": "0.166.0",
+          "expected": "Explicitly forced target outcome, observed independently without substituting the relay exit.",
+          "fixture": "repo_health_v1",
+          "id": "external_termination",
+          "mode": "noninteractive ephemeral execution with embedded app-server",
+          "required_evidence": [
+            "Observe one fixed synthetic reply before the separate owner records and issues the force request.",
+            "Retain and wait on each subject handle; obtain actual exit codes and scope job accounting to the selected job.",
+            "Attribute the observed closure, record inaccessible endpoints, and confirm observer finalization and receipt state.",
+            "Classify the forced lifecycle as failure; a confirmed forced case can still qualify as a test.",
+            "Record provider job exit separately from the independently owned server job."
+          ],
+          "sessions": 1,
+          "subscription_usage": "expected_if_authorized"
+        }
+      ],
+      "version": {
+        "artifact": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+        "digest": "9d563ee4e0441ff9d59d612013e0460ddf8e5709735c2d9f6b98b7ef8ca4eb42",
+        "digest_algorithm": "sha256",
+        "executable": "codex.exe",
+        "identity_method": "official_artifact_bytes",
+        "installed": "0.166.0",
+        "matched_source": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856",
+        "rolling_docs_limit": "Rolling flags were checked against the pinned Rust release. Ephemeral execution and skipping user config do not detach auth storage.",
+        "stage0": "0.166.0 in Stage 0A and Stage 0B",
+        "stage_1_2": "0.166.0"
+      }
+    },
+    "grok": {
+      "authorized_sessions": 0,
+      "historical_mode": "headless streaming JSON, no TUI or ACP session for Stage 1.2",
+      "isolation": {
+        "blocker": "No verified nonmutating auth reuse in the isolated home. Normal profile changes and inherited tool routes are disallowed.",
+        "future": "A fresh isolated home and workspace must exclude imported MCP, hooks, plugins, background agents and every tool outside the exact allowlist.",
+        "historical": "Disposable Grok home and workspace trust scope, exact qualified tool, disabled imports, with an auth reference.",
+        "status": "configuration_only"
+      },
+      "layers": [
+        {
+          "descendants": "Starts only the owned controller.",
+          "eof": "Requires a recorded actor read plus its causal close.",
+          "escape": "No intentional breakaway.",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "observer",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "Outside every job under test.",
+          "kind": "observer",
+          "launch_owner": "Director-approved run controller would start the independent witness.",
+          "parent": null,
+          "pipe_closer": "Controlled endpoint owners only.",
+          "receipt_risk": "Final ledger is independent of any in-band receipt.",
+          "role": "proposed",
+          "stdio": "Separate witness ledger. No private provider pipes by inheritance."
+        },
+        {
+          "descendants": "Starts the verified provider root and any independent server owner.",
+          "eof": "Can close an owned writer and wait for a trusted read event.",
+          "escape": "Abort if containment or handle retention fails.",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "owner",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "Outside the provider job. Use separate server job for the split design.",
+          "kind": "external_owner",
+          "launch_owner": "Witness starts a separate controller with minimal job rights.",
+          "parent": "observer",
+          "pipe_closer": "A separately authorized force controller can terminate only its intended job.",
+          "receipt_risk": "Loss of owner or witness must fail closed.",
+          "role": "proposed",
+          "stdio": "Owns only the explicitly created control endpoints."
+        },
+        {
+          "descendants": "HEAD source has shared MCP pools; leader and background processes for the pinned headless route UNKNOWN.",
+          "eof": "Root output closure is not server EOF.",
+          "escape": "UNKNOWN",
+          "exit": "Wait for handle signal before reading the OS exit code.",
+          "id": "client",
+          "identity": "Compare retained process handle PID and creation FILETIME.",
+          "job": "UNKNOWN",
+          "kind": "provider_client",
+          "launch_owner": "Stage 1.2 harness started the headless terminal executable.",
+          "parent": "owner",
+          "pipe_closer": "Root or launch controller.",
+          "receipt_risk": "Root completion does not establish receipt or cleanup.",
+          "role": "historically_observed",
+          "stdio": "Root emits streaming JSON events."
+        },
+        {
+          "descendants": "UNKNOWN",
+          "eof": "Stage 0C native probe observed no EOF.",
+          "escape": "UNKNOWN",
+          "exit": "Stage 0C ACP root exit zero and probe exit one were distinct.",
+          "id": "acp_alternative",
+          "identity": "Distinct root identity if used in a later route.",
+          "job": "UNKNOWN",
+          "kind": "alternate_route",
+          "launch_owner": "Separate ACP launcher was tested as Stage 0C control-plane evidence only.",
+          "parent": null,
+          "pipe_closer": "ACP session close terminated the test probe in Stage 0C.",
+          "receipt_risk": "Unverified for the Stage 1.2 headless route.",
+          "role": "excluded_historical_route",
+          "stdio": "ACP JSON-RPC is separate from MCP stdio."
+        },
+        {
+          "descendants": "UNKNOWN",
+          "eof": "Earlier supervised route closed server stdin. Server read EOF was observed separately from relay disconnect.",
+          "escape": "UNKNOWN",
+          "exit": "Stage 0C native probe process exit one observed through a retained handle.",
+          "id": "launcher",
+          "identity": "Retain and bind direct child or relay handle through known ownership.",
+          "job": "UNKNOWN",
+          "kind": "mcp_launcher",
+          "launch_owner": "Qualified headless calls reached the configured server. Exact historical OS launcher hierarchy UNKNOWN.",
+          "parent": "UNKNOWN",
+          "pipe_closer": "Historical native route could end the probe before read EOF.",
+          "receipt_risk": "Early termination can lose in-band proof.",
+          "role": "historically_observed",
+          "stdio": "Native MCP pipes belong to the launch path."
+        },
+        {
+          "descendants": "Fixed fixture only.",
+          "eof": "Independent EOF only established on the Stage 0C supervised probe.",
+          "escape": "UNKNOWN",
+          "exit": "Stage 1.2 fixture OS exit code UNKNOWN.",
+          "id": "server",
+          "identity": "Use known server create handle outside provider job in split route.",
+          "job": "UNKNOWN",
+          "kind": "synthetic_mcp_server",
+          "launch_owner": "Pinned fixture was configured as one exact allowlisted local server.",
+          "parent": "launcher",
+          "pipe_closer": "Native launcher or separate owner, depending on the route.",
+          "receipt_risk": "Keep relay and server receipts distinct.",
+          "role": "historically_observed",
+          "stdio": "Stage 0C disjoint owner retained both server stdio ends."
+        }
+      ],
+      "native_qualified": false,
+      "observations": {
+        "actual_exit_codes": {
+          "class": "independently_owned_launcher",
+          "limit": "Real server code comes from its own retained handle; relay exit is separate."
+        },
+        "client_to_server_pipe": {
+          "class": "proxy",
+          "limit": "Stage 0C local relay precedent observed disconnect, then the owner closed the server writer."
+        },
+        "descendant_inventory": {
+          "class": "not_established",
+          "limit": "Exact headless leader, workers and breakaway behavior have no matched source proof."
+        },
+        "genuine_eof": {
+          "class": "independently_owned_launcher",
+          "limit": "Require actual synthetic server read EOF and explicit relay/owner boundary."
+        },
+        "job_accounting": {
+          "class": "not_established",
+          "limit": "Record provider and independent fixture jobs separately; no descendant assumptions."
+        },
+        "observer_survival": {
+          "class": "direct",
+          "limit": "Observer is outside the provider and server jobs; verify its terminal record."
+        },
+        "process_creation_identity": {
+          "class": "direct",
+          "limit": "Retain headless root identity; separate owner can retain its own server identity."
+        },
+        "provider_termination": {
+          "class": "direct",
+          "limit": "Future owned headless root launch can retain its handle."
+        },
+        "server_termination": {
+          "class": "independently_owned_launcher",
+          "limit": "Stage 0C separate owner is a precedent; qualify current fixture separately."
+        },
+        "server_to_client_pipe": {
+          "class": "proxy",
+          "limit": "Use byte-transparent relay and track provider-facing and fixture-facing terminals."
+        }
+      },
+      "product": "Grok Build",
+      "protocol": {
+        "acp": null,
+        "mcp": "2025-11-25"
+      },
+      "readiness": "NO-GO",
+      "reason": "Archived native headless probe exited nonzero without EOF. The supervised split route is promising, but isolation and approved auth reuse are unresolved and extra tool activity is disqualifying.",
+      "recovery": "Close the relay and its one-time local capability; reap independently owned jobs before deleting only the scratch home and workspace.",
+      "stops": [
+        "Built-in lookup or unexpected provider action",
+        "Missing pinned permission support or safe auth",
+        "Relay leakage, unknown descendant or unobservable pipe outcome",
+        "Unapproved quota or state mutation"
+      ],
+      "trials": [
+        {
+          "client_version": "1.0.92",
+          "expected": "Supervised route can test normal owner-driven server EOF; the direct route remains unqualified.",
+          "fixture": "repo_health_v1",
+          "id": "normal",
+          "mode": "headless streaming JSON with a separately owned MCP fixture",
+          "required_evidence": [
+            "Pin binary, synthetic package, protocol and exact tool allowlist.",
+            "Observe exact verified synthetic reply and normal provider root completion.",
+            "Record actor read EOF, actual output terminal read, retained-handle exit codes and independent job accounting.",
+            "Require the witness to survive, finish and verify its ledger.",
+            "Use the exact named tool; abort on the historical out-of-scope lookup behavior."
+          ],
+          "sessions": 1,
+          "subscription_usage": "expected_if_authorized"
+        },
+        {
+          "client_version": "1.0.92",
+          "expected": "Separate forced provider boundary and underlying server outcome with both ledgers retained.",
+          "fixture": "repo_health_v1",
+          "id": "external_termination",
+          "mode": "headless streaming JSON with a separately owned MCP fixture",
+          "required_evidence": [
+            "Observe one fixed synthetic reply before the separate owner records and issues the force request.",
+            "Retain and wait on each subject handle; obtain actual exit codes and scope job accounting to the selected job.",
+            "Attribute the observed closure, record inaccessible endpoints, and confirm observer finalization and receipt state.",
+            "Classify the forced lifecycle as failure; a confirmed forced case can still qualify as a test.",
+            "Distinguish forced relay closure from deliberate independent server cleanup."
+          ],
+          "sessions": 1,
+          "subscription_usage": "expected_if_authorized"
+        }
+      ],
+      "version": {
+        "artifact": "https://x.ai/cli/grok-1.0.92-windows-x86_64.exe",
+        "digest": "060e51f93743b540e59c5cf9c81c0ce7b48b61c263f09235d981a6ababb1c9d7",
+        "digest_algorithm": "sha256",
+        "executable": "grok.exe",
+        "identity_method": "official_artifact_bytes",
+        "installed": "1.0.92",
+        "matched_source": "UNKNOWN",
+        "rolling_docs_limit": "Public mirror revision differs from b06756fd6256. Its stdio spawn and shared pool are context only; rolling docs also cover modes absent from the pilot.",
+        "stage0": "1.0.92 stable, build b06756fd6256, in Stages 0A, 0B and 0C",
+        "stage_1_2": "1.0.92"
+      }
+    }
+  },
+  "schema": "wpai.benchmark.native-route-feasibility.v1"
+}

@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WPAI native route feasibility v1",
+  "type": "object",
+  "required": ["schema", "baseline", "constitution", "authorized_now", "live_provider_sessions_started", "live_inference_authorized", "native_provider_qualification_started", "future_sessions_if_all_authorized", "frozen_repeatability", "routes"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const":"wpai.benchmark.native-route-feasibility.v1"},
+    "baseline": {"type":"string", "pattern":"^[0-9a-f]{40}$"},
+    "constitution": {"type":"string", "pattern":"^[0-9a-f]{40}$"},
+    "authorized_now": {"const":0},
+    "live_provider_sessions_started": {"const":0},
+    "live_inference_authorized": {"const":false},
+    "native_provider_qualification_started": {"const":false},
+    "future_sessions_if_all_authorized": {"const":6},
+    "frozen_repeatability": {"$ref":"#/$defs/frozenRepeatability"},
+    "routes": {
+      "type": "object",
+      "required": ["codex", "antigravity", "grok"],
+      "additionalProperties": false,
+      "properties": {
+        "codex": {"$ref":"#/$defs/route"},
+        "antigravity": {"$ref":"#/$defs/route"},
+        "grok": {"$ref":"#/$defs/route"}
+      }
+    }
+  },
+  "$defs": {
+    "frozenRepeatability": {
+      "type": "object",
+      "required": ["sha256", "session_counts", "paired_runs"],
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {"type":"string", "pattern":"^[0-9a-f]{64}$"},
+        "session_counts": {
+          "type": "object",
+          "required": ["authorized_now", "historically_matched_routes_if_qualified", "all_three_routes_if_qualified", "includes_qualification_sessions"],
+          "additionalProperties": false,
+          "properties": {
+            "authorized_now": {"const":0},
+            "historically_matched_routes_if_qualified": {"const":20},
+            "all_three_routes_if_qualified": {"const":30},
+            "includes_qualification_sessions": {"const":false}
+          }
+        },
+        "paired_runs": {
+          "type": "object",
+          "required": ["codex", "antigravity", "grok"],
+          "additionalProperties": false,
+          "properties": {
+            "codex": {"const":5},
+            "antigravity": {"const":5},
+            "grok": {"const":5}
+          }
+        }
+      }
+    },
+    "route": {
+      "type": "object",
+      "required": ["product", "version", "historical_mode", "protocol", "native_qualified", "readiness", "authorized_sessions", "reason", "layers", "observations", "isolation", "recovery", "stops", "trials"],
+      "additionalProperties": false,
+      "properties": {
+        "product": {"type":"string"},
+        "version": {"$ref":"#/$defs/version"},
+        "historical_mode": {"type":"string"},
+        "protocol": {
+          "type": "object",
+          "required": ["mcp", "acp"],
+          "additionalProperties": false,
+          "properties": {
+            "mcp": {"type":"string", "pattern":"^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+            "acp": {"enum":[null,1]}
+          }
+        },
+        "native_qualified": {"const":false},
+        "readiness": {"const":"NO-GO"},
+        "authorized_sessions": {"const":0},
+        "reason": {"type":"string"},
+        "layers": {
+          "type": "array",
+          "items": {"$ref":"#/$defs/layer"},
+          "minItems": 5
+        },
+        "observations": {"$ref":"#/$defs/observations"},
+        "isolation": {
+          "type": "object",
+          "required": ["status", "historical", "future", "blocker"],
+          "additionalProperties": false,
+          "properties": {
+            "status": {"enum":["configuration_only", "partial_historical"]},
+            "historical": {"type":"string"},
+            "future": {"type":"string"},
+            "blocker": {"type":"string"}
+          }
+        },
+        "recovery": {"type":"string"},
+        "stops": {
+          "type": "array",
+          "items": {"type":"string"},
+          "minItems": 1
+        },
+        "trials": {
+          "type": "array",
+          "items": {"$ref":"#/$defs/trial"},
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+    "version": {
+      "type": "object",
+      "required": ["stage0", "stage_1_2", "installed", "executable", "identity_method", "digest_algorithm", "digest", "artifact", "matched_source", "rolling_docs_limit"],
+      "additionalProperties": false,
+      "properties": {
+        "stage0": {"type":"string"},
+        "stage_1_2": {"type":"string", "pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "installed": {"type":"string", "pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "executable": {"enum":["codex.exe", "agy.exe", "grok.exe"]},
+        "identity_method": {"const":"official_artifact_bytes"},
+        "digest_algorithm": {"enum":["sha256", "sha512"]},
+        "digest": {"type":"string", "pattern":"^[0-9a-f]{64}([0-9a-f]{64})?$"},
+        "artifact": {"type":"string", "pattern":"^https://[^\\s]+$"},
+        "matched_source": {"type":"string", "pattern":"^(UNKNOWN|[0-9a-f]{40})$"},
+        "rolling_docs_limit": {"type":"string"}
+      }
+    },
+    "layer": {
+      "type": "object",
+      "required": ["id", "kind", "role", "parent", "launch_owner", "job", "descendants", "escape", "identity", "exit", "stdio", "eof", "pipe_closer", "receipt_risk"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type":"string", "pattern":"^[a-z_]+$"},
+        "kind": {"enum":["observer", "external_owner", "provider_client", "control_runtime", "control_client", "acp_session", "mcp_launcher", "synthetic_mcp_server", "alternate_route"]},
+        "role": {"enum":["proposed", "historically_observed", "matched_in_process", "matched_source_branch", "not_established", "excluded_historical_route"]},
+        "parent": {"type":["string", "null"]},
+        "launch_owner": {"type":"string"},
+        "job": {"type":"string"},
+        "descendants": {"type":"string"},
+        "escape": {"type":"string"},
+        "identity": {"type":"string"},
+        "exit": {"type":"string"},
+        "stdio": {"type":"string"},
+        "eof": {"type":"string"},
+        "pipe_closer": {"type":"string"},
+        "receipt_risk": {"type":"string"}
+      }
+    },
+    "observations": {
+      "type": "object",
+      "required": ["provider_termination", "server_termination", "descendant_inventory", "job_accounting", "process_creation_identity", "actual_exit_codes", "client_to_server_pipe", "server_to_client_pipe", "genuine_eof", "observer_survival"],
+      "additionalProperties": false,
+      "properties": {
+        "provider_termination": {"$ref":"#/$defs/observation"},
+        "server_termination": {"$ref":"#/$defs/observation"},
+        "descendant_inventory": {"$ref":"#/$defs/observation"},
+        "job_accounting": {"$ref":"#/$defs/observation"},
+        "process_creation_identity": {"$ref":"#/$defs/observation"},
+        "actual_exit_codes": {"$ref":"#/$defs/observation"},
+        "client_to_server_pipe": {"$ref":"#/$defs/observation"},
+        "server_to_client_pipe": {"$ref":"#/$defs/observation"},
+        "genuine_eof": {"$ref":"#/$defs/observation"},
+        "observer_survival": {"$ref":"#/$defs/observation"}
+      }
+    },
+    "observation": {
+      "type": "object",
+      "required": ["class", "limit"],
+      "additionalProperties": false,
+      "properties": {
+        "class": {"enum":["direct", "proxy", "independently_owned_launcher", "unavailable", "not_established"]},
+        "limit": {"type":"string"}
+      }
+    },
+    "trial": {
+      "type": "object",
+      "required": ["id", "client_version", "mode", "sessions", "subscription_usage", "fixture", "expected", "required_evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"enum":["normal", "external_termination"]},
+        "client_version": {"type":"string", "pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "mode": {"type":"string"},
+        "sessions": {"const":1},
+        "subscription_usage": {"const":"expected_if_authorized"},
+        "fixture": {"const":"repo_health_v1"},
+        "expected": {"type":"string"},
+        "required_evidence": {
+          "type": "array",
+          "items": {"type":"string"},
+          "minItems": 1
+        }
+      }
+    }
+  }
+}
