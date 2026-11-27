@@ -1,0 +1,1238 @@
+{
+  "authorization": {
+    "account_or_config_changes": 0,
+    "authorized_now": 0,
+    "live_provider_sessions": 0,
+    "native_qualification_started": false,
+    "paired_study_authorized": false,
+    "provider_api_calls": 0,
+    "provider_processes_started": 0
+  },
+  "baseline": "948d7692d4787a6f04e853177e5ff3f11c7c7efb",
+  "constitution": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "evidence_counts": {
+    "HISTORICAL_REPOSITORY_EVIDENCE": 5,
+    "INFERENCE": 3,
+    "OFFICIAL_DOC_CURRENT_ONLY": 12,
+    "UNKNOWN": 5,
+    "VERSION_MATCHED_OFFICIAL_DOC": 0,
+    "VERSION_MATCHED_SOURCE": 23
+  },
+  "frozen": {
+    "paired_runs": {
+      "antigravity": 5,
+      "codex": 5,
+      "grok": 5
+    },
+    "proposed_lifecycle_cases": 6,
+    "repeatability_sha256": "2655c6732c919abdd7624d36cd12296234f20443e09b78f5f354e5bf29003224",
+    "session_counts": {
+      "all_three_routes_if_qualified": 30,
+      "authorized_now": 0,
+      "historically_matched_routes_if_qualified": 20,
+      "includes_qualification_sessions": false
+    },
+    "stage_1_5_matrix_sha256": "7be11e1c7aafcf3e89e1069e2598639fbacb6b3ffbb66db8c4a1607c1c5176a4"
+  },
+  "routes": {
+    "antigravity": {
+      "authorized_sessions": 0,
+      "blocked_by": "The 1.5.18 Windows credential namespace, token writeback, ordinary settings and worker sharing are unresolved. A directory selector does not settle Windows Credential Manager scope.",
+      "claims": [
+        {
+          "claim": "The archived Python ACP driver selected a relative app-data name and a disposable ACP log. It separately checked the usual Gemini and CLI settings locations.",
+          "class": "HISTORICAL_REPOSITORY_EVIDENCE",
+          "id": "ag-archive-state",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "archived_route_only",
+            "limitation": "A selector accepted by the archived runner and equal before/after hashes do not establish complete relocation, startup read avoidance or credential isolation.",
+            "location": "work/benchmarks/stage-1.2/agent_trials.py",
+            "locator": "antigravity, lines 242\u2013265 and 366\u2013374",
+            "revision": "948d7692d4787a6f04e853177e5ff3f11c7c7efb"
+          },
+          "topics": [
+            "state_root",
+            "filesystem_state",
+            "configuration_precedence",
+            "environment"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "The pinned run recorded an existing signed-in Google session. It used a Python driver and one session-scoped stdio MCP registration, disabled default customizations in the request path, and used allow-once handling for the selected tool.",
+          "class": "HISTORICAL_REPOSITORY_EVIDENCE",
+          "id": "ag-archive-route",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "archived_route_only",
+            "limitation": "The driver was not an editor. Worker identity, global exclusions and authentication backend were not measured.",
+            "location": "work/benchmarks/stage-1.2/agent_trials.py",
+            "locator": "antigravity, lines 301\u2013350 and outputs/stage-1.2/runs/antigravity-treatment.json",
+            "revision": "948d7692d4787a6f04e853177e5ff3f11c7c7efb"
+          },
+          "topics": [
+            "subscription",
+            "tool_sources",
+            "background",
+            "trust"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "Google's current CLI guide describes silent lookup of saved profiles through Windows Credential Manager. Personal Google OAuth and Gemini API-key mode are separate paths. The current API-key mode requires a matching provider setting and environment input.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "ag-auth-doc",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "These sections do not identify a 1.5.18 target name, persistence or token-refresh destination. ADC and enterprise routes are different from the archived subscription.",
+            "location": "https://antigravity.google/docs/cli/install/",
+            "locator": "Authenticate / Antigravity CLI / Local silent keyring sign-in and Using a Gemini API key",
+            "revision": null
+          },
+          "topics": [
+            "subscription",
+            "keyring",
+            "api_key",
+            "environment",
+            "oauth_refresh"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "The current documentation says local sign-in is shared across App, CLI, IDEs and SDK, and that ACP uses the CLI's sign-in and settings.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "ag-shared-doc",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "Cross-surface sharing is a current product description, not a pinned Windows storage or worker contract.",
+            "location": "https://antigravity.google/docs/cli/acp",
+            "locator": "Overview and Quick start, read with Authenticate overview",
+            "revision": null
+          },
+          "topics": [
+            "subscription",
+            "keyring",
+            "background",
+            "ordinary_reuse"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "If 1.5.18 uses the documented Windows facility, its credential set follows the current logon token. Moving a data directory alone cannot establish a separate Windows account or prove a distinct credential entry.",
+          "class": "INFERENCE",
+          "id": "ag-os-scope",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "conditional",
+            "limitation": "Google's exact keyring namespace, lookup behavior and storage persistence are unverified.",
+            "location": "https://learn.microsoft.com/en-us/windows/win32/api/wincred/nf-wincred-credreadw",
+            "locator": "CredReadW credential set and current token",
+            "revision": null
+          },
+          "topics": [
+            "keyring",
+            "ordinary_reuse"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "The rolling settings guide lists CLI preferences under .gemini/antigravity-cli, global MCP/hooks/plugins under .gemini/config and workspace counterparts under .agents. CLI flags override supported preferences for a session. Startup can normalize and rewrite the settings file.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "ag-settings-doc",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "Duplicate server names may leave an already running server in place. This is no proof of exact merge order, immutable startup or worker isolation on 1.5.18.",
+            "location": "https://antigravity.google/docs/settings",
+            "locator": "Antigravity CLI / Configuration file location, Other configuration files, and Command-line overrides",
+            "revision": null
+          },
+          "topics": [
+            "configuration_precedence",
+            "filesystem_state",
+            "trust",
+            "tool_sources",
+            "environment"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "The current ACP IDE guide describes optional per-session workers, with a worker required for editor-configured HTTP MCP.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "ag-worker-doc",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "The archived stdio route did not opt into per-session workers. Current documentation supplies no binding between worker separation and credential scope.",
+            "location": "https://antigravity.google/docs/ide/extensions/acp",
+            "locator": "ACP startup flag table / process-per-session",
+            "revision": null
+          },
+          "topics": [
+            "state_root",
+            "background",
+            "tool_sources"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "The current hooks guide describes per-conversation transcript and artifact paths under an app-data root. It lists different default roots for CLI, App and IDE.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "ag-logs-doc",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "The default documented CLI data root does not establish what the 1.5.18 app-data selector relocates, or where account and worker state live.",
+            "location": "https://antigravity.google/docs/hooks",
+            "locator": "Input and output contract / Common input fields and transcriptPath",
+            "revision": null
+          },
+          "topics": [
+            "filesystem_state",
+            "state_root"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "Current MCP guidance documents global and workspace servers, exact-tool or wildcard permission matches, and OAuth for some external servers. Traced policy and credential cases for separate ACP distributions do not establish the CLI route's implementation.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "ag-tools-doc",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "The archived local stdio route did not test external MCP OAuth, wildcard suppression, managed precedence or exclusion of other tool sources.",
+            "location": "https://antigravity.google/docs/cli/mcp/",
+            "locator": "Global and workspace server configs, MCP permissions and OAuth",
+            "revision": null
+          },
+          "topics": [
+            "managed_policy",
+            "tool_sources",
+            "mcp_oauth"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "No matched implementation or release-tag evidence establishes 1.5.18 token files, in-memory support, keyring target and fallback, credential refresh writeback, or secondary session and device effects.",
+          "class": "UNKNOWN",
+          "id": "ag-build-gap",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "unestablished",
+            "limitation": "The reviewed CLI changelog did not expose a 1.5.18 entry. A public binary digest authenticates the identity recorded by Stage 1.5, not the storage behavior.",
+            "location": "https://antigravity.google/docs/changelog/",
+            "locator": "Antigravity CLI release list and recorded Stage 1.5 Windows installer manifest identity",
+            "revision": null
+          },
+          "topics": [
+            "file_auth",
+            "ephemeral",
+            "keyring",
+            "oauth_refresh",
+            "mcp_oauth",
+            "account_registration",
+            "ordinary_reuse"
+          ],
+          "version": "1.5.18"
+        },
+        {
+          "claim": "Exact Windows cache, history, session, memory, plugin and update roots and managed precedence are unverified. It is unknown whether a worker can reuse ordinary settings, trust, tools or auth outside the selected data name.",
+          "class": "UNKNOWN",
+          "id": "ag-state-gap",
+          "provider": "antigravity",
+          "source": {
+            "applicability": "unestablished",
+            "limitation": "Current docs and the archived harness do not establish a complete exclusion gate for global/workspace/managed tool and state sources.",
+            "location": "outputs/stage-1.5/route-matrix.json",
+            "locator": "routes.antigravity.version and isolation",
+            "revision": null
+          },
+          "topics": [
+            "state_root",
+            "filesystem_state",
+            "configuration_precedence",
+            "managed_policy",
+            "tool_sources",
+            "auto_update",
+            "trust",
+            "environment",
+            "background"
+          ],
+          "version": "1.5.18"
+        }
+      ],
+      "classification": "UNKNOWN",
+      "decision": "NO-GO",
+      "essential_gates": {
+        "account_nonmutation": {
+          "claims": [
+            "ag-build-gap"
+          ],
+          "status": "unknown"
+        },
+        "configuration_policy": {
+          "claims": [
+            "ag-state-gap"
+          ],
+          "status": "unknown"
+        },
+        "ordinary_subscription": {
+          "claims": [
+            "ag-build-gap",
+            "ag-os-scope"
+          ],
+          "status": "unknown"
+        },
+        "provenance": {
+          "claims": [
+            "ag-build-gap"
+          ],
+          "status": "unknown"
+        }
+      },
+      "evidence_counts": {
+        "HISTORICAL_REPOSITORY_EVIDENCE": 2,
+        "INFERENCE": 1,
+        "OFFICIAL_DOC_CURRENT_ONLY": 6,
+        "UNKNOWN": 2,
+        "VERSION_MATCHED_OFFICIAL_DOC": 0,
+        "VERSION_MATCHED_SOURCE": 0
+      },
+      "future": "Obtain 1.5.18-specific storage and worker documentation. A separately approved Windows account or vendor-provided isolation mechanism could be evaluated only after subscription and account-side effects are documented.",
+      "future_preflight_eligible": false,
+      "historical_mode": "one headless driver with one stdio ACP session and session-scoped stdio MCP",
+      "managed_policy_authoritative": true,
+      "native_qualified": false,
+      "precedence": {
+        "current_context": [
+          "ag-settings-doc",
+          "ag-shared-doc"
+        ],
+        "exact_edges": [],
+        "status": "unknown_exact",
+        "unknowns": [
+          "Exact Windows policy and scope merge order",
+          "Independently loaded authentication and worker state"
+        ]
+      },
+      "product": "Google Antigravity CLI",
+      "provenance": "unresolved_source",
+      "version": {
+        "algorithm": "sha512",
+        "artifact": "https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/windows_amd64.json",
+        "build_marker": null,
+        "digest": "53605db7013dfed51e8c416d51e0c17a3b5ad0750c13da5669954ba4a281318746be0cf8cde2b256cfdb4bfbdade4badad1a0503931f8458416184549afa06b6",
+        "executable": "agy.exe",
+        "historical": "1.5.18",
+        "installed_record": "1.5.18",
+        "matched_source": null,
+        "release_tag": null
+      }
+    },
+    "codex": {
+      "authorized_sessions": 0,
+      "blocked_by": "Private config and process-memory storage exist, but a fresh pinned exec cannot retain the ordinary subscription through those mechanisms without supplying or reading credential material. Managed state and provider-side effects also need proof.",
+      "claims": [
+        {
+          "claim": "CODEX_HOME selects an existing directory that the resolver canonicalizes. Without that selector the OS user home supplies the .codex default.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-home",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "A canonicalized path can resolve an alias back to its original directory. The resolver only establishes this root.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/utils/home-dir/src/lib.rs#L5-L62",
+            "locator": "utils/home-dir/src/lib.rs / find_codex_home",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "state_root",
+            "environment"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Ignoring the user config empties its layer and leaves the resolved home and auth backend independently selected. The exec ephemeral flag controls thread settings.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-skip",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Read with cx-config and cx-ephemeral. Neither exec flag constitutes a scoped subscription grant.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/exec/src/lib.rs#L609-L627",
+            "locator": "exec/src/lib.rs / ConfigOverrides for exec",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "state_root",
+            "configuration_precedence",
+            "ordinary_reuse"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The Windows ordinary stack overlays packaged defaults, system defaults, cloud config fragments, user and selected profile, trusted project layers, then session overrides. The loader can also insert thread-specific layers and evaluates project trust. Its ignore-user-config path builds an empty user layer.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-config",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Project ordering is represented as a grouped layer. Enforcement by managed requirements is separate from the preference merge.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/config/src/loader/mod.rs#L123-L535",
+            "locator": "config/src/loader/mod.rs / load_config_layers_state and load_user_config_layer",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "configuration_precedence",
+            "state_root",
+            "trust"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Configuration tables merge by key. An empty upper server map alone cannot establish removal of lower-layer servers.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-merge",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Special fields have additional merge behavior. Source review cannot identify the effective policy on a particular host.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/config/src/merge.rs#L57-L128",
+            "locator": "config/src/merge.rs / merge_toml_values",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "configuration_precedence",
+            "tool_sources"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Windows system defaults use the ProgramData known-folder OpenAI/Codex config. The machine policy RequirementsPath selector can redirect requirements from the default colocated requirements.toml.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-system",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "The selector and paths are public source symbols. No machine registry or policy file was queried.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/config/src/loader/mod.rs#L807-L838",
+            "locator": "config/src/loader/mod.rs / windows_codex_system_dir and system requirements resolution",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "managed_policy",
+            "configuration_precedence"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Managed requirements can pin CLI credential storage and the ChatGPT base URL at auth bootstrap, and supply login and workspace restrictions.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-enforcement",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Managed policy remains authoritative. System/cloud requirements and cloud-sourced preferences must be evaluated independently of a private root.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/core/src/config/auth_keyring.rs#L39-L78",
+            "locator": "core/src/config/auth_keyring.rs / bootstrap_auth_config",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "managed_policy",
+            "configuration_precedence",
+            "subscription",
+            "ordinary_reuse"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Requirements can constrain MCP server identity, plugins, web search and startup update checking. The effective MCP catalog can include plugin registrations and host-owned app tools.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-tool-policy",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Managed requirements and server/tool catalog need separate checks. A permitted server name or a disabled web search setting alone is insufficient.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/config/src/config_requirements.rs#L164-L205",
+            "locator": "config/src/config_requirements.rs / ConfigRequirements",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "managed_policy",
+            "tool_sources",
+            "auto_update"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Auth-gated MCP materialization uses the catalog, including previously added compatibility built-ins and extension overlays. Host-owned app tools have an additional gate.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-runtime-tools",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "The archived synthetic local stdio entry does not prove the absence of independently configured sources on another host.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/codex-mcp/src/mcp/mod.rs#L404-L449",
+            "locator": "codex-mcp/src/mcp/mod.rs / effective_mcp_servers_from_configured",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "tool_sources",
+            "background"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The default file-backed CLI account store is auth.json under the resolved CODEX_HOME. Its schema holds authentication modes, OAuth token data and refresh metadata. File saves can truncate and rewrite the selected file.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-file",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "The file backend is directory-scoped by resolution. A link into an ordinary store would expose that ordinary store to reads and writes.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/login/src/auth/storage.rs#L47-L73",
+            "locator": "login/src/auth/storage.rs / AuthDotJson, also FileAuthStorage at lines 242\u2013276",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "subscription",
+            "file_auth",
+            "oauth_refresh"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The direct account keyring backend uses a service entry scoped by a digest of the canonical Codex home. The keyring feature selects the native Windows backend.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-keyring",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Read with cx-windows-keyring. This is entry naming within a Windows credential set, not a separate Windows account boundary.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/login/src/auth/storage.rs#L285-L388",
+            "locator": "login/src/auth/storage.rs / compute_store_key and DirectKeyringAuthStorage",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "keyring",
+            "file_auth"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The pinned keyring crate enables the Windows-native facility on Windows.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-windows-keyring",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Windows logon scope comes from Microsoft platform documentation. This does not identify an ordinary user entry or its persistence mode.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/keyring-store/Cargo.toml#L22-L23",
+            "locator": "keyring-store/Cargo.toml / windows target features",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "keyring"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Changing Codex home changes the native account entry key, not the current Windows token's credential set. The scratch entry cannot supply the existing ordinary account data without an independently authorized source.",
+          "class": "INFERENCE",
+          "id": "cx-os-scope",
+          "provider": "codex",
+          "source": {
+            "applicability": "conditional",
+            "limitation": "The Windows API describes logon-token credential sets, not the actual machine's entries or the pinned client's selected backend.",
+            "location": "https://learn.microsoft.com/en-us/windows/win32/api/wincred/nf-wincred-credreadw",
+            "locator": "CredReadW description, read with cx-keyring and cx-windows-keyring",
+            "revision": null
+          },
+          "topics": [
+            "keyring",
+            "ordinary_reuse"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The encrypted account backend uses a per-home encrypted file under secrets/codex_auth.age and an OS-keyring-held encryption key. The secret-auth-storage backend feature defaults on for Windows. The separate CLI storage mode still defaults to file.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-secret-keyring",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Read with cx-store-modes and the pinned features/src/lib.rs lines 1140\u20131145. This feature is consulted only when a keyring-capable mode is selected.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/secrets/src/local.rs#L40-L65",
+            "locator": "secrets/src/local.rs / LocalSecretsNamespace, path construction at lines 171\u2013188 and key access at lines 260\u2013289",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "keyring",
+            "file_auth"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The CLI storage modes are file, keyring, auto and ephemeral. Plain keyring does not use a file fallback. Auto load can fall back after a miss or error, and saves can fall back after a keyring error.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-store-modes",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Read with config/src/types.rs lines 135\u2013148, which marks file as default. The separate account-grant read path falls back on a miss and propagates keyring errors.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/login/src/auth/storage.rs#L528-L588",
+            "locator": "login/src/auth/storage.rs / AutoAuthStorage and the backend selection at lines 647\u2013694",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "file_auth",
+            "keyring",
+            "ephemeral"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The auth resolver checks an enabled and permitted CODEX_API_KEY input, then process-memory external auth, then permitted external access-token input, then the persistent backend. Explicit ephemeral storage stops before persistent lookup.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-ephemeral",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Ephemeral memory is populated within a process and is empty in a fresh CLI without supplied auth. A supplied API key or access token is not a handoff of an existing ordinary sign-in under the requirement.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/login/src/auth/manager.rs#L1536-L1623",
+            "locator": "login/src/auth/manager.rs / load_auth",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "ephemeral",
+            "ordinary_reuse",
+            "subscription",
+            "api_key",
+            "environment"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Ephemeral auth is a process-global memory map keyed by the resolved home. The embedded app-server is part of the archived exec process. A separately managed client can supply app-server auth and handle delegated refresh.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-ephemeral-entry",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Separate app-server external_auth.rs lines 24\u201380 describe a different control route. It requires a credential owner and does not import a cached ordinary subscription into a fresh exec.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/login/src/auth/storage.rs#L604-L644",
+            "locator": "login/src/auth/storage.rs / EPHEMERAL_AUTH_STORE and EphemeralAuthStorage",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "ephemeral",
+            "background",
+            "subscription"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "ChatGPT OAuth refresh calls the auth service and can replace token fields and refresh metadata in the active storage backend.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-refresh",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Memory-only persistence does not establish no provider-side token rotation, session creation or effects on an existing login.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/login/src/auth/manager.rs#L1657-L1755",
+            "locator": "login/src/auth/manager.rs / persist_tokens and request_chatgpt_token_refresh",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "oauth_refresh",
+            "account_registration",
+            "ordinary_reuse"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Device login obtains a provider-side grant and exchanges it for authentication material before writes through the selected local backend.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-device",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "The source shows an authorization exchange, but does not prove whether the service adds or replaces account or device registrations.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/login/src/device_code_auth.rs#L165-L232",
+            "locator": "login/src/device_code_auth.rs / request_device_code and complete_device_code_login",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "account_registration",
+            "subscription"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "MCP OAuth is a separate credential domain. File fallback uses .credentials.json under CODEX_HOME. Ordinary direct-keyring MCP entries use server identity and may be shared across homes; encrypted and enterprise variants have separate namespace rules.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-mcp-oauth",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Read with rmcp-client/src/oauth.rs lines 857 and 1056\u20131084 and secrets/src/local.rs lines 41\u201344. The archived local stdio server did not validate remote MCP OAuth isolation.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/rmcp-client/src/oauth/credential_store.rs#L334-L354",
+            "locator": "rmcp-client/src/oauth/credential_store.rs / shared ordinary direct-keyring entries",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "mcp_oauth",
+            "keyring",
+            "file_auth"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Log files default to CODEX_HOME/log. SQLite resolves effective config before CODEX_SQLITE_HOME before the selected home, with managed constraints. The embedded exec initializes state DB before starting its in-process client.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-logs",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Read with exec/src/lib.rs lines 714\u2013741. Thread ephemerality does not imply no other local writes or equivalent isolation under managed settings.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/core/src/config/mod.rs#L4314-L4344",
+            "locator": "core/src/config/mod.rs / SQLite and log resolution",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "filesystem_state",
+            "state_root",
+            "environment"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "History is a distinct history.jsonl store. Rollout data has sessions and archived_sessions locations, and memories have a root under Codex home.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-history",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Read with rollout/src/lib.rs lines 86\u201387 and memories/read/src/lib.rs lines 10\u201317. Durability depends on the settings and invoked path.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/message-history/src/lib.rs#L49-L128",
+            "locator": "message-history/src/lib.rs / history path and append machinery",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "filesystem_state"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The Windows primary runtime plugin marketplace may resolve from the ordinary Windows profile cache outside CODEX_HOME. The regular plugin cache and models_cache.json are separate local state.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-cache",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Read with models-manager/src/manager.rs line 42 and core-plugins/src/script_attribution.rs line 109. This establishes discovery paths, not that each path was used in Stage 1.2.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/core-plugins/src/marketplace_policy.rs#L557-L573",
+            "locator": "core-plugins/src/marketplace_policy.rs / primary_runtime_marketplace_root",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "filesystem_state",
+            "state_root",
+            "tool_sources"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The local MCP launcher composes default Windows env inputs, named variables and literal overrides with non-inheritable exclusions. The embedded exec may resolve executor state from the selected home or process environment.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-mcp-env",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "Read with exec/src/lib.rs lines 722\u2013741. Server process and cwd are separate boundaries; a home selector does not sanitize the host or the effective process environment.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/rmcp-client/src/utils.rs#L16-L58",
+            "locator": "rmcp-client/src/utils.rs / create_env_for_mcp_server",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "environment",
+            "background",
+            "tool_sources"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The pinned source implements update checks behind the startup setting in its TUI path; the setting defaults to true.",
+          "class": "VERSION_MATCHED_SOURCE",
+          "id": "cx-update",
+          "provider": "codex",
+          "source": {
+            "applicability": "exact_version",
+            "limitation": "The archived route is exec with embedded app-server. This TUI evidence does not establish a complete no-update guarantee for all helper or extension paths.",
+            "location": "https://github.com/openai/codex/blob/6ff1e1ca3b30fc8b914720681fcf5fe62e95f856/codex-rs/tui/src/updates.rs#L26-L42",
+            "locator": "tui/src/updates.rs / startup update check",
+            "revision": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856"
+          },
+          "topics": [
+            "auto_update"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "Stage 1.2 recorded an existing ChatGPT subscription and used a disposable config with a reference to the ordinary file-backed authentication state. Its synthetic MCP entry and disabled features were limited to that fixture.",
+          "class": "HISTORICAL_REPOSITORY_EVIDENCE",
+          "id": "cx-archive",
+          "provider": "codex",
+          "source": {
+            "applicability": "archived_route_only",
+            "limitation": "The ordinary-file before/after digest did not prove that reads, refresh or provider-side effects were absent. The archived credential reference is outside the allowed route.",
+            "location": "work/benchmarks/stage-1.2/agent_trials.py",
+            "locator": "codex, lines 148\u2013223 and outputs/stage-1.2/runs/codex-treatment.json",
+            "revision": "948d7692d4787a6f04e853177e5ff3f11c7c7efb"
+          },
+          "topics": [
+            "state_root",
+            "subscription",
+            "file_auth",
+            "ordinary_reuse",
+            "trust",
+            "tool_sources"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "The rolling authentication guide distinguishes ChatGPT sign-in from API-key auth and documents file, keyring, auto and process-memory caches.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "cx-doc-auth",
+          "provider": "codex",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "Pinned availability and behavior are proved by the source records. Current descriptions do not attest the archived account's state.",
+            "location": "https://learn.chatgpt.com/docs/auth",
+            "locator": "Authentication methods and Credential storage",
+            "revision": null
+          },
+          "topics": [
+            "ephemeral",
+            "subscription",
+            "api_key",
+            "keyring"
+          ],
+          "version": "0.166.0"
+        },
+        {
+          "claim": "No matched evidence establishes a stand-alone pinned exec route that retains the existing subscription without ordinary credential access and guarantees no provider-side session or device changes.",
+          "class": "UNKNOWN",
+          "id": "cx-account-gap",
+          "provider": "codex",
+          "source": {
+            "applicability": "unestablished",
+            "limitation": "Read-only source evidence covers client flows. Provider-side session replacement and effective host policy are unresolved.",
+            "location": "outputs/stage-1.5/route-matrix.json",
+            "locator": "routes.codex.isolation plus cx-ephemeral and cx-device",
+            "revision": null
+          },
+          "topics": [
+            "ordinary_reuse",
+            "account_registration",
+            "background"
+          ],
+          "version": "0.166.0"
+        }
+      ],
+      "classification": "PARTIAL_ISOLATION",
+      "decision": "NO-GO",
+      "essential_gates": {
+        "account_nonmutation": {
+          "claims": [
+            "cx-account-gap"
+          ],
+          "status": "unknown"
+        },
+        "configuration_policy": {
+          "claims": [
+            "cx-system",
+            "cx-tool-policy"
+          ],
+          "status": "partial"
+        },
+        "ordinary_subscription": {
+          "claims": [
+            "cx-ephemeral",
+            "cx-archive"
+          ],
+          "status": "contradicted"
+        },
+        "provenance": {
+          "claims": [
+            "cx-home"
+          ],
+          "status": "established"
+        }
+      },
+      "evidence_counts": {
+        "HISTORICAL_REPOSITORY_EVIDENCE": 1,
+        "INFERENCE": 1,
+        "OFFICIAL_DOC_CURRENT_ONLY": 1,
+        "UNKNOWN": 1,
+        "VERSION_MATCHED_OFFICIAL_DOC": 0,
+        "VERSION_MATCHED_SOURCE": 23
+      },
+      "future": "Use the synthetic route. For a different future route, obtain a version-matched, provider-supported account handoff with an independent scope and documented session effects before requesting separate director approval.",
+      "future_preflight_eligible": false,
+      "historical_mode": "noninteractive ephemeral execution with embedded app-server",
+      "managed_policy_authoritative": true,
+      "native_qualified": false,
+      "precedence": {
+        "current_context": [],
+        "exact_edges": [
+          {
+            "claim": "cx-config",
+            "higher": "system_defaults",
+            "lower": "packaged"
+          },
+          {
+            "claim": "cx-config",
+            "higher": "cloud_defaults",
+            "lower": "system_defaults"
+          },
+          {
+            "claim": "cx-config",
+            "higher": "user",
+            "lower": "cloud_defaults"
+          },
+          {
+            "claim": "cx-config",
+            "higher": "profile",
+            "lower": "user"
+          },
+          {
+            "claim": "cx-config",
+            "higher": "trusted_project",
+            "lower": "profile"
+          },
+          {
+            "claim": "cx-config",
+            "higher": "runtime",
+            "lower": "trusted_project"
+          },
+          {
+            "claim": "cx-enforcement",
+            "higher": "enforced_requirements",
+            "lower": "runtime"
+          }
+        ],
+        "status": "exact_partial",
+        "unknowns": [
+          "Effective host policy and tool catalog",
+          "Thread-specific ordering and any separate plugin or update state"
+        ]
+      },
+      "product": "Codex CLI",
+      "provenance": "matched_source",
+      "version": {
+        "algorithm": "sha256",
+        "artifact": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+        "build_marker": null,
+        "digest": "9d563ee4e0441ff9d59d612013e0460ddf8e5709735c2d9f6b98b7ef8ca4eb42",
+        "executable": "codex.exe",
+        "historical": "0.166.0",
+        "installed_record": "0.166.0",
+        "matched_source": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856",
+        "release_tag": "rust-v0.166.0"
+      }
+    },
+    "grok": {
+      "authorized_sessions": 0,
+      "blocked_by": "The archive shows a scratch configuration and trust scope but relies on an ordinary auth reference. Pinned storage and policy precedence are unknown, and the historical control recorded an additional tool.",
+      "claims": [
+        {
+          "claim": "Stage 1.2 headless streaming JSON reported an existing xAI OAuth subscription. The harness used GROK_HOME and referenced ordinary .grok/auth.json from its scratch home.",
+          "class": "HISTORICAL_REPOSITORY_EVIDENCE",
+          "id": "gr-archive-auth",
+          "provider": "grok",
+          "source": {
+            "applicability": "archived_route_only",
+            "limitation": "Before/after file equality covers content at two points. It cannot show absence of reads, attempted refresh or server-side changes.",
+            "location": "work/benchmarks/stage-1.2/agent_trials.py",
+            "locator": "grok, lines 375\u2013415 and outputs/stage-1.2/runs/grok-treatment.json",
+            "revision": "948d7692d4787a6f04e853177e5ff3f11c7c7efb"
+          },
+          "topics": [
+            "subscription",
+            "file_auth",
+            "ordinary_reuse",
+            "state_root"
+          ],
+          "version": "1.0.92"
+        },
+        {
+          "claim": "The archived setup used scratch config and workspace trust, set import exclusions and auto-updater controls, and observed one MCP registration with no active hooks or enabled plugins. The control trace still recorded an unapproved search tool event.",
+          "class": "HISTORICAL_REPOSITORY_EVIDENCE",
+          "id": "gr-archive-config",
+          "provider": "grok",
+          "source": {
+            "applicability": "archived_route_only",
+            "limitation": "A single treatment fixture can be scoped while a control remains unqualified. These facts do not prove source-wide precedence or updater exclusion.",
+            "location": "outputs/stage-1.2/runs/grok-control.json",
+            "locator": "isolation, out_of_scope_tool_events and lifecycle, read with runner lines 375\u2013439",
+            "revision": "948d7692d4787a6f04e853177e5ff3f11c7c7efb"
+          },
+          "topics": [
+            "configuration_precedence",
+            "tool_sources",
+            "auto_update",
+            "trust",
+            "environment",
+            "filesystem_state"
+          ],
+          "version": "1.0.92"
+        },
+        {
+          "claim": "Current settings describe GROK_HOME, user and project config, and separate managed defaults and requirement pins. Project config can add MCP, plugins and permission rules.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "gr-config-doc",
+          "provider": "grok",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "The published Unix examples are not proof of the pinned Windows system configuration location or effective contents.",
+            "location": "https://docs.x.ai/build/settings",
+            "locator": "Scopes and environment variables",
+            "revision": null
+          },
+          "topics": [
+            "state_root",
+            "configuration_precedence",
+            "filesystem_state",
+            "tool_sources",
+            "trust",
+            "environment"
+          ],
+          "version": "1.0.92"
+        },
+        {
+          "claim": "Current enterprise docs place user and system requirements above preferences and describe imported managed compatibility policy. Managed pins can constrain tools, sandbox and login.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "gr-policy-doc",
+          "provider": "grok",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "This is a rolling precedence model including non-Windows path examples. It does not establish the Windows 1.0.92 precedence.",
+            "location": "https://docs.x.ai/build/enterprise",
+            "locator": "Configuration and System-level policy",
+            "revision": null
+          },
+          "topics": [
+            "configuration_precedence",
+            "managed_policy",
+            "tool_sources"
+          ],
+          "version": "1.0.92"
+        },
+        {
+          "claim": "Current docs distinguish refreshable browser/device and external OAuth paths from API-key use, describe per-model selection, and warn that enforced account policy can clear a noncompliant saved session.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "gr-auth-doc",
+          "provider": "grok",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "Current credential ordering and refreshable modes do not establish 1.0.92 local writeback or account effects. An alternate token source or API key is not an ordinary subscription handoff.",
+            "location": "https://docs.x.ai/build/enterprise",
+            "locator": "Authentication and Restricting login methods",
+            "revision": null
+          },
+          "topics": [
+            "subscription",
+            "api_key",
+            "oauth_refresh",
+            "file_auth",
+            "environment",
+            "account_registration"
+          ],
+          "version": "1.0.92"
+        },
+        {
+          "claim": "Current MCP docs describe project replacement of same-name user entries, compatibility imports below native config, variable expansion, MCP OAuth in mcp_credentials.json and MCP stderr logs.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "gr-mcp-doc",
+          "provider": "grok",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "Current docs are not a pin to 1.0.92 and additional plugin or tool sources can be independent of the named MCP server.",
+            "location": "https://docs.x.ai/build/features/mcp-servers",
+            "locator": "Project scope, Compatibility, TOML environment expansion and Troubleshooting",
+            "revision": null
+          },
+          "topics": [
+            "mcp_oauth",
+            "tool_sources",
+            "filesystem_state",
+            "configuration_precedence",
+            "environment"
+          ],
+          "version": "1.0.92"
+        },
+        {
+          "claim": "Current sessions documentation describes local history, resumed sessions and optional sync. Enterprise documentation also identifies local session state under the Grok directory.",
+          "class": "OFFICIAL_DOC_CURRENT_ONLY",
+          "id": "gr-session-doc",
+          "provider": "grok",
+          "source": {
+            "applicability": "unpinned",
+            "limitation": "Exact cache, memory, log, history, plugin, upgrade and leader state locations that may remain outside GROK_HOME are unverified for the pinned build.",
+            "location": "https://docs.x.ai/build/features/sessions",
+            "locator": "Sessions and session persistence",
+            "revision": null
+          },
+          "topics": [
+            "filesystem_state",
+            "background"
+          ],
+          "version": "1.0.92"
+        },
+        {
+          "claim": "The inspected public snapshot describes a Grok home resolver, on-disk MCP credential storage and leader-mode code. Its own upstream marker differs from the archived Windows build marker. No correspondence is established.",
+          "class": "INFERENCE",
+          "id": "gr-mirror",
+          "provider": "grok",
+          "source": {
+            "applicability": "conditional",
+            "limitation": "Mirror behavior is useful context only. No storage or process conclusion from it is assigned to 1.0.92.",
+            "location": "https://github.com/xai-org/grok-build/blob/2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8/SOURCE_REV",
+            "locator": "SOURCE_REV identifies 559751fdcec02d413e4c57c8832ab275e4f44980. Compare archived build b06756fd6256.",
+            "revision": "2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8"
+          },
+          "topics": [
+            "state_root",
+            "background",
+            "mcp_oauth",
+            "file_auth"
+          ],
+          "version": "1.0.92"
+        },
+        {
+          "claim": "Exact Windows keyring participation, MCP OAuth storage, refresh locking or replacement, memory-only options and server-side device or session effects are unresolved.",
+          "class": "UNKNOWN",
+          "id": "gr-credential-gap",
+          "provider": "grok",
+          "source": {
+            "applicability": "unestablished",
+            "limitation": "The file reference proves exposure in the archived harness, not exclusive credential lookup in the executable.",
+            "location": "outputs/stage-1.5/route-matrix.json",
+            "locator": "routes.grok.version and isolation",
+            "revision": null
+          },
+          "topics": [
+            "ordinary_reuse",
+            "keyring",
+            "file_auth",
+            "ephemeral",
+            "mcp_oauth",
+            "oauth_refresh",
+            "account_registration"
+          ],
+          "version": "1.0.92"
+        },
+        {
+          "claim": "No version-matched inventory proves all active configuration, import, plugin, search, trust, update or shared process paths stay within the selected boundary.",
+          "class": "UNKNOWN",
+          "id": "gr-config-gap",
+          "provider": "grok",
+          "source": {
+            "applicability": "unestablished",
+            "limitation": "The out-of-scope search in the historical control is a concrete reason to require independent effective-catalog proof.",
+            "location": "outputs/stage-1.5/route-matrix.json",
+            "locator": "routes.grok.version, isolation and observation limits",
+            "revision": null
+          },
+          "topics": [
+            "state_root",
+            "configuration_precedence",
+            "managed_policy",
+            "tool_sources",
+            "auto_update",
+            "trust",
+            "environment",
+            "background",
+            "filesystem_state"
+          ],
+          "version": "1.0.92"
+        }
+      ],
+      "classification": "PARTIAL_ISOLATION",
+      "decision": "NO-GO",
+      "essential_gates": {
+        "account_nonmutation": {
+          "claims": [
+            "gr-credential-gap"
+          ],
+          "status": "unknown"
+        },
+        "configuration_policy": {
+          "claims": [
+            "gr-archive-config",
+            "gr-config-gap"
+          ],
+          "status": "partial"
+        },
+        "ordinary_subscription": {
+          "claims": [
+            "gr-archive-auth",
+            "gr-credential-gap"
+          ],
+          "status": "unknown"
+        },
+        "provenance": {
+          "claims": [
+            "gr-credential-gap",
+            "gr-mirror"
+          ],
+          "status": "unknown"
+        }
+      },
+      "evidence_counts": {
+        "HISTORICAL_REPOSITORY_EVIDENCE": 2,
+        "INFERENCE": 1,
+        "OFFICIAL_DOC_CURRENT_ONLY": 5,
+        "UNKNOWN": 2,
+        "VERSION_MATCHED_OFFICIAL_DOC": 0,
+        "VERSION_MATCHED_SOURCE": 0
+      },
+      "future": "Require vendor proof for build b06756fd6256 covering credential scope, refresh and effective tool exclusions. Continue with the synthetic owner and relay while the pinned native route is blocked.",
+      "future_preflight_eligible": false,
+      "historical_mode": "headless streaming JSON, no TUI or ACP session for Stage 1.2",
+      "managed_policy_authoritative": true,
+      "native_qualified": false,
+      "precedence": {
+        "current_context": [
+          "gr-config-doc",
+          "gr-policy-doc",
+          "gr-mcp-doc"
+        ],
+        "exact_edges": [],
+        "status": "unknown_exact",
+        "unknowns": [
+          "Exact Windows policy, workspace, imports, environment and CLI merge",
+          "Background and updater state outside the home"
+        ]
+      },
+      "product": "Grok Build",
+      "provenance": "unresolved_source",
+      "version": {
+        "algorithm": "sha256",
+        "artifact": "https://x.ai/cli/grok-1.0.92-windows-x86_64.exe",
+        "build_marker": "b06756fd6256",
+        "digest": "060e51f93743b540e59c5cf9c81c0ce7b48b61c263f09235d981a6ababb1c9d7",
+        "executable": "grok.exe",
+        "historical": "1.0.92",
+        "installed_record": "1.0.92",
+        "matched_source": null,
+        "release_tag": null
+      }
+    }
+  },
+  "schema": "wpai.benchmark.provider-account-isolation.v1"
+}

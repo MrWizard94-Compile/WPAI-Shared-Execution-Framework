@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WPAI provider isolation assessment v1",
+  "type": "object",
+  "required": ["schema", "baseline", "constitution", "authorization", "frozen", "evidence_counts", "routes"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const":"wpai.benchmark.provider-account-isolation.v1"},
+    "baseline": {"type":"string", "pattern":"^[0-9a-f]{40}$"},
+    "constitution": {"type":"string", "pattern":"^[0-9a-f]{40}$"},
+    "authorization": {
+      "type": "object",
+      "required": ["authorized_now", "provider_processes_started", "live_provider_sessions", "provider_api_calls", "account_or_config_changes", "paired_study_authorized", "native_qualification_started"],
+      "additionalProperties": false,
+      "properties": {
+        "authorized_now": {"const":0},
+        "provider_processes_started": {"const":0},
+        "live_provider_sessions": {"const":0},
+        "provider_api_calls": {"const":0},
+        "account_or_config_changes": {"const":0},
+        "paired_study_authorized": {"const":false},
+        "native_qualification_started": {"const":false}
+      }
+    },
+    "frozen": {
+      "type": "object",
+      "required": ["repeatability_sha256", "stage_1_5_matrix_sha256", "proposed_lifecycle_cases", "paired_runs", "session_counts"],
+      "additionalProperties": false,
+      "properties": {
+        "repeatability_sha256": {"type":"string", "pattern":"^[0-9a-f]{64}$"},
+        "stage_1_5_matrix_sha256": {"type":"string", "pattern":"^[0-9a-f]{64}$"},
+        "proposed_lifecycle_cases": {"const":6},
+        "paired_runs": {
+          "type": "object",
+          "required": ["codex", "antigravity", "grok"],
+          "additionalProperties": false,
+          "properties": {
+            "codex": {"const":5},
+            "antigravity": {"const":5},
+            "grok": {"const":5}
+          }
+        },
+        "session_counts": {
+          "type": "object",
+          "required": ["authorized_now", "historically_matched_routes_if_qualified", "all_three_routes_if_qualified", "includes_qualification_sessions"],
+          "additionalProperties": false,
+          "properties": {
+            "authorized_now": {"const":0},
+            "historically_matched_routes_if_qualified": {"const":20},
+            "all_three_routes_if_qualified": {"const":30},
+            "includes_qualification_sessions": {"const":false}
+          }
+        }
+      }
+    },
+    "evidence_counts": {
+      "type": "object",
+      "required": ["VERSION_MATCHED_SOURCE", "VERSION_MATCHED_OFFICIAL_DOC", "OFFICIAL_DOC_CURRENT_ONLY", "HISTORICAL_REPOSITORY_EVIDENCE", "INFERENCE", "UNKNOWN"],
+      "additionalProperties": false,
+      "properties": {
+        "VERSION_MATCHED_SOURCE": {"type":"integer"},
+        "VERSION_MATCHED_OFFICIAL_DOC": {"type":"integer"},
+        "OFFICIAL_DOC_CURRENT_ONLY": {"type":"integer"},
+        "HISTORICAL_REPOSITORY_EVIDENCE": {"type":"integer"},
+        "INFERENCE": {"type":"integer"},
+        "UNKNOWN": {"type":"integer"}
+      }
+    },
+    "routes": {
+      "type": "object",
+      "required": ["codex", "antigravity", "grok"],
+      "additionalProperties": false,
+      "properties": {
+        "codex": {"$ref":"#/$defs/route"},
+        "antigravity": {"$ref":"#/$defs/route"},
+        "grok": {"$ref":"#/$defs/route"}
+      }
+    }
+  },
+  "$defs": {
+    "route": {
+      "type": "object",
+      "required": ["product", "version", "historical_mode", "provenance", "decision", "native_qualified", "authorized_sessions", "future_preflight_eligible", "managed_policy_authoritative", "classification", "blocked_by", "future", "essential_gates", "precedence", "claims", "evidence_counts"],
+      "additionalProperties": false,
+      "properties": {
+        "product": {"type":"string", "pattern":"^.+$"},
+        "version": {"$ref":"#/$defs/version"},
+        "historical_mode": {"type":"string", "pattern":"^.+$"},
+        "provenance": {"enum":["matched_source", "unresolved_source"]},
+        "decision": {"const":"NO-GO"},
+        "native_qualified": {"const":false},
+        "authorized_sessions": {"const":0},
+        "future_preflight_eligible": {"const":false},
+        "managed_policy_authoritative": {"const":true},
+        "classification": {"enum":["PROVEN_ISOLATED", "PARTIAL_ISOLATION", "NOT_ISOLATABLE", "UNKNOWN", "ROLLING_DOCS_ONLY"]},
+        "blocked_by": {"type":"string", "pattern":"^.+$"},
+        "future": {"type":"string", "pattern":"^.+$"},
+        "essential_gates": {
+          "type": "object",
+          "required": ["provenance", "ordinary_subscription", "account_nonmutation", "configuration_policy"],
+          "additionalProperties": false,
+          "properties": {
+            "provenance": {"$ref":"#/$defs/gate"},
+            "ordinary_subscription": {"$ref":"#/$defs/gate"},
+            "account_nonmutation": {"$ref":"#/$defs/gate"},
+            "configuration_policy": {"$ref":"#/$defs/gate"}
+          }
+        },
+        "precedence": {
+          "type": "object",
+          "required": ["status", "exact_edges", "current_context", "unknowns"],
+          "additionalProperties": false,
+          "properties": {
+            "status": {"enum":["exact_partial", "unknown_exact"]},
+            "exact_edges": {
+              "type": "array",
+              "items": {"$ref":"#/$defs/edge"},
+              "minItems": 0
+            },
+            "current_context": {
+              "type": "array",
+              "items": {"type":"string", "pattern":"^.+$"},
+              "minItems": 0
+            },
+            "unknowns": {
+              "type": "array",
+              "items": {"type":"string", "pattern":"^.+$"},
+              "minItems": 1
+            }
+          }
+        },
+        "claims": {
+          "type": "array",
+          "items": {"$ref":"#/$defs/claim"},
+          "minItems": 1
+        },
+        "evidence_counts": {
+          "type": "object",
+          "required": ["VERSION_MATCHED_SOURCE", "VERSION_MATCHED_OFFICIAL_DOC", "OFFICIAL_DOC_CURRENT_ONLY", "HISTORICAL_REPOSITORY_EVIDENCE", "INFERENCE", "UNKNOWN"],
+          "additionalProperties": false,
+          "properties": {
+            "VERSION_MATCHED_SOURCE": {"type":"integer"},
+            "VERSION_MATCHED_OFFICIAL_DOC": {"type":"integer"},
+            "OFFICIAL_DOC_CURRENT_ONLY": {"type":"integer"},
+            "HISTORICAL_REPOSITORY_EVIDENCE": {"type":"integer"},
+            "INFERENCE": {"type":"integer"},
+            "UNKNOWN": {"type":"integer"}
+          }
+        }
+      }
+    },
+    "version": {
+      "type": "object",
+      "required": ["historical", "installed_record", "executable", "algorithm", "digest", "artifact", "matched_source", "release_tag", "build_marker"],
+      "additionalProperties": false,
+      "properties": {
+        "historical": {"type":"string", "pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "installed_record": {"type":"string", "pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "executable": {"enum":["codex.exe", "agy.exe", "grok.exe"]},
+        "algorithm": {"enum":["sha256", "sha512"]},
+        "digest": {"type":"string", "pattern":"^[0-9a-f]{64}([0-9a-f]{64})?$"},
+        "artifact": {"type":"string", "pattern":"^https://[^\\s]+$"},
+        "matched_source": {"type":["string", "null"]},
+        "release_tag": {"type":["string", "null"]},
+        "build_marker": {"type":["string", "null"]}
+      }
+    },
+    "gate": {
+      "type": "object",
+      "required": ["status", "claims"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {"enum":["established", "unknown", "contradicted", "partial"]},
+        "claims": {
+          "type": "array",
+          "items": {"type":"string", "pattern":"^.+$"},
+          "minItems": 1
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "required": ["lower", "higher", "claim"],
+      "additionalProperties": false,
+      "properties": {
+        "lower": {"type":"string", "pattern":"^.+$"},
+        "higher": {"type":"string", "pattern":"^.+$"},
+        "claim": {"type":"string", "pattern":"^.+$"}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "required": ["id", "provider", "version", "class", "topics", "claim", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type":"string", "pattern":"^(cx|ag|gr)-[a-z][a-z-]+$"},
+        "provider": {"enum":["codex", "antigravity", "grok"]},
+        "version": {"type":"string", "pattern":"^.+$"},
+        "class": {"enum":["VERSION_MATCHED_SOURCE", "VERSION_MATCHED_OFFICIAL_DOC", "OFFICIAL_DOC_CURRENT_ONLY", "HISTORICAL_REPOSITORY_EVIDENCE", "INFERENCE", "UNKNOWN"]},
+        "topics": {
+          "type": "array",
+          "items": {"type":"string", "pattern":"^.+$"},
+          "minItems": 1
+        },
+        "claim": {"type":"string", "pattern":"^.+$"},
+        "source": {
+          "type": "object",
+          "required": ["location", "revision", "locator", "applicability", "limitation"],
+          "additionalProperties": false,
+          "properties": {
+            "location": {"type":"string", "pattern":"^.+$"},
+            "revision": {"type":["string", "null"]},
+            "locator": {"type":"string", "pattern":"^.+$"},
+            "applicability": {"enum":["exact_version", "unpinned", "archived_route_only", "conditional", "unestablished"]},
+            "limitation": {"type":"string", "pattern":"^.+$"}
+          }
+        }
+      }
+    }
+  }
+}
