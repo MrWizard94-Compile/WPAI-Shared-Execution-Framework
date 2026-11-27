@@ -47,4 +47,4 @@ PASS means the test observed the expected result. Negative cases such as witness
 
 ## Hosted verification
 
-The hosted Windows workflow result is recorded against the implementation commit after publication.
+The Windows tests workflow ran on a push to `main` at implementation commit `9e667745fe1af1619fbd07d0024d13c887fe083f` and concluded `success`. Both Python 3.10.11 and 3.14.3 jobs passed the `Verify Stage 1.4 independent lifecycle witness` step and all prior-stage checks. [GitHub Actions run 45994057584](https://github.com/MrWizard94-Compile/WPAI-Shared-Execution-Framework/actions/runs/45994057584)

@@ -1,7 +1,7 @@
 4145b42a3d0a73619d6880cac0c2393a676fb9ca5a36e353380b0ea6fb01e78b  .github/workflows/tests.yml
 23bf15dce535380778e3a35c668a94c673d25f86830648584490918010c3cc36  outputs/stage-1.4/architecture.md
 880ec23052415cf137deb24824623db37cba0cedb3fbe74e47b1fc72bb96d578  outputs/stage-1.4/evidence.json
-f2636e57f1053bf7309c29fb1c9e1bf755931b309a45d47d224bc629daef5521  outputs/stage-1.4/handoff.md
+e5ab0c797d7a1eee9aca421bf576820c36a16b43502ffc9e424ea4aebf5c096e  outputs/stage-1.4/handoff.md
 85fed623f6c4887505854f1f6411ecf0d46d199044a35e372c06ed3d8678837b  outputs/stage-1.4/historical.sha256
 73e4af490d49c8a9c826b503e7cfafbf2daac36330b1e72a5a89477d9156ba91  work/benchmarks/stage-1.4/README.md
 d475e48b1a8143f43743f159517444795e4503f2f928a5dbe64709f362068339  work/benchmarks/stage-1.4/actors.py
