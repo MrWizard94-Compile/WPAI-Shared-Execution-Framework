@@ -19,3 +19,7 @@ The child waits for a one-byte private startup handshake before loading fixture 
 `paired_stats.py <provider> <pairs.json>` reads one provider's JSON array. Each object has a unique `pair_id` and embedded `control` and `treatment` raw run records in the Stage 1.2 normalized shape. Future run records also need a distinct `run_id` for each arm, measured `fixture_identities`, and the original `lifecycle` receipt from that run. Pass the opaque ID to the wrapper with `--run-id` or retain the one it generates. The comparator checks the receipt's ID, arm and fixture hashes against the run and its frozen inputs. Retain the source records so receipt provenance can be verified. Capture counters for each arm and preserve missing observations as null. The output includes per-pair differences, reduction fractions for positive control baselines, ranges, medians and missing counts. Eligibility is evaluated per metric. Provider groups stay separate.
 
 The [handoff](../../../outputs/stage-1.3/handoff.md) carries the acceptance matrix and the future live authorization gate.
+
+## Stage 1.3.1 correction
+
+For new offline lifecycle receipts and future pair analysis, use the [Stage 1.3.1 tools](../stage-1.3.1/README.md). The archived reproduction commands above apply to Stage 1.3. Stage 1.3.1 adds verified pump termination, a validated receipt merge and explicit missing-evidence states.

@@ -1,0 +1,101 @@
+{
+  "schema": "wpai.benchmark.correction-verification.v1",
+  "accepted_baseline": "ec7ea9d5c88a6d8adee65fd2fd5518947f39a687",
+  "constitution": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "historical_manifest_sha256": "0486e1251159de0f724265c9f6d2cde208c8270b23d7b95221b03a07e6bb1584",
+  "historical_files_verified": 45,
+  "original_documentation_prefixes_verified": 2,
+  "source_and_test_sha256": {
+    "work/benchmarks/stage-1.3.1/comparator.py": "4dd7ade5bb4141eae148b73d6eb4f386e8e696181939c3a626c1779b55b2ab01",
+    "work/benchmarks/stage-1.3.1/lifecycle_receipt.py": "ff47a366b0fb42794e203811ec6f18076f4cffb1dbacd4b55527c2e768686664",
+    "work/benchmarks/stage-1.3.1/paired_stats.py": "f63745a9f322ca64d0bc270206bde0e920e21a809722af9c8468c09488eae155",
+    "work/benchmarks/stage-1.3.1/public_evidence.py": "ad6d18dad262dfa692282b479776cdfe4df4b7c261d574a1e45b24f0fbf10835",
+    "work/benchmarks/stage-1.3.1/supervisor.py": "f31bbec82f0c46fdfd191be549b15faf253027b6b6022507b0c3bb7cfd05d6d0",
+    "work/benchmarks/stage-1.3.1/tests/test_comparator.py": "df493379ffdefc65411a20d607aa5343d8229d56372e4487bbcd88d448ffee28",
+    "work/benchmarks/stage-1.3.1/tests/test_receipt.py": "24abf3c53f954b8b81fcb051acca05b8748597246a55f131aaffd22c5478126f",
+    "work/benchmarks/stage-1.3.1/tests/test_supervisor.py": "dabf3d01dac89d565a8c1e1cd75557914b719daaa2c6dbfcb297d893744b293b",
+    "work/benchmarks/stage-1.3.1/winjob.py": "3a64fb35384c299fdda233a4e6dfde6cd2d7005fed21c6606619d84dffb917d2",
+    "work/benchmarks/stage-1.3.1/wrapper.py": "d9bed4e25a2a5072fe3a735652f93be39a3436110382709fdc93fa58cbbf1b67"
+  },
+  "historical_routes": {
+    "codex": {
+      "pair_eligible": true,
+      "resource_metrics_eligible": false,
+      "historical_observed_reduction_fractions": {
+        "client_observed_benchmark_calls": 0.916667,
+        "whole_run_seconds_including_preflight": 0.395051,
+        "input_tokens_including_known_cache": 0.792748,
+        "total_tokens": 0.787562
+      },
+      "arms": {
+        "control": {
+          "answer_valid": true,
+          "tool_execution_valid": true,
+          "lifecycle_status": "open",
+          "client_observed_result_bytes_available": false
+        },
+        "treatment": {
+          "answer_valid": true,
+          "tool_execution_valid": true,
+          "lifecycle_status": "open",
+          "client_observed_result_bytes_available": false
+        }
+      }
+    },
+    "antigravity": {
+      "pair_eligible": true,
+      "resource_metrics_eligible": false,
+      "historical_observed_reduction_fractions": {
+        "client_observed_benchmark_calls": 0.916667,
+        "whole_run_seconds_including_preflight": 0.671001,
+        "total_tokens": 0.850588
+      },
+      "arms": {
+        "control": {
+          "answer_valid": true,
+          "tool_execution_valid": true,
+          "lifecycle_status": "open",
+          "client_observed_result_bytes_available": false
+        },
+        "treatment": {
+          "answer_valid": true,
+          "tool_execution_valid": true,
+          "lifecycle_status": "open",
+          "client_observed_result_bytes_available": false
+        }
+      }
+    },
+    "grok": {
+      "pair_eligible": false,
+      "resource_metrics_eligible": false,
+      "historical_observed_reduction_fractions": {},
+      "arms": {
+        "control": {
+          "answer_valid": true,
+          "tool_execution_valid": false,
+          "lifecycle_status": "open",
+          "client_observed_result_bytes_available": false
+        },
+        "treatment": {
+          "answer_valid": true,
+          "tool_execution_valid": true,
+          "lifecycle_status": "open",
+          "client_observed_result_bytes_available": false
+        }
+      }
+    }
+  },
+  "discarded_attempts_preserved": 6,
+  "unchanged_schedule_sha256": "2655c6732c919abdd7624d36cd12296234f20443e09b78f5f354e5bf29003224",
+  "planned_pairs_per_route": {
+    "codex": 5,
+    "antigravity": 5,
+    "grok": 5
+  },
+  "unchanged_planned_session_counts": {
+    "authorized_now": 0,
+    "historically_matched_routes_if_qualified": 20,
+    "all_three_routes_if_qualified": 30,
+    "includes_qualification_sessions": false
+  }
+}

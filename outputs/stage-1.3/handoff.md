@@ -68,3 +68,7 @@ PASS identifies an observed Stage 1.3 result. FAIL identifies a criterion contra
 | Native MCP lifecycle qualification | OPEN | The offline supervisor is verified. Future authorization and route-specific capture are required. |
 | Grok clean control for resource comparison | OPEN | Stage 1.2's extra search remains disqualifying. |
 | Repeatability study and full upstream schema validation | OPEN | The study is plan-only. The full upstream validator remains deferred. |
+
+## Stage 1.3.1 correction
+
+The [Stage 1.3.1 handoff](../stage-1.3.1/handoff.md) records the Windows cancellation and comparator fixes. The historical observations and acceptance findings above describe Stage 1.3. New lifecycle claims require a v2 receipt and verified termination of all three pumps.

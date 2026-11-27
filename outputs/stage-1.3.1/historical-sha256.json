@@ -1,0 +1,195 @@
+{
+  "baseline_commit": "ec7ea9d5c88a6d8adee65fd2fd5518947f39a687",
+  "files": {
+    "outputs/stage-1.2/attempts/antigravity-control-attempt2.json": {
+      "bytes": 1304,
+      "sha256": "cd1bd88e591003a950e9b3edd3d0c53dab20e232a7d661f8bfbf5c1a970eb386"
+    },
+    "outputs/stage-1.2/attempts/antigravity-control-relative.json": {
+      "bytes": 3514,
+      "sha256": "4902b0f07eeda9b0cf7ca3dc3aca0bea2129677a3a914dce76c2e494a9e9f1e8"
+    },
+    "outputs/stage-1.2/attempts/antigravity-control-retry.json": {
+      "bytes": 3515,
+      "sha256": "5f925154cde919c3cf0b1e918b68453ce0529107bd7f73ac5343bd4fc28e4ac8"
+    },
+    "outputs/stage-1.2/attempts/antigravity-control.json": {
+      "bytes": 1000,
+      "sha256": "f287418bab7fe00c87969f940310aa153c33d469bf155bb64d872738f46eaff8"
+    },
+    "outputs/stage-1.2/attempts/antigravity-treatment.json": {
+      "bytes": 3616,
+      "sha256": "645cb42f3f2ede0af33159ab279119dba62af5bdf9a197f048fa471c0642a71b"
+    },
+    "outputs/stage-1.2/attempts/grok-control.json": {
+      "bytes": 3416,
+      "sha256": "046481158aef6a221b97639c79722467bf5975f8a2a5bbc01f883aedbd10d8f9"
+    },
+    "outputs/stage-1.2/audit-followup.md": {
+      "bytes": 2863,
+      "sha256": "42a7b337e235d69f9d28dd9a63fc3c4de31f3f887267353ea654e98aa284987c"
+    },
+    "outputs/stage-1.2/comparison.json": {
+      "bytes": 12104,
+      "sha256": "35d5a6d6a433537d042e9aff8324bb989e7f8e490b8313c558404b8c4e2376bd"
+    },
+    "outputs/stage-1.2/control-prompt.txt": {
+      "bytes": 1040,
+      "sha256": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf"
+    },
+    "outputs/stage-1.2/handoff.md": {
+      "bytes": 13229,
+      "sha256": "e3bd74f12839fefaec8e0158c068f8d8bf96fc01f8173b91bf655f8b13d8966d"
+    },
+    "outputs/stage-1.2/identities.json": {
+      "bytes": 472,
+      "sha256": "f918b0330edd0e6041c0cc7213343edd90e4d5089caf4926d52c84d8601ca00c"
+    },
+    "outputs/stage-1.2/runs/antigravity-control.json": {
+      "bytes": 25586,
+      "sha256": "a85435cfb6ab657ba824e95a573e65a0b3c3a0ce7f867abb9dcb94670cccec06"
+    },
+    "outputs/stage-1.2/runs/antigravity-treatment.json": {
+      "bytes": 9856,
+      "sha256": "4e047c5276c903b94c139e3952fefa25234a5c3be0801f4137e580312ad8a694"
+    },
+    "outputs/stage-1.2/runs/codex-control.json": {
+      "bytes": 23055,
+      "sha256": "3b7167ad504026fae6a9d186ea00f0ebe49028be4bc80cfd580fbc7000ba0822"
+    },
+    "outputs/stage-1.2/runs/codex-treatment.json": {
+      "bytes": 9402,
+      "sha256": "581410bd5b63e906c8cd2cdd824c18e48f091c057a79115e0b746f8766b51758"
+    },
+    "outputs/stage-1.2/runs/grok-control.json": {
+      "bytes": 22870,
+      "sha256": "71ccad81c032922c438611ffb8190e606d69e38e7b764334806f5651b809ce5d"
+    },
+    "outputs/stage-1.2/runs/grok-treatment.json": {
+      "bytes": 9821,
+      "sha256": "aea935c39626a754818c15adaa91c790207e89bb730b45e57979642f70070f01"
+    },
+    "outputs/stage-1.2/treatment-prompt.txt": {
+      "bytes": 931,
+      "sha256": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325"
+    },
+    "outputs/stage-1.3/reconciliation.json": {
+      "bytes": 58373,
+      "sha256": "4be4ab22b00d2500230d5a748080a34366e6c6c536b2ad9ccdc8d1da6a82a03c"
+    },
+    "outputs/stage-1.3/repeatability-plan.json": {
+      "bytes": 22030,
+      "sha256": "2655c6732c919abdd7624d36cd12296234f20443e09b78f5f354e5bf29003224"
+    },
+    "outputs/stage-1.3/usage-reference.json": {
+      "bytes": 7047,
+      "sha256": "9fd3bde53441dbece9af1008c6941763f59ccc25eb450fc5c2fcae62d09d87c6"
+    },
+    "work/benchmarks/stage-1.2/README.md": {
+      "bytes": 3365,
+      "sha256": "268ad4146c956712848e805550a3add4c043a5db1ca6f8becf674acc881b5bd0"
+    },
+    "work/benchmarks/stage-1.2/agent_trials.py": {
+      "bytes": 30850,
+      "sha256": "5ebece4a3a7c077936d0f86e5fd82483c3c7e8b676b9cb0a79ad5fff244a4bb8"
+    },
+    "work/benchmarks/stage-1.2/benchmark.py": {
+      "bytes": 4251,
+      "sha256": "49d5b1746e5c48f0837b5e7d391c0f2e7d9dfa4ef9ca20af01d7bb89046a5674"
+    },
+    "work/benchmarks/stage-1.2/control.txt": {
+      "bytes": 258,
+      "sha256": "17ba5275fa0296e4a52e87b79d17fb8f8c651687a62ca5f040fb6b3e1328c89c"
+    },
+    "work/benchmarks/stage-1.2/ground_truth.json": {
+      "bytes": 4127,
+      "sha256": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8"
+    },
+    "work/benchmarks/stage-1.2/measure.py": {
+      "bytes": 7807,
+      "sha256": "0d0d28ab6492104cb6f5f5864e57ec8ee51f87d99648cf68fce66665648e1bae"
+    },
+    "work/benchmarks/stage-1.2/response_schema.json": {
+      "bytes": 8591,
+      "sha256": "66760159677ef20e42b112a317b2fff28947c9994bb347b6361dcc4a9568448e"
+    },
+    "work/benchmarks/stage-1.2/server.py": {
+      "bytes": 7182,
+      "sha256": "dc7167e9b1b710f27b500f46ac8c3dcf028b983ee341040628263e48d7b27c7d"
+    },
+    "work/benchmarks/stage-1.2/task.txt": {
+      "bytes": 800,
+      "sha256": "7a3136413349df22e6b66662d82510ef0e78ae5c3322f09c247426fdd686aec6"
+    },
+    "work/benchmarks/stage-1.2/treatment.txt": {
+      "bytes": 149,
+      "sha256": "fe8128d857625216064d0ddbad44c4e6717c6b4e445fad0780e793a4605cba4c"
+    },
+    "work/benchmarks/stage-1.2/verify_fixture.py": {
+      "bytes": 5367,
+      "sha256": "c1083926b84e6b47b957889b526dd0811089a2aeb912a748aa6b87e93da14ecf"
+    },
+    "work/benchmarks/stage-1.2/verify_publication_exception.py": {
+      "bytes": 1476,
+      "sha256": "550954c0c7ddae542cae2186f9f6caf0448ccab0cd8d1198a9f14e7b23d0fcf7"
+    },
+    "work/benchmarks/stage-1.3/bootstrap.py": {
+      "bytes": 1554,
+      "sha256": "c1cac8efb226ff03e3a8269132ec5e5389a9f6a874062a971a11a762e4e0fc43"
+    },
+    "work/benchmarks/stage-1.3/comparator.py": {
+      "bytes": 22217,
+      "sha256": "ecaafc93576449318e7bd0c02a9f76f66ffce3bad9648a7d83698a3e14e9ed0c"
+    },
+    "work/benchmarks/stage-1.3/evidence.py": {
+      "bytes": 3388,
+      "sha256": "23dfaf2bdd531806bb0a2d29627f454f3738df343971c4bcedd2d364d89d4d76"
+    },
+    "work/benchmarks/stage-1.3/paired_stats.py": {
+      "bytes": 3832,
+      "sha256": "f63745a9f322ca64d0bc270206bde0e920e21a809722af9c8468c09488eae155"
+    },
+    "work/benchmarks/stage-1.3/plan.py": {
+      "bytes": 7363,
+      "sha256": "38799abeb0025968e94b88a888d64ce182b8ab1412dbaa71055df0d5ddd5800b"
+    },
+    "work/benchmarks/stage-1.3/public_evidence.py": {
+      "bytes": 2154,
+      "sha256": "2796557015c22fbdaca43f87ca969c0477cf1507e22394070de1cc365bc9b1dd"
+    },
+    "work/benchmarks/stage-1.3/supervisor.py": {
+      "bytes": 9553,
+      "sha256": "d9d7d393c7a01f1033319cacf51e1e22d4028d3804b29999be3292c03a20b320"
+    },
+    "work/benchmarks/stage-1.3/tests/test_comparator.py": {
+      "bytes": 10109,
+      "sha256": "d8d442a5c36a29fc351455173dbd8d1f0a25b19656d52d5251bd962192a5f57c"
+    },
+    "work/benchmarks/stage-1.3/tests/test_plan.py": {
+      "bytes": 3807,
+      "sha256": "3c73fc0fa70328f7ce761927f79ecadba86ed546b87adc94355200a134be967f"
+    },
+    "work/benchmarks/stage-1.3/tests/test_supervisor.py": {
+      "bytes": 13295,
+      "sha256": "be5fdc7fc3d9dce421af27a4fd8c4fe98b317bc25715ebdd4a0bfda392856f3c"
+    },
+    "work/benchmarks/stage-1.3/winjob.py": {
+      "bytes": 2851,
+      "sha256": "1a0bdab9e244cb3c5eeb922b11c7bb701b7a2f942a5517bcb758cef0a10e8aa6"
+    },
+    "work/benchmarks/stage-1.3/wrapper.py": {
+      "bytes": 2152,
+      "sha256": "050cb454f44ed2a14addab1aa07db47dc70c76765ba3438918354c2b914bce76"
+    }
+  },
+  "append_only_documentation": {
+    "outputs/stage-1.3/handoff.md": {
+      "bytes": 10658,
+      "sha256": "39aa681511f4406ffcc9b49c55177917562dbac3f882c4af5b6d2e9ebac7bed3"
+    },
+    "work/benchmarks/stage-1.3/README.md": {
+      "bytes": 3601,
+      "sha256": "8b51e04942f16ab310c96feba8ca8b58eb782af6dc3a4abefb142fb275fee963"
+    }
+  }
+}
