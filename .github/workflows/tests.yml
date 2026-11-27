@@ -48,4 +48,10 @@ jobs:
         run: |
           python -B -W error -m unittest discover -s work/benchmarks/stage-1.4/tests -v
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          python -B -W error work/benchmarks/stage-1.4/public_evidence.py
+          python -B -W error work/benchmarks/stage-1.4.1/verify_prior.py
+      - name: Verify Stage 1.4.1 scenario-specific witness completeness
+        working-directory: .
+        run: |
+          python -B -W error -m unittest discover -s work/benchmarks/stage-1.4.1/tests -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -W error work/benchmarks/stage-1.4.1/public_evidence.py

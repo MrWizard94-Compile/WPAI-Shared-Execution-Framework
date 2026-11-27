@@ -1,0 +1,173 @@
+{
+  "authorized_now": 0,
+  "baseline": "3526d53e8a29beba6cfb08b28737298a9ff7e1ed",
+  "constitution": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "historical_files_verified": 75,
+  "native_provider_qualification_started": false,
+  "scenarios": {
+    "channel_broken": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "unavailable",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "channel_broken",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": [
+        "server.stdin_eof"
+      ]
+    },
+    "descendant": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "observed_failure",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "descendant",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": [
+        "server.stdin_eof",
+        "wrapper.stdin_eof"
+      ]
+    },
+    "external_tree": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "observed_failure",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "external_tree",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": [
+        "server.stdin_eof",
+        "server.stdout_observation",
+        "wrapper.stdin_eof"
+      ]
+    },
+    "identity_mismatch": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "invalid",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "identity_mismatch",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": []
+    },
+    "local_pipe_close": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "observed_failure",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "local_pipe_close",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": [
+        "server.stdin_eof",
+        "wrapper.stdin_eof"
+      ]
+    },
+    "missing_exit": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "unavailable",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "missing_exit",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": [
+        "server.exit_code"
+      ]
+    },
+    "missing_registration": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "unavailable",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "missing_registration",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": [
+        "job.registered_members",
+        "server.exit_code",
+        "server.registration",
+        "server.signaled_handle",
+        "server.stdin_eof"
+      ]
+    },
+    "normal": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "observed_success",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "normal",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": []
+    },
+    "observer_crash": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "incomplete",
+      "missing": [
+        "observer_finalized"
+      ],
+      "qualification": "incomplete",
+      "scenario": "observer_crash",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "separate_crash_guard": {
+        "active": 0,
+        "observer_exit_code": 91
+      },
+      "unobserved": []
+    },
+    "server_nonzero": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "observed_failure",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "server_nonzero",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": []
+    },
+    "server_zero": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "observed_success",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "server_zero",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": []
+    },
+    "timeout": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "observed_failure",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "timeout",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": [
+        "server.stdin_eof",
+        "wrapper.stdin_eof"
+      ]
+    },
+    "wrapper_only": {
+      "conflicts": [],
+      "contract": "stage-1.4.1",
+      "lifecycle_status": "observed_failure",
+      "missing": [],
+      "qualification": "pass",
+      "scenario": "wrapper_only",
+      "schema": "wpai.benchmark.lifecycle-scenario-verdict.v1",
+      "unobserved": [
+        "server.stdin_eof",
+        "wrapper.stdin_eof"
+      ]
+    }
+  },
+  "schema": "wpai.benchmark.lifecycle-scenario-evidence.v1",
+  "stage_1_4_implementation": "9e667745fe1af1619fbd07d0024d13c887fe083f"
+}
