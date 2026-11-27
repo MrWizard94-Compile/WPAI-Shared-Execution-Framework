@@ -17,9 +17,9 @@ The project baseline was `3526d53e8a29beba6cfb08b28737298a9ff7e1ed`, with Stage 
 | A10–A11 | PASS | Complete expected negative cases remain qualified. A crash ledger remains incomplete and exits nonzero. |
 | A12–A14 | PASS | Python 3.10.11 and 3.14.3 passed the local warnings-as-errors suites, original manifest verifier and new deterministic replay. |
 | A15–A16 | PASS | Zero live inference and `authorized_now: 0`. Publication scope is the existing `main`, with no branches or pull requests added. |
-| A17 | See hosted verification | The hosted result is associated with the exact implementation commit. |
+| A17 | PASS | Both hosted Windows jobs passed on the exact implementation commit. |
 | A18 | OPEN | Native provider lifecycle qualification is unstarted and unauthorized. The paired study remains separately unauthorized. |
 
 ## Hosted verification
 
-The Windows workflow result will be recorded against the implementation commit after publication.
+The Windows tests workflow ran on a push to `main` at implementation commit `73e96b50f117cd85de9b789702ba6097c8fce0fc` and concluded `success`. Both Python 3.10.11 and 3.14.3 passed the `Verify Stage 1.4.1 scenario-specific witness completeness` step and the prior-stage checks. [GitHub Actions run 45998582535](https://github.com/MrWizard94-Compile/WPAI-Shared-Execution-Framework/actions/runs/45998582535)
