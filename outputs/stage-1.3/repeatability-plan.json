@@ -1,0 +1,543 @@
+{
+  "schema": "wpai.benchmark.repeatability-plan.v1",
+  "execution_mode": "plan-only",
+  "live_inference_authorized": false,
+  "seed": 20261127,
+  "order_algorithm": "SHA-256 ranks pair positions per route and chooses whether two or three start with control.",
+  "context_policy": "Start each arm in a fresh independent context. Record cache counters; do not reset provider state.",
+  "authorization_gate": [
+    "Obtain explicit authorization for live inference, named providers, session budget and subscription use.",
+    "Qualify each proposed native or independently owned transport for complete lifecycle evidence.",
+    "Requalify Grok control with no out-of-scope tools before including the route in resource comparison.",
+    "Confirm the exact client/model/settings and fixture fingerprints before starting a pair.",
+    "Approve any qualification sessions separately. They are outside the five-pair counts."
+  ],
+  "session_counts": {
+    "authorized_now": 0,
+    "historically_matched_routes_if_qualified": 20,
+    "all_three_routes_if_qualified": 30,
+    "includes_qualification_sessions": false
+  },
+  "measurements": {
+    "all_routes": [
+      "model_calls",
+      "agent_turns",
+      "client_observed_benchmark_calls",
+      "server_operation_count",
+      "raw_input_tokens",
+      "cached_input_tokens",
+      "cache_creation_tokens",
+      "output_tokens",
+      "reasoning_tokens",
+      "total_tokens",
+      "whole_run_seconds_including_preflight",
+      "provider_phase_seconds",
+      "server_call_round_trip_ms",
+      "server_acquisition_ms",
+      "server_serialization_ms",
+      "server_report_json_bytes",
+      "server_rpc_wire_bytes",
+      "provider_reported_cost_usd",
+      "lifecycle"
+    ],
+    "unavailable_across_stage_1_2": [
+      "actual_billable_api_charge_usd",
+      "subscription_quota_delta",
+      "model_only_latency_seconds",
+      "tool_call_rounds",
+      "client_observed_result_bytes"
+    ],
+    "codex_unavailable": [
+      "model_calls",
+      "provider_phase_seconds",
+      "provider_reported_cost_usd"
+    ],
+    "antigravity_unavailable": [
+      "model_calls",
+      "provider_reported_cost_usd",
+      "input_tokens_including_known_cache",
+      "separate_reasoning_setting"
+    ],
+    "grok_provider_cost_is_billing": false
+  },
+  "routes": {
+    "codex": {
+      "stage_1_2_pair_eligible": true,
+      "ready_for_live_resource_comparison": false,
+      "open_gates": [
+        "future_live_authorization",
+        "native_or_independent_transport_qualification"
+      ],
+      "paired_runs": 5,
+      "model_sessions": 10,
+      "configurations": {
+        "control": {
+          "sha256": "2b03ec450f7353224ed9380132ea0b7f517ff7358d7c5bee9364150ae4ea0476",
+          "settings": {
+            "provider": "codex",
+            "arm": "control",
+            "tool": "fixture_read_field_v1",
+            "fresh_context": true,
+            "prompt_sha256": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+            "fixture": {
+              "stage_1_1_package": "9063cd629145fee025a6330dd969a6bb608bc2571cca72dde5860947652a3686",
+              "ground_truth.json": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8",
+              "response_schema.json": "66760159677ef20e42b112a317b2fff28947c9994bb347b6361dcc4a9568448e",
+              "control-prompt.txt": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+              "treatment-prompt.txt": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325"
+            },
+            "client_model_and_isolation": {
+              "model": "gpt-6.1-sol",
+              "model_identity_source": "pinned CLI model selection",
+              "client_version": "codex-cli 0.166.0",
+              "auth_category": "existing ChatGPT subscription",
+              "reasoning_setting": "low",
+              "requested_model": "gpt-6.1-sol",
+              "client_routing_hint_sha256": null,
+              "isolation": {
+                "only_mcp_server": "wpai_benchmark",
+                "shell_disabled": true,
+                "apps_hooks_memory_subagents_web_disabled": true,
+                "credentials_source_referenced_not_copied": true
+              },
+              "protocol": "2025-06-18",
+              "acp_version": null
+            },
+            "transport_qualification": "required"
+          }
+        },
+        "treatment": {
+          "sha256": "e7adc749fda560da98bf5ab67d761472ea047af65851277d77e8c73014c18d7f",
+          "settings": {
+            "provider": "codex",
+            "arm": "treatment",
+            "tool": "repo_health_v1",
+            "fresh_context": true,
+            "prompt_sha256": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325",
+            "fixture": {
+              "stage_1_1_package": "9063cd629145fee025a6330dd969a6bb608bc2571cca72dde5860947652a3686",
+              "ground_truth.json": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8",
+              "response_schema.json": "66760159677ef20e42b112a317b2fff28947c9994bb347b6361dcc4a9568448e",
+              "control-prompt.txt": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+              "treatment-prompt.txt": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325"
+            },
+            "client_model_and_isolation": {
+              "model": "gpt-6.1-sol",
+              "model_identity_source": "pinned CLI model selection",
+              "client_version": "codex-cli 0.166.0",
+              "auth_category": "existing ChatGPT subscription",
+              "reasoning_setting": "low",
+              "requested_model": "gpt-6.1-sol",
+              "client_routing_hint_sha256": null,
+              "isolation": {
+                "only_mcp_server": "wpai_benchmark",
+                "shell_disabled": true,
+                "apps_hooks_memory_subagents_web_disabled": true,
+                "credentials_source_referenced_not_copied": true
+              },
+              "protocol": "2025-06-18",
+              "acp_version": null
+            },
+            "transport_qualification": "required"
+          }
+        }
+      },
+      "pairs": [
+        {
+          "pair_id": "codex-01",
+          "run_order": [
+            {
+              "arm": "control",
+              "context_id": "codex-01-control",
+              "configuration_sha256": "2b03ec450f7353224ed9380132ea0b7f517ff7358d7c5bee9364150ae4ea0476"
+            },
+            {
+              "arm": "treatment",
+              "context_id": "codex-01-treatment",
+              "configuration_sha256": "e7adc749fda560da98bf5ab67d761472ea047af65851277d77e8c73014c18d7f"
+            }
+          ]
+        },
+        {
+          "pair_id": "codex-02",
+          "run_order": [
+            {
+              "arm": "control",
+              "context_id": "codex-02-control",
+              "configuration_sha256": "2b03ec450f7353224ed9380132ea0b7f517ff7358d7c5bee9364150ae4ea0476"
+            },
+            {
+              "arm": "treatment",
+              "context_id": "codex-02-treatment",
+              "configuration_sha256": "e7adc749fda560da98bf5ab67d761472ea047af65851277d77e8c73014c18d7f"
+            }
+          ]
+        },
+        {
+          "pair_id": "codex-03",
+          "run_order": [
+            {
+              "arm": "control",
+              "context_id": "codex-03-control",
+              "configuration_sha256": "2b03ec450f7353224ed9380132ea0b7f517ff7358d7c5bee9364150ae4ea0476"
+            },
+            {
+              "arm": "treatment",
+              "context_id": "codex-03-treatment",
+              "configuration_sha256": "e7adc749fda560da98bf5ab67d761472ea047af65851277d77e8c73014c18d7f"
+            }
+          ]
+        },
+        {
+          "pair_id": "codex-04",
+          "run_order": [
+            {
+              "arm": "treatment",
+              "context_id": "codex-04-treatment",
+              "configuration_sha256": "e7adc749fda560da98bf5ab67d761472ea047af65851277d77e8c73014c18d7f"
+            },
+            {
+              "arm": "control",
+              "context_id": "codex-04-control",
+              "configuration_sha256": "2b03ec450f7353224ed9380132ea0b7f517ff7358d7c5bee9364150ae4ea0476"
+            }
+          ]
+        },
+        {
+          "pair_id": "codex-05",
+          "run_order": [
+            {
+              "arm": "treatment",
+              "context_id": "codex-05-treatment",
+              "configuration_sha256": "e7adc749fda560da98bf5ab67d761472ea047af65851277d77e8c73014c18d7f"
+            },
+            {
+              "arm": "control",
+              "context_id": "codex-05-control",
+              "configuration_sha256": "2b03ec450f7353224ed9380132ea0b7f517ff7358d7c5bee9364150ae4ea0476"
+            }
+          ]
+        }
+      ]
+    },
+    "antigravity": {
+      "stage_1_2_pair_eligible": true,
+      "ready_for_live_resource_comparison": false,
+      "open_gates": [
+        "future_live_authorization",
+        "native_or_independent_transport_qualification"
+      ],
+      "paired_runs": 5,
+      "model_sessions": 10,
+      "configurations": {
+        "control": {
+          "sha256": "5c49a21185679a7d13006d51a3ff115092c66863840a3a9e64c569f95cec8f80",
+          "settings": {
+            "provider": "antigravity",
+            "arm": "control",
+            "tool": "fixture_read_field_v1",
+            "fresh_context": true,
+            "prompt_sha256": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+            "fixture": {
+              "stage_1_1_package": "9063cd629145fee025a6330dd969a6bb608bc2571cca72dde5860947652a3686",
+              "ground_truth.json": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8",
+              "response_schema.json": "66760159677ef20e42b112a317b2fff28947c9994bb347b6361dcc4a9568448e",
+              "control-prompt.txt": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+              "treatment-prompt.txt": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325"
+            },
+            "client_model_and_isolation": {
+              "model": "gemini-4-neon-high",
+              "model_identity_source": "ACP session current model",
+              "client_version": "1.5.18",
+              "auth_category": "existing signed-in Google Antigravity session",
+              "reasoning_setting": null,
+              "requested_model": null,
+              "client_routing_hint_sha256": null,
+              "isolation": {
+                "only_mcp_server": "wpai_benchmark",
+                "terminal_sandbox": true,
+                "customizations_disabled": true,
+                "host_methods_denied": true
+              },
+              "protocol": "2026-07-28",
+              "acp_version": 1
+            },
+            "transport_qualification": "required"
+          }
+        },
+        "treatment": {
+          "sha256": "6e84d358cd206e78bbc1f23e4841dca09eba21cb0f8244d0dbc22d9d046ce3d4",
+          "settings": {
+            "provider": "antigravity",
+            "arm": "treatment",
+            "tool": "repo_health_v1",
+            "fresh_context": true,
+            "prompt_sha256": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325",
+            "fixture": {
+              "stage_1_1_package": "9063cd629145fee025a6330dd969a6bb608bc2571cca72dde5860947652a3686",
+              "ground_truth.json": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8",
+              "response_schema.json": "66760159677ef20e42b112a317b2fff28947c9994bb347b6361dcc4a9568448e",
+              "control-prompt.txt": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+              "treatment-prompt.txt": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325"
+            },
+            "client_model_and_isolation": {
+              "model": "gemini-4-neon-high",
+              "model_identity_source": "ACP session current model",
+              "client_version": "1.5.18",
+              "auth_category": "existing signed-in Google Antigravity session",
+              "reasoning_setting": null,
+              "requested_model": null,
+              "client_routing_hint_sha256": null,
+              "isolation": {
+                "only_mcp_server": "wpai_benchmark",
+                "terminal_sandbox": true,
+                "customizations_disabled": true,
+                "host_methods_denied": true
+              },
+              "protocol": "2026-07-28",
+              "acp_version": 1
+            },
+            "transport_qualification": "required"
+          }
+        }
+      },
+      "pairs": [
+        {
+          "pair_id": "antigravity-01",
+          "run_order": [
+            {
+              "arm": "control",
+              "context_id": "antigravity-01-control",
+              "configuration_sha256": "5c49a21185679a7d13006d51a3ff115092c66863840a3a9e64c569f95cec8f80"
+            },
+            {
+              "arm": "treatment",
+              "context_id": "antigravity-01-treatment",
+              "configuration_sha256": "6e84d358cd206e78bbc1f23e4841dca09eba21cb0f8244d0dbc22d9d046ce3d4"
+            }
+          ]
+        },
+        {
+          "pair_id": "antigravity-02",
+          "run_order": [
+            {
+              "arm": "treatment",
+              "context_id": "antigravity-02-treatment",
+              "configuration_sha256": "6e84d358cd206e78bbc1f23e4841dca09eba21cb0f8244d0dbc22d9d046ce3d4"
+            },
+            {
+              "arm": "control",
+              "context_id": "antigravity-02-control",
+              "configuration_sha256": "5c49a21185679a7d13006d51a3ff115092c66863840a3a9e64c569f95cec8f80"
+            }
+          ]
+        },
+        {
+          "pair_id": "antigravity-03",
+          "run_order": [
+            {
+              "arm": "treatment",
+              "context_id": "antigravity-03-treatment",
+              "configuration_sha256": "6e84d358cd206e78bbc1f23e4841dca09eba21cb0f8244d0dbc22d9d046ce3d4"
+            },
+            {
+              "arm": "control",
+              "context_id": "antigravity-03-control",
+              "configuration_sha256": "5c49a21185679a7d13006d51a3ff115092c66863840a3a9e64c569f95cec8f80"
+            }
+          ]
+        },
+        {
+          "pair_id": "antigravity-04",
+          "run_order": [
+            {
+              "arm": "treatment",
+              "context_id": "antigravity-04-treatment",
+              "configuration_sha256": "6e84d358cd206e78bbc1f23e4841dca09eba21cb0f8244d0dbc22d9d046ce3d4"
+            },
+            {
+              "arm": "control",
+              "context_id": "antigravity-04-control",
+              "configuration_sha256": "5c49a21185679a7d13006d51a3ff115092c66863840a3a9e64c569f95cec8f80"
+            }
+          ]
+        },
+        {
+          "pair_id": "antigravity-05",
+          "run_order": [
+            {
+              "arm": "control",
+              "context_id": "antigravity-05-control",
+              "configuration_sha256": "5c49a21185679a7d13006d51a3ff115092c66863840a3a9e64c569f95cec8f80"
+            },
+            {
+              "arm": "treatment",
+              "context_id": "antigravity-05-treatment",
+              "configuration_sha256": "6e84d358cd206e78bbc1f23e4841dca09eba21cb0f8244d0dbc22d9d046ce3d4"
+            }
+          ]
+        }
+      ]
+    },
+    "grok": {
+      "stage_1_2_pair_eligible": false,
+      "ready_for_live_resource_comparison": false,
+      "open_gates": [
+        "future_live_authorization",
+        "native_or_independent_transport_qualification",
+        "out_of_scope_control_requalification"
+      ],
+      "paired_runs": 5,
+      "model_sessions": 10,
+      "configurations": {
+        "control": {
+          "sha256": "f3e18b3d3dfe37976fbec270fe435d1b6ec4ab6f3dc875247b72341943420017",
+          "settings": {
+            "provider": "grok",
+            "arm": "control",
+            "tool": "fixture_read_field_v1",
+            "fresh_context": true,
+            "prompt_sha256": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+            "fixture": {
+              "stage_1_1_package": "9063cd629145fee025a6330dd969a6bb608bc2571cca72dde5860947652a3686",
+              "ground_truth.json": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8",
+              "response_schema.json": "66760159677ef20e42b112a317b2fff28947c9994bb347b6361dcc4a9568448e",
+              "control-prompt.txt": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+              "treatment-prompt.txt": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325"
+            },
+            "client_model_and_isolation": {
+              "model": "grok-4.7-build",
+              "model_identity_source": "Grok modelUsage",
+              "client_version": "grok 1.0.92 (b06756fd6256)",
+              "auth_category": "existing xAI OAuth subscription session",
+              "reasoning_setting": "low",
+              "requested_model": "grok-4.7",
+              "client_routing_hint_sha256": "fc1d1ae76fe7f61ce61ba74c3f42651c002ddb8d0d7bc8a94c2756b333dd56d9",
+              "isolation": {
+                "only_mcp_server": "wpai_benchmark",
+                "permissions": "exact allow with dontAsk",
+                "no_hooks_or_enabled_plugins": true,
+                "credentials_source_referenced_not_copied": true
+              },
+              "protocol": "2025-11-25",
+              "acp_version": null
+            },
+            "transport_qualification": "required"
+          }
+        },
+        "treatment": {
+          "sha256": "5205d7262ce5f285d7b3a8ade80ad6980f839f9572dc3dc884a9f30feb47c194",
+          "settings": {
+            "provider": "grok",
+            "arm": "treatment",
+            "tool": "repo_health_v1",
+            "fresh_context": true,
+            "prompt_sha256": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325",
+            "fixture": {
+              "stage_1_1_package": "9063cd629145fee025a6330dd969a6bb608bc2571cca72dde5860947652a3686",
+              "ground_truth.json": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8",
+              "response_schema.json": "66760159677ef20e42b112a317b2fff28947c9994bb347b6361dcc4a9568448e",
+              "control-prompt.txt": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+              "treatment-prompt.txt": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325"
+            },
+            "client_model_and_isolation": {
+              "model": "grok-4.7-build",
+              "model_identity_source": "Grok modelUsage",
+              "client_version": "grok 1.0.92 (b06756fd6256)",
+              "auth_category": "existing xAI OAuth subscription session",
+              "reasoning_setting": "low",
+              "requested_model": "grok-4.7",
+              "client_routing_hint_sha256": "fc1d1ae76fe7f61ce61ba74c3f42651c002ddb8d0d7bc8a94c2756b333dd56d9",
+              "isolation": {
+                "only_mcp_server": "wpai_benchmark",
+                "permissions": "exact allow with dontAsk",
+                "no_hooks_or_enabled_plugins": true,
+                "credentials_source_referenced_not_copied": true
+              },
+              "protocol": "2025-11-25",
+              "acp_version": null
+            },
+            "transport_qualification": "required"
+          }
+        }
+      },
+      "pairs": [
+        {
+          "pair_id": "grok-01",
+          "run_order": [
+            {
+              "arm": "treatment",
+              "context_id": "grok-01-treatment",
+              "configuration_sha256": "5205d7262ce5f285d7b3a8ade80ad6980f839f9572dc3dc884a9f30feb47c194"
+            },
+            {
+              "arm": "control",
+              "context_id": "grok-01-control",
+              "configuration_sha256": "f3e18b3d3dfe37976fbec270fe435d1b6ec4ab6f3dc875247b72341943420017"
+            }
+          ]
+        },
+        {
+          "pair_id": "grok-02",
+          "run_order": [
+            {
+              "arm": "control",
+              "context_id": "grok-02-control",
+              "configuration_sha256": "f3e18b3d3dfe37976fbec270fe435d1b6ec4ab6f3dc875247b72341943420017"
+            },
+            {
+              "arm": "treatment",
+              "context_id": "grok-02-treatment",
+              "configuration_sha256": "5205d7262ce5f285d7b3a8ade80ad6980f839f9572dc3dc884a9f30feb47c194"
+            }
+          ]
+        },
+        {
+          "pair_id": "grok-03",
+          "run_order": [
+            {
+              "arm": "control",
+              "context_id": "grok-03-control",
+              "configuration_sha256": "f3e18b3d3dfe37976fbec270fe435d1b6ec4ab6f3dc875247b72341943420017"
+            },
+            {
+              "arm": "treatment",
+              "context_id": "grok-03-treatment",
+              "configuration_sha256": "5205d7262ce5f285d7b3a8ade80ad6980f839f9572dc3dc884a9f30feb47c194"
+            }
+          ]
+        },
+        {
+          "pair_id": "grok-04",
+          "run_order": [
+            {
+              "arm": "treatment",
+              "context_id": "grok-04-treatment",
+              "configuration_sha256": "5205d7262ce5f285d7b3a8ade80ad6980f839f9572dc3dc884a9f30feb47c194"
+            },
+            {
+              "arm": "control",
+              "context_id": "grok-04-control",
+              "configuration_sha256": "f3e18b3d3dfe37976fbec270fe435d1b6ec4ab6f3dc875247b72341943420017"
+            }
+          ]
+        },
+        {
+          "pair_id": "grok-05",
+          "run_order": [
+            {
+              "arm": "control",
+              "context_id": "grok-05-control",
+              "configuration_sha256": "f3e18b3d3dfe37976fbec270fe435d1b6ec4ab6f3dc875247b72341943420017"
+            },
+            {
+              "arm": "treatment",
+              "context_id": "grok-05-treatment",
+              "configuration_sha256": "5205d7262ce5f285d7b3a8ade80ad6980f839f9572dc3dc884a9f30feb47c194"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

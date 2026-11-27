@@ -26,6 +26,7 @@ The same `wpai.repo_health.v1` operation is available over MCP stdio as `2025-06
 | 1 | [Source](work/wpai-exec), [package](outputs/wpai-exec-stage-1.zip), [W1 report](outputs/wpai-stage-1-w1.md), [verification and repeatability data](outputs/wpai-stage-1-w1-evidence.json) |
 | 1.1 | [Hardened package](outputs/wpai-exec-stage-1.1.zip), [handoff](docs/stage-1.1-handoff.md), [protocol audit](docs/stage-1.1-protocol.md), [publication review](docs/stage-1.1-publication-review.md) |
 | 1.2 | [Synthetic agent benchmark](outputs/stage-1.2/handoff.md), [reproduction](work/benchmarks/stage-1.2/README.md), [comparison data](outputs/stage-1.2/comparison.json) |
+| 1.3 | [Offline measurement handoff](outputs/stage-1.3/handoff.md), [reproduction](work/benchmarks/stage-1.3/README.md), [plan-only schedule](outputs/stage-1.3/repeatability-plan.json) |
 
 Stage 0C has an approved Claude Code exception. Stage 1 verified the twelve W1 fields against independent Git and GitHub reads across three repeatability trials. Follow the existing authorization limits for model-driven tests against private repository data.
 
