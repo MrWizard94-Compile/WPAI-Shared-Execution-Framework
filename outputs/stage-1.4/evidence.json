@@ -1,0 +1,961 @@
+{
+  "baseline": {
+    "branch": "main",
+    "constitution": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+    "constitution_version": "6.24.0",
+    "historical_files_verified": 61,
+    "repository": "MrWizard94-Compile/WPAI-Shared-Execution-Framework",
+    "sha": "a4dbdb46ddcac40ee701773e328b725cb0eba954"
+  },
+  "frozen_plan_session_counts": {
+    "all_three_routes_if_qualified": 30,
+    "authorized_now": 0,
+    "historically_matched_routes_if_qualified": 20,
+    "includes_qualification_sessions": false
+  },
+  "live_inference_authorized": false,
+  "native_provider_qualification_started": false,
+  "scenarios": {
+    "channel_broken": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {},
+      "in_band_receipt_present": null,
+      "issues": [
+        [
+          "unavailable",
+          "channel_disconnected"
+        ]
+      ],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [
+        "server.stdin_eof"
+      ],
+      "observed_exit_codes": {
+        "server": 0,
+        "wrapper": 0
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "channel_broken",
+      "signaled_processes": [
+        "server",
+        "wrapper"
+      ],
+      "status": "unavailable",
+      "stdin_eof_sources": {
+        "wrapper": "trusted_fixture_control_pipe"
+      },
+      "stdout_classification": {
+        "server": "unattributed_peer_closure",
+        "wrapper": "graceful_eof_observed"
+      }
+    },
+    "descendant": {
+      "active_after_wrapper_exit": [
+        "descendant"
+      ],
+      "external_owner_acknowledged": false,
+      "force_requests": {
+        "job": "observer_control"
+      },
+      "in_band_receipt_present": null,
+      "issues": [],
+      "job_accounting": {
+        "after_wrapper_exit": {
+          "active": 2,
+          "total": 3
+        },
+        "final": {
+          "active": 0,
+          "total": 3
+        },
+        "registered": {
+          "active": 3,
+          "total": 3
+        }
+      },
+      "missing_observations": [
+        "server.stdin_eof",
+        "wrapper.stdin_eof"
+      ],
+      "observed_exit_codes": {
+        "descendant": 124,
+        "server": 124,
+        "wrapper": 0
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "descendant": {
+          "in_job": true,
+          "source": "bounded_job_membership"
+        },
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "descendant",
+      "signaled_processes": [
+        "descendant",
+        "server",
+        "wrapper"
+      ],
+      "status": "observed_failure",
+      "stdin_eof_sources": {},
+      "stdout_classification": {
+        "server": "peer_closure_observed_after_force_request",
+        "wrapper": "unattributed_peer_closure"
+      }
+    },
+    "external_tree": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": true,
+      "force_requests": {
+        "job": "external_owner",
+        "owner": "observer_control"
+      },
+      "in_band_receipt_present": false,
+      "issues": [],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [
+        "server.stdin_eof",
+        "server.stdout_observation",
+        "wrapper.stdin_eof"
+      ],
+      "observed_exit_codes": {
+        "owner": 1,
+        "server": 124,
+        "wrapper": 124
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "owner_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "owner": {
+          "in_job": false,
+          "source": "created_handle"
+        },
+        "server": {
+          "in_job": true,
+          "source": "bounded_job_membership"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "external_tree",
+      "signaled_processes": [
+        "owner",
+        "server",
+        "wrapper"
+      ],
+      "status": "observed_failure",
+      "stdin_eof_sources": {},
+      "stdout_classification": {
+        "wrapper": "peer_closure_observed_after_force_request"
+      }
+    },
+    "identity_mismatch": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {},
+      "in_band_receipt_present": null,
+      "issues": [
+        [
+          "invalid",
+          "identity_mismatch"
+        ]
+      ],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [],
+      "observed_exit_codes": {
+        "server": 0,
+        "wrapper": 0
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "identity_mismatch",
+      "signaled_processes": [
+        "server",
+        "wrapper"
+      ],
+      "status": "invalid",
+      "stdin_eof_sources": {
+        "server": "trusted_fixture_control_pipe",
+        "wrapper": "trusted_fixture_control_pipe"
+      },
+      "stdout_classification": {
+        "server": "graceful_eof_observed",
+        "wrapper": "graceful_eof_observed"
+      }
+    },
+    "local_pipe_close": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {
+        "job": "observer_control"
+      },
+      "in_band_receipt_present": null,
+      "issues": [],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [
+        "server.stdin_eof",
+        "wrapper.stdin_eof"
+      ],
+      "observed_exit_codes": {
+        "server": 124,
+        "wrapper": 124
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "local_close",
+          "source": "observer_closed_reader",
+          "winerror": 0
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "local_pipe_close",
+      "signaled_processes": [
+        "server",
+        "wrapper"
+      ],
+      "status": "observed_failure",
+      "stdin_eof_sources": {},
+      "stdout_classification": {
+        "server": "local_close",
+        "wrapper": "peer_closure_observed_after_force_request"
+      }
+    },
+    "missing_exit": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {},
+      "in_band_receipt_present": null,
+      "issues": [
+        [
+          "unavailable",
+          "missing_exit"
+        ]
+      ],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [
+        "server.exit_code"
+      ],
+      "observed_exit_codes": {
+        "wrapper": 0
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "missing_exit",
+      "signaled_processes": [
+        "server",
+        "wrapper"
+      ],
+      "status": "unavailable",
+      "stdin_eof_sources": {
+        "server": "trusted_fixture_control_pipe",
+        "wrapper": "trusted_fixture_control_pipe"
+      },
+      "stdout_classification": {
+        "server": "graceful_eof_observed",
+        "wrapper": "graceful_eof_observed"
+      }
+    },
+    "missing_registration": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {},
+      "in_band_receipt_present": null,
+      "issues": [
+        [
+          "unavailable",
+          "missing_registration"
+        ]
+      ],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [
+        "server.registration",
+        "server.signaled_handle",
+        "server.exit_code",
+        "server.stdin_eof",
+        "job.registered_members"
+      ],
+      "observed_exit_codes": {
+        "wrapper": 0
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "missing_registration",
+      "signaled_processes": [
+        "wrapper"
+      ],
+      "status": "unavailable",
+      "stdin_eof_sources": {
+        "wrapper": "trusted_fixture_control_pipe"
+      },
+      "stdout_classification": {
+        "server": "unattributed_peer_closure",
+        "wrapper": "graceful_eof_observed"
+      }
+    },
+    "normal": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {},
+      "in_band_receipt_present": null,
+      "issues": [],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [],
+      "observed_exit_codes": {
+        "server": 0,
+        "wrapper": 0
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "normal",
+      "signaled_processes": [
+        "server",
+        "wrapper"
+      ],
+      "status": "observed_success",
+      "stdin_eof_sources": {
+        "server": "trusted_fixture_control_pipe",
+        "wrapper": "trusted_fixture_control_pipe"
+      },
+      "stdout_classification": {
+        "server": "graceful_eof_observed",
+        "wrapper": "graceful_eof_observed"
+      }
+    },
+    "observer_crash": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {},
+      "in_band_receipt_present": null,
+      "issues": [],
+      "job_accounting": {
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [
+        "server.signaled_handle",
+        "server.exit_code",
+        "server.stdin_eof",
+        "server.stdout_observation",
+        "wrapper.signaled_handle",
+        "wrapper.exit_code",
+        "wrapper.stdin_eof",
+        "wrapper.stdout_observation",
+        "job.empty"
+      ],
+      "observed_exit_codes": {},
+      "observer_finalized": false,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {},
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "observer_crash",
+      "signaled_processes": [],
+      "status": "incomplete",
+      "stdin_eof_sources": {},
+      "stdout_classification": {},
+      "test_parent_after_observer_exit": {
+        "active": 0,
+        "observer_exit_code": 91
+      }
+    },
+    "server_nonzero": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {},
+      "in_band_receipt_present": null,
+      "issues": [],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [],
+      "observed_exit_codes": {
+        "server": 7,
+        "wrapper": 0
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "server_nonzero",
+      "signaled_processes": [
+        "server",
+        "wrapper"
+      ],
+      "status": "observed_failure",
+      "stdin_eof_sources": {
+        "server": "trusted_fixture_control_pipe",
+        "wrapper": "trusted_fixture_control_pipe"
+      },
+      "stdout_classification": {
+        "server": "graceful_eof_observed",
+        "wrapper": "graceful_eof_observed"
+      }
+    },
+    "server_zero": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {},
+      "in_band_receipt_present": null,
+      "issues": [],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [],
+      "observed_exit_codes": {
+        "server": 0,
+        "wrapper": 0
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "server_zero",
+      "signaled_processes": [
+        "server",
+        "wrapper"
+      ],
+      "status": "observed_success",
+      "stdin_eof_sources": {
+        "server": "trusted_fixture_control_pipe",
+        "wrapper": "trusted_fixture_control_pipe"
+      },
+      "stdout_classification": {
+        "server": "graceful_eof_observed",
+        "wrapper": "graceful_eof_observed"
+      }
+    },
+    "timeout": {
+      "active_after_wrapper_exit": [],
+      "external_owner_acknowledged": false,
+      "force_requests": {
+        "job": "observer_control"
+      },
+      "in_band_receipt_present": null,
+      "issues": [
+        [
+          "failure",
+          "timeout"
+        ]
+      ],
+      "job_accounting": {
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [
+        "server.stdin_eof",
+        "wrapper.stdin_eof"
+      ],
+      "observed_exit_codes": {
+        "server": 124,
+        "wrapper": 124
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "timeout",
+      "signaled_processes": [
+        "server",
+        "wrapper"
+      ],
+      "status": "observed_failure",
+      "stdin_eof_sources": {},
+      "stdout_classification": {
+        "server": "peer_closure_observed_after_force_request",
+        "wrapper": "peer_closure_observed_after_force_request"
+      }
+    },
+    "wrapper_only": {
+      "active_after_wrapper_exit": [
+        "server"
+      ],
+      "external_owner_acknowledged": false,
+      "force_requests": {
+        "job": "observer_control",
+        "wrapper": "observer_control"
+      },
+      "in_band_receipt_present": null,
+      "issues": [],
+      "job_accounting": {
+        "after_wrapper_exit": {
+          "active": 1,
+          "total": 2
+        },
+        "final": {
+          "active": 0,
+          "total": 2
+        },
+        "registered": {
+          "active": 2,
+          "total": 2
+        }
+      },
+      "missing_observations": [
+        "server.stdin_eof",
+        "wrapper.stdin_eof"
+      ],
+      "observed_exit_codes": {
+        "server": 124,
+        "wrapper": 1
+      },
+      "observer_finalized": true,
+      "observer_outside_target_job": true,
+      "pipe_terminals": {
+        "server_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "server_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_control": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        },
+        "wrapper_stdout": {
+          "outcome": "peer_closed",
+          "source": "ReadFile",
+          "winerror": 109
+        }
+      },
+      "registered_processes": {
+        "server": {
+          "in_job": true,
+          "source": "created_handle"
+        },
+        "wrapper": {
+          "in_job": true,
+          "source": "created_handle"
+        }
+      },
+      "scenario": "wrapper_only",
+      "signaled_processes": [
+        "server",
+        "wrapper"
+      ],
+      "status": "observed_failure",
+      "stdin_eof_sources": {},
+      "stdout_classification": {
+        "server": "peer_closure_observed_after_force_request",
+        "wrapper": "peer_closure_observed_after_force_request"
+      }
+    }
+  },
+  "schema": "wpai.benchmark.lifecycle-witness-qualification.v1",
+  "scope": "Offline synthetic witness evidence. Runtime identities, timestamps, and chain hashes are validated before normalization."
+}
