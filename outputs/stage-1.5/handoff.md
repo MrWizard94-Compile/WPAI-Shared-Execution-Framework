@@ -25,7 +25,7 @@ Baseline project `main` was `3a6784ab7b7969361288a484542e18e6b6577a50`. The acce
 | A11 | PASS | Separate normal and forced qualification cases, budgets, stops and recovery specified. |
 | A12 | PASS | Exact-source gaps and unobserved process ownership remain UNKNOWN. |
 | A13 | PASS | Versioned schema, deterministic matrix and offline verifier cover static evidence and authorization. [Publication manifest](manifest.sha256) |
-| A14 | PENDING | Hosted Windows tests will bind verification to the published SHA. |
+| A14 | PASS | Hosted Windows tests passed on the published Stage 1.5 implementation SHA. Exact run evidence below. |
 | A15 | PASS | Existing Windows matrix, action pins, read-only permission, disabled credential persistence, warning policy and prior verification steps retained. |
 | A16 | PASS | Zero live sessions, zero paid usage or qualification activity, zero current authorization. |
 | A17 | PASS | Stage 1.3 five-pair repeatability plan preserved by exact SHA-256. |
@@ -34,3 +34,9 @@ Baseline project `main` was `3a6784ab7b7969361288a484542e18e6b6577a50`. The acce
 | A20 | PASS | The three NO-GO decisions identify distinct prerequisites for a future director decision. |
 
 Native lifecycle qualification and the later paired resource comparisons remain OPEN. This assessment leaves all historical session counts and authorization gates intact.
+
+## Verification
+
+The full Windows suites and evidence verifiers passed locally on Python 3.10.11 and 3.14.3 with warnings treated as errors. Hosted **Windows tests** run `46031723679`, triggered by a push to `main`, had head `384b967e373ce57170a5c23a29c99e09f411bb95` and concluded `success`. Both **Python 3.10.11** and **Python 3.14.3** passed the Stage 1.5 static provider route feasibility and zero authorization step and every prior verification step. [Hosted implementation run](https://github.com/MrWizard94-Compile/WPAI-Shared-Execution-Framework/actions/runs/46031723679)
+
+This closeout records that run in the handoff and updates the corresponding manifest checksum. The workflow also runs on the closeout commit.
