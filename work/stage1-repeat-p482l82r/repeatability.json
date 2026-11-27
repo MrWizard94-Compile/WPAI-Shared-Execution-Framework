@@ -1,0 +1,47 @@
+{
+  "package_sha256": "e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+  "protocol": "2026-07-28",
+  "fresh_server_process_per_trial": true,
+  "ci_scope": "same reported CI surfaces, checked independently after each trial",
+  "git_metadata_unchanged": true,
+  "git_metadata_files": 11,
+  "trials": [
+    {
+      "trial": 1,
+      "opened_at": "2026-11-27T03:49:51.615+00:00",
+      "elapsed_ms": 1606.4,
+      "git_process_attempts": 11,
+      "github_get_process_attempts": 10,
+      "provider_usage": "unavailable",
+      "w1_fields_matched": 12,
+      "main_sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+      "result_bytes": 7837,
+      "probe_shutdown_exit": 0
+    },
+    {
+      "trial": 2,
+      "opened_at": "2026-11-27T03:49:56.446+00:00",
+      "elapsed_ms": 1475.6,
+      "git_process_attempts": 11,
+      "github_get_process_attempts": 10,
+      "provider_usage": "unavailable",
+      "w1_fields_matched": 12,
+      "main_sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+      "result_bytes": 7837,
+      "probe_shutdown_exit": 0
+    },
+    {
+      "trial": 3,
+      "opened_at": "2026-11-27T03:50:01.064+00:00",
+      "elapsed_ms": 1539.8,
+      "git_process_attempts": 11,
+      "github_get_process_attempts": 10,
+      "provider_usage": "unavailable",
+      "w1_fields_matched": 12,
+      "main_sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+      "result_bytes": 7837,
+      "probe_shutdown_exit": 0
+    }
+  ],
+  "median_elapsed_ms": 1539.8
+}

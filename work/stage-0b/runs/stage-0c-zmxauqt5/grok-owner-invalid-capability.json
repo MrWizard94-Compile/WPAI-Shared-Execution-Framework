@@ -1,0 +1,14 @@
+{
+  "harnessSHA256": "729fe9c5f6b5cc38358e4ba6a5e0b15ce5c46a6a021b1ac13343198bd06430d3",
+  "control": "A Windows local client presented a different per-run capability",
+  "supervisorDiagnostic": "Local relay capability rejected",
+  "launcherStarted": false,
+  "serverTraceCreated": false,
+  "forwardingThreadsStarted": false,
+  "supervisorThreadStopped": true,
+  "pipeReopenWinError": 2,
+  "normalAndDisposableConfigUnchanged": true,
+  "modelInvoked": false,
+  "stage0bProbeSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+  "stage0bLauncherSHA256": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683"
+}

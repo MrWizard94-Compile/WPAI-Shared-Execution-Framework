@@ -1,0 +1,206 @@
+{
+  "case": "direct-modern",
+  "serverSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+  "timestamp": "2026-11-26T20:03:52.072324+00:00",
+  "reconnections": [
+    {
+      "attempt": 1,
+      "catalog": [
+        "probe_denied_operation",
+        "probe_echo",
+        "probe_evidence_page",
+        "probe_info",
+        "probe_validation"
+      ],
+      "operations": {
+        "info": {
+          "server": "wpai-stage-0b-probe",
+          "build": "0.1.1",
+          "contract": "wpai.probe.v1",
+          "protocol": "2026-07-28",
+          "supported": [
+            "2026-07-28",
+            "2025-11-25",
+            "2025-06-18"
+          ]
+        },
+        "echo": {
+          "value": {
+            "label": "WPAI",
+            "count": 7,
+            "enabled": true
+          }
+        },
+        "valid": {
+          "valid": true,
+          "count": 9
+        },
+        "invalidType": {
+          "code": "INVALID_INPUT",
+          "reason": "Expected an integer"
+        },
+        "invalidBool": {
+          "code": "INVALID_INPUT",
+          "reason": "Expected an integer"
+        },
+        "unexpectedProperty": {
+          "code": "INVALID_INPUT",
+          "reason": "Unexpected property"
+        },
+        "invalidRange": {
+          "code": "INVALID_INPUT",
+          "reason": "Integer out of range"
+        },
+        "denied": {
+          "code": "DENIED",
+          "protectedActions": 0
+        },
+        "firstPage": {
+          "page": 1,
+          "rows": [
+            "alder",
+            "birch"
+          ],
+          "nextCursor": "AfTaQYCo2uATcOxlgK2yww"
+        },
+        "nextPage": {
+          "page": 2,
+          "rows": [
+            "cedar",
+            "dogwood"
+          ],
+          "nextCursor": null
+        },
+        "expiredCursor": {
+          "code": "CURSOR_EXPIRED_OR_UNKNOWN"
+        }
+      },
+      "process": {
+        "exit": 0,
+        "forced": false
+      }
+    },
+    {
+      "attempt": 2,
+      "catalog": [
+        "probe_denied_operation",
+        "probe_echo",
+        "probe_evidence_page",
+        "probe_info",
+        "probe_validation"
+      ],
+      "process": {
+        "exit": 0,
+        "forced": false
+      }
+    }
+  ],
+  "seconds": 20.657,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 15164,
+      "build": "0.1.1"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2026-07-28",
+      "mechanism": "server/discover"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2026-07-28",
+      "tools": 5
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_info",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_echo",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_validation",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_validation",
+      "outcome": "INVALID_INPUT"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_validation",
+      "outcome": "INVALID_INPUT"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_validation",
+      "outcome": "INVALID_INPUT"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_validation",
+      "outcome": "INVALID_INPUT"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_denied_operation",
+      "outcome": "DENIED",
+      "protectedActions": 0
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_evidence_page",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_evidence_page",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_evidence_page",
+      "outcome": "CURSOR_EXPIRED_OR_UNKNOWN"
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    },
+    {
+      "event": "start",
+      "pid": 24268,
+      "build": "0.1.1"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2026-07-28",
+      "mechanism": "server/discover"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2026-07-28",
+      "tools": 5
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

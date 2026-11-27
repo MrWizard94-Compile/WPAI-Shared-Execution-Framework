@@ -1,0 +1,81 @@
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,4 +1,9 @@
+ # Changelog
++
++## 6.24.1 — 2026-11-26 (proposal)
++
++- Clarify benchmark provenance across wrapper, process, remote service,
++  and provider boundaries under `PERF-REASON-001`.
+ 
+ ## 6.24.0 — 2026-11-23 (proposal)
+ 
+--- a/SKILL.md
++++ b/SKILL.md
+@@ -7,7 +7,7 @@
+   Each top-level call must produce one meaningful Constitution improvement.
+ metadata:
+   short-description: "Apply and evolve WPAI Constitution"
+-  skill-version: "6.24.0"
++  skill-version: "6.24.1"
+   canonical-source: "MrWizard94-Compile/Agents-Constitution"
+ ---
+ 
+--- a/SOURCE.json
++++ b/SOURCE.json
+@@ -1,7 +1,7 @@
+ {
+   "schema": 2,
+   "name": "wpai-constitution",
+-  "skill_version": "6.24.0",
++  "skill_version": "6.24.1",
+   "canonical_repository": "MrWizard94-Compile/Agents-Constitution",
+   "canonical_url": "https://github.com/MrWizard94-Compile/Agents-Constitution",
+   "default_branch": "main",
+--- a/VERSION
++++ b/VERSION
+@@ -1 +1 @@
+-6.24.0
++6.24.1
+--- a/evolution/LEDGER.md
++++ b/evolution/LEDGER.md
+@@ -1,6 +1,23 @@
+ # Evolution Ledger
+ 
+ The ledger is evidence of evolution. A ledger entry, version bump, changelog edit, or formatting-only diff never counts as the meaningful improvement by itself.
++
++## 2026-11-26 — Preserve benchmark measurement boundaries
++
++**Observed gap:** a repository-health benchmark had one visible invocation,
++multiple Git and API-command attempts, and no model-usage telemetry. A single
++operation count cannot describe all three measurement boundaries.
++
++**Meaningful change:** extend `PERF-REASON-001` with unit, boundary, and
++provenance for cross-boundary benchmark metrics and require equivalent
++observations for savings claims.
++
++**Falsification:** present two trials with equal visible invocations, different
++process counts, and unknown provider usage. A conforming report preserves
++both measured counts, identifies unavailable usage, and withholds the savings
++claim if the measurement boundaries or windows differ.
++
++**Boundary:** apply-ready proposal based on `0adf5ecee5f7f96ce3749944dc097a003731a6e9`.
+ 
+ ## 2026-11-23 — Always execute an accountable start-to-finish SOP
+ 
+--- a/law/ENGINEERING.md
++++ b/law/ENGINEERING.md
+@@ -258,6 +258,13 @@
+ largest indivisible unit and preserve ordering, ownership, completion, and
+ cancellation; yielding between expensive units does not bound one unit.
+ 
++When a benchmark crosses wrapper, subprocess, remote service, or provider
++boundaries, give each reported metric a unit, observation boundary, and
++provenance. Keep visible invocations, attempted subprocess launches, and
++observed remote operations distinct. Mark derived, estimated, and unavailable
++telemetry explicitly. Compare savings only across equivalent workloads,
++boundaries, and observation windows.
++
+ ### PERF-BUDGET-001 — Real constraints
+ 
+ Honor explicit CPU, GPU, RAM, storage, latency, battery, tick, token, and cost

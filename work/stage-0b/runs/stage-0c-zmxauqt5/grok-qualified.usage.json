@@ -1,0 +1,24 @@
+{
+  "inputTokens": 20338,
+  "outputTokens": 863,
+  "cachedReadTokens": 8832,
+  "cacheCreationTokens": 0,
+  "reasoningTokens": 209,
+  "totalTokens": 21201,
+  "modelCalls": 3,
+  "costUsdTicks": 326060000,
+  "turnCount": 1,
+  "primaryModelId": "grok-4.7-build",
+  "modelUsage": {
+    "grok-4.7-build": {
+      "inputTokens": 20338,
+      "outputTokens": 863,
+      "cachedReadTokens": 8832,
+      "cacheCreationTokens": 0,
+      "reasoningTokens": 209,
+      "totalTokens": 21201,
+      "modelCalls": 3,
+      "costUsdTicks": 326060000
+    }
+  }
+}

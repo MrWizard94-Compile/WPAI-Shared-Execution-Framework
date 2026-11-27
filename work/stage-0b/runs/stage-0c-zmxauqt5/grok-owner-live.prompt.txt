@@ -1,0 +1,13 @@
+Stage 0C synthetic MCP validation. The catalog keys are already known; do not
+use search_tool. Use the MCP dispatcher use_tool with inline tool_input and each exact
+tool_name including its wpai_probe__ prefix. Do not use shell, files, web, or other tools.
+
+1. wpai_probe__probe_info with {}.
+2. wpai_probe__probe_echo with {"value":{"label":"WPAI","count":7,"enabled":true}}.
+3. wpai_probe__probe_validation with {"count":9}, then deliberately use the same exact
+   catalog key with {"count":"9"}. If the client rejects the latter, report the error.
+4. wpai_probe__probe_denied_operation with {}.
+5. wpai_probe__probe_evidence_page with {}, then immediately the same exact key with
+   {"cursor":"<the exact cursor returned by page 1>"}.
+
+Report the actual JSON results. Mark a missing call as missing. Do not fabricate results.

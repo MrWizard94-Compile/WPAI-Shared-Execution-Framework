@@ -1,0 +1,17 @@
+{
+  "archive_sha256": "e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+  "reproducible": true,
+  "archive_members": [
+    "MANIFEST.sha256",
+    "README.md",
+    "W1-objective.txt",
+    "repo_health.py",
+    "tests/test_repo_health.py",
+    "wpai_exec.py"
+  ],
+  "test_log": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage1-package-_559rxjp\\unittest.log",
+  "integration_evidence": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage1-verify-kqv25u3r",
+  "cli_observed_fields": 12,
+  "cli_denial_exit": 2,
+  "manifest": "110928e5fe65b5df6725b4bcc885867a51139c4817d0a7a17ae28d6852b68fc4  README.md\nb7a8a6f0034f9456100ff8311f98873deec95e4c851d68259ddc0bf7b1aebbf2  W1-objective.txt\n59706183db4de8b05626cd5ea4c92a3072095dc3ef7977d6256d3d9701aaba7c  repo_health.py\n9162acc8d31f4f276b518385db2fca58cdc4fb21866536b8d281c543df393ec3  tests/test_repo_health.py\n92345329a6799951045904d10b60417380922a7c2b0fa2c242d2565530d4e1e6  wpai_exec.py\n"
+}

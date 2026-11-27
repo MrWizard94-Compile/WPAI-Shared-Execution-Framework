@@ -1,0 +1,90 @@
+{
+  "version": "grok 1.0.92 (b06756fd6256) [stable]",
+  "timestampUTC": "2026-11-26T20:29:53.229163+00:00",
+  "argv": [
+    "C:\\Users\\LOCAL_USER\\.grok\\bin\\grok.exe",
+    "--no-auto-update",
+    "--permission-mode",
+    "dontAsk",
+    "--no-subagents",
+    "--no-memory",
+    "--no-plan",
+    "--disable-web-search",
+    "--allow",
+    "MCPTool(wpai_probe__probe_info)",
+    "--allow",
+    "MCPTool(wpai_probe__probe_echo)",
+    "--allow",
+    "MCPTool(wpai_probe__probe_validation)",
+    "--allow",
+    "MCPTool(wpai_probe__probe_evidence_page)",
+    "--allow",
+    "MCPTool(wpai_probe__probe_denied_operation)",
+    "--deny",
+    "Bash",
+    "--deny",
+    "Read",
+    "--deny",
+    "Edit",
+    "--deny",
+    "Grep",
+    "--deny",
+    "WebFetch",
+    "--deny",
+    "WebSearch",
+    "agent",
+    "--no-leader",
+    "--model",
+    "grok-4.7",
+    "--reasoning-effort",
+    "low",
+    "stdio"
+  ],
+  "artifact": {
+    "probe.py": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+    "launch_probe.py": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683"
+  },
+  "configSHA256": "77d77f71701b87e3bde90632a21ae2e2c1a0c4c3f1209086a6b1446114c4b695",
+  "prompt": "Use only the MCP dispatcher use_tool with {\"tool_name\":\"wpai_probe__probe_echo\",\n\"tool_input\":{\"value\":{\"label\":\"WPAI\",\"count\":7,\"enabled\":true}}}. That qualified key is\nalready known. Do not search or use any other tool. Return the exact echo JSON you received.",
+  "requestedModel": "grok-4.7",
+  "launchScope": {
+    "trusted": true,
+    "servers": [
+      [
+        "wpai_probe",
+        "stdio"
+      ]
+    ],
+    "activePlugins": 0,
+    "hooks": 0
+  },
+  "acpSessionCapabilities": {
+    "list": {},
+    "resume": {},
+    "close": {}
+  },
+  "authMethods": [
+    "cached_token",
+    "grok.com"
+  ],
+  "authRoute": "Existing cached xAI OAuth",
+  "modes": {
+    "initial": null,
+    "available": []
+  },
+  "configOptionIds": [
+    "model",
+    "reasoning_effort"
+  ],
+  "failure": "ACP did not expose a verifiable deny-by-default permission mode",
+  "sessionCloseReply": {
+    "_meta": {
+      "x.ai/closeOutcome": "closed"
+    }
+  },
+  "exit": 0,
+  "forced": false,
+  "normalConfigUnchanged": true,
+  "seconds": 7.399,
+  "wire": []
+}

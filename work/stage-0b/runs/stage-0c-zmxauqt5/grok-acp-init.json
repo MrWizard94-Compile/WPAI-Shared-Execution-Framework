@@ -1,0 +1,33 @@
+{
+  "protocolVersion": 1,
+  "sessionCapabilities": {
+    "list": {},
+    "resume": {},
+    "close": {}
+  },
+  "authMethodIds": [
+    "cached_token",
+    "grok.com"
+  ],
+  "metadataKeys": [
+    "currentWorkingDirectory",
+    "agentVersion",
+    "agentId",
+    "agentInstanceId",
+    "hostname",
+    "metadata",
+    "grokShell",
+    "defaultAuthMethodId",
+    "x.ai/mcp/sdk",
+    "x.ai/pluginDirs",
+    "modelState",
+    "mcpServers",
+    "mcpApps",
+    "availableCommands",
+    "cancelRewind",
+    "sessionRecap",
+    "feedbackTraceOffer",
+    "voiceMode"
+  ],
+  "exitOnStdinEof": 0
+}

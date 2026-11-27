@@ -1,0 +1,48 @@
+Failed to redirect ACP output to log file: creating log file directory: mkdir C:\Users\LOCAL_USER\Documents\Codex\2026-11-26\new-chat\work\stage-0b\runs\stage-0b-fv8l8qwh\agy\acp-gemini\C:: The filename, directory name, or volume label syntax is incorrect.
+I1126 14:57:06.904517       1 serve.go:30] Starting ACP server (pid 8376, worker=false, isJetski=false)
+I1126 14:57:06.904517       1 server.go:203] Running ACP RPC loop...
+I1126 14:57:06.904517      22 server.go:227] ACP Request received: initialize
+I1126 14:57:06.905108      22 auth_handlers.go:64] Sending initialize response: {"protocolVersion":1,"agentCapabilities":{"loadSession":true,"load_session":true,"promptCapabilities":{"image":true,"audio":false,"embeddedContext":true},"sessionCapabilities":{"resume":{},"close":{},"load":{},"list":{},"additionalDirectories":{}},"session_capabilities":{"resume":{},"close":{},"load":{},"list":{},"additionalDirectories":{}},"auth":{"logout":{}},"_meta":{"antigravity":{"tier":true,"systemPrompt":{"append":true}}}},"agentInfo":{"name":"Antigravity ACP Server","version":"1.5.18"},"authMethods":[{"id":"oauth-personal","name":"Log in with Google","description":"Log in with your Google account"},{"id":"oauth-business","name":"Log in with Gemini Enterprise","description":"Log in with your Gemini Enterprise account"},{"id":"gemini-api-key","name":"Gemini API key","description":"Use an API key with Gemini Developer API"},{"id":"agent-platform","name":"Gemini Enterprise Agent Platform","description":"Use Gemini Enterprise Agent Platform (formerly Vertex AI) with Application Default Credentials"}]}
+I1126 14:57:06.905663      23 server.go:227] ACP Request received: session/new
+I1126 14:57:06.905663      23 boot.go:65] Booting backend (overlay=false)
+I1126 14:57:06.906185      52 server.go:2787] Starting language server process with pid 8376
+E1126 14:57:06.906185      52 server.go:2668] Failed to get AppDataDir for crash reporter: must not be absolute: C:\Users\LOCAL_USER\Documents\Codex\2026-11-26\new-chat\work\stage-0b\runs\stage-0b-fv8l8qwh\agy\acp-app
+I1126 14:57:06.906185      52 workflow_python.go:21] run_workflow Python: interpreter "", embedded true
+I1126 14:57:06.906185      52 server.go:1231] Setting GOMAXPROCS to 4
+W1126 14:57:06.906185      52 server.go:1204] failed to load secplugins config at startup: must not be absolute: C:\Users\LOCAL_USER\Documents\Codex\2026-11-26\new-chat\work\stage-0b\runs\stage-0b-fv8l8qwh\agy\acp-app
+E1126 14:57:06.906185      52 launcher.go:229] Language server exited with error: must not be absolute: C:\Users\LOCAL_USER\Documents\Codex\2026-11-26\new-chat\work\stage-0b\runs\stage-0b-fv8l8qwh\agy\acp-app
+(1) attached stack trace
+  -- stack trace:
+  | google3/third_party/jetski/language_server/language_server.setUpInstallationID
+  | 	third_party/jetski/language_server/server.go:1242
+  | google3/third_party/jetski/language_server/language_server.CreateLanguageServerAndServe
+  | 	third_party/jetski/language_server/server.go:2836
+  | google3/third_party/jetski/cli/acp/server/server.bootBackend.func3
+  | 	third_party/jetski/cli/acp/server/launcher.go:228
+Wraps: (2) attached stack trace
+  -- stack trace:
+  | google3/third_party/oneharness/internal/fs/local/local.AppDataDir
+  | 	third_party/oneharness/internal/fs/local/local.go:40
+  | google3/third_party/jetski/fs/local/local.AppDataDir
+  | 	third_party/jetski/fs/local/local.go:61
+  | google3/third_party/jetski/language_server/language_server.setUpInstallationID
+  | 	third_party/jetski/language_server/server.go:1240
+  | [...repeated from below...]
+Wraps: (3) attached stack trace
+  -- stack trace:
+  | google3/third_party/oneharness/internal/fs/fs.NewRelativePath
+  | 	third_party/oneharness/internal/fs/relative.go:25
+  | google3/third_party/oneharness/internal/fs/local/local.SetAppDataRelDir
+  | 	third_party/oneharness/internal/fs/local/local.go:177
+  | google3/third_party/jetski/fs/local/local.SetAppDataRelDir
+  | 	third_party/jetski/fs/local/local.go:96
+  | google3/third_party/jetski/language_server/language_server.setUpFS
+  | 	third_party/jetski/language_server/server.go:1185
+  | google3/third_party/jetski/language_server/language_server.CreateLanguageServerAndServe
+  | 	third_party/jetski/language_server/server.go:2790
+  | google3/third_party/jetski/cli/acp/server/server.bootBackend.func3
+  | 	third_party/jetski/cli/acp/server/launcher.go:228
+  | runtime.goexit
+  | 	third_party/go/gc/src/runtime/asm_amd64.s:1237
+Wraps: (4) must not be absolute: C:\Users\LOCAL_USER\Documents\Codex\2026-11-26\new-chat\work\stage-0b\runs\stage-0b-fv8l8qwh\agy\acp-app
+Error types: (1) *withstack.withStack (2) *withstack.withStack (3) *withstack.withStack (4) *errutil.leafError

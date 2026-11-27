@@ -1,0 +1,47 @@
+{
+  "case": "claude",
+  "serverSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+  "timestamp": "2026-11-26T20:03:54.420125+00:00",
+  "projectBeforeApproval": {
+    "exit": 0,
+    "stdout": "Checking MCP server health\u2026\n\nwpai_probe: C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -I -B C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-j50bwj7o claude - \u23f8 Pending approval (run `claude` to approve)\n",
+    "stderr": ""
+  },
+  "registerUser": {
+    "exit": 0,
+    "stdout": "Added stdio MCP server wpai_probe with command: C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -I -B C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-j50bwj7o claude to user config\nFile modified: C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-j50bwj7o\\claude\\home\\.claude\\.claude.json\n",
+    "stderr": ""
+  },
+  "userHealth": {
+    "exit": 0,
+    "stdout": "Checking MCP server health\u2026\n\nwpai_probe: C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -I -B C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-j50bwj7o claude - \u221a Connected\n",
+    "stderr": ""
+  },
+  "seconds": 1.934,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 2600,
+      "build": "0.1.1"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2025-11-25",
+      "offered": "2025-11-25",
+      "mechanism": "initialize"
+    },
+    {
+      "event": "initialized",
+      "protocol": "2025-11-25"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2025-11-25",
+      "tools": 5
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+\## 6. Establish the first benchmark workload\
+\
+Use TrackForge as the initial representative project:\
+\
+\`MrWizard94-Compile/TrackForge\`\
+\
+This is a READ-ONLY inspection.\
+\
+Do not clone, fetch, checkout, switch branches, create branches, modify files, commit, push, or change repository settings.\
+\
+Use the existing local checkout if available and read-only GitHub access where available.\
+\
+If the local checkout does not exist, do not create one.\
+\
+\### Workload W1: Repository Health Check\
+\
+Establish the following facts:\
+\
+1\. Canonical repository identity.\
+2\. Current local branch and HEAD SHA, if locally available.\
+3\. Accepted remote main HEAD SHA.\
+4\. Local working-tree state.\
+5\. Staged, unstaged and untracked changes.\
+6\. Local and remote branch inventory, distinguishing stale local references from current remote data.\
+7\. Main branch divergence, where it can be established.\
+8\. Latest relevant commits.\
+9\. Open pull requests and their destinations.\
+10\. Latest applicable GitHub Actions results.\
+11\. Failed checks and their actual causes.\
+12\. Any evident discrepancies between local and remote state.\
+\
+Do not dump entire logs or repository contents into the report.\
+\
+Use bounded retrieval and concise structured results.\
+\
+Distinguish unavailable information from negative findings.\
+\
+\### Baseline execution\
+\
+Perform this workload using the ordinary available Codex toolchain, without any reusable WPAI execution framework.\
+\
+Record:\
+\
+\- Number of visibly executed tool calls.\
+\- Number of underlying commands and API operations, where observable.\
+\- Total elapsed execution time.\
+\- Input tokens.\
+\- Output tokens.\
+\- Reasoning tokens.\
+\- Cached tokens.\
+\- Provider cost or subscription usage, if exposed.\
+\- Verification coverage.\
+\- Accuracy of the resulting report.\
+\
+For every metric, identify whether it is directly measured, derived, estimated or unavailable.\
+\
+Do not inspect private model internals or hidden session files to obtain telemetry.\
+\
+Do not fabricate token counts when the current environment does not expose them.\
+\
+Preserve the exact workload definition so the identical task can later be repeated with Grok and the optimized WPAI framework.\
+\
+\---\
+\

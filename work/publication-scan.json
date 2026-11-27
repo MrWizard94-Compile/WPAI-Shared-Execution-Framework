@@ -1,0 +1,158 @@
+{
+  "candidate_count": 175,
+  "copies_with_redactions": {
+    "outputs/stage-0c-grok-evidence.json": {
+      "home_account": 3
+    },
+    "outputs/stage-0c-grok-shutdown-evidence.json": {
+      "home_account": 4
+    },
+    "outputs/stage-0c-grok-supervised-evidence.json": {
+      "home_account": 2
+    },
+    "work/wpai-stage-1-workflow-record.json": {
+      "home_account": 7
+    },
+    "work/stage-0b/runs/stage-0b-3n9qslnh/gemini.json": {
+      "home_account": 6
+    },
+    "work/stage-0b/runs/stage-0b-4941s3pl/claude/project/.mcp.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0b-4941s3pl/claude.json": {
+      "home_account": 10
+    },
+    "work/stage-0b/runs/stage-0b-4941s3pl/grok.json": {
+      "home_account": 7
+    },
+    "work/stage-0b/runs/stage-0b-81icbxww/claude-modern/project/.mcp.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0b-81icbxww/claude-modern.json": {
+      "home_account": 10
+    },
+    "work/stage-0b/runs/stage-0b-fv8l8qwh/agy/.agents/mcp_config.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0b-fv8l8qwh/agy/acp.stderr.log": {
+      "home_account": 5
+    },
+    "work/stage-0b/runs/stage-0b-fv8l8qwh/agy.json": {
+      "home_account": 1
+    },
+    "work/stage-0b/runs/stage-0b-fv8l8qwh/gemini.json": {
+      "home_account": 6
+    },
+    "work/stage-0b/runs/stage-0b-j50bwj7o/agy/.agents/mcp_config.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0b-j50bwj7o/agy.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0b-j50bwj7o/claude/project/.mcp.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0b-j50bwj7o/claude-modern/project/.mcp.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0b-j50bwj7o/claude-modern.json": {
+      "home_account": 10
+    },
+    "work/stage-0b/runs/stage-0b-j50bwj7o/claude.json": {
+      "home_account": 10
+    },
+    "work/stage-0b/runs/stage-0b-j50bwj7o/gemini.json": {
+      "home_account": 6
+    },
+    "work/stage-0b/runs/stage-0b-j50bwj7o/grok.json": {
+      "home_account": 7
+    },
+    "work/stage-0b/runs/stage-0b-u2wfui3w/agy/.agents/mcp_config.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0b-u2wfui3w/agy.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/claude-mcp.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-acp-close-observed.json": {
+      "home_account": 1
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-acp-close-observed.stderr.txt": {
+      "home_account": 98
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-acp-model-close.json": {
+      "home_account": 1
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-acp-model-close.stderr.txt": {
+      "home_account": 98
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-acp-policy-check.json": {
+      "home_account": 1
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-acp-policy-check.stderr.txt": {
+      "home_account": 98
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-headless-close.result.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-headless-close.stderr.txt": {
+      "home_account": 98
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-headless-close.stdout.jsonl": {
+      "home_account": 1
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-inspect-summary.json": {
+      "home_account": 1
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-invoke.result.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-invoke.stderr.txt": {
+      "home_account": 98
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-invoke.stdout.jsonl": {
+      "home_account": 1
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-live.result.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-live.stderr.txt": {
+      "home_account": 98
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-live.stdout.jsonl": {
+      "home_account": 1
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-owner-live.json": {
+      "home_account": 2
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-owner-live.stderr.txt": {
+      "home_account": 98
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-owner-live.stdout.jsonl": {
+      "home_account": 1
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-qualified.config.toml": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-qualified.result.json": {
+      "home_account": 3
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-qualified.stderr.txt": {
+      "home_account": 98
+    },
+    "work/stage-0b/runs/stage-0c-zmxauqt5/grok-qualified.stdout.jsonl": {
+      "home_account": 1
+    },
+    "work/stage1-evolution-0fp3e65q/tests.log": {
+      "home_account": 7
+    },
+    "work/stage1-package-_559rxjp/package.json": {
+      "home_account": 2
+    }
+  },
+  "review_failures": {
+    "outputs/stage-0b-mcp-probe.zip": "archive member records/grok.json contains {'home_account': 7}"
+  }
+}

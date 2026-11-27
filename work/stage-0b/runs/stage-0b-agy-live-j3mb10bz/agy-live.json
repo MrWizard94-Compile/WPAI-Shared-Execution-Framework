@@ -1,0 +1,104 @@
+{
+  "probe_sha256": "bce681ebe3ab7c63b5caf73831ffcff305ac32ad2880834904f25d88c02b994c",
+  "expectedEcho": {
+    "value": {
+      "label": "WPAI",
+      "count": 7,
+      "enabled": true
+    }
+  },
+  "inference": "Existing user-initiated sign-in",
+  "acpVersion": 1,
+  "ephemeralFixtureSession": true,
+  "permissions": [
+    {
+      "tool": "probe_info",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_echo",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_validation",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_denied_operation",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_evidence_page",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_evidence_page",
+      "allowOnce": true
+    }
+  ],
+  "stopReason": "end_turn",
+  "reply": "### Echo JSON\n\n```json\n{\"value\":{\"count\":7,\"enabled\":true,\"label\":\"WPAI\"}}\n```\n\n### Observed Successes and Errors\n\n**Successes**\n- `probe_info({})`: `{\"server\":\"wpai-stage-0b-probe\",\"build\":\"0.1.0\",\"contract\":\"wpai.probe.v1\",\"protocol\":\"2026-07-28\",\"supported\":[\"2026-07-28\",\"2025-11-25\",\"2025-06-18\"]}`\n- `probe_echo({\"value\":{\"label\":\"WPAI\",\"count\":7,\"enabled\":true}})`: `{\"value\":{\"count\":7,\"enabled\":true,\"label\":\"WPAI\"}}`\n- `probe_validation({\"count\":9})`: `{\"valid\":true,\"count\":9}`\n- `probe_evidence_page({})`: `{\"page\":1,\"rows\":[\"alder\",\"birch\"],\"nextCursor\":\"lcFA5nBBoav1glpLx9o6Yw\"}`\n\n**Errors**\n- `probe_validation({\"count\":\"9\"})`: Tool validation error \u2014 `invalid arguments: at '/count': got string, want integer`\n- `probe_validation({\"count\":3,\"extra\":1})`: Tool validation error \u2014 `invalid arguments: additional properties 'extra' not allowed`\n- `probe_validation({\"count\":10})`: Tool validation error \u2014 `invalid arguments: at '/count': maximum: got 10, want 9`\n- `probe_denied_operation({})`: Tool execution error \u2014 `{\"code\":\"DENIED\",\"protectedActions\":0}`\n- `probe_evidence_page({\"cursor\":\"lcFA5nBBoav1glpLx9o6Yw\"})`: Tool execution error \u2014 `{\"code\":\"CURSOR_EXPIRED_OR_UNKNOWN\"}`",
+  "process": {
+    "exit": 0,
+    "forced": false
+  },
+  "existingSettingsUnchanged": true,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 21460,
+      "build": "0.1.0"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2026-07-28",
+      "mechanism": "server/discover"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2026-07-28",
+      "tools": 5
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_info",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_echo",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_validation",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_denied_operation",
+      "outcome": "DENIED",
+      "protectedActions": 0
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_evidence_page",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_evidence_page",
+      "outcome": "CURSOR_EXPIRED_OR_UNKNOWN"
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

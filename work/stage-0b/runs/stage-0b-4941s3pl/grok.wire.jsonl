@@ -1,0 +1,5 @@
+{"event":"start","pid":6192,"build":"0.1.0"}
+{"event":"negotiate","protocol":"2025-11-25","offered":"2025-11-25","mechanism":"initialize"}
+{"event":"initialized","protocol":"2025-11-25"}
+{"event":"catalog","protocol":"2025-11-25","tools":5}
+{"event":"stop","reason":"eof"}

@@ -1,0 +1,7 @@
+* -text whitespace=cr-at-eol
+*.json whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+*.jsonl whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+*.log whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+*.md whitespace=cr-at-eol,-blank-at-eof
+*.txt whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+*.patch -whitespace

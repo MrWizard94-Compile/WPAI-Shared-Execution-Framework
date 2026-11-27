@@ -1,0 +1,10 @@
+Stage 0C synthetic MCP compatibility test. Use only the configured wpai_probe MCP
+server. Do not use shell, filesystem, web, skills, agents, or any unrelated tools.
+Use probe_info with {} and probe_echo with {"value":{"label":"WPAI","count":7,"enabled":true}}.
+Use probe_validation first with {"count":9} and then deliberately try {"count":"9"}.
+Do not repair the invalid input. If the client rejects it, record the error.
+Call probe_denied_operation with {} and record its actual result.
+Call probe_evidence_page with {}, then immediately call it again with the returned exact cursor
+so that the second page arrives before the cursor expires. Do the page calls last and back to back.
+Report the actual JSON values and mark any call that could not execute. Do not fabricate any result.
+Keep the final answer short.

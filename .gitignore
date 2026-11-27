@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+.codex/
+.claude/
+.gemini/
+.grok/
+home/
+tmp/

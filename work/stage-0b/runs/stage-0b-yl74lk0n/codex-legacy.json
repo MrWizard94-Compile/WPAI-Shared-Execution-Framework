@@ -1,0 +1,190 @@
+{
+  "case": "codex-legacy",
+  "serverSHA256": "bce681ebe3ab7c63b5caf73831ffcff305ac32ad2880834904f25d88c02b994c",
+  "timestamp": "2026-11-26T19:57:02.387848+00:00",
+  "catalog": [
+    "probe_denied_operation",
+    "probe_echo",
+    "probe_evidence_page",
+    "probe_info",
+    "probe_validation"
+  ],
+  "operations": {
+    "info": {
+      "server": "wpai-stage-0b-probe",
+      "build": "0.1.0",
+      "contract": "wpai.probe.v1",
+      "protocol": "2025-06-18",
+      "supported": [
+        "2026-07-28",
+        "2025-11-25",
+        "2025-06-18"
+      ]
+    },
+    "echo": {
+      "value": {
+        "label": "WPAI",
+        "count": 7,
+        "enabled": true
+      }
+    },
+    "valid": {
+      "valid": true,
+      "count": 9
+    },
+    "invalidType": {
+      "code": "INVALID_INPUT",
+      "reason": "Expected an integer"
+    },
+    "invalidBool": {
+      "code": "INVALID_INPUT",
+      "reason": "Expected an integer"
+    },
+    "unexpectedProperty": {
+      "code": "INVALID_INPUT",
+      "reason": "Unexpected property"
+    },
+    "invalidRange": {
+      "code": "INVALID_INPUT",
+      "reason": "Integer out of range"
+    },
+    "denied": {
+      "code": "DENIED",
+      "protectedActions": 0
+    },
+    "firstPage": {
+      "page": 1,
+      "rows": [
+        "alder",
+        "birch"
+      ],
+      "nextCursor": "JOw_SHM-eIcNDIUdRKTVmQ"
+    },
+    "nextPage": {
+      "page": 2,
+      "rows": [
+        "cedar",
+        "dogwood"
+      ],
+      "nextCursor": null
+    },
+    "expiredCursor": {
+      "code": "CURSOR_EXPIRED_OR_UNKNOWN"
+    }
+  },
+  "inferenceRequested": false,
+  "process": {
+    "exit": 0,
+    "forced": false
+  },
+  "seconds": 4.588,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 3024,
+      "build": "0.1.0"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2025-06-18",
+      "offered": "2025-06-18",
+      "mechanism": "initialize"
+    },
+    {
+      "event": "initialized",
+      "protocol": "2025-06-18"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2025-06-18",
+      "tools": 5
+    },
+    {
+      "event": "start",
+      "pid": 1704,
+      "build": "0.1.0"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2025-06-18",
+      "offered": "2025-06-18",
+      "mechanism": "initialize"
+    },
+    {
+      "event": "initialized",
+      "protocol": "2025-06-18"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2025-06-18",
+      "tools": 5
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_info",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_echo",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_validation",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_validation",
+      "outcome": "INVALID_INPUT"
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_validation",
+      "outcome": "INVALID_INPUT"
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_validation",
+      "outcome": "INVALID_INPUT"
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_validation",
+      "outcome": "INVALID_INPUT"
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_denied_operation",
+      "outcome": "DENIED",
+      "protectedActions": 0
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_evidence_page",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_evidence_page",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2025-06-18",
+      "tool": "probe_evidence_page",
+      "outcome": "CURSOR_EXPIRED_OR_UNKNOWN"
+    }
+  ]
+}

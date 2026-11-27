@@ -1,0 +1,80 @@
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,4 +1,9 @@
+ # Changelog
++
++## 6.24.1 — 2026-11-26 (proposal)
++
++- Require member-level publication review and verify the integrity and
++  provenance of redacted releases under `SEC-SECRET-001`.
+ 
+ ## 6.24.0 — 2026-11-23 (proposal)
+ 
+--- a/SKILL.md
++++ b/SKILL.md
+@@ -7,7 +7,7 @@
+   Each top-level call must produce one meaningful Constitution improvement.
+ metadata:
+   short-description: "Apply and evolve WPAI Constitution"
+-  skill-version: "6.24.0"
++  skill-version: "6.24.1"
+   canonical-source: "MrWizard94-Compile/Agents-Constitution"
+ ---
+ 
+--- a/SOURCE.json
++++ b/SOURCE.json
+@@ -1,7 +1,7 @@
+ {
+   "schema": 2,
+   "name": "wpai-constitution",
+-  "skill_version": "6.24.0",
++  "skill_version": "6.24.1",
+   "canonical_repository": "MrWizard94-Compile/Agents-Constitution",
+   "canonical_url": "https://github.com/MrWizard94-Compile/Agents-Constitution",
+   "default_branch": "main",
+--- a/VERSION
++++ b/VERSION
+@@ -1 +1 @@
+-6.24.0
++6.24.1
+--- a/evolution/LEDGER.md
++++ b/evolution/LEDGER.md
+@@ -1,6 +1,22 @@
+ # Evolution Ledger
+ 
+ The ledger is evidence of evolution. A ledger entry, version bump, changelog edit, or formatting-only diff never counts as the meaningful improvement by itself.
++
++## 2026-11-26 — Validate evidence containers at publication
++
++**Observed gap:** a compatibility archive passed its integrity checks while a
++nested client record still contained an identifying local path.
++
++**Meaningful change:** `SEC-SECRET-001` explicitly covers archive members and
++metadata at the publication boundary and requires verified integrity and
++provenance after redaction.
++
++**Falsification:** give the reviewer an archive with correct original hashes
++and an identifying path in a nested record. The released copy must remove the
++path, verify its own manifest, and preserve unaffected source bytes and the
++original evidence according to its retention boundary.
++
++**Boundary:** proposal against `0adf5ecee5f7f96ce3749944dc097a003731a6e9`.
+ 
+ ## 2026-11-23 — Always execute an accountable start-to-finish SOP
+ 
+--- a/law/SECURITY.md
++++ b/law/SECURITY.md
+@@ -39,6 +39,13 @@
+ Before scanning, packaging, or opening diagnostic files, identify sensitive
+ paths and use metadata or redacted evidence when content is unnecessary.
+ Agents must not copy production secrets into broadly readable workspaces.
++
++Review the exact payload selected for a public or external destination. When it
++contains archives or other evidence containers, inspect their members and
++metadata as well as the outer files. After redaction, validate the released
++artifact and update its integrity manifests while preserving the original
++evidence under its authorized retention and visibility. Identify materially
++changed copies so original observations and released bytes stay attributable.
+ 
+ ### SEC-LIB-001 — Security mechanisms
+ 

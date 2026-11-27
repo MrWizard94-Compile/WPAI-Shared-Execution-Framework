@@ -1,0 +1,359 @@
+{
+  "stage0bArchiveSHA256": "b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+  "execution": {
+    "timestampUTC": "2026-11-26T20:22:00.284001+00:00",
+    "version": "grok 1.0.92 (b06756fd6256) [stable]",
+    "requestedModel": "grok-4.7",
+    "authRoute": "Existing stock xAI OAuth; API key env removed",
+    "cwd": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0c-zmxauqt5\\grok",
+    "command": [
+      "C:\\Users\\LOCAL_USER\\.grok\\bin\\grok.exe",
+      "--no-auto-update",
+      "--model",
+      "grok-4.7",
+      "--reasoning-effort",
+      "low",
+      "--permission-mode",
+      "dontAsk",
+      "--tools",
+      "read_file",
+      "--disable-web-search",
+      "--no-memory",
+      "--no-subagents",
+      "--no-plan",
+      "--max-turns",
+      "9",
+      "--verbatim",
+      "--output-format",
+      "streaming-json",
+      "--session-id",
+      "a2add77c-5d38-41ad-afbc-11febb0a103c",
+      "--prompt-file",
+      "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0c-zmxauqt5\\grok-qualified.prompt.txt",
+      "--allow",
+      "MCPTool(wpai_probe__probe_info)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_echo)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_validation)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_evidence_page)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_denied_operation)",
+      "--deny",
+      "Bash",
+      "--deny",
+      "Read",
+      "--deny",
+      "Edit",
+      "--deny",
+      "Grep",
+      "--deny",
+      "WebFetch",
+      "--deny",
+      "WebSearch"
+    ],
+    "configSHA256": "2272e4005209612ffb05ec0eae5a8a80c614c3e66330242e189406dea25d41c0",
+    "probeSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+    "launcherSHA256": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683",
+    "sessionId": "a2add77c-5d38-41ad-afbc-11febb0a103c",
+    "clientPid": 12108,
+    "exit": 0,
+    "seconds": 14.403,
+    "normalConfigUnchanged": true,
+    "wire": [
+      {
+        "event": "start",
+        "pid": 23620,
+        "build": "0.1.1"
+      },
+      {
+        "event": "negotiate",
+        "protocol": "2025-11-25",
+        "offered": "2025-11-25",
+        "mechanism": "initialize"
+      },
+      {
+        "event": "initialized",
+        "protocol": "2025-11-25"
+      },
+      {
+        "event": "catalog",
+        "protocol": "2025-11-25",
+        "tools": 5
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_info",
+        "outcome": "OK"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_echo",
+        "outcome": "OK"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_validation",
+        "outcome": "OK"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_denied_operation",
+        "outcome": "DENIED",
+        "protectedActions": 0
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_evidence_page",
+        "outcome": "OK"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_validation",
+        "outcome": "INVALID_INPUT"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_evidence_page",
+        "outcome": "OK"
+      }
+    ]
+  },
+  "preflight": {
+    "trusted": true,
+    "managedOnly": "off",
+    "mcpServers": [
+      {
+        "name": "wpai_probe",
+        "transport": "stdio"
+      }
+    ],
+    "hooks": 0,
+    "enabledPlugins": [],
+    "ruleCount": 720,
+    "fixtureRuleSkips": 0
+  },
+  "clientToolResults": [
+    {
+      "clientEventId": "call-6980cc4a-357d-4bb9-85c3-bdc00e1776c7-0",
+      "operation": "probe_info",
+      "input": {},
+      "status": "completed",
+      "isError": false,
+      "jsonText": "{\"server\":\"wpai-stage-0b-probe\",\"build\":\"0.1.1\",\"contract\":\"wpai.probe.v1\",\"protocol\":\"2025-11-25\",\"supported\":[\"2026-07-28\",\"2025-11-25\",\"2025-06-18\"]}",
+      "result": {
+        "server": "wpai-stage-0b-probe",
+        "build": "0.1.1",
+        "contract": "wpai.probe.v1",
+        "protocol": "2025-11-25",
+        "supported": [
+          "2026-07-28",
+          "2025-11-25",
+          "2025-06-18"
+        ]
+      }
+    },
+    {
+      "clientEventId": "call-6980cc4a-357d-4bb9-85c3-bdc00e1776c7-1",
+      "operation": "probe_echo",
+      "input": {
+        "value": {
+          "label": "WPAI",
+          "count": 7,
+          "enabled": true
+        }
+      },
+      "status": "completed",
+      "isError": false,
+      "jsonText": "{\"value\":{\"label\":\"WPAI\",\"count\":7,\"enabled\":true}}",
+      "result": {
+        "value": {
+          "label": "WPAI",
+          "count": 7,
+          "enabled": true
+        }
+      }
+    },
+    {
+      "clientEventId": "call-6980cc4a-357d-4bb9-85c3-bdc00e1776c7-2",
+      "operation": "probe_validation",
+      "input": {
+        "count": 9
+      },
+      "status": "completed",
+      "isError": false,
+      "jsonText": "{\"valid\":true,\"count\":9}",
+      "result": {
+        "valid": true,
+        "count": 9
+      }
+    },
+    {
+      "clientEventId": "call-6980cc4a-357d-4bb9-85c3-bdc00e1776c7-3",
+      "operation": "probe_denied_operation",
+      "input": {},
+      "status": "failed",
+      "isError": true,
+      "jsonText": "{\"code\":\"DENIED\",\"protectedActions\":0}",
+      "result": {
+        "code": "DENIED",
+        "protectedActions": 0
+      }
+    },
+    {
+      "clientEventId": "call-6980cc4a-357d-4bb9-85c3-bdc00e1776c7-4",
+      "operation": "probe_evidence_page",
+      "input": {},
+      "status": "completed",
+      "isError": false,
+      "jsonText": "{\"page\":1,\"rows\":[\"alder\",\"birch\"],\"nextCursor\":\"ed0ZPGBD4uuOg5McVsvpKw\"}",
+      "result": {
+        "page": 1,
+        "rows": [
+          "alder",
+          "birch"
+        ],
+        "nextCursor": "ed0ZPGBD4uuOg5McVsvpKw"
+      }
+    },
+    {
+      "clientEventId": "call-de4544a2-6dab-46f2-93d5-a666fb6f99e6-5",
+      "operation": "probe_validation",
+      "input": {
+        "count": "9"
+      },
+      "status": "failed",
+      "isError": true,
+      "jsonText": "{\"code\":\"INVALID_INPUT\",\"reason\":\"Expected an integer\"}",
+      "result": {
+        "code": "INVALID_INPUT",
+        "reason": "Expected an integer"
+      }
+    },
+    {
+      "clientEventId": "call-de4544a2-6dab-46f2-93d5-a666fb6f99e6-6",
+      "operation": "probe_evidence_page",
+      "input": {
+        "cursor": "ed0ZPGBD4uuOg5McVsvpKw"
+      },
+      "status": "completed",
+      "isError": false,
+      "jsonText": "{\"page\":2,\"rows\":[\"cedar\",\"dogwood\"],\"nextCursor\":null}",
+      "result": {
+        "page": 2,
+        "rows": [
+          "cedar",
+          "dogwood"
+        ],
+        "nextCursor": null
+      }
+    }
+  ],
+  "finalModelText": "All seven calls completed. Actual results:\n\n1. `wpai_probe__probe_info` with `{}`:\n```json\n{\"server\":\"wpai-stage-0b-probe\",\"build\":\"0.1.1\",\"contract\":\"wpai.probe.v1\",\"protocol\":\"2025-11-25\",\"supported\":[\"2026-07-28\",\"2025-11-25\",\"2025-06-18\"]}\n```\n\n2. `wpai_probe__probe_echo` with `{\"value\":{\"label\":\"WPAI\",\"count\":7,\"enabled\":true}}`:\n```json\n{\"value\":{\"label\":\"WPAI\",\"count\":7,\"enabled\":true}}\n```\n\n3. `wpai_probe__probe_validation` with `{\"count\":9}`:\n```json\n{\"valid\":true,\"count\":9}\n```\n\nSame key with `{\"count\":\"9\"}` was rejected by the tool:\n```json\n{\"code\":\"INVALID_INPUT\",\"reason\":\"Expected an integer\"}\n```\nDispatcher message: `Failed to call probe_validation`.\n\n4. `wpai_probe__probe_denied_operation` with `{}` failed:\n```json\n{\"code\":\"DENIED\",\"protectedActions\":0}\n```\nDispatcher message: `Failed to call probe_denied_operation`.\n\n5. `wpai_probe__probe_evidence_page` with `{}`:\n```json\n{\"page\":1,\"rows\":[\"alder\",\"birch\"],\"nextCursor\":\"ed0ZPGBD4uuOg5McVsvpKw\"}\n```\n\nSame key with `{\"cursor\":\"ed0ZPGBD4uuOg5McVsvpKw\"}`:\n```json\n{\"page\":2,\"rows\":[\"cedar\",\"dogwood\"],\"nextCursor\":null}\n```\n\nNo calls were missing.",
+  "retention": {
+    "jsonText": "confirmed",
+    "separateStructuredContent": "not exposed in Grok tool event"
+  },
+  "shutdown": {
+    "agentExit": 0,
+    "stopReason": "end_turn",
+    "headlessServerEOF": false,
+    "diagnosticWire": [
+      {
+        "event": "start",
+        "pid": 1984,
+        "build": "0.1.1"
+      },
+      {
+        "event": "negotiate",
+        "protocol": "2025-11-25",
+        "offered": "2025-11-25",
+        "mechanism": "initialize"
+      },
+      {
+        "event": "initialized",
+        "protocol": "2025-11-25"
+      },
+      {
+        "event": "catalog",
+        "protocol": "2025-11-25",
+        "tools": 5
+      },
+      {
+        "event": "stop",
+        "reason": "eof"
+      }
+    ],
+    "recordedPids": [
+      1984,
+      2512,
+      23620
+    ],
+    "liveProbePids": 0,
+    "listenersAtRecordedPids": 0
+  },
+  "usage": {
+    "inputTokens": 20338,
+    "outputTokens": 863,
+    "cachedReadTokens": 8832,
+    "cacheCreationTokens": 0,
+    "reasoningTokens": 209,
+    "totalTokens": 21201,
+    "modelCalls": 3,
+    "costUsdTicks": 326060000,
+    "turnCount": 1,
+    "primaryModelId": "grok-4.7-build",
+    "modelUsage": {
+      "grok-4.7-build": {
+        "inputTokens": 20338,
+        "outputTokens": 863,
+        "cachedReadTokens": 8832,
+        "cacheCreationTokens": 0,
+        "reasoningTokens": 209,
+        "totalTokens": 21201,
+        "modelCalls": 3,
+        "costUsdTicks": 326060000
+      }
+    }
+  },
+  "quotaDelta": "unavailable",
+  "priorAttempts": [
+    {
+      "stage": "model selection",
+      "error": "Couldn't set model 'grok-build': Invalid params: \"unknown model id\". Run 'grok models' to see available models.",
+      "wireCalls": 0
+    },
+    {
+      "stage": "client dispatch",
+      "stopReason": "cancelled",
+      "reportedUsage": {
+        "input_tokens": 4479,
+        "cache_read_input_tokens": 8320,
+        "cache_creation_input_tokens": 0,
+        "output_tokens": 523,
+        "reasoning_tokens": 368,
+        "total_tokens": 13322
+      },
+      "wireCalls": 0,
+      "errors": [
+        "Tool search was denied by the Read rule.",
+        "The short MCP name did not reach the server. The headless dispatcher reported cancellation."
+      ]
+    }
+  ],
+  "claude": {
+    "status": "deferred by director",
+    "localAuthStatus": {
+      "loggedIn": false,
+      "authMethod": "none"
+    }
+  }
+}

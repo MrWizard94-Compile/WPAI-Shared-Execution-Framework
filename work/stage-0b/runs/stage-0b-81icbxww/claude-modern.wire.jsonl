@@ -1,0 +1,6 @@
+{"event":"start","pid":24572,"build":"0.1.0"}
+{"event":"negotiate","protocol":"2026-07-28","mechanism":"server/discover"}
+{"event":"stop","reason":"eof"}
+{"event":"start","pid":19772,"build":"0.1.0"}
+{"event":"catalog","protocol":"2026-07-28","tools":5}
+{"event":"stop","reason":"eof"}

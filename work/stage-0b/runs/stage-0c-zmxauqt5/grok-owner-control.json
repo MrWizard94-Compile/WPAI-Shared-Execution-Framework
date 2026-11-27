@@ -1,0 +1,47 @@
+{
+  "mode": "control",
+  "stage0bProbeSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+  "stage0bLauncherSHA256": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683",
+  "transport": "One-instance Windows local-only named pipe with one-time capability",
+  "supervisorPid": 3112,
+  "launcherPid": 16048,
+  "exactControlReply": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+      "protocolVersion": "2025-11-25",
+      "serverInfo": {
+        "name": "wpai-stage-0b-probe",
+        "version": "0.1.1"
+      },
+      "capabilities": {
+        "tools": {
+          "listChanged": false
+        }
+      }
+    }
+  },
+  "disconnect": "Windows peer closed",
+  "closedProbeStdin": true,
+  "simulatedRelayExit": 1,
+  "launcherExit": 0,
+  "ownerThreadStopped": true,
+  "relayThreadsStopped": true,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 21792,
+      "build": "0.1.1"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2025-11-25",
+      "offered": "2025-11-25",
+      "mechanism": "initialize"
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

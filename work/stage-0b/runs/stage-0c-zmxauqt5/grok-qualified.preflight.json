@@ -1,0 +1,14 @@
+{
+  "trusted": true,
+  "managedOnly": "off",
+  "mcpServers": [
+    {
+      "name": "wpai_probe",
+      "transport": "stdio"
+    }
+  ],
+  "hooks": 0,
+  "enabledPlugins": [],
+  "ruleCount": 720,
+  "fixtureRuleSkips": 0
+}

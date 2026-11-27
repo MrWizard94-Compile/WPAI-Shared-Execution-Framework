@@ -1,0 +1,376 @@
+{
+  "schema": 1,
+  "invocation": "wpai-exec-stage-0a-2026-11-26-four-agent",
+  "law_sha": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "scope": "Read-only environment, protocol and governance audit, four-agent feasibility and Codex W1 acquisition. Local report and exact workload only. No repository, configuration, payment or implementation authority.",
+  "candidate": "report sha256 31AFE4E637760CA42345FC4F8A666DC3793C93E43247CBE26D39606EAE09D646 and W1 objective sha256 B7A8A6F0034F9456100FF8311F98873DEEC95E4C851D68259DDC0BF7B1AEBBF2",
+  "claim": "partial",
+  "stages": [
+    {
+      "stage": 1,
+      "status": "done",
+      "reason": "Read the attachment before dependent work and reconciled its addendum against the frozen revision and benchmark",
+      "evidence": [
+        "contract",
+        "source"
+      ]
+    },
+    {
+      "stage": 2,
+      "status": "done",
+      "reason": "Inspected local versions, config structure and bounded Git/GitHub baseline",
+      "evidence": [
+        "environment",
+        "benchmark"
+      ]
+    },
+    {
+      "stage": 3,
+      "status": "done",
+      "reason": "Checked current official docs and installed release source. Classified unknown negotiation and client gaps",
+      "evidence": [
+        "matrix"
+      ]
+    },
+    {
+      "stage": 4,
+      "status": "done",
+      "reason": "Specified four-client release gates and exact scope for the authorized audit",
+      "evidence": [
+        "analysis",
+        "contract"
+      ]
+    },
+    {
+      "stage": 5,
+      "status": "done",
+      "reason": "Produced the report and exact W1 brief",
+      "evidence": [
+        "package"
+      ]
+    },
+    {
+      "stage": 6,
+      "status": "done",
+      "reason": "Rechecked baseline values and artifact package, with runtime compatibility assigned to the proposed authorized follow-up",
+      "evidence": [
+        "qa",
+        "benchmark",
+        "package"
+      ]
+    },
+    {
+      "stage": 7,
+      "status": "done",
+      "reason": "Reviewed report assertions against observed results and public vendor sources",
+      "evidence": [
+        "qa",
+        "matrix",
+        "source"
+      ]
+    },
+    {
+      "stage": 8,
+      "status": "done",
+      "reason": "Scored Section 0 for the inspection deliverable",
+      "evidence": [
+        "qa",
+        "package"
+      ]
+    },
+    {
+      "stage": 9,
+      "status": "na",
+      "reason": "External publication and deployment were outside the inspection scope",
+      "evidence": [
+        "contract"
+      ]
+    },
+    {
+      "stage": 10,
+      "status": "open",
+      "reason": "Inspection-only scope limited evolution to a placement recommendation. No apply-ready amendment was staged",
+      "evidence": [
+        "contract",
+        "analysis"
+      ]
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "A",
+      "criterion": "Executive assessment and credible shared path covering all four",
+      "status": "pass",
+      "required_evidence": [
+        "analysis"
+      ],
+      "evidence": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "B",
+      "criterion": "Inspected workstation and four agent environments with version/config scope evidence",
+      "status": "pass",
+      "required_evidence": [
+        "runtime"
+      ],
+      "evidence": [
+        "environment"
+      ]
+    },
+    {
+      "id": "C",
+      "criterion": "Four-agent matrix with confirmed, documented, unverified and unsupported labels",
+      "status": "pass",
+      "required_evidence": [
+        "review"
+      ],
+      "evidence": [
+        "matrix"
+      ]
+    },
+    {
+      "id": "D",
+      "criterion": "Frozen canonical source and COST-EXEC placement",
+      "status": "pass",
+      "required_evidence": [
+        "source",
+        "analysis"
+      ],
+      "evidence": [
+        "source",
+        "analysis"
+      ]
+    },
+    {
+      "id": "E",
+      "criterion": "Actual TrackForge W1 facts and measured/derived/unavailable scorecard",
+      "status": "pass",
+      "required_evidence": [
+        "runtime"
+      ],
+      "evidence": [
+        "benchmark"
+      ]
+    },
+    {
+      "id": "F",
+      "criterion": "Exact workload and provider telemetry replay instructions",
+      "status": "pass",
+      "required_evidence": [
+        "package",
+        "review"
+      ],
+      "evidence": [
+        "package",
+        "qa"
+      ]
+    },
+    {
+      "id": "G-J",
+      "criterion": "Minimum shared architecture, risks, unresolved exit questions and next measurable goal",
+      "status": "pass",
+      "required_evidence": [
+        "analysis"
+      ],
+      "evidence": [
+        "analysis"
+      ]
+    }
+  ],
+  "section0": [
+    {
+      "item": 1,
+      "status": "pass",
+      "reason": "All audit sections and the four ecosystem assessment are delivered",
+      "evidence": [
+        "package",
+        "analysis"
+      ]
+    },
+    {
+      "item": 2,
+      "status": "pass",
+      "reason": "Verified prerequisites for the inspection and identified open implementation dependencies",
+      "evidence": [
+        "environment"
+      ]
+    },
+    {
+      "item": 3,
+      "status": "pass",
+      "reason": "Report and checks validated. The Git warning belongs to the pre-existing worktree and is diagnosed",
+      "evidence": [
+        "qa"
+      ]
+    },
+    {
+      "item": 4,
+      "status": "na",
+      "reason": "Inspection deliverable introduced no product behavior. W1 has direct and independent read checks",
+      "evidence": [
+        "benchmark"
+      ]
+    },
+    {
+      "item": 5,
+      "status": "pass",
+      "reason": "Tied client and schema documentation to applicable local and versioned observations",
+      "evidence": [
+        "matrix"
+      ]
+    },
+    {
+      "item": 6,
+      "status": "pass",
+      "reason": "Inspected structure and known policy fields without exposing credential values. Preserved repository and configuration scope",
+      "evidence": [
+        "environment",
+        "contract",
+        "qa"
+      ]
+    },
+    {
+      "item": 7,
+      "status": "pass",
+      "reason": "Measured W1 acquisition and derived operation counts with units and explicit unavailable telemetry",
+      "evidence": [
+        "benchmark"
+      ]
+    },
+    {
+      "item": 8,
+      "status": "pass",
+      "reason": "Reported actual and declared tools separately and checked frozen source and client version conditions",
+      "evidence": [
+        "environment",
+        "source"
+      ]
+    },
+    {
+      "item": 9,
+      "status": "pass",
+      "reason": "Two local deliverables with checked section completeness and exact W1 extraction",
+      "evidence": [
+        "package"
+      ]
+    },
+    {
+      "item": 10,
+      "status": "pass",
+      "reason": "Authorized reads only against existing projects. No paid tests, project builds or deployments",
+      "evidence": [
+        "contract",
+        "qa"
+      ]
+    },
+    {
+      "item": 11,
+      "status": "pass",
+      "reason": "Preserved the exact workload and bounded oracle commands. Documented repository drift and unavailable timing boundaries.",
+      "evidence": [
+        "benchmark",
+        "package"
+      ]
+    },
+    {
+      "item": 12,
+      "status": "pass",
+      "reason": "Preserved private scope in local output and attributed primary docs. No code or asset licensing mutation",
+      "evidence": [
+        "qa"
+      ]
+    },
+    {
+      "item": 13,
+      "status": "na",
+      "reason": "Single Codex invocation. Four products are audit subjects, with no delegated implementation",
+      "evidence": [
+        "contract"
+      ]
+    },
+    {
+      "item": 14,
+      "status": "pass",
+      "reason": "Report includes scope, evidence, replay operations, metrics, risks and measurable gates",
+      "evidence": [
+        "analysis",
+        "package"
+      ]
+    },
+    {
+      "item": 15,
+      "status": "pass",
+      "reason": "Four-item factual self-audit in the report and this record",
+      "evidence": [
+        "qa",
+        "package"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "contract",
+      "kind": "authorization",
+      "reference": "Updated goal attachment Sections 1–10 and four-agent addendum authorize inspection and the report only.",
+      "subject": "report sha256 31AFE4E637760CA42345FC4F8A666DC3793C93E43247CBE26D39606EAE09D646 and W1 objective sha256 B7A8A6F0034F9456100FF8311F98873DEEC95E4C851D68259DDC0BF7B1AEBBF2"
+    },
+    {
+      "id": "source",
+      "kind": "source",
+      "reference": "git ls-remote main, check-frozen-load.py (23/23), validate-source.py and canonical GitHub Actions run 45404019842.",
+      "subject": "report sha256 31AFE4E637760CA42345FC4F8A666DC3793C93E43247CBE26D39606EAE09D646 and W1 objective sha256 B7A8A6F0034F9456100FF8311F98873DEEC95E4C851D68259DDC0BF7B1AEBBF2"
+    },
+    {
+      "id": "environment",
+      "kind": "runtime",
+      "reference": "Host inspection, version/help probes, metadata-only configuration inspection, one negative TCP test, and actual installed CLI feature listing.",
+      "subject": "report sha256 31AFE4E637760CA42345FC4F8A666DC3793C93E43247CBE26D39606EAE09D646 and W1 objective sha256 B7A8A6F0034F9456100FF8311F98873DEEC95E4C851D68259DDC0BF7B1AEBBF2"
+    },
+    {
+      "id": "benchmark",
+      "kind": "runtime",
+      "reference": "Report Section E. Six PowerShell invocations in three visible calls captured 12 fields in window ending 14:05:29.767 EST. Independent ref, status/diff, history and workflow-tree checks.",
+      "subject": "report sha256 31AFE4E637760CA42345FC4F8A666DC3793C93E43247CBE26D39606EAE09D646 and W1 objective sha256 B7A8A6F0034F9456100FF8311F98873DEEC95E4C851D68259DDC0BF7B1AEBBF2"
+    },
+    {
+      "id": "matrix",
+      "kind": "review",
+      "reference": "Report Sections B–C. Client documentation and exact Codex source pin distinguish confirmed option presence, documented behavior, unknowns and known limitations.",
+      "subject": "report sha256 31AFE4E637760CA42345FC4F8A666DC3793C93E43247CBE26D39606EAE09D646 and W1 objective sha256 B7A8A6F0034F9456100FF8311F98873DEEC95E4C851D68259DDC0BF7B1AEBBF2"
+    },
+    {
+      "id": "analysis",
+      "kind": "analysis",
+      "reference": "Report Sections A, D and G–J. One shared core, risk register, rule placement, remaining integration and measurable follow-up.",
+      "subject": "report sha256 31AFE4E637760CA42345FC4F8A666DC3793C93E43247CBE26D39606EAE09D646 and W1 objective sha256 B7A8A6F0034F9456100FF8311F98873DEEC95E4C851D68259DDC0BF7B1AEBBF2"
+    },
+    {
+      "id": "package",
+      "kind": "package",
+      "reference": "Local outputs contain report and exact W1 brief only. Extracted Section 6 matches the updated and original user attachments. No external publication.",
+      "subject": "report sha256 31AFE4E637760CA42345FC4F8A666DC3793C93E43247CBE26D39606EAE09D646 and W1 objective sha256 B7A8A6F0034F9456100FF8311F98873DEEC95E4C851D68259DDC0BF7B1AEBBF2"
+    },
+    {
+      "id": "qa",
+      "kind": "review",
+      "reference": "Read back A–J and matrix, recounted W1 invocations from executed commands, reread exact extracted section, rechecked TrackForge and canonical Constitution refs and local status, and scoped the CRLF warning.",
+      "subject": "report sha256 31AFE4E637760CA42345FC4F8A666DC3793C93E43247CBE26D39606EAE09D646 and W1 objective sha256 B7A8A6F0034F9456100FF8311F98873DEEC95E4C851D68259DDC0BF7B1AEBBF2"
+    }
+  ],
+  "evolution": {
+    "status": "unstarted",
+    "evidence": []
+  },
+  "self_audit": [
+    "Canonical main and exact file bytes checked.",
+    "W1 metadata cross-checked via independent routes. Acquisition telemetry has bounded scope.",
+    "All four providers have explicit evidence status. No new runtime compatibility was asserted.",
+    "Scope limited evolution to the placement recommendation."
+  ],
+  "remaining": [
+    "Director decision on Stage 0B fixture and four approved profiles. Runtime validation and comparison pending outside Stage 0A.",
+    "SOP evolution open under the task-specific inspection-only restriction."
+  ]
+}

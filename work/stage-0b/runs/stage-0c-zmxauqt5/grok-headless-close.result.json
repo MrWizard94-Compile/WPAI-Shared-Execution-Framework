@@ -1,0 +1,96 @@
+{
+  "timestampUTC": "2026-11-26T20:36:10.024858+00:00",
+  "version": "grok 1.0.92 (b06756fd6256) [stable]",
+  "requestedModel": "grok-4.7",
+  "authRoute": "Existing stock xAI OAuth; API key env removed",
+  "cwd": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0c-zmxauqt5\\grok",
+  "command": [
+    "C:\\Users\\LOCAL_USER\\.grok\\bin\\grok.exe",
+    "--no-auto-update",
+    "--model",
+    "grok-4.7",
+    "--reasoning-effort",
+    "low",
+    "--permission-mode",
+    "dontAsk",
+    "--tools",
+    "read_file",
+    "--disable-web-search",
+    "--no-memory",
+    "--no-subagents",
+    "--no-plan",
+    "--max-turns",
+    "4",
+    "--verbatim",
+    "--output-format",
+    "streaming-json",
+    "--session-id",
+    "ed98a14a-de47-4fd4-8288-bf5954a287b5",
+    "--prompt-file",
+    "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0c-zmxauqt5\\grok-headless-close.prompt.txt",
+    "--allow",
+    "MCPTool(wpai_probe__probe_info)",
+    "--allow",
+    "MCPTool(wpai_probe__probe_echo)",
+    "--allow",
+    "MCPTool(wpai_probe__probe_validation)",
+    "--allow",
+    "MCPTool(wpai_probe__probe_evidence_page)",
+    "--allow",
+    "MCPTool(wpai_probe__probe_denied_operation)",
+    "--deny",
+    "Bash",
+    "--deny",
+    "Read",
+    "--deny",
+    "Edit",
+    "--deny",
+    "Grep",
+    "--deny",
+    "WebFetch",
+    "--deny",
+    "WebSearch"
+  ],
+  "configSHA256": "1b1e2730f80d1376629e798e4b0a01ebc488df756fdfd75c90a3878780384257",
+  "probeSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+  "launcherSHA256": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683",
+  "sessionId": "ed98a14a-de47-4fd4-8288-bf5954a287b5",
+  "clientPid": 13860,
+  "observedServerPid": 20860,
+  "serverObservedLiveBeforeClientExit": true,
+  "exit": 0,
+  "probeAfterClientExit": {
+    "exited": true,
+    "exitCode": 1
+  },
+  "seconds": 5.449,
+  "normalConfigUnchanged": true,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 20860,
+      "build": "0.1.1"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2025-11-25",
+      "offered": "2025-11-25",
+      "mechanism": "initialize"
+    },
+    {
+      "event": "initialized",
+      "protocol": "2025-11-25"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2025-11-25",
+      "tools": 5
+    },
+    {
+      "event": "call",
+      "protocol": "2025-11-25",
+      "tool": "probe_echo",
+      "outcome": "OK"
+    }
+  ]
+}

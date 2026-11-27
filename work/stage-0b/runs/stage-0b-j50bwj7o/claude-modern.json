@@ -1,0 +1,51 @@
+{
+  "case": "claude-modern",
+  "serverSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+  "timestamp": "2026-11-26T20:03:56.361736+00:00",
+  "projectBeforeApproval": {
+    "exit": 0,
+    "stdout": "Checking MCP server health\u2026\n\nwpai_probe: C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -I -B C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-j50bwj7o claude-modern - \u23f8 Pending approval (run `claude` to approve)\n",
+    "stderr": ""
+  },
+  "registerUser": {
+    "exit": 0,
+    "stdout": "Added stdio MCP server wpai_probe with command: C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -I -B C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-j50bwj7o claude-modern to user config\nFile modified: C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-j50bwj7o\\claude-modern\\home\\.claude\\.claude.json\n",
+    "stderr": ""
+  },
+  "userHealth": {
+    "exit": 0,
+    "stdout": "Checking MCP server health\u2026\n\nwpai_probe: C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -I -B C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-j50bwj7o claude-modern - \u221a Connected\n",
+    "stderr": ""
+  },
+  "seconds": 2.159,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 23856,
+      "build": "0.1.1"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2026-07-28",
+      "mechanism": "server/discover"
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    },
+    {
+      "event": "start",
+      "pid": 20472,
+      "build": "0.1.1"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2026-07-28",
+      "tools": 5
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "schema": 1,
+  "invocation": "wpai-stage-0b-2026-11-26-antigravity",
+  "law_sha": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "scope": "Official normal Google CLI installation and one isolated MCP compatibility fixture for Grok, Codex, Antigravity and Claude. Supplemental legacy Gemini. OAuth initiated manually by the director for Antigravity only.",
+  "candidate": "Report SHA-256 6adb380094765f605eebd01143a54436ec721d3be3344f358e989a420e691438 and archive SHA-256 b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+  "claim": "partial",
+  "stages": [
+    {
+      "stage": 1,
+      "status": "done",
+      "reason": "Froze law and incorporated the director’s target change and manual sign-in",
+      "evidence": [
+        "authority",
+        "frozen"
+      ]
+    },
+    {
+      "stage": 2,
+      "status": "done",
+      "reason": "Inspected install target, official provenance and existing tools",
+      "evidence": [
+        "installation",
+        "frozen"
+      ]
+    },
+    {
+      "stage": 3,
+      "status": "done",
+      "reason": "Verified applicable spec and native tool surfaces. Selected a small dual-era fixture",
+      "evidence": [
+        "fixture",
+        "audit"
+      ]
+    },
+    {
+      "stage": 4,
+      "status": "done",
+      "reason": "Isolated test profiles, set an explicit synthetic contract and acceptance matrix",
+      "evidence": [
+        "authority",
+        "fixture"
+      ]
+    },
+    {
+      "stage": 5,
+      "status": "done",
+      "reason": "Installed official CLI and built fixture outside production repositories",
+      "evidence": [
+        "installation",
+        "fixture"
+      ]
+    },
+    {
+      "stage": 6,
+      "status": "done",
+      "reason": "Re-ran all final-hash cases after cursor TTL fix. Documented auth-bounded results",
+      "evidence": [
+        "records",
+        "boundaries"
+      ]
+    },
+    {
+      "stage": 7,
+      "status": "done",
+      "reason": "Checked outcome scope and the difference between discovery and invocation",
+      "evidence": [
+        "audit",
+        "records"
+      ]
+    },
+    {
+      "stage": 8,
+      "status": "done",
+      "reason": "Verified report, replay sources, records, package manifest and Section 0",
+      "evidence": [
+        "package",
+        "audit"
+      ]
+    },
+    {
+      "stage": 9,
+      "status": "na",
+      "reason": "No external publication or production deployment requested",
+      "evidence": [
+        "authority"
+      ]
+    },
+    {
+      "stage": 10,
+      "status": "open",
+      "reason": "User prohibited Constitution changes. Report and closeout record are available without a staged evolution",
+      "evidence": [
+        "authority",
+        "package"
+      ]
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "install",
+      "criterion": "Normally install requested Google software and verify version/source/fresh shell",
+      "status": "pass",
+      "required_evidence": [
+        "install"
+      ],
+      "evidence": [
+        "installation"
+      ]
+    },
+    {
+      "id": "fixture",
+      "criterion": "One disposable dual-era MCP artifact exposing the five named operations",
+      "status": "pass",
+      "required_evidence": [
+        "source"
+      ],
+      "evidence": [
+        "fixture"
+      ]
+    },
+    {
+      "id": "client-records",
+      "criterion": "Actual separate test records with explicit invocation and authentication limitations",
+      "status": "pass",
+      "required_evidence": [
+        "runtime"
+      ],
+      "evidence": [
+        "records"
+      ]
+    },
+    {
+      "id": "boundaries",
+      "criterion": "Independent denial, isolation and bounded behavior",
+      "status": "pass",
+      "required_evidence": [
+        "runtime"
+      ],
+      "evidence": [
+        "boundaries"
+      ]
+    },
+    {
+      "id": "handoff",
+      "criterion": "Report sections A through G, archive, instructions and hashes",
+      "status": "pass",
+      "required_evidence": [
+        "package"
+      ],
+      "evidence": [
+        "package"
+      ]
+    }
+  ],
+  "section0": [
+    {
+      "item": 1,
+      "status": "pass",
+      "reason": "Requested installation, fixture and evidence package delivered. Four-agent production interoperability expressly remains open",
+      "evidence": [
+        "package",
+        "audit"
+      ]
+    },
+    {
+      "item": 2,
+      "status": "pass",
+      "reason": "Verified host tools, pinned source and installation provenance",
+      "evidence": [
+        "installation",
+        "frozen"
+      ]
+    },
+    {
+      "item": 3,
+      "status": "pass",
+      "reason": "Fixture verification exited successfully. Package deprecation notice and installer active-PATH warning are disclosed",
+      "evidence": [
+        "installation",
+        "boundaries"
+      ]
+    },
+    {
+      "item": 4,
+      "status": "pass",
+      "reason": "Verified intended core behavior, negative cases, client outcomes and process cleanup within authorized routes",
+      "evidence": [
+        "records",
+        "boundaries"
+      ]
+    },
+    {
+      "item": 5,
+      "status": "pass",
+      "reason": "Replay instructions, manifest and report reflect tested source",
+      "evidence": [
+        "package"
+      ]
+    },
+    {
+      "item": 6,
+      "status": "pass",
+      "reason": "SRI/signature, isolated paths, no secret input, no production write and server authorization evaluated",
+      "evidence": [
+        "installation",
+        "boundaries",
+        "authority"
+      ]
+    },
+    {
+      "item": 7,
+      "status": "pass",
+      "reason": "Measured client cases and verified explicit process, frame, cursor and message bounds",
+      "evidence": [
+        "records",
+        "boundaries"
+      ]
+    },
+    {
+      "item": 8,
+      "status": "pass",
+      "reason": "Verified exact installed tooling and standard-library target",
+      "evidence": [
+        "installation",
+        "fixture"
+      ]
+    },
+    {
+      "item": 9,
+      "status": "pass",
+      "reason": "Local archive readable with verified manifest and complete replay package",
+      "evidence": [
+        "package"
+      ]
+    },
+    {
+      "item": 10,
+      "status": "pass",
+      "reason": "Used normal user install plus approved account route. No new API purchases or production scope",
+      "evidence": [
+        "authority",
+        "installation"
+      ]
+    },
+    {
+      "item": 11,
+      "status": "pass",
+      "reason": "Isolated replay instructions and final source checksum cover meaningful variation",
+      "evidence": [
+        "package",
+        "fixture"
+      ]
+    },
+    {
+      "item": 12,
+      "status": "pass",
+      "reason": "Official package identity and license verified. Internal artifact cites authoritative sources",
+      "evidence": [
+        "installation",
+        "audit"
+      ]
+    },
+    {
+      "item": 13,
+      "status": "na",
+      "reason": "Single integrator. Four clients are subjects of the test, with no delegated implementation",
+      "evidence": [
+        "authority"
+      ]
+    },
+    {
+      "item": 14,
+      "status": "pass",
+      "reason": "Report links actual outcomes to exact artifacts, limitations and next gates",
+      "evidence": [
+        "package",
+        "audit"
+      ]
+    },
+    {
+      "item": 15,
+      "status": "pass",
+      "reason": "Self-audit summarizes verified and open evidence",
+      "evidence": [
+        "audit"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "authority",
+      "kind": "authorization",
+      "subject": "Report SHA-256 6adb380094765f605eebd01143a54436ec721d3be3344f358e989a420e691438 and archive SHA-256 b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+      "reference": "Stage 0B attachment and director’s change to Antigravity followed by manual sign-in. Fixture-only scope."
+    },
+    {
+      "id": "frozen",
+      "kind": "source",
+      "subject": "Report SHA-256 6adb380094765f605eebd01143a54436ec721d3be3344f358e989a420e691438 and archive SHA-256 b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+      "reference": "Verified remote pin, all 23 frozen source hashes and matching 6.24.0 loader. Final tracked source tree clean."
+    },
+    {
+      "id": "installation",
+      "kind": "install",
+      "subject": "Report SHA-256 6adb380094765f605eebd01143a54436ec721d3be3344f358e989a420e691438 and archive SHA-256 b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+      "reference": "Gemini npm latest/SRI/registry signatures, normal global npm install, npm list and fresh shell. Antigravity verified vendor checksum, Google LLC Authenticode and fresh shell."
+    },
+    {
+      "id": "fixture",
+      "kind": "source",
+      "subject": "Report SHA-256 6adb380094765f605eebd01143a54436ec721d3be3344f358e989a420e691438 and archive SHA-256 b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+      "reference": "Disposable build 0.1.1 SHA-256 d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770; syntax parse and one shared source."
+    },
+    {
+      "id": "records",
+      "kind": "runtime",
+      "subject": "Report SHA-256 6adb380094765f605eebd01143a54436ec721d3be3344f358e989a420e691438 and archive SHA-256 b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+      "reference": "Same final hash in four primary runtime records. Discovery 4/4, validated invocation 2/4; explicit model-auth and policy limits. Also exact Gemini health and trust record."
+    },
+    {
+      "id": "boundaries",
+      "kind": "runtime",
+      "subject": "Report SHA-256 6adb380094765f605eebd01143a54436ec721d3be3344f358e989a420e691438 and archive SHA-256 b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+      "reference": "Eight negative/lifecycle boundary checks and direct legacy and modern operation checks. Process and listener cleanup, settings snapshots, Antigravity approved client and server denials."
+    },
+    {
+      "id": "package",
+      "kind": "package",
+      "subject": "Report SHA-256 6adb380094765f605eebd01143a54436ec721d3be3344f358e989a420e691438 and archive SHA-256 b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+      "reference": "Outputs local report A–G and ZIP passed CRC, manifest, source parse and explicit cross-record assertions."
+    },
+    {
+      "id": "audit",
+      "kind": "review",
+      "subject": "Report SHA-256 6adb380094765f605eebd01143a54436ec721d3be3344f358e989a420e691438 and archive SHA-256 b59081f4feab80c7a0c4eee1f582b0108c3815dec7c4a3a22fddcde2a56a3439",
+      "reference": "Reviewed user objective item by item. Marked clean EOF and 4-agent invocation separately. Report classifies documented, unverified, unsupported and confirmed."
+    }
+  ],
+  "evolution": {
+    "status": "unstarted",
+    "evidence": []
+  },
+  "self_audit": [
+    "Validated official package and installer identities, installed binaries and ordinary shell resolution.",
+    "All final client records point to the same probe hash.",
+    "Observed all four discoveries and two native invocation routes. Grok and Claude execution require further evidence.",
+    "Confirmed independent synthetic denial, final process cleanup, and archive integrity."
+  ],
+  "remaining": [
+    "Stage 1 readiness needs Grok and Claude invocation on an approved route. This is recorded as open in the completed Stage 0B report.",
+    "User excluded Constitution changes. Staged evolution remains outside scope."
+  ]
+}

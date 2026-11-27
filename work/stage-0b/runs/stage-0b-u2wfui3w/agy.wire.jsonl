@@ -1,0 +1,4 @@
+{"event":"start","pid":7760,"build":"0.1.0"}
+{"event":"negotiate","protocol":"2026-07-28","mechanism":"server/discover"}
+{"event":"catalog","protocol":"2026-07-28","tools":5}
+{"event":"stop","reason":"eof"}

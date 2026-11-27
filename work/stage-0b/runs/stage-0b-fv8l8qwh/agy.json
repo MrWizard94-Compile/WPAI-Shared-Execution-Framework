@@ -1,0 +1,26 @@
+{
+  "case": "agy",
+  "serverSHA256": "bce681ebe3ab7c63b5caf73831ffcff305ac32ad2880834904f25d88c02b994c",
+  "timestamp": "2026-11-26T19:57:06.572360+00:00",
+  "workspaceMcp": {
+    "exit": 0,
+    "stdout": "No MCP servers configured.\n",
+    "stderr": ""
+  },
+  "acp": {
+    "protocol": 1,
+    "authMethodIds": [
+      "oauth-personal",
+      "oauth-business",
+      "gemini-api-key",
+      "agent-platform"
+    ],
+    "sessionError": "session/new: {'code': -32603, 'message': 'Failed to start Antigravity: language server failed to start: must not be absolute: C:\\\\Users\\\\LOCAL_USER\\\\Documents\\\\Codex\\\\2026-11-26\\\\new-chat\\\\work\\\\stage-0b\\\\runs\\\\stage-0b-fv8l8qwh\\\\agy\\\\acp-app'}"
+  },
+  "process": {
+    "exit": 0,
+    "forced": false
+  },
+  "seconds": 0.345,
+  "wire": []
+}

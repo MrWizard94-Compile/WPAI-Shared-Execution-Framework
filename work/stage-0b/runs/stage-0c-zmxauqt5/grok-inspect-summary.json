@@ -1,0 +1,38 @@
+{
+  "projectRootMatches": false,
+  "projectTrusted": false,
+  "configurationLayers": [
+    {
+      "role": "user",
+      "filename": "config.toml"
+    },
+    {
+      "role": "project",
+      "filename": "config.toml"
+    }
+  ],
+  "mcp": [
+    {
+      "name": "wpai_probe",
+      "transport": "stdio",
+      "source": {
+        "type": "configToml",
+        "path": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0c-zmxauqt5\\grok\\.grok\\config.toml"
+      }
+    }
+  ],
+  "plugins": [
+    {
+      "name": "cloudflare",
+      "enabled": false,
+      "scope": "user"
+    }
+  ],
+  "hooks": 0,
+  "managedOnly": "off",
+  "managedSettingsActive": false,
+  "permissionLoaded": 709,
+  "configWarnings": 1,
+  "permissionSkippedCount": 73,
+  "fixturePermissionSkips": 0
+}

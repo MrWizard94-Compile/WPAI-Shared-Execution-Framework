@@ -1,0 +1,1 @@
+Use the MCP dispatcher use_tool exactly once with the known qualified key wpai_probe__probe_echo, inline tool_input {"value":{"label":"WPAI","count":7,"enabled":true}}. Do not do tool search or use any other tool. Return the exact JSON received.

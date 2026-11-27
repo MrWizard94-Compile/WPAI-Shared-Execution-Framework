@@ -1,0 +1,1 @@
+{"type":"error","message":"Couldn't set model 'grok-build': Invalid params: \"unknown model id\". Run 'grok models' to see available models.","cwd":"C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0c-zmxauqt5\\grok"}

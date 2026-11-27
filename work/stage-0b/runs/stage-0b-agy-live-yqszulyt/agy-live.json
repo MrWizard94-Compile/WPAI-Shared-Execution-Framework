@@ -1,0 +1,104 @@
+{
+  "probe_sha256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+  "expectedEcho": {
+    "value": {
+      "label": "WPAI",
+      "count": 7,
+      "enabled": true
+    }
+  },
+  "inference": "Existing user-initiated sign-in",
+  "acpVersion": 1,
+  "ephemeralFixtureSession": true,
+  "permissions": [
+    {
+      "tool": "probe_info",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_echo",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_validation",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_denied_operation",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_evidence_page",
+      "allowOnce": true
+    },
+    {
+      "tool": "probe_evidence_page",
+      "allowOnce": true
+    }
+  ],
+  "stopReason": "end_turn",
+  "reply": "### Echo JSON\n```json\n{\"value\":{\"count\":7,\"enabled\":true,\"label\":\"WPAI\"}}\n```\n\n### Observed Successes\n- `probe_info({})`: `{\"server\":\"wpai-stage-0b-probe\",\"build\":\"0.1.1\",\"contract\":\"wpai.probe.v1\",\"protocol\":\"2026-07-28\",\"supported\":[\"2026-07-28\",\"2025-11-25\",\"2025-06-18\"]}`\n- `probe_echo({\"value\":{\"label\":\"WPAI\",\"count\":7,\"enabled\":true}})`: `{\"value\":{\"count\":7,\"enabled\":true,\"label\":\"WPAI\"}}`\n- `probe_validation({\"count\":9})`: `{\"valid\":true,\"count\":9}`\n- `probe_evidence_page({})`: `{\"page\":1,\"rows\":[\"alder\",\"birch\"],\"nextCursor\":\"ljWHaixrkxJ4Ijq8s5uikQ\"}`\n- `probe_evidence_page({\"cursor\":\"ljWHaixrkxJ4Ijq8s5uikQ\"})`: `{\"page\":2,\"rows\":[\"cedar\",\"dogwood\"],\"nextCursor\":null}`\n\n### Observed Errors\n- `probe_validation({\"count\":\"9\"})`: `Encountered error in tool validation: invalid arguments: - at '/count': got string, want integer`\n- `probe_validation({\"count\":3,\"extra\":1})`: `Encountered error in tool validation: invalid arguments: - additional properties 'extra' not allowed`\n- `probe_validation({\"count\":10})`: `Encountered error in tool validation: invalid arguments: - at '/count': maximum: got 10, want 9`\n- `probe_denied_operation({})`: `Encountered error in tool execution: {\"code\":\"DENIED\",\"protectedActions\":0}`",
+  "process": {
+    "exit": 0,
+    "forced": false
+  },
+  "existingSettingsUnchanged": true,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 21004,
+      "build": "0.1.1"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2026-07-28",
+      "mechanism": "server/discover"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2026-07-28",
+      "tools": 5
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_info",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_echo",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_validation",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_denied_operation",
+      "outcome": "DENIED",
+      "protectedActions": 0
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_evidence_page",
+      "outcome": "OK"
+    },
+    {
+      "event": "call",
+      "protocol": "2026-07-28",
+      "tool": "probe_evidence_page",
+      "outcome": "OK"
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "case": "gemini",
+  "serverSHA256": "bce681ebe3ab7c63b5caf73831ffcff305ac32ad2880834904f25d88c02b994c",
+  "timestamp": "2026-11-26T19:58:41.298134+00:00",
+  "workspaceMcp": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": "Warning: MCP servers are configured but disabled because this folder is untrusted.\nUser-level servers are also suppressed in untrusted folders to prevent accidental side-effects.\n\nConfigured MCP servers:\n\n\u25cb wpai_probe: C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -I -B C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-3n9qslnh gemini (stdio) - Disabled\n"
+  },
+  "workspaceMcpExplicitTrust": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": "Configured MCP servers:\n\n\u2713 wpai_probe: C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -I -B C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-3n9qslnh gemini (stdio) - Connected\n"
+  },
+  "seconds": 4.238,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 15196,
+      "build": "0.1.0"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2025-11-25",
+      "offered": "2025-11-25",
+      "mechanism": "initialize"
+    },
+    {
+      "event": "initialized",
+      "protocol": "2025-11-25"
+    },
+    {
+      "event": "ping",
+      "protocol": "2025-11-25"
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

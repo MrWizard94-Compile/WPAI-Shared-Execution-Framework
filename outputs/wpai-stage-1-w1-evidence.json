@@ -1,0 +1,488 @@
+{
+  "package_sha256": "e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+  "oracle": {
+    "oracle": {
+      "matches": {
+        "01_identity": true,
+        "02_local_head": true,
+        "03_remote_main": true,
+        "04_working_tree": true,
+        "05_change_counts": true,
+        "06_branch_inventory": true,
+        "07_main_divergence": true,
+        "08_recent_commits": true,
+        "09_open_pull_requests": true,
+        "10_applicable_actions": true,
+        "11_failed_checks": true,
+        "12_discrepancies": true
+      },
+      "git_remote": "ls-remote --heads origin",
+      "main_sha": "b26b56ab554180ad00feb36d83a84938e60aad5d"
+    },
+    "git_metadata_unchanged": true,
+    "git_metadata_fingerprinted": 11,
+    "as_of": "2026-11-26T22:30:56.501653-05:00",
+    "server_sha256": "92345329a6799951045904d10b60417380922a7c2b0fa2c242d2565530d4e1e6"
+  },
+  "live_w1": {
+    "contract": "wpai.repo_health.v1",
+    "status": "OK",
+    "project": "trackforge",
+    "opened_at": "2026-11-27T03:30:48.330+00:00",
+    "closed_at": "2026-11-27T03:30:49.867+00:00",
+    "facts": {
+      "01_identity": {
+        "status": "observed",
+        "source": "git_origin_and_github_repository",
+        "target": "MrWizard94-Compile/TrackForge",
+        "observed_at": "2026-11-27T03:30:49.867+00:00",
+        "value": {
+          "local": {
+            "status": "observed",
+            "source": "git_origin",
+            "target": "trackforge",
+            "observed_at": "2026-11-27T03:30:48.476+00:00",
+            "value": {
+              "origin_repo": "MrWizard94-Compile/TrackForge"
+            }
+          },
+          "remote": {
+            "status": "observed",
+            "source": "github_repository",
+            "target": "MrWizard94-Compile/TrackForge",
+            "observed_at": "2026-11-27T03:30:48.800+00:00",
+            "value": {
+              "default_branch": "main",
+              "full_name": "MrWizard94-Compile/TrackForge",
+              "id": 1351477573,
+              "private": true
+            }
+          }
+        }
+      },
+      "02_local_head": {
+        "status": "observed",
+        "source": "git_head",
+        "target": "trackforge",
+        "observed_at": "2026-11-27T03:30:48.912+00:00",
+        "value": {
+          "branch": "staging",
+          "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d"
+        }
+      },
+      "03_remote_main": {
+        "status": "observed",
+        "source": "github_live_ref",
+        "target": "refs/heads/main",
+        "observed_at": "2026-11-27T03:30:49.266+00:00",
+        "value": "b26b56ab554180ad00feb36d83a84938e60aad5d"
+      },
+      "04_working_tree": {
+        "status": "observed",
+        "source": "git_status_porcelain_v2",
+        "target": "trackforge",
+        "observed_at": "2026-11-27T03:30:49.867+00:00",
+        "value": "clean"
+      },
+      "05_change_counts": {
+        "status": "observed",
+        "source": "git_status_porcelain_v2",
+        "target": "trackforge",
+        "observed_at": "2026-11-27T03:30:49.064+00:00",
+        "value": {
+          "staged": 0,
+          "unstaged": 0,
+          "untracked": 0,
+          "conflicted": 0
+        }
+      },
+      "06_branch_inventory": {
+        "status": "observed",
+        "source": "git_local_cache_and_github_live_branches",
+        "target": "MrWizard94-Compile/TrackForge",
+        "observed_at": "2026-11-27T03:30:49.867+00:00",
+        "value": {
+          "local_and_cached": {
+            "status": "observed",
+            "source": "git_local_and_cached_remote_refs",
+            "target": "trackforge",
+            "observed_at": "2026-11-27T03:30:48.864+00:00",
+            "value": {
+              "items": [
+                {
+                  "name": "refs/heads/main",
+                  "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+                  "symbolic_target": null
+                },
+                {
+                  "name": "refs/heads/staging",
+                  "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+                  "symbolic_target": null
+                },
+                {
+                  "name": "refs/remotes/origin/HEAD",
+                  "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+                  "symbolic_target": "refs/remotes/origin/main"
+                },
+                {
+                  "name": "refs/remotes/origin/main",
+                  "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+                  "symbolic_target": null
+                },
+                {
+                  "name": "refs/remotes/origin/staging",
+                  "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+                  "symbolic_target": null
+                }
+              ],
+              "truncated": false
+            }
+          },
+          "remote_live": {
+            "status": "observed",
+            "source": "github_live_branches",
+            "target": "MrWizard94-Compile/TrackForge",
+            "observed_at": "2026-11-27T03:30:49.266+00:00",
+            "value": {
+              "items": [
+                {
+                  "name": "main",
+                  "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d"
+                },
+                {
+                  "name": "staging",
+                  "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d"
+                }
+              ],
+              "truncated": false
+            }
+          }
+        }
+      },
+      "07_main_divergence": {
+        "status": "observed",
+        "source": "commit_graph",
+        "target": "MrWizard94-Compile/TrackForge",
+        "observed_at": "2026-11-27T03:30:49.867+00:00",
+        "value": {
+          "local_main_divergence": {
+            "status": "observed",
+            "source": "git_or_github_commit_graph",
+            "target": [
+              "b26b56ab554180ad00feb36d83a84938e60aad5d",
+              "b26b56ab554180ad00feb36d83a84938e60aad5d"
+            ],
+            "observed_at": "2026-11-27T03:30:49.351+00:00",
+            "value": {
+              "ahead": 0,
+              "behind": 0,
+              "method": "equal_shas"
+            }
+          },
+          "active_divergence": {
+            "status": "observed",
+            "source": "git_or_github_commit_graph",
+            "target": [
+              "b26b56ab554180ad00feb36d83a84938e60aad5d",
+              "b26b56ab554180ad00feb36d83a84938e60aad5d"
+            ],
+            "observed_at": "2026-11-27T03:30:49.351+00:00",
+            "value": {
+              "ahead": 0,
+              "behind": 0,
+              "method": "equal_shas"
+            }
+          }
+        }
+      },
+      "08_recent_commits": {
+        "status": "observed",
+        "source": "git_and_github_commits",
+        "target": "MrWizard94-Compile/TrackForge",
+        "observed_at": "2026-11-27T03:30:49.867+00:00",
+        "value": {
+          "local_head": {
+            "status": "observed",
+            "source": "git_log",
+            "target": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+            "observed_at": "2026-11-27T03:30:49.414+00:00",
+            "value": [
+              {
+                "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+                "date": "2026-11-26T16:17:46-05:00",
+                "subject": "Show the application icon on the native title bar and keep one recorded take with the selected scale in the prod"
+              },
+              {
+                "sha": "4f0e6e2b14de98cd1bcfb393ea436ed621b314c0",
+                "date": "2026-11-26T14:48:14-05:00",
+                "subject": "Connect supported MIDI 1.0 expression from an explicit input through live monitoring and version-two capture."
+              },
+              {
+                "sha": "bba3e4b24d28b0cb77572115c8fe0357dc66da28",
+                "date": "2026-11-26T11:28:35-05:00",
+                "subject": "Date the remaining full-product status sentences in MANIFEST."
+              },
+              {
+                "sha": "df23dbe46f10e1d25727ef6863c7eb657a7f3515",
+                "date": "2026-11-26T11:24:51-05:00",
+                "subject": "Qualify the remaining October adoption sentences in MANIFEST."
+              },
+              {
+                "sha": "df6ee3132eba19a8cb9e45d901819117b003e061",
+                "date": "2026-11-26T11:15:56-05:00",
+                "subject": "State the Native desktop as the current AGENTS and MANIFEST delivery."
+              }
+            ]
+          },
+          "remote_main": {
+            "status": "observed",
+            "source": "github_commits",
+            "target": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+            "observed_at": "2026-11-27T03:30:49.799+00:00",
+            "value": [
+              {
+                "sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+                "date": "2026-11-26T21:17:46Z",
+                "subject": "Show the application icon on the native title bar and keep one recorded take with the selected scale in the prod"
+              },
+              {
+                "sha": "4f0e6e2b14de98cd1bcfb393ea436ed621b314c0",
+                "date": "2026-11-26T19:48:14Z",
+                "subject": "Connect supported MIDI 1.0 expression from an explicit input through live monitoring and version-two capture."
+              },
+              {
+                "sha": "bba3e4b24d28b0cb77572115c8fe0357dc66da28",
+                "date": "2026-11-26T16:28:35Z",
+                "subject": "Date the remaining full-product status sentences in MANIFEST."
+              },
+              {
+                "sha": "df23dbe46f10e1d25727ef6863c7eb657a7f3515",
+                "date": "2026-11-26T16:24:51Z",
+                "subject": "Qualify the remaining October adoption sentences in MANIFEST."
+              },
+              {
+                "sha": "df6ee3132eba19a8cb9e45d901819117b003e061",
+                "date": "2026-11-26T16:15:56Z",
+                "subject": "State the Native desktop as the current AGENTS and MANIFEST delivery."
+              }
+            ]
+          }
+        }
+      },
+      "09_open_pull_requests": {
+        "status": "observed",
+        "source": "github_open_pulls",
+        "target": "MrWizard94-Compile/TrackForge",
+        "observed_at": "2026-11-27T03:30:49.300+00:00",
+        "value": {
+          "items": [],
+          "truncated": false
+        }
+      },
+      "10_applicable_actions": {
+        "status": "observed",
+        "source": "github_actions_checks_and_statuses",
+        "target": "MrWizard94-Compile/TrackForge",
+        "observed_at": "2026-11-27T03:30:49.867+00:00",
+        "value": {
+          "workflows": {
+            "status": "observed",
+            "source": "github_actions_workflows",
+            "target": "MrWizard94-Compile/TrackForge",
+            "observed_at": "2026-11-27T03:30:49.300+00:00",
+            "value": {
+              "items": [],
+              "total": 0,
+              "truncated": false
+            }
+          },
+          "runs_main": {
+            "status": "observed",
+            "source": "github_actions_runs",
+            "target": "main",
+            "observed_at": "2026-11-27T03:30:49.349+00:00",
+            "value": {
+              "items": [],
+              "total": 0,
+              "truncated": false
+            }
+          },
+          "checks_main": {
+            "status": "observed",
+            "source": "github_check_runs",
+            "target": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+            "observed_at": "2026-11-27T03:30:49.799+00:00",
+            "value": {
+              "items": [],
+              "total": 0,
+              "truncated": false
+            }
+          },
+          "statuses_main": {
+            "status": "observed",
+            "source": "github_commit_statuses",
+            "target": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+            "observed_at": "2026-11-27T03:30:49.867+00:00",
+            "value": {
+              "items": [],
+              "total": 0,
+              "truncated": false
+            }
+          },
+          "runs_active": {
+            "status": "observed",
+            "source": "github_actions_runs",
+            "target": "staging",
+            "observed_at": "2026-11-27T03:30:49.799+00:00",
+            "value": {
+              "items": [],
+              "total": 0,
+              "truncated": false
+            }
+          }
+        }
+      },
+      "11_failed_checks": {
+        "status": "observed",
+        "source": "github_ci",
+        "target": [
+          "runs_main",
+          "checks_main",
+          "statuses_main",
+          "runs_active"
+        ],
+        "observed_at": "2026-11-27T03:30:49.867+00:00",
+        "value": {
+          "items": [],
+          "incomplete": []
+        }
+      },
+      "12_discrepancies": {
+        "status": "observed",
+        "source": "git_and_github_cross_check",
+        "target": "MrWizard94-Compile/TrackForge",
+        "observed_at": "2026-11-27T03:30:49.867+00:00",
+        "value": {
+          "checks": [
+            "active_head_vs_live_main",
+            "worktree_vs_index_and_head",
+            "local_refs_vs_live_branches"
+          ],
+          "items": [],
+          "truncated": false
+        }
+      }
+    },
+    "measurements": {
+      "elapsed_ms": 1537.5,
+      "git_process_attempts": 11,
+      "github_get_process_attempts": 10,
+      "provider_usage": "unavailable"
+    }
+  },
+  "routes": {
+    "direct_legacy": {
+      "catalog": [
+        "repo_health_v1"
+      ],
+      "denial": {
+        "contract": "wpai.repo_health.v1",
+        "status": "DENIED"
+      },
+      "bytes": 7837,
+      "process": {
+        "exit": 0,
+        "forced": false
+      }
+    },
+    "direct_modern": {
+      "catalog": [
+        "repo_health_v1"
+      ],
+      "denial": {
+        "contract": "wpai.repo_health.v1",
+        "status": "DENIED"
+      },
+      "bytes": 7837,
+      "process": {
+        "exit": 0,
+        "forced": false
+      }
+    },
+    "codex_legacy": {
+      "catalog": [
+        "repo_health_v1"
+      ],
+      "denial": {
+        "contract": "wpai.repo_health.v1",
+        "status": "DENIED"
+      },
+      "bytes": 6294,
+      "process": {
+        "exit": 0,
+        "forced": false
+      }
+    },
+    "codex_modern": {
+      "catalog": [
+        "repo_health_v1"
+      ],
+      "denial": {
+        "contract": "wpai.repo_health.v1",
+        "status": "DENIED"
+      },
+      "bytes": 6294,
+      "process": {
+        "exit": 0,
+        "forced": false
+      }
+    }
+  },
+  "repeatability": {
+    "package_sha256": "e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+    "protocol": "2026-07-28",
+    "fresh_server_process_per_trial": true,
+    "ci_scope": "same reported CI surfaces, checked independently after each trial",
+    "git_metadata_unchanged": true,
+    "git_metadata_files": 11,
+    "trials": [
+      {
+        "trial": 1,
+        "opened_at": "2026-11-27T03:49:51.615+00:00",
+        "elapsed_ms": 1606.4,
+        "git_process_attempts": 11,
+        "github_get_process_attempts": 10,
+        "provider_usage": "unavailable",
+        "w1_fields_matched": 12,
+        "main_sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+        "result_bytes": 7837,
+        "probe_shutdown_exit": 0
+      },
+      {
+        "trial": 2,
+        "opened_at": "2026-11-27T03:49:56.446+00:00",
+        "elapsed_ms": 1475.6,
+        "git_process_attempts": 11,
+        "github_get_process_attempts": 10,
+        "provider_usage": "unavailable",
+        "w1_fields_matched": 12,
+        "main_sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+        "result_bytes": 7837,
+        "probe_shutdown_exit": 0
+      },
+      {
+        "trial": 3,
+        "opened_at": "2026-11-27T03:50:01.064+00:00",
+        "elapsed_ms": 1539.8,
+        "git_process_attempts": 11,
+        "github_get_process_attempts": 10,
+        "provider_usage": "unavailable",
+        "w1_fields_matched": 12,
+        "main_sha": "b26b56ab554180ad00feb36d83a84938e60aad5d",
+        "result_bytes": 7837,
+        "probe_shutdown_exit": 0
+      }
+    ],
+    "median_elapsed_ms": 1539.8
+  }
+}

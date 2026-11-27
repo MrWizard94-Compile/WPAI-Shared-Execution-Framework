@@ -1,0 +1,42 @@
+{
+  "case": "grok",
+  "serverSHA256": "bce681ebe3ab7c63b5caf73831ffcff305ac32ad2880834904f25d88c02b994c",
+  "timestamp": "2026-11-26T19:57:02.410039+00:00",
+  "list": {
+    "exit": 0,
+    "stdout": "[\n  {\n    \"command\": \"C:\\\\Users\\\\LOCAL_USER\\\\AppData\\\\Local\\\\Python\\\\pythoncore-3.14-64\\\\python.exe\",\n    \"args\": [\n      \"-I\",\n      \"-B\",\n      \"C:\\\\Users\\\\LOCAL_USER\\\\Documents\\\\Codex\\\\2026-11-26\\\\new-chat\\\\work\\\\stage-0b\\\\launch_probe.py\",\n      \"C:\\\\Users\\\\LOCAL_USER\\\\Documents\\\\Codex\\\\2026-11-26\\\\new-chat\\\\work\\\\stage-0b\\\\runs\\\\stage-0b-4941s3pl\",\n      \"grok\"\n    ],\n    \"enabled\": true,\n    \"name\": \"wpai_probe\",\n    \"scope\": \"user\"\n  }\n]\n",
+    "stderr": ""
+  },
+  "doctor": {
+    "exit": 0,
+    "stdout": "{\n  \"sources\": [\n    {\n      \"path\": \"~/.grok/config.toml\",\n      \"status\": {\n        \"status\": \"found\",\n        \"server_count\": 1\n      }\n    },\n    {\n      \"path\": \"~/.claude.json\",\n      \"status\": {\n        \"status\": \"not_found\"\n      }\n    },\n    {\n      \"path\": \".mcp.json\",\n      \"status\": {\n        \"status\": \"not_found\"\n      }\n    }\n  ],\n  \"servers\": [\n    {\n      \"name\": \"wpai_probe\",\n      \"transport\": \"stdio\",\n      \"target\": \"C:\\\\Users\\\\LOCAL_USER\\\\AppData\\\\Local\\\\Python\\\\pythoncore-3.14-64\\\\python.exe -I -B C:\\\\Users\\\\LOCAL_USER\\\\Documents\\\\Codex\\\\2026-11-26\\\\new-chat\\\\work\\\\stage-0b\\\\launch_probe.py C:\\\\Users\\\\LOCAL_USER\\\\Documents\\\\Codex\\\\2026-11-26\\\\new-chat\\\\work\\\\stage-0b\\\\runs\\\\stage-0b-4941s3pl grok\",\n      \"source\": \"config\",\n      \"checks\": [\n        {\n          \"label\": \"command found\",\n          \"passed\": true,\n          \"detail\": \"C:\\\\Users\\\\LOCAL_USER\\\\AppData\\\\Local\\\\Python\\\\pythoncore-3.14-64\\\\python.exe\"\n        },\n        {\n          \"label\": \"server started\",\n          \"passed\": true,\n          \"detail\": \"0.0s\"\n        },\n        {\n          \"label\": \"handshake OK\",\n          \"passed\": true,\n          \"detail\": \"protocol 2025-11-25\"\n        },\n        {\n          \"label\": \"5 tools discovered\",\n          \"passed\": true,\n          \"detail\": \"\"\n        }\n      ],\n      \"healthy\": true\n    }\n  ],\n  \"healthy_count\": 1,\n  \"failing_count\": 0\n}\n",
+    "stderr": ""
+  },
+  "seconds": 0.931,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 6192,
+      "build": "0.1.0"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2025-11-25",
+      "offered": "2025-11-25",
+      "mechanism": "initialize"
+    },
+    {
+      "event": "initialized",
+      "protocol": "2025-11-25"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2025-11-25",
+      "tools": 5
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

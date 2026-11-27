@@ -1,0 +1,24 @@
+{
+  "oracle": {
+    "matches": {
+      "01_identity": true,
+      "02_local_head": true,
+      "03_remote_main": true,
+      "04_working_tree": true,
+      "05_change_counts": true,
+      "06_branch_inventory": true,
+      "07_main_divergence": true,
+      "08_recent_commits": true,
+      "09_open_pull_requests": true,
+      "10_applicable_actions": true,
+      "11_failed_checks": true,
+      "12_discrepancies": true
+    },
+    "git_remote": "ls-remote --heads origin",
+    "main_sha": "b26b56ab554180ad00feb36d83a84938e60aad5d"
+  },
+  "git_metadata_unchanged": true,
+  "git_metadata_fingerprinted": 11,
+  "as_of": "2026-11-26T22:30:56.501653-05:00",
+  "server_sha256": "92345329a6799951045904d10b60417380922a7c2b0fa2c242d2565530d4e1e6"
+}

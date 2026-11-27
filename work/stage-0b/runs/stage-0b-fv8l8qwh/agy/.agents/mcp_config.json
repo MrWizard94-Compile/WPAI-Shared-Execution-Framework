@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "wpai_probe": {
+      "command": "C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "args": [
+        "-I",
+        "-B",
+        "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py",
+        "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-fv8l8qwh",
+        "agy"
+      ]
+    }
+  }
+}

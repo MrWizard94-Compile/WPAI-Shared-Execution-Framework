@@ -1,0 +1,53 @@
+{
+  "case": "sdk-legacy",
+  "serverSHA256": "bce681ebe3ab7c63b5caf73831ffcff305ac32ad2880834904f25d88c02b994c",
+  "timestamp": "2026-11-26T19:57:09.716069+00:00",
+  "protocol": "2025-11-25",
+  "catalog": [
+    "probe_denied_operation",
+    "probe_echo",
+    "probe_evidence_page",
+    "probe_info",
+    "probe_validation"
+  ],
+  "echo": {
+    "value": {
+      "label": "WPAI",
+      "count": 7,
+      "enabled": true
+    }
+  },
+  "seconds": 1.186,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 21740,
+      "build": "0.1.0"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2025-11-25",
+      "offered": "2025-11-25",
+      "mechanism": "initialize"
+    },
+    {
+      "event": "initialized",
+      "protocol": "2025-11-25"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2025-11-25",
+      "tools": 5
+    },
+    {
+      "event": "call",
+      "protocol": "2025-11-25",
+      "tool": "probe_echo",
+      "outcome": "OK"
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{"event":"start","pid":21460,"build":"0.1.0"}
+{"event":"negotiate","protocol":"2026-07-28","mechanism":"server/discover"}
+{"event":"catalog","protocol":"2026-07-28","tools":5}
+{"event":"call","protocol":"2026-07-28","tool":"probe_info","outcome":"OK"}
+{"event":"call","protocol":"2026-07-28","tool":"probe_echo","outcome":"OK"}
+{"event":"call","protocol":"2026-07-28","tool":"probe_validation","outcome":"OK"}
+{"event":"call","protocol":"2026-07-28","tool":"probe_denied_operation","outcome":"DENIED","protectedActions":0}
+{"event":"call","protocol":"2026-07-28","tool":"probe_evidence_page","outcome":"OK"}
+{"event":"call","protocol":"2026-07-28","tool":"probe_evidence_page","outcome":"CURSOR_EXPIRED_OR_UNKNOWN"}
+{"event":"stop","reason":"eof"}

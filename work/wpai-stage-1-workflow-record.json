@@ -1,0 +1,367 @@
+{
+  "schema": 1,
+  "invocation": "wpai-stage-1-w1-2026-11-26",
+  "law_sha": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "scope": "Local package for the first allowlisted read-only W1 operation after the director accepted deferring Claude. Stage 0C four-client completion remains open.",
+  "candidate": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+  "claim": "complete",
+  "stages": [
+    {
+      "stage": 1,
+      "status": "done",
+      "reason": "Read exact Stage 0C attachment, accepted continuation and W1 objective",
+      "evidence": [
+        "scope",
+        "law"
+      ]
+    },
+    {
+      "stage": 2,
+      "status": "done",
+      "reason": "Verified the production checkout, allowed repo ID, frozen governance and local executables",
+      "evidence": [
+        "law",
+        "oracle"
+      ]
+    },
+    {
+      "stage": 3,
+      "status": "done",
+      "reason": "Reviewed the local execution and dual-era protocol contract",
+      "evidence": [
+        "design",
+        "routes"
+      ]
+    },
+    {
+      "stage": 4,
+      "status": "done",
+      "reason": "Scoped the first slice, chose isolated local handoff and identified acceptance classes",
+      "evidence": [
+        "scope",
+        "design"
+      ]
+    },
+    {
+      "stage": 5,
+      "status": "done",
+      "reason": "Built one CLI and one dual-era MCP service for repo_health_v1",
+      "evidence": [
+        "artifact",
+        "unit"
+      ]
+    },
+    {
+      "stage": 6,
+      "status": "done",
+      "reason": "Verified extracted entry points, failure paths and all twelve field comparisons",
+      "evidence": [
+        "unit",
+        "oracle",
+        "routes",
+        "artifact"
+      ]
+    },
+    {
+      "stage": 7,
+      "status": "done",
+      "reason": "Audited read-only behavior, package integrity and benchmark provenance",
+      "evidence": [
+        "design",
+        "oracle",
+        "handoff"
+      ]
+    },
+    {
+      "stage": 8,
+      "status": "done",
+      "reason": "Prepared the archive, reproducible manifest, report and limits",
+      "evidence": [
+        "handoff",
+        "artifact"
+      ]
+    },
+    {
+      "stage": 9,
+      "status": "na",
+      "reason": "Remote publication and normal client installation were outside this local handoff",
+      "evidence": [
+        "scope"
+      ]
+    },
+    {
+      "stage": 10,
+      "status": "done",
+      "reason": "Verified the delivered paths and staged one validated Constitution change",
+      "evidence": [
+        "artifact",
+        "handoff",
+        "patch"
+      ]
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "w1",
+      "criterion": "All 12 W1 dispositions match independent Git and GitHub evidence",
+      "status": "pass",
+      "required_evidence": [
+        "runtime"
+      ],
+      "evidence": [
+        "oracle",
+        "routes"
+      ]
+    },
+    {
+      "id": "adapter",
+      "criterion": "One extracted MCP entry point responds through both eras and Codex client routes",
+      "status": "pass",
+      "required_evidence": [
+        "package",
+        "runtime"
+      ],
+      "evidence": [
+        "artifact",
+        "routes"
+      ]
+    },
+    {
+      "id": "limits",
+      "criterion": "Server-side pre-launch authorization, timeout, size handling and bounded read-only acquisition",
+      "status": "pass",
+      "required_evidence": [
+        "source",
+        "runtime"
+      ],
+      "evidence": [
+        "unit",
+        "oracle",
+        "routes"
+      ]
+    },
+    {
+      "id": "delivery",
+      "criterion": "Reproducible local package with exact W1 objective, usage and verification notes",
+      "status": "pass",
+      "required_evidence": [
+        "package",
+        "review"
+      ],
+      "evidence": [
+        "artifact",
+        "handoff"
+      ]
+    }
+  ],
+  "section0": [
+    {
+      "item": 1,
+      "status": "pass",
+      "reason": "Twelve purpose-fit fields and CLI/MCP entry points",
+      "evidence": [
+        "oracle",
+        "routes",
+        "artifact"
+      ]
+    },
+    {
+      "item": 2,
+      "status": "pass",
+      "reason": "Python, Git and GitHub CLI verified on Windows",
+      "evidence": [
+        "unit",
+        "routes"
+      ]
+    },
+    {
+      "item": 3,
+      "status": "pass",
+      "reason": "Ten tests on each owned runtime with warnings as errors",
+      "evidence": [
+        "unit"
+      ]
+    },
+    {
+      "item": 4,
+      "status": "pass",
+      "reason": "Authorization, absence, failure metadata, deadlines, overflow and cancellation tested",
+      "evidence": [
+        "unit",
+        "oracle",
+        "routes"
+      ]
+    },
+    {
+      "item": 5,
+      "status": "pass",
+      "reason": "README, manifest, W1 and actual results agree",
+      "evidence": [
+        "artifact",
+        "handoff"
+      ]
+    },
+    {
+      "item": 6,
+      "status": "pass",
+      "reason": "Scoped private read access and subprocess denial reviewed",
+      "evidence": [
+        "design",
+        "unit",
+        "oracle"
+      ]
+    },
+    {
+      "item": 7,
+      "status": "pass",
+      "reason": "Measured live time, process attempts, payload size and caps",
+      "evidence": [
+        "routes",
+        "unit"
+      ]
+    },
+    {
+      "item": 8,
+      "status": "pass",
+      "reason": "Declared Python and local protocol support exercised",
+      "evidence": [
+        "unit",
+        "routes"
+      ]
+    },
+    {
+      "item": 9,
+      "status": "pass",
+      "reason": "Deterministic archive plus extracted tests and runtime",
+      "evidence": [
+        "artifact",
+        "routes"
+      ]
+    },
+    {
+      "item": 10,
+      "status": "pass",
+      "reason": "Existing tooling and credentials, no model inference or purchases",
+      "evidence": [
+        "scope",
+        "handoff"
+      ]
+    },
+    {
+      "item": 11,
+      "status": "pass",
+      "reason": "Two package builds matched and source manifest verified",
+      "evidence": [
+        "artifact"
+      ]
+    },
+    {
+      "item": 12,
+      "status": "pass",
+      "reason": "Original implementation follows documented protocols and uses stdlib only",
+      "evidence": [
+        "design",
+        "artifact"
+      ]
+    },
+    {
+      "item": 13,
+      "status": "na",
+      "reason": "Single owner and no multi-agent implementation integration",
+      "evidence": [
+        "scope"
+      ]
+    },
+    {
+      "item": 14,
+      "status": "pass",
+      "reason": "Package manifest, commands, evidence and gap documented",
+      "evidence": [
+        "artifact",
+        "handoff"
+      ]
+    },
+    {
+      "item": 15,
+      "status": "pass",
+      "reason": "Four-line audit below refers to observed boundaries",
+      "evidence": [
+        "oracle",
+        "handoff",
+        "routes"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "scope",
+      "kind": "authorization",
+      "subject": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+      "reference": "Stage 0C attachment section 7 and Human Director: Note the gap for far future work and continue."
+    },
+    {
+      "id": "law",
+      "kind": "source",
+      "subject": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+      "reference": "Live canonical main and frozen checker verified 0adf5ecee5f7f96ce3749944dc097a003731a6e9; source v6.24.0 and 23 binding files."
+    },
+    {
+      "id": "design",
+      "kind": "analysis",
+      "subject": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+      "reference": "Single allowlisted project, one adapter, independent identities, fixed subprocess/API operations, no credentials in reports."
+    },
+    {
+      "id": "unit",
+      "kind": "source",
+      "subject": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+      "reference": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage1-package-_559rxjp\\unittest.log; 10 tests each with Python 3.10 and 3.14 and -W error."
+    },
+    {
+      "id": "oracle",
+      "kind": "runtime",
+      "subject": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+      "reference": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage1-verify-kqv25u3r\\comparison.json; 12 independently matched W1 fields and 11 unchanged Git metadata fingerprints."
+    },
+    {
+      "id": "routes",
+      "kind": "runtime",
+      "subject": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+      "reference": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage1-verify-kqv25u3r\\routes.json; same packaged server via both direct stdio eras and isolated Codex app-server profiles."
+    },
+    {
+      "id": "artifact",
+      "kind": "package",
+      "subject": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+      "reference": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage1-package-_559rxjp\\package.json; exact, reproducible archive members and CLI replay from extracted package."
+    },
+    {
+      "id": "handoff",
+      "kind": "review",
+      "subject": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+      "reference": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\outputs\\wpai-stage-1-w1.md sha256=66f43aa91e15d5c32bbd35aaae863d7aab2536ae0ee27e8a585a6f95a791a7a9; reviewed against the 12 W1 statuses, package, scope and limitations."
+    },
+    {
+      "id": "patch",
+      "kind": "source",
+      "subject": "wpai-exec-stage-1.zip sha256=e59195bbf15d172efdb085728efd4c265a86305df391d688eed2ee38255c490a",
+      "reference": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\outputs\\wpai-constitution-measurement-proposal.patch sha256=ddeef0e04e27403c309d9b1e87c70fadfc6a55af504178183dee9b948ee23e8d; apply-check, source validator, detached-copy tests in C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage1-evolution-hth4rwom\\tests.log."
+    }
+  ],
+  "evolution": {
+    "status": "staged",
+    "evidence": [
+      "patch"
+    ]
+  },
+  "self_audit": [
+    "Twelve live values agreed with independent commands for the final observation window.",
+    "Both protocol eras and Codex isolated profiles returned matching text and structured values.",
+    "Git metadata fingerprints agreed and a denied project never constructed the reader.",
+    "Provider telemetry and live failure causes were unavailable. Claude remains deferred and remote deployment was outside the scope."
+  ],
+  "remaining": [
+    "Stage 0C: retest Claude only when eligible subscription and director approval are available.",
+    "Constitution proposal requires later review and independent acceptance before adoption."
+  ]
+}

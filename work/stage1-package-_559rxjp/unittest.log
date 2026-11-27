@@ -1,0 +1,30 @@
+test_capped_process_output_and_deadline (test_repo_health.RepositoryTests.test_capped_process_output_and_deadline) ... ok
+test_failed_jobs_preserve_step_and_unknown_cause (test_repo_health.RepositoryTests.test_failed_jobs_preserve_step_and_unknown_cause) ... ok
+test_graph_counts_preserve_ahead_behind_direction (test_repo_health.RepositoryTests.test_graph_counts_preserve_ahead_behind_direction) ... ok
+test_invalid_and_denied_requests_do_not_construct_reader (test_repo_health.RepositoryTests.test_invalid_and_denied_requests_do_not_construct_reader) ... ok
+test_origin_mismatch_stops_git_after_identity (test_repo_health.RepositoryTests.test_origin_mismatch_stops_git_after_identity) ... ok
+test_renamed_original_is_not_a_second_status_record (test_repo_health.RepositoryTests.test_renamed_original_is_not_a_second_status_record) ... ok
+test_cancelled_call_gets_no_reply (test_repo_health.TransportTests.test_cancelled_call_gets_no_reply) ... ok
+test_legacy_initialization_and_denial_payload_parity (test_repo_health.TransportTests.test_legacy_initialization_and_denial_payload_parity) ... ok
+test_modern_discovery_bad_version_and_oversize_recovery (test_repo_health.TransportTests.test_modern_discovery_bad_version_and_oversize_recovery) ... ok
+test_size_limit_keeps_field_dispositions (test_repo_health.TransportTests.test_size_limit_keeps_field_dispositions) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.348s
+
+OK
+test_capped_process_output_and_deadline (test_repo_health.RepositoryTests) ... ok
+test_failed_jobs_preserve_step_and_unknown_cause (test_repo_health.RepositoryTests) ... ok
+test_graph_counts_preserve_ahead_behind_direction (test_repo_health.RepositoryTests) ... ok
+test_invalid_and_denied_requests_do_not_construct_reader (test_repo_health.RepositoryTests) ... ok
+test_origin_mismatch_stops_git_after_identity (test_repo_health.RepositoryTests) ... ok
+test_renamed_original_is_not_a_second_status_record (test_repo_health.RepositoryTests) ... ok
+test_cancelled_call_gets_no_reply (test_repo_health.TransportTests) ... ok
+test_legacy_initialization_and_denial_payload_parity (test_repo_health.TransportTests) ... ok
+test_modern_discovery_bad_version_and_oversize_recovery (test_repo_health.TransportTests) ... ok
+test_size_limit_keeps_field_dispositions (test_repo_health.TransportTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.342s
+
+OK

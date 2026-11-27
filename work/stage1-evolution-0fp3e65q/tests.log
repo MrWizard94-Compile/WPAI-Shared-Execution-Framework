@@ -1,0 +1,214 @@
+test_accepts_canonical_url_without_confusing_old_repo_slug_with_skill (test_adoption.AdoptionCheckTests.test_accepts_canonical_url_without_confusing_old_repo_slug_with_skill) ... ok
+test_allows_explicit_historical_recovery_and_inert_legacy_export (test_adoption.AdoptionCheckTests.test_allows_explicit_historical_recovery_and_inert_legacy_export) ... ok
+test_deleted_tracked_soul_file_is_not_a_retained_artifact (test_adoption.AdoptionCheckTests.test_deleted_tracked_soul_file_is_not_a_retained_artifact) ... ok
+test_detects_active_soul_law_reference_without_flagging_history (test_adoption.AdoptionCheckTests.test_detects_active_soul_law_reference_without_flagging_history) ... ok
+test_detects_floating_canonical_raw_url_only_in_workflows (test_adoption.AdoptionCheckTests.test_detects_floating_canonical_raw_url_only_in_workflows) ... ok
+test_detects_ignored_agent_artifacts_without_crawling_ignored_dependencies (test_adoption.AdoptionCheckTests.test_detects_ignored_agent_artifacts_without_crawling_ignored_dependencies) ... ok
+test_detects_legacy_storage_sent_to_runtime_prompt (test_adoption.AdoptionCheckTests.test_detects_legacy_storage_sent_to_runtime_prompt) ... ok
+test_detects_old_pack_and_ci_consumer (test_adoption.AdoptionCheckTests.test_detects_old_pack_and_ci_consumer) ... ok
+test_detects_retired_pointer_and_pre_pack_backups_by_path (test_adoption.AdoptionCheckTests.test_detects_retired_pointer_and_pre_pack_backups_by_path) ... ok
+test_detects_untracked_full_soul_without_following_links (test_adoption.AdoptionCheckTests.test_detects_untracked_full_soul_without_following_links) ... ok
+test_empty_retired_directory_is_not_shadow_law (test_adoption.AdoptionCheckTests.test_empty_retired_directory_is_not_shadow_law) ... ok
+test_explicit_filesystem_mode_audits_ignored_subproject_and_built_output (test_adoption.AdoptionCheckTests.test_explicit_filesystem_mode_audits_ignored_subproject_and_built_output) ... ok
+test_filesystem_mode_can_pass_clean_ignored_project_without_git (test_adoption.AdoptionCheckTests.test_filesystem_mode_can_pass_clean_ignored_project_without_git) ... ok
+test_filesystem_mode_limit_never_returns_a_false_pass (test_adoption.AdoptionCheckTests.test_filesystem_mode_limit_never_returns_a_false_pass) ... ok
+test_filesystem_mode_reports_links_and_nested_repositories (test_adoption.AdoptionCheckTests.test_filesystem_mode_reports_links_and_nested_repositories) ... ok
+test_first_link_stops_before_descendant_metadata_and_rejects_traversal (test_adoption.AdoptionCheckTests.test_first_link_stops_before_descendant_metadata_and_rejects_traversal) ... ok
+test_git_tracked_descendants_of_linked_directory_are_not_read (test_adoption.AdoptionCheckTests.test_git_tracked_descendants_of_linked_directory_are_not_read) ... ok
+test_linked_agent_directory_is_reported_without_reading_target (test_adoption.AdoptionCheckTests.test_linked_agent_directory_is_reported_without_reading_target) ... ok
+test_linked_root_is_rejected_before_git_or_filesystem_scan (test_adoption.AdoptionCheckTests.test_linked_root_is_rejected_before_git_or_filesystem_scan) ... ok
+test_native_jvm_and_shell_consumers_are_not_invisible_to_audit (test_adoption.AdoptionCheckTests.test_native_jvm_and_shell_consumers_are_not_invisible_to_audit) ... ok
+test_native_text_keeps_size_bounds_and_binary_artifacts_are_not_decoded (test_adoption.AdoptionCheckTests.test_native_text_keeps_size_bounds_and_binary_artifacts_are_not_decoded) ... ok
+test_ordinary_leaf_symlink_is_unresolved_coverage_not_a_clean_scan (test_adoption.AdoptionCheckTests.test_ordinary_leaf_symlink_is_unresolved_coverage_not_a_clean_scan) ... ok
+test_requires_literal_commit_pin_for_canonical_workflow_checkout (test_adoption.AdoptionCheckTests.test_requires_literal_commit_pin_for_canonical_workflow_checkout) ... ok
+test_bypass_wildcards_disabled_or_extra_restrictions_fail (test_branch_policy.BranchPolicyTests.test_bypass_wildcards_disabled_or_extra_restrictions_fail) ... ok
+test_cli_never_confuses_outage_redaction_drift_and_success (test_branch_policy.BranchPolicyTests.test_cli_never_confuses_outage_redaction_drift_and_success) ... ok
+test_disabled_automatic_deletion_or_changed_default_fails (test_branch_policy.BranchPolicyTests.test_disabled_automatic_deletion_or_changed_default_fails) ... ok
+test_effective_creation_rule_must_cover_only_prohibited_names (test_branch_policy.BranchPolicyTests.test_effective_creation_rule_must_cover_only_prohibited_names) ... ok
+test_main_alone_and_one_review_slot_pass (test_branch_policy.BranchPolicyTests.test_main_alone_and_one_review_slot_pass) ... ok
+test_public_archived_patches_match_manifest_and_are_outside_binding_set (test_branch_policy.BranchPolicyTests.test_public_archived_patches_match_manifest_and_are_outside_binding_set) ... ok
+test_third_branch_missing_main_duplicate_or_incomplete_listing_fails (test_branch_policy.BranchPolicyTests.test_third_branch_missing_main_duplicate_or_incomplete_listing_fails) ... ok
+test_cleanup_interrupted_after_backup_deletion_resumes (test_distribution.DistributionTests.test_cleanup_interrupted_after_backup_deletion_resumes) ... ok
+test_commit_record_failure_rolls_back_both_targets (test_distribution.DistributionTests.test_commit_record_failure_rolls_back_both_targets) ... ok
+test_failed_journal_preparation_never_touches_mirror (test_distribution.DistributionTests.test_failed_journal_preparation_never_touches_mirror) ... ok
+test_interrupted_committed_cleanup_finishes_without_rollback (test_distribution.DistributionTests.test_interrupted_committed_cleanup_finishes_without_rollback) ... ok
+test_interrupted_install_recovers_on_next_sync (test_distribution.DistributionTests.test_interrupted_install_recovers_on_next_sync) ... ok
+test_interrupted_preparation_is_discarded_before_retry (test_distribution.DistributionTests.test_interrupted_preparation_is_discarded_before_retry) ... ok
+test_interrupted_second_target_rolls_back_batch_before_retry (test_distribution.DistributionTests.test_interrupted_second_target_rolls_back_batch_before_retry) ... ok
+test_overlapping_processes_cannot_recover_or_install_out_of_order (test_distribution.DistributionTests.test_overlapping_processes_cannot_recover_or_install_out_of_order) ... ok
+test_prunes_only_previously_generated_files (test_distribution.DistributionTests.test_prunes_only_previously_generated_files) ... ok
+test_recover_only_cli_rolls_back_without_fetching_source (test_distribution.DistributionTests.test_recover_only_cli_rolls_back_without_fetching_source) ... ok
+test_recovery_preserves_post_interruption_user_edit (test_distribution.DistributionTests.test_recovery_preserves_post_interruption_user_edit) ... ok
+test_rejects_foreign_lock_file_without_overwriting_it (test_distribution.DistributionTests.test_rejects_foreign_lock_file_without_overwriting_it) ... ok
+test_rejects_modified_generated_file (test_distribution.DistributionTests.test_rejects_modified_generated_file) ... ok
+test_rejects_modified_or_unknown_files_before_writing (test_distribution.DistributionTests.test_rejects_modified_or_unknown_files_before_writing) ... ok
+test_rejects_traversal_and_foreign_manifest (test_distribution.DistributionTests.test_rejects_traversal_and_foreign_manifest) ... ok
+test_same_commit_manifest_and_unknown_file_preservation (test_distribution.DistributionTests.test_same_commit_manifest_and_unknown_file_preservation) ... ok
+test_second_target_write_failure_rolls_back_both_mirrors (test_distribution.DistributionTests.test_second_target_write_failure_rolls_back_both_mirrors) ... ok
+test_agents_version_only_is_not_evolution (test_evolution_guard.EvolutionGuardTests.test_agents_version_only_is_not_evolution) ... ok
+test_base_branch_drift_uses_merge_base_content (test_evolution_guard.EvolutionGuardTests.test_base_branch_drift_uses_merge_base_content) ... ok
+test_cli_checks_real_commits (test_evolution_guard.EvolutionGuardTests.test_cli_checks_real_commits) ... ok
+test_each_known_version_surface_is_ignored_independently (test_evolution_guard.EvolutionGuardTests.test_each_known_version_surface_is_ignored_independently) ... ok
+test_exact_rename_alone_is_not_evolution (test_evolution_guard.EvolutionGuardTests.test_exact_rename_alone_is_not_evolution) ... ok
+test_invalid_base_or_malformed_manifest_fails_closed (test_evolution_guard.EvolutionGuardTests.test_invalid_base_or_malformed_manifest_fails_closed) ... ok
+test_new_source_and_deleted_source_are_candidates (test_evolution_guard.EvolutionGuardTests.test_new_source_and_deleted_source_are_candidates) ... ok
+test_no_committed_change_and_missing_required_metadata_fail (test_evolution_guard.EvolutionGuardTests.test_no_committed_change_and_missing_required_metadata_fail) ... ok
+test_python_indentation_change_passes_with_review_qualification (test_evolution_guard.EvolutionGuardTests.test_python_indentation_change_passes_with_review_qualification) ... ok
+test_semantic_whitespace_and_version_literals_are_preserved (test_evolution_guard.EvolutionGuardTests.test_semantic_whitespace_and_version_literals_are_preserved) ... ok
+test_skill_body_change_remains_a_candidate (test_evolution_guard.EvolutionGuardTests.test_skill_body_change_remains_a_candidate) ... ok
+test_source_json_formatting_and_version_only_fail (test_evolution_guard.EvolutionGuardTests.test_source_json_formatting_and_version_only_fail) ... ok
+test_source_manifest_change_remains_a_candidate (test_evolution_guard.EvolutionGuardTests.test_source_manifest_change_remains_a_candidate) ... ok
+test_synchronized_release_versions_are_not_evolution (test_evolution_guard.EvolutionGuardTests.test_synchronized_release_versions_are_not_evolution) ... ok
+test_version_must_increase_numerically (test_evolution_guard.EvolutionGuardTests.test_version_must_increase_numerically) ... ok
+test_workflow_only_change_does_not_expand_existing_contract (test_evolution_guard.EvolutionGuardTests.test_workflow_only_change_does_not_expand_existing_contract) ... ok
+test_clean_checkout_of_frozen_sha_passes (test_frozen_load.FrozenLoadTests.test_clean_checkout_of_frozen_sha_passes) ... ok
+test_cli_matching_loader_and_failure_exit_codes (test_frozen_load.FrozenLoadTests.test_cli_matching_loader_and_failure_exit_codes) ... ok
+test_cli_reports_stale_loader_without_failing_integrity (test_frozen_load.FrozenLoadTests.test_cli_reports_stale_loader_without_failing_integrity) ... ok
+test_hash_check_catches_change_that_git_status_hides (test_frozen_load.FrozenLoadTests.test_hash_check_catches_change_that_git_status_hides) ... ok
+test_loader_version_reads_quoted_and_bare_headers (test_frozen_load.FrozenLoadTests.test_loader_version_reads_quoted_and_bare_headers) ... ok
+test_rejects_binding_file_missing_from_revision_and_unsafe_paths (test_frozen_load.FrozenLoadTests.test_rejects_binding_file_missing_from_revision_and_unsafe_paths) ... ok
+test_rejects_directory_that_is_not_a_checkout (test_frozen_load.FrozenLoadTests.test_rejects_directory_that_is_not_a_checkout) ... ok
+test_rejects_modified_tracked_file (test_frozen_load.FrozenLoadTests.test_rejects_modified_tracked_file) ... ok
+test_rejects_short_sha_branch_name_and_other_head (test_frozen_load.FrozenLoadTests.test_rejects_short_sha_branch_name_and_other_head) ... ok
+test_version_comparison_is_numeric_not_textual (test_frozen_load.FrozenLoadTests.test_version_comparison_is_numeric_not_textual) ... ok
+test_case_distinct_roots_are_not_deduplicated (test_inventory_copies.InventoryCopiesTests.test_case_distinct_roots_are_not_deduplicated) ... skipped 'case-distinct roots require a case-sensitive filesystem'
+test_child_failure_marks_its_root_partial_not_inaccessible (test_inventory_copies.InventoryCopiesTests.test_child_failure_marks_its_root_partial_not_inaccessible) ... ok
+test_cli_rejects_an_empty_default_root_list (test_inventory_copies.InventoryCopiesTests.test_cli_rejects_an_empty_default_root_list) ... ok
+test_cli_returns_nonzero_after_writing_a_report_with_access_gaps (test_inventory_copies.InventoryCopiesTests.test_cli_returns_nonzero_after_writing_a_report_with_access_gaps) ... ok
+test_cli_succeeds_only_for_a_readable_root (test_inventory_copies.InventoryCopiesTests.test_cli_succeeds_only_for_a_readable_root) ... ok
+test_coverage_attributes_equivalent_alias_errors (test_inventory_copies.InventoryCopiesTests.test_coverage_attributes_equivalent_alias_errors) ... ok
+test_detects_content_signature_in_renamed_file (test_inventory_copies.InventoryCopiesTests.test_detects_content_signature_in_renamed_file) ... ok
+test_detects_path_candidate_even_for_binary_file (test_inventory_copies.InventoryCopiesTests.test_detects_path_candidate_even_for_binary_file) ... ok
+test_detects_pre_pack_backup_without_constitution_content_marker (test_inventory_copies.InventoryCopiesTests.test_detects_pre_pack_backup_without_constitution_content_marker) ... ok
+test_interrupted_scan_resumes_without_partial_final_report_or_duplicate_hits (test_inventory_copies.InventoryCopiesTests.test_interrupted_scan_resumes_without_partial_final_report_or_duplicate_hits) ... WPAI Constitution mirror recovery complete
+PROGRESS: 1 directories, 0 files, 0 hits, 0 access errors
+PROGRESS: 2 directories, 1 files, 1 hits, 0 access errors
+PROGRESS: 3 directories, 2 files, 2 hits, 0 access errors
+ok
+test_overlapping_roots_are_rejected_before_checkpoint (test_inventory_copies.InventoryCopiesTests.test_overlapping_roots_are_rejected_before_checkpoint) ... ok
+test_real_windows_alias_excludes_checkpoint_and_rejects_overlap (test_inventory_copies.InventoryCopiesTests.test_real_windows_alias_excludes_checkpoint_and_rejects_overlap) ... ok
+test_reparse_error_keeps_lexical_root_attribution (test_inventory_copies.InventoryCopiesTests.test_reparse_error_keeps_lexical_root_attribution) ... ok
+test_report_identifies_an_inaccessible_root_without_claiming_absence (test_inventory_copies.InventoryCopiesTests.test_report_identifies_an_inaccessible_root_without_claiming_absence) ... ok
+test_resume_accepts_a_frontier_on_another_windows_drive (test_inventory_copies.InventoryCopiesTests.test_resume_accepts_a_frontier_on_another_windows_drive) ... PROGRESS: 1 directories, 0 files, 0 hits, 0 access errors
+PROGRESS: 2 directories, 0 files, 0 hits, 0 access errors
+ok
+test_resume_rejects_a_frontier_through_a_parent_link (test_inventory_copies.InventoryCopiesTests.test_resume_rejects_a_frontier_through_a_parent_link) ... ok
+test_resume_rejects_changed_scan_parameters_and_escaped_frontier (test_inventory_copies.InventoryCopiesTests.test_resume_rejects_changed_scan_parameters_and_escaped_frontier) ... PROGRESS: 1 directories, 0 files, 0 hits, 0 access errors
+ok
+test_scan_does_not_follow_directory_symlink (test_inventory_copies.InventoryCopiesTests.test_scan_does_not_follow_directory_symlink) ... ok
+test_scanner_excludes_its_own_checkpoint_inside_scanned_root (test_inventory_copies.InventoryCopiesTests.test_scanner_excludes_its_own_checkpoint_inside_scanned_root) ... PROGRESS: 1 directories, 1 files, 1 hits, 0 access errors
+PROGRESS: 2 directories, 1 files, 1 hits, 0 access errors
+ok
+test_unresolvable_error_remains_an_incomplete_coverage_gap (test_inventory_copies.InventoryCopiesTests.test_unresolvable_error_remains_an_incomplete_coverage_gap) ... ok
+test_absolute_traversal_duplicate_and_mismatched_patch_paths_fail (test_proposal_reviews.ProposalRegisterTests.test_absolute_traversal_duplicate_and_mismatched_patch_paths_fail) ... ok
+test_all_reviewed_local_variants_and_historical_closures_remain_traceable (test_proposal_reviews.ProposalRegisterTests.test_all_reviewed_local_variants_and_historical_closures_remain_traceable) ... ok
+test_corrupt_bytes_false_digest_or_unregistered_archive_file_fails (test_proposal_reviews.ProposalRegisterTests.test_corrupt_bytes_false_digest_or_unregistered_archive_file_fails) ... ok
+test_current_register_and_original_git_archive_have_independent_provenance (test_proposal_reviews.ProposalRegisterTests.test_current_register_and_original_git_archive_have_independent_provenance) ... ERROR
+test_invalid_json_duplicate_keys_and_mirror_exposure_fail_closed (test_proposal_reviews.ProposalRegisterTests.test_invalid_json_duplicate_keys_and_mirror_exposure_fail_closed) ... ok
+test_linked_evidence_is_rejected_without_reading_target (test_proposal_reviews.ProposalRegisterTests.test_linked_evidence_is_rejected_without_reading_target) ... ok
+test_missing_reason_bad_home_status_and_duplicate_identity_fail (test_proposal_reviews.ProposalRegisterTests.test_missing_reason_bad_home_status_and_duplicate_identity_fail) ... ok
+test_private_raw_patch_and_unsupported_historical_closure_fail (test_proposal_reviews.ProposalRegisterTests.test_private_raw_patch_and_unsupported_historical_closure_fail) ... ok
+test_sop_canonical_home_can_resolve_a_proposal (test_proposal_reviews.ProposalRegisterTests.test_sop_canonical_home_can_resolve_a_proposal) ... ok
+test_unavailable_oversized_evidence_and_future_resolution_fail (test_proposal_reviews.ProposalRegisterTests.test_unavailable_oversized_evidence_and_future_resolution_fail) ... ok
+test_valid_evidence_and_visible_pending_have_different_completion_results (test_proposal_reviews.ProposalRegisterTests.test_valid_evidence_and_visible_pending_have_different_completion_results) ... ok
+test_current_source_and_reflowed_prose_keep_reviewed_contracts (test_proposal_reviews.ReviewedEvidenceTests.test_current_source_and_reflowed_prose_keep_reviewed_contracts) ... ERROR
+test_full_source_validator_rejects_a_removed_reviewed_clause (test_proposal_reviews.ReviewedEvidenceTests.test_full_source_validator_rejects_a_removed_reviewed_clause) ... ok
+test_guard_cannot_borrow_missing_clause_from_another_section_or_archive (test_proposal_reviews.ReviewedEvidenceTests.test_guard_cannot_borrow_missing_clause_from_another_section_or_archive) ... ok
+test_missing_home_and_sop_routes_fail (test_proposal_reviews.ReviewedEvidenceTests.test_missing_home_and_sop_routes_fail) ... ok
+test_removing_each_distinct_evidence_boundary_fails (test_proposal_reviews.ReviewedEvidenceTests.test_removing_each_distinct_evidence_boundary_fails) ... ok
+test_all_bypass_paths_and_missing_rules_fail (test_repository_ruleset.RulesetAuditTests.test_all_bypass_paths_and_missing_rules_fail) ... ok
+test_approved_policy_passes (test_repository_ruleset.RulesetAuditTests.test_approved_policy_passes) ... ok
+test_cli_distinguishes_redaction_outage_and_policy_drift (test_repository_ruleset.RulesetAuditTests.test_cli_distinguishes_redaction_outage_and_policy_drift) ... ok
+test_duplicate_or_incomplete_listing_fails (test_repository_ruleset.RulesetAuditTests.test_duplicate_or_incomplete_listing_fails) ... ok
+test_assumption_rule_rejects_lost_unread_input_safeguards (test_source_validation.SourceValidationTests.test_assumption_rule_rejects_lost_unread_input_safeguards) ... ok
+test_cache_link_rule_rejects_a_one_sided_miss (test_source_validation.SourceValidationTests.test_cache_link_rule_rejects_a_one_sided_miss) ... ok
+test_completeness_done_gate_and_routes_cannot_disappear (test_source_validation.SourceValidationTests.test_completeness_done_gate_and_routes_cannot_disappear) ... ok
+test_completeness_rule_guards_named_control_clauses (test_source_validation.SourceValidationTests.test_completeness_rule_guards_named_control_clauses) ... ok
+test_completeness_rule_requires_a_detailed_core_home (test_source_validation.SourceValidationTests.test_completeness_rule_requires_a_detailed_core_home) ... ok
+test_completeness_slogan_alone_is_not_an_operational_rule (test_source_validation.SourceValidationTests.test_completeness_slogan_alone_is_not_an_operational_rule) ... ok
+test_craft_rule_rejects_missing_or_self_certified_oracle (test_source_validation.SourceValidationTests.test_craft_rule_rejects_missing_or_self_certified_oracle) ... ok
+test_current_source_valid (test_source_validation.SourceValidationTests.test_current_source_valid) ... ok
+test_freeze_rule_rejects_lost_load_integrity_safeguards (test_source_validation.SourceValidationTests.test_freeze_rule_rejects_lost_load_integrity_safeguards) ... ok
+test_missing_binding_file_fails (test_source_validation.SourceValidationTests.test_missing_binding_file_fails) ... ok
+test_quality_done_and_gate_wiring_cannot_disappear (test_source_validation.SourceValidationTests.test_quality_done_and_gate_wiring_cannot_disappear) ... ok
+test_quality_guard_accepts_markdown_reflow_and_case (test_source_validation.SourceValidationTests.test_quality_guard_accepts_markdown_reflow_and_case) ... ok
+test_quality_guard_cannot_borrow_from_another_section (test_source_validation.SourceValidationTests.test_quality_guard_cannot_borrow_from_another_section) ... ok
+test_quality_loader_and_sop_routes_cannot_disappear (test_source_validation.SourceValidationTests.test_quality_loader_and_sop_routes_cannot_disappear) ... ok
+test_quality_rule_guards_every_operational_clause (test_source_validation.SourceValidationTests.test_quality_rule_guards_every_operational_clause) ... ok
+test_quality_rule_is_enforced_as_a_protected_rule (test_source_validation.SourceValidationTests.test_quality_rule_is_enforced_as_a_protected_rule) ... ok
+test_quality_rule_must_remain_in_the_protected_core (test_source_validation.SourceValidationTests.test_quality_rule_must_remain_in_the_protected_core) ... ok
+test_quality_rule_ranks_immediately_after_human_authority (test_source_validation.SourceValidationTests.test_quality_rule_ranks_immediately_after_human_authority) ... ok
+test_quality_rule_requires_a_detailed_core_home (test_source_validation.SourceValidationTests.test_quality_rule_requires_a_detailed_core_home) ... ok
+test_quality_slogan_alone_is_not_an_operational_rule (test_source_validation.SourceValidationTests.test_quality_slogan_alone_is_not_an_operational_rule) ... ok
+test_resource_rule_requires_host_level_acceptance (test_source_validation.SourceValidationTests.test_resource_rule_requires_host_level_acceptance) ... ok
+test_resourcefulness_guard_accepts_markdown_reflow_and_case (test_source_validation.SourceValidationTests.test_resourcefulness_guard_accepts_markdown_reflow_and_case) ... ok
+test_resourcefulness_guard_cannot_borrow_from_another_section (test_source_validation.SourceValidationTests.test_resourcefulness_guard_cannot_borrow_from_another_section) ... ok
+test_resourcefulness_loader_and_sop_routes_cannot_disappear (test_source_validation.SourceValidationTests.test_resourcefulness_loader_and_sop_routes_cannot_disappear) ... ok
+test_resourcefulness_rule_guards_every_operational_clause (test_source_validation.SourceValidationTests.test_resourcefulness_rule_guards_every_operational_clause) ... ok
+test_resourcefulness_rule_must_remain_in_the_protected_core (test_source_validation.SourceValidationTests.test_resourcefulness_rule_must_remain_in_the_protected_core) ... ok
+test_resourcefulness_rule_requires_a_detailed_core_home (test_source_validation.SourceValidationTests.test_resourcefulness_rule_requires_a_detailed_core_home) ... ok
+test_resourcefulness_slogan_alone_is_not_an_operational_rule (test_source_validation.SourceValidationTests.test_resourcefulness_slogan_alone_is_not_an_operational_rule) ... ok
+test_source_validation_calls_the_quality_guard (test_source_validation.SourceValidationTests.test_source_validation_calls_the_quality_guard) ... ok
+test_source_validation_calls_the_resourcefulness_guard (test_source_validation.SourceValidationTests.test_source_validation_calls_the_resourcefulness_guard) ... ok
+test_approval_and_destination_observation_are_both_required (test_workflow.WorkflowRecordTests.test_approval_and_destination_observation_are_both_required) ... ok
+test_changed_candidate_invalidates_old_pass_evidence (test_workflow.WorkflowRecordTests.test_changed_candidate_invalidates_old_pass_evidence) ... ok
+test_cli_distinguishes_unreadable_invalid_partial_and_complete (test_workflow.WorkflowRecordTests.test_cli_distinguishes_unreadable_invalid_partial_and_complete) ... ok
+test_complete_scope_may_have_no_remaining_work (test_workflow.WorkflowRecordTests.test_complete_scope_may_have_no_remaining_work) ... ok
+test_equivalence_review_can_reference_old_and_current_evidence (test_workflow.WorkflowRecordTests.test_equivalence_review_can_reference_old_and_current_evidence) ... ok
+test_missing_duplicate_reordered_and_invalid_stage_ids_fail (test_workflow.WorkflowRecordTests.test_missing_duplicate_reordered_and_invalid_stage_ids_fail) ... ok
+test_n_a_needs_reason_and_cannot_waive_verification (test_workflow.WorkflowRecordTests.test_n_a_needs_reason_and_cannot_waive_verification) ... ok
+test_observed_authorized_publication_can_close (test_workflow.WorkflowRecordTests.test_observed_authorized_publication_can_close) ... ok
+test_partial_and_stop_records_remain_honest_without_completing_evolution (test_workflow.WorkflowRecordTests.test_partial_and_stop_records_remain_honest_without_completing_evolution) ... ok
+test_requested_publication_cannot_be_hidden_as_not_applicable (test_workflow.WorkflowRecordTests.test_requested_publication_cannot_be_hidden_as_not_applicable) ... ok
+test_review_only_can_complete_with_staged_evolution_and_no_publication (test_workflow.WorkflowRecordTests.test_review_only_can_complete_with_staged_evolution_and_no_publication) ... ok
+test_section_zero_cannot_reuse_old_candidate_after_other_evidence_refresh (test_workflow.WorkflowRecordTests.test_section_zero_cannot_reuse_old_candidate_after_other_evidence_refresh) ... ok
+test_source_qa_cannot_substitute_for_requested_live_deployment (test_workflow.WorkflowRecordTests.test_source_qa_cannot_substitute_for_requested_live_deployment) ... ok
+test_template_is_not_a_completed_run (test_workflow.WorkflowRecordTests.test_template_is_not_a_completed_run) ... ok
+test_undefined_duplicate_and_missing_evidence_fail (test_workflow.WorkflowRecordTests.test_undefined_duplicate_and_missing_evidence_fail) ... ok
+test_unknown_and_malformed_fields_fail_without_exceptions (test_workflow.WorkflowRecordTests.test_unknown_and_malformed_fields_fail_without_exceptions) ... ok
+test_workflow_and_section_zero_cannot_hide_open_or_failed_gates (test_workflow.WorkflowRecordTests.test_workflow_and_section_zero_cannot_hide_open_or_failed_gates) ... ok
+test_complete_candidate_routes_and_stages_pass (test_workflow.WorkflowSourceTests.test_complete_candidate_routes_and_stages_pass) ... ok
+test_each_deleted_stage_is_detected (test_workflow.WorkflowSourceTests.test_each_deleted_stage_is_detected) ... ok
+test_gate_safeguard_cannot_be_borrowed_from_another_stage (test_workflow.WorkflowSourceTests.test_gate_safeguard_cannot_be_borrowed_from_another_stage) ... ok
+test_removing_each_entrypoint_route_is_detected (test_workflow.WorkflowSourceTests.test_removing_each_entrypoint_route_is_detected) ... ok
+test_rule_name_only_sop_cannot_replace_execution_workflow (test_workflow.WorkflowSourceTests.test_rule_name_only_sop_cannot_replace_execution_workflow) ... ok
+
+======================================================================
+ERROR: test_current_register_and_original_git_archive_have_independent_provenance (test_proposal_reviews.ProposalRegisterTests.test_current_register_and_original_git_archive_have_independent_provenance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\LOCAL_USER\Documents\Codex\2026-11-26\new-chat\work\stage1-evolution-0fp3e65q\tests\test_proposal_reviews.py", line 156, in test_current_register_and_original_git_archive_have_independent_provenance
+    original = json.loads(blob("evolution/pending/manifest.json"))
+                          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOCAL_USER\Documents\Codex\2026-11-26\new-chat\work\stage1-evolution-0fp3e65q\tests\test_proposal_reviews.py", line 154, in blob
+    return subprocess.run(["git", "show", BASE + ":" + relative], cwd=ROOT,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          check=True, capture_output=True).stdout
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LOCAL_USER\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', 'show', 'c5331af55d3aadf30633c96ae2404845ec830723:evolution/pending/manifest.json']' returned non-zero exit status 128.
+
+======================================================================
+ERROR: test_current_source_and_reflowed_prose_keep_reviewed_contracts (test_proposal_reviews.ReviewedEvidenceTests.test_current_source_and_reflowed_prose_keep_reviewed_contracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\LOCAL_USER\Documents\Codex\2026-11-26\new-chat\work\stage1-evolution-0fp3e65q\tests\test_proposal_reviews.py", line 197, in test_current_source_and_reflowed_prose_keep_reviewed_contracts
+    self.assertEqual(VALIDATOR.reviewed_evidence_contract_errors(self.root), [])
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\LOCAL_USER\Documents\Codex\2026-11-26\new-chat\work\stage1-evolution-0fp3e65q\tools\validate-source.py", line 284, in reviewed_evidence_contract_errors
+    body = (root / relative).read_text(encoding="utf-8-sig")
+  File "C:\Users\LOCAL_USER\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 788, in read_text
+    return f.read()
+           ~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+  File "C:\Users\LOCAL_USER\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\utf_8_sig.py", line 69, in _buffer_decode
+    return codecs.utf_8_decode(input, errors, final)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x94 in position 331: invalid start byte
+
+----------------------------------------------------------------------
+Ran 165 tests in 36.761s
+
+FAILED (errors=2, skipped=1)

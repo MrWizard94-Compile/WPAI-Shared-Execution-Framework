@@ -1,0 +1,300 @@
+{
+  "scope": "Control-plane lifecycle only. No session/prompt request was sent.",
+  "installedGrokAcpCapabilities": {
+    "protocolVersion": 1,
+    "sessionCapabilities": {
+      "list": {},
+      "resume": {},
+      "close": {}
+    },
+    "authMethodIds": [
+      "cached_token",
+      "grok.com"
+    ],
+    "metadataKeys": [
+      "currentWorkingDirectory",
+      "agentVersion",
+      "agentId",
+      "agentInstanceId",
+      "hostname",
+      "metadata",
+      "grokShell",
+      "defaultAuthMethodId",
+      "x.ai/mcp/sdk",
+      "x.ai/pluginDirs",
+      "modelState",
+      "mcpServers",
+      "mcpApps",
+      "availableCommands",
+      "cancelRewind",
+      "sessionRecap",
+      "feedbackTraceOffer",
+      "voiceMode"
+    ],
+    "exitOnStdinEof": 0
+  },
+  "effectivePermissionModeProbe": {
+    "availableConfigOptions": [
+      "model",
+      "reasoning_effort"
+    ],
+    "requestedMethod": "session/set_mode",
+    "reason": "session/set_mode: {'code': -32602, 'message': 'Invalid params', 'data': 'unknown mode id: dontAsk'}",
+    "documentedExistingAuthRoute": "Existing cached xAI OAuth"
+  },
+  "controlledClose": {
+    "version": "grok 1.0.92 (b06756fd6256) [stable]",
+    "timestampUTC": "2026-11-26T20:32:32.859309+00:00",
+    "argv": [
+      "C:\\Users\\LOCAL_USER\\.grok\\bin\\grok.exe",
+      "--no-auto-update",
+      "--permission-mode",
+      "dontAsk",
+      "--no-subagents",
+      "--no-memory",
+      "--no-plan",
+      "--disable-web-search",
+      "--allow",
+      "MCPTool(wpai_probe__probe_info)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_echo)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_validation)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_evidence_page)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_denied_operation)",
+      "--deny",
+      "Bash",
+      "--deny",
+      "Read",
+      "--deny",
+      "Edit",
+      "--deny",
+      "Grep",
+      "--deny",
+      "WebFetch",
+      "--deny",
+      "WebSearch",
+      "agent",
+      "--no-leader",
+      "--model",
+      "grok-4.7",
+      "--reasoning-effort",
+      "low",
+      "stdio"
+    ],
+    "artifact": {
+      "probe.py": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+      "launch_probe.py": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683"
+    },
+    "configSHA256": "a68064563281b194ba9d4fb0b438466966b146b309cb7383916bd081ad15f4c1",
+    "requestedModel": "grok-4.7",
+    "launchScope": {
+      "trusted": true,
+      "servers": [
+        [
+          "wpai_probe",
+          "stdio"
+        ]
+      ],
+      "activePlugins": 0,
+      "hooks": 0
+    },
+    "acpSessionCapabilities": {
+      "list": {},
+      "resume": {},
+      "close": {}
+    },
+    "authMethods": [
+      "cached_token",
+      "grok.com"
+    ],
+    "authRoute": "Existing cached xAI OAuth",
+    "modes": {
+      "initial": null,
+      "available": []
+    },
+    "configOptionIds": [
+      "model",
+      "reasoning_effort"
+    ],
+    "observedServerPid": 3792,
+    "modelInvoked": false,
+    "sessionCloseReply": {
+      "_meta": {
+        "x.ai/closeOutcome": "closed"
+      }
+    },
+    "probeAfterSessionClose": {
+      "exited": true,
+      "exitCode": 1
+    },
+    "exit": 0,
+    "forced": false,
+    "probeAfterAcpTransportClose": {
+      "exited": true,
+      "exitCode": 1
+    },
+    "normalConfigUnchanged": true,
+    "seconds": 7.571,
+    "wire": [
+      {
+        "event": "start",
+        "pid": 3792,
+        "build": "0.1.1"
+      },
+      {
+        "event": "negotiate",
+        "protocol": "2025-11-25",
+        "offered": "2025-11-25",
+        "mechanism": "initialize"
+      },
+      {
+        "event": "initialized",
+        "protocol": "2025-11-25"
+      },
+      {
+        "event": "catalog",
+        "protocol": "2025-11-25",
+        "tools": 5
+      }
+    ]
+  },
+  "cleanup": {
+    "liveProbePids": 0,
+    "listenersAtRecordedPids": 0
+  },
+  "interpretation": "The original seven-call headless run did not capture the probe exit code. The independent ACP control run and the later instrumented headless model run each captured probe exit code 1 without EOF. The Grok host exited 0 in both cases. The headless follow-up received exact echo JSON before shutdown.",
+  "headlessModelFollowup": {
+    "scope": "One subscribed synthetic echo through the already verified headless route with a retained read-only Windows process handle.",
+    "execution": {
+      "timestampUTC": "2026-11-26T20:36:10.024858+00:00",
+      "version": "grok 1.0.92 (b06756fd6256) [stable]",
+      "requestedModel": "grok-4.7",
+      "authRoute": "Existing stock xAI OAuth; API key env removed",
+      "cwd": "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0c-zmxauqt5\\grok",
+      "command": [
+        "C:\\Users\\LOCAL_USER\\.grok\\bin\\grok.exe",
+        "--no-auto-update",
+        "--model",
+        "grok-4.7",
+        "--reasoning-effort",
+        "low",
+        "--permission-mode",
+        "dontAsk",
+        "--tools",
+        "read_file",
+        "--disable-web-search",
+        "--no-memory",
+        "--no-subagents",
+        "--no-plan",
+        "--max-turns",
+        "4",
+        "--verbatim",
+        "--output-format",
+        "streaming-json",
+        "--session-id",
+        "ed98a14a-de47-4fd4-8288-bf5954a287b5",
+        "--prompt-file",
+        "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0c-zmxauqt5\\grok-headless-close.prompt.txt",
+        "--allow",
+        "MCPTool(wpai_probe__probe_info)",
+        "--allow",
+        "MCPTool(wpai_probe__probe_echo)",
+        "--allow",
+        "MCPTool(wpai_probe__probe_validation)",
+        "--allow",
+        "MCPTool(wpai_probe__probe_evidence_page)",
+        "--allow",
+        "MCPTool(wpai_probe__probe_denied_operation)",
+        "--deny",
+        "Bash",
+        "--deny",
+        "Read",
+        "--deny",
+        "Edit",
+        "--deny",
+        "Grep",
+        "--deny",
+        "WebFetch",
+        "--deny",
+        "WebSearch"
+      ],
+      "configSHA256": "1b1e2730f80d1376629e798e4b0a01ebc488df756fdfd75c90a3878780384257",
+      "probeSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+      "launcherSHA256": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683",
+      "sessionId": "ed98a14a-de47-4fd4-8288-bf5954a287b5",
+      "clientPid": 13860,
+      "observedServerPid": 20860,
+      "serverObservedLiveBeforeClientExit": true,
+      "exit": 0,
+      "probeAfterClientExit": {
+        "exited": true,
+        "exitCode": 1
+      },
+      "seconds": 5.449,
+      "normalConfigUnchanged": true,
+      "wire": [
+        {
+          "event": "start",
+          "pid": 20860,
+          "build": "0.1.1"
+        },
+        {
+          "event": "negotiate",
+          "protocol": "2025-11-25",
+          "offered": "2025-11-25",
+          "mechanism": "initialize"
+        },
+        {
+          "event": "initialized",
+          "protocol": "2025-11-25"
+        },
+        {
+          "event": "catalog",
+          "protocol": "2025-11-25",
+          "tools": 5
+        },
+        {
+          "event": "call",
+          "protocol": "2025-11-25",
+          "tool": "probe_echo",
+          "outcome": "OK"
+        }
+      ]
+    },
+    "toolEventId": "call-ad0d7d06-04e4-4d18-8b63-3c88e5a7cce7-0",
+    "echo": {
+      "value": {
+        "label": "WPAI",
+        "count": 7,
+        "enabled": true
+      }
+    },
+    "stopReason": "end_turn",
+    "reportedUsage": {
+      "input_tokens": 3351,
+      "cache_read_input_tokens": 9344,
+      "cache_creation_input_tokens": 0,
+      "output_tokens": 268,
+      "reasoning_tokens": 181,
+      "total_tokens": 12963
+    },
+    "reportedModels": {
+      "grok-4.7-build": {
+        "inputTokens": 3351,
+        "outputTokens": 268,
+        "cacheReadInputTokens": 9344,
+        "cacheCreationInputTokens": 0,
+        "modelCalls": 2,
+        "costUSD": 0.012982
+      }
+    },
+    "recordedCliCostUSD": 0.012982,
+    "cleanup": {
+      "liveOriginalProcesses": 0,
+      "listenersAtRecordedPids": 0
+    }
+  }
+}

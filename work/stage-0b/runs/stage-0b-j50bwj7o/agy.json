@@ -1,0 +1,56 @@
+{
+  "case": "agy",
+  "serverSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+  "timestamp": "2026-11-26T20:04:02.429372+00:00",
+  "workspaceMcp": {
+    "exit": 0,
+    "stdout": "No MCP servers configured.\n",
+    "stderr": ""
+  },
+  "registerUser": {
+    "exit": 0,
+    "stdout": "Added MCP server \"wpai_probe\" (stdio)\n",
+    "stderr": ""
+  },
+  "userMcp": {
+    "exit": 0,
+    "stdout": "NAME        TYPE   STATUS   COMMAND/URL\nwpai_probe  stdio  enabled  C:\\Users\\LOCAL_USER\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -I -B C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\launch_probe.py C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0b-j50bwj7o agy\n",
+    "stderr": ""
+  },
+  "acp": {
+    "protocol": 1,
+    "authMethodIds": [
+      "oauth-personal",
+      "oauth-business",
+      "gemini-api-key",
+      "agent-platform"
+    ],
+    "isolatedSessionCreated": true
+  },
+  "process": {
+    "exit": 0,
+    "forced": false
+  },
+  "seconds": 1.27,
+  "wire": [
+    {
+      "event": "start",
+      "pid": 21028,
+      "build": "0.1.1"
+    },
+    {
+      "event": "negotiate",
+      "protocol": "2026-07-28",
+      "mechanism": "server/discover"
+    },
+    {
+      "event": "catalog",
+      "protocol": "2026-07-28",
+      "tools": 5
+    },
+    {
+      "event": "stop",
+      "reason": "eof"
+    }
+  ]
+}

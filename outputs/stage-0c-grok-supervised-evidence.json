@@ -1,0 +1,344 @@
+{
+  "harnessFileInDisposableWorkspace": "work/stage-0b/stage_0c_stdio_owner.py",
+  "harnessSHA256": "729fe9c5f6b5cc38358e4ba6a5e0b15ce5c46a6a021b1ac13343198bd06430d3",
+  "transportControls": {
+    "windowsRejectRemoteClients": true,
+    "onePipeInstance": true,
+    "perTestCapabilityRetained": false,
+    "bytesForwardedWithoutMcpTranslation": true,
+    "onlyOriginalProbeLauncherUsed": true
+  },
+  "control": {
+    "mode": "control",
+    "stage0bProbeSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+    "stage0bLauncherSHA256": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683",
+    "transport": "One-instance Windows local-only named pipe with one-time capability",
+    "supervisorPid": 3112,
+    "launcherPid": 16048,
+    "exactControlReply": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "protocolVersion": "2025-11-25",
+        "serverInfo": {
+          "name": "wpai-stage-0b-probe",
+          "version": "0.1.1"
+        },
+        "capabilities": {
+          "tools": {
+            "listChanged": false
+          }
+        }
+      }
+    },
+    "disconnect": "Windows peer closed",
+    "closedProbeStdin": true,
+    "simulatedRelayExit": 1,
+    "launcherExit": 0,
+    "ownerThreadStopped": true,
+    "relayThreadsStopped": true,
+    "wire": [
+      {
+        "event": "start",
+        "pid": 21792,
+        "build": "0.1.1"
+      },
+      {
+        "event": "negotiate",
+        "protocol": "2025-11-25",
+        "offered": "2025-11-25",
+        "mechanism": "initialize"
+      },
+      {
+        "event": "stop",
+        "reason": "eof"
+      }
+    ]
+  },
+  "live": {
+    "mode": "live",
+    "stage0bProbeSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+    "stage0bLauncherSHA256": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683",
+    "transport": "One-instance Windows local-only named pipe with one-time capability",
+    "supervisorPid": 14980,
+    "disposableConfigSHA256": "fc303d6cf903be27eaed36fd472a1f0210540f89485aa3116199ec5bb9c1fa8c",
+    "argv": [
+      "C:\\Users\\LOCAL_USER\\.grok\\bin\\grok.exe",
+      "--no-auto-update",
+      "--model",
+      "grok-4.7",
+      "--reasoning-effort",
+      "low",
+      "--permission-mode",
+      "dontAsk",
+      "--tools",
+      "read_file",
+      "--disable-web-search",
+      "--no-memory",
+      "--no-subagents",
+      "--no-plan",
+      "--max-turns",
+      "9",
+      "--verbatim",
+      "--output-format",
+      "streaming-json",
+      "--session-id",
+      "7dcf982e-f977-4fe5-8bdb-61cca0b18aa2",
+      "--prompt-file",
+      "C:\\Users\\LOCAL_USER\\Documents\\Codex\\2026-11-26\\new-chat\\work\\stage-0b\\runs\\stage-0c-zmxauqt5\\grok-owner-live.prompt.txt",
+      "--allow",
+      "MCPTool(wpai_probe__probe_info)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_echo)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_validation)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_evidence_page)",
+      "--allow",
+      "MCPTool(wpai_probe__probe_denied_operation)",
+      "--deny",
+      "Bash",
+      "--deny",
+      "Read",
+      "--deny",
+      "Edit",
+      "--deny",
+      "Grep",
+      "--deny",
+      "WebFetch",
+      "--deny",
+      "WebSearch"
+    ],
+    "authRoute": "Existing grok.com OAuth",
+    "installedVersion": "grok 1.0.92 (b06756fd6256) [stable]",
+    "grokPid": 18312,
+    "launcherPid": 11804,
+    "disconnect": "Windows peer closed",
+    "closedProbeStdin": true,
+    "launcherExit": 0,
+    "grokExit": 0,
+    "grokSeconds": 15.269,
+    "normalSettingsUnchanged": true,
+    "ownerThreadStopped": true,
+    "relayThreadsStopped": true,
+    "wire": [
+      {
+        "event": "start",
+        "pid": 6256,
+        "build": "0.1.1"
+      },
+      {
+        "event": "negotiate",
+        "protocol": "2025-11-25",
+        "offered": "2025-11-25",
+        "mechanism": "initialize"
+      },
+      {
+        "event": "initialized",
+        "protocol": "2025-11-25"
+      },
+      {
+        "event": "catalog",
+        "protocol": "2025-11-25",
+        "tools": 5
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_info",
+        "outcome": "OK"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_echo",
+        "outcome": "OK"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_validation",
+        "outcome": "OK"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_denied_operation",
+        "outcome": "DENIED",
+        "protectedActions": 0
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_evidence_page",
+        "outcome": "OK"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_validation",
+        "outcome": "INVALID_INPUT"
+      },
+      {
+        "event": "call",
+        "protocol": "2025-11-25",
+        "tool": "probe_evidence_page",
+        "outcome": "OK"
+      },
+      {
+        "event": "stop",
+        "reason": "eof"
+      }
+    ]
+  },
+  "toolResults": [
+    {
+      "callId": "call-e2a76a5f-c46e-41e2-a26c-6c3cfa1d8c13-0",
+      "tool": "probe_info",
+      "input": {},
+      "isError": false,
+      "jsonText": "{\"server\":\"wpai-stage-0b-probe\",\"build\":\"0.1.1\",\"contract\":\"wpai.probe.v1\",\"protocol\":\"2025-11-25\",\"supported\":[\"2026-07-28\",\"2025-11-25\",\"2025-06-18\"]}",
+      "result": {
+        "server": "wpai-stage-0b-probe",
+        "build": "0.1.1",
+        "contract": "wpai.probe.v1",
+        "protocol": "2025-11-25",
+        "supported": [
+          "2026-07-28",
+          "2025-11-25",
+          "2025-06-18"
+        ]
+      }
+    },
+    {
+      "callId": "call-e2a76a5f-c46e-41e2-a26c-6c3cfa1d8c13-1",
+      "tool": "probe_echo",
+      "input": {
+        "value": {
+          "label": "WPAI",
+          "count": 7,
+          "enabled": true
+        }
+      },
+      "isError": false,
+      "jsonText": "{\"value\":{\"label\":\"WPAI\",\"count\":7,\"enabled\":true}}",
+      "result": {
+        "value": {
+          "label": "WPAI",
+          "count": 7,
+          "enabled": true
+        }
+      }
+    },
+    {
+      "callId": "call-e2a76a5f-c46e-41e2-a26c-6c3cfa1d8c13-2",
+      "tool": "probe_validation",
+      "input": {
+        "count": 9
+      },
+      "isError": false,
+      "jsonText": "{\"valid\":true,\"count\":9}",
+      "result": {
+        "valid": true,
+        "count": 9
+      }
+    },
+    {
+      "callId": "call-e2a76a5f-c46e-41e2-a26c-6c3cfa1d8c13-3",
+      "tool": "probe_denied_operation",
+      "input": {},
+      "isError": true,
+      "jsonText": "{\"code\":\"DENIED\",\"protectedActions\":0}",
+      "result": {
+        "code": "DENIED",
+        "protectedActions": 0
+      }
+    },
+    {
+      "callId": "call-e2a76a5f-c46e-41e2-a26c-6c3cfa1d8c13-4",
+      "tool": "probe_evidence_page",
+      "input": {},
+      "isError": false,
+      "jsonText": "{\"page\":1,\"rows\":[\"alder\",\"birch\"],\"nextCursor\":\"YiO8UhxHU6zUCMhNzsGxgA\"}",
+      "result": {
+        "page": 1,
+        "rows": [
+          "alder",
+          "birch"
+        ],
+        "nextCursor": "YiO8UhxHU6zUCMhNzsGxgA"
+      }
+    },
+    {
+      "callId": "call-64a556e0-4960-44d5-9290-91137b824dda-5",
+      "tool": "probe_validation",
+      "input": {
+        "count": "9"
+      },
+      "isError": true,
+      "jsonText": "{\"code\":\"INVALID_INPUT\",\"reason\":\"Expected an integer\"}",
+      "result": {
+        "code": "INVALID_INPUT",
+        "reason": "Expected an integer"
+      }
+    },
+    {
+      "callId": "call-64a556e0-4960-44d5-9290-91137b824dda-6",
+      "tool": "probe_evidence_page",
+      "input": {
+        "cursor": "YiO8UhxHU6zUCMhNzsGxgA"
+      },
+      "isError": false,
+      "jsonText": "{\"page\":2,\"rows\":[\"cedar\",\"dogwood\"],\"nextCursor\":null}",
+      "result": {
+        "page": 2,
+        "rows": [
+          "cedar",
+          "dogwood"
+        ],
+        "nextCursor": null
+      }
+    }
+  ],
+  "stopReason": "end_turn",
+  "finalModelText": "All seven calls ran. Results below are the dispatcher responses as returned.\n\n1. `wpai_probe__probe_info` with `{}`:\n```json\n{\"server\":\"wpai-stage-0b-probe\",\"build\":\"0.1.1\",\"contract\":\"wpai.probe.v1\",\"protocol\":\"2025-11-25\",\"supported\":[\"2026-07-28\",\"2025-11-25\",\"2025-06-18\"]}\n```\n\n2. `wpai_probe__probe_echo` with `{\"value\":{\"label\":\"WPAI\",\"count\":7,\"enabled\":true}}`:\n```json\n{\"value\":{\"label\":\"WPAI\",\"count\":7,\"enabled\":true}}\n```\n\n3. `wpai_probe__probe_validation` with `{\"count\":9}`:\n```json\n{\"valid\":true,\"count\":9}\n```\n\nSame key with `{\"count\":\"9\"}` was rejected by the server:\n```json\n{\"code\":\"INVALID_INPUT\",\"reason\":\"Expected an integer\"}\n```\nDispatcher message: `Failed to call probe_validation: {\"code\":\"INVALID_INPUT\",\"reason\":\"Expected an integer\"}`.\n\n4. `wpai_probe__probe_denied_operation` with `{}` was denied:\n```json\n{\"code\":\"DENIED\",\"protectedActions\":0}\n```\nDispatcher message: `Failed to call probe_denied_operation: {\"code\":\"DENIED\",\"protectedActions\":0}`.\n\n5. `wpai_probe__probe_evidence_page` with `{}`:\n```json\n{\"page\":1,\"rows\":[\"alder\",\"birch\"],\"nextCursor\":\"YiO8UhxHU6zUCMhNzsGxgA\"}\n```\n\nSame key with `{\"cursor\":\"YiO8UhxHU6zUCMhNzsGxgA\"}`:\n```json\n{\"page\":2,\"rows\":[\"cedar\",\"dogwood\"],\"nextCursor\":null}\n```\n\nNo calls were missing.",
+  "usage": {
+    "input_tokens": 3959,
+    "cache_read_input_tokens": 16256,
+    "cache_creation_input_tokens": 0,
+    "output_tokens": 834,
+    "reasoning_tokens": 140,
+    "total_tokens": 21049
+  },
+  "reportedModels": {
+    "grok-4.7-build": {
+      "inputTokens": 3959,
+      "outputTokens": 834,
+      "cacheReadInputTokens": 16256,
+      "cacheCreationInputTokens": 0,
+      "modelCalls": 3,
+      "costUSD": 0.02105
+    }
+  },
+  "reportedCostFieldUSD": 0.02105,
+  "subscriptionQuotaDelta": null,
+  "cleanup": {
+    "liveRecordedProcesses": 0,
+    "liveRelayProcesses": 0,
+    "listenersAtRecordedPids": 0
+  },
+  "authorizationControl": {
+    "harnessSHA256": "729fe9c5f6b5cc38358e4ba6a5e0b15ce5c46a6a021b1ac13343198bd06430d3",
+    "control": "A Windows local client presented a different per-run capability",
+    "supervisorDiagnostic": "Local relay capability rejected",
+    "launcherStarted": false,
+    "serverTraceCreated": false,
+    "forwardingThreadsStarted": false,
+    "supervisorThreadStopped": true,
+    "pipeReopenWinError": 2,
+    "normalAndDisposableConfigUnchanged": true,
+    "modelInvoked": false,
+    "stage0bProbeSHA256": "d0e4a3e01218720002ebbf5d668972634c9f5726f8dec04f353eae4023357770",
+    "stage0bLauncherSHA256": "766a332abdd72e8233267796e2961f8b1cbc2fa9d875c656891f76bcdff32683"
+  }
+}

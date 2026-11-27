@@ -1,0 +1,361 @@
+{
+  "schema": 1,
+  "invocation": "wpai-stage-0c-grok-2026-11-26",
+  "law_sha": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "candidate": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+  "scope": "Read-only governance, exact Stage 0B fixture, subscribed local Grok invocation and combined report. Claude paused by the director. No production implementation or remote publication.",
+  "claim": "partial",
+  "stages": [
+    {
+      "stage": 1,
+      "status": "done",
+      "reason": "Read pasted objective, pinned canonical law, reconciled trust and Claude deferral",
+      "evidence": [
+        "scope",
+        "source"
+      ]
+    },
+    {
+      "stage": 2,
+      "status": "done",
+      "reason": "Verified resident artifact, archive manifest and initial Grok and Claude state",
+      "evidence": [
+        "probe",
+        "claude"
+      ]
+    },
+    {
+      "stage": 3,
+      "status": "done",
+      "reason": "Verified installed permission flags and official Grok qualified key contract",
+      "evidence": [
+        "isolation",
+        "grok"
+      ]
+    },
+    {
+      "stage": 4,
+      "status": "done",
+      "reason": "Selected local fixture and exact-tool policies. Required user trust for workspace",
+      "evidence": [
+        "scope",
+        "isolation"
+      ]
+    },
+    {
+      "stage": 5,
+      "status": "done",
+      "reason": "Ran approved Grok session. Recorded correctable model and dispatch errors before final invocation",
+      "evidence": [
+        "grok"
+      ]
+    },
+    {
+      "stage": 6,
+      "status": "open",
+      "reason": "Grok invocation and supervised graceful shutdown verified. Native failures retained. Claude deferred.",
+      "evidence": [
+        "grok",
+        "shutdown",
+        "claude"
+      ]
+    },
+    {
+      "stage": 7,
+      "status": "done",
+      "reason": "Reconciled client results against server and Stage 0B records",
+      "evidence": [
+        "grok",
+        "retained"
+      ]
+    },
+    {
+      "stage": 8,
+      "status": "done",
+      "reason": "Packaged partial acceptance and preserved original archive",
+      "evidence": [
+        "handoff"
+      ]
+    },
+    {
+      "stage": 9,
+      "status": "na",
+      "reason": "Production and external publication outside scope",
+      "evidence": [
+        "scope"
+      ]
+    },
+    {
+      "stage": 10,
+      "status": "open",
+      "reason": "Four-agent execution and apply-ready evolution remain outside current closure",
+      "evidence": [
+        "scope",
+        "claude"
+      ]
+    }
+  ],
+  "section0": [
+    {
+      "item": 1,
+      "status": "open",
+      "reason": "Grok passed active invocation. Claude was explicitly deferred and its acceptance stays open",
+      "evidence": [
+        "scope",
+        "grok"
+      ]
+    },
+    {
+      "item": 2,
+      "status": "pass",
+      "reason": "Installed target, expected archive, auth mode and trust state verified",
+      "evidence": [
+        "probe",
+        "isolation"
+      ]
+    },
+    {
+      "item": 3,
+      "status": "pass",
+      "reason": "Fixed model/dispatch prerequisites using actual evidence. Historical warnings and gaps scoped",
+      "evidence": [
+        "grok"
+      ]
+    },
+    {
+      "item": 4,
+      "status": "open",
+      "reason": "Grok behavior and negative cases verified. Claude model route and graceful EOF open",
+      "evidence": [
+        "grok",
+        "shutdown",
+        "claude"
+      ]
+    },
+    {
+      "item": 5,
+      "status": "pass",
+      "reason": "Artifact, recorded commands and report agree",
+      "evidence": [
+        "handoff",
+        "probe"
+      ]
+    },
+    {
+      "item": 6,
+      "status": "pass",
+      "reason": "Scoped permission and config checks, no external listener or production mutation",
+      "evidence": [
+        "isolation",
+        "shutdown"
+      ]
+    },
+    {
+      "item": 7,
+      "status": "pass",
+      "reason": "Elapsed, usage counters and telemetry limitations recorded",
+      "evidence": [
+        "grok"
+      ]
+    },
+    {
+      "item": 8,
+      "status": "pass",
+      "reason": "Exact installed versions and Stage 0B source frozen",
+      "evidence": [
+        "grok",
+        "probe",
+        "source"
+      ]
+    },
+    {
+      "item": 9,
+      "status": "pass",
+      "reason": "Delivered checked report and evidence record",
+      "evidence": [
+        "handoff"
+      ]
+    },
+    {
+      "item": 10,
+      "status": "pass",
+      "reason": "Existing authorized Grok subscription route and bounds respected",
+      "evidence": [
+        "scope",
+        "grok"
+      ]
+    },
+    {
+      "item": 11,
+      "status": "pass",
+      "reason": "Reproducibility supported through unchanged verified archive and exact argv",
+      "evidence": [
+        "probe",
+        "handoff"
+      ]
+    },
+    {
+      "item": 12,
+      "status": "pass",
+      "reason": "Private fixture and credentials kept outside publication. Primary docs cited",
+      "evidence": [
+        "scope",
+        "handoff"
+      ]
+    },
+    {
+      "item": 13,
+      "status": "na",
+      "reason": "No delegated agents. External model CLIs were test subjects",
+      "evidence": [
+        "scope"
+      ]
+    },
+    {
+      "item": 14,
+      "status": "pass",
+      "reason": "Report includes risks, stage acceptance, paths and next goal",
+      "evidence": [
+        "handoff",
+        "retained"
+      ]
+    },
+    {
+      "item": 15,
+      "status": "pass",
+      "reason": "Self-audit records verified and open criteria",
+      "evidence": [
+        "grok",
+        "claude",
+        "shutdown"
+      ]
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "fixture",
+      "criterion": "Verify accepted Stage 0B artifact and launcher by exact hash",
+      "status": "pass",
+      "required_evidence": [
+        "source"
+      ],
+      "evidence": [
+        "probe"
+      ]
+    },
+    {
+      "id": "grok",
+      "criterion": "Run native Grok calls and validate expected behavior independently",
+      "status": "pass",
+      "required_evidence": [
+        "runtime"
+      ],
+      "evidence": [
+        "grok"
+      ]
+    },
+    {
+      "id": "claude",
+      "criterion": "Run native Claude invocation and validate echo and denial",
+      "status": "open",
+      "required_evidence": [
+        "runtime"
+      ],
+      "evidence": [
+        "claude"
+      ]
+    },
+    {
+      "id": "shutdown",
+      "criterion": "Prove graceful server shutdown on both new model routes",
+      "status": "open",
+      "required_evidence": [
+        "runtime"
+      ],
+      "evidence": [
+        "shutdown"
+      ]
+    },
+    {
+      "id": "handoff",
+      "criterion": "Update combined record and Stage 1 readiness without changing Stage 0B material",
+      "status": "pass",
+      "required_evidence": [
+        "package"
+      ],
+      "evidence": [
+        "handoff"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "scope",
+      "kind": "authorization",
+      "subject": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+      "reference": "Stage 0C pasted objective, director approved trust only for the fixture, and explicitly deferred Claude Code."
+    },
+    {
+      "id": "source",
+      "kind": "source",
+      "subject": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+      "reference": "Fresh accepted main 0adf5ecee5f7f96ce3749944dc097a003731a6e9 and 23 matching frozen files."
+    },
+    {
+      "id": "probe",
+      "kind": "source",
+      "subject": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+      "reference": "Stage 0B archive CRC and manifest verified, disposable copies match original, exact server and launcher hash rechecked after execution."
+    },
+    {
+      "id": "isolation",
+      "kind": "runtime",
+      "subject": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+      "reference": "Grok preflight saw one local stdio server, exact off policy, no fixture rule skips, no enabled plugins or hooks, and trusted folder acquired through director action. Separate local-only relay control rejected an incorrect per-run capability before creating the Stage 0B launcher or forwarding threads."
+    },
+    {
+      "id": "grok",
+      "kind": "runtime",
+      "subject": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+      "reference": "Final Stage 0C evidence has installed CLI/model, config fingerprint, seven native agent tool uses and matching server calls, echo/validation/paging/denial, and reported telemetry."
+    },
+    {
+      "id": "shutdown",
+      "kind": "runtime",
+      "subject": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+      "reference": "Native headless and ACP control paths recorded nonzero original probe exits. The separate supervisor passed a forced relay-disconnect control and all seven signed-in Grok calls with probe EOF, launcher exit 0 and no remaining process or listener."
+    },
+    {
+      "id": "claude",
+      "kind": "runtime",
+      "subject": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+      "reference": "Installed auth status exit 1 and signed out. Director requested deferral. Stage 0B discovery evidence remains."
+    },
+    {
+      "id": "retained",
+      "kind": "review",
+      "subject": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+      "reference": "Stage 0B records independently verified without rerunning Codex or Antigravity. Compared echo, page 2 and denial."
+    },
+    {
+      "id": "handoff",
+      "kind": "package",
+      "subject": "wpai-stage-0b-0c-compatibility.md e82bcbfde90aeac8aaef718bf6743e099b46bc4a7f6f6601adc3509089249bc2; stage-0c-grok-evidence.json a62b4164f1263027b9bc3b40be0a81a7b9b7c6a422409b07847450511876cd85; stage-0c-grok-shutdown-evidence.json 447cec0e9ff12bf328e42ef8a9c9acf330cdcce0b657bf718812f979e11cae95; stage-0c-grok-supervised-evidence.json 624c8bd589dfecc11ffc8d599c75ea164283f277dc0e89ab3a12f58dd65029a0",
+      "reference": "Combined report and three preserved Grok evidence records distinguish native and supervised teardown."
+    }
+  ],
+  "evolution": {
+    "status": "unstarted",
+    "evidence": []
+  },
+  "self_audit": [
+    "Preserved and verified exact Stage 0B server and launcher.",
+    "Verified seven native Grok deliveries with client and independent server evidence.",
+    "Verified native failures and exact supervised seven-call pass with original probe EOF and exit 0.",
+    "Claude model validation remains paused. Stage 1 remains unopened."
+  ],
+  "remaining": [
+    "Claude invocation and model-route shutdown remain paused by the director. Resume only on explicit request with a permitted route, or obtain explicit written acceptance before planning Stage 1.",
+    "For Grok the disposable supervised route is verified. Native teardown exits nonzero on both tested native paths. No Stage 1 implementation underway."
+  ]
+}
