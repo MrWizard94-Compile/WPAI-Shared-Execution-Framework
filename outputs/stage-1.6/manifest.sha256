@@ -1,0 +1,13 @@
+ec54158a8611beace6955dd5fa447ddc6c2bc0ea9a278a4d4966e180ec93d61c  outputs/stage-1.6/architecture.md
+af1566fd240aa1a58f8835d80f62d71204e661886d13c0bfea61197a4dc55a45  outputs/stage-1.6/evidence.json
+a519370e48a3d84b7a1ec4093c151f5573c5b5ed38d5021662c855bbee8ac97b  outputs/stage-1.6/handoff.md
+7212ea93f88a1bfb702826d0976694eb6891567bef87e8eefed9817cb3281337  outputs/stage-1.6/historical.sha256
+ae727f7837de525cfc27a7892913378765b89f8370912000b58a718cf49f9334  work/benchmarks/stage-1.6/README.md
+c8f6260e07dab5ca22b922748c82cb0e6d9a4d642997091106ee086745b4fbdd  work/benchmarks/stage-1.6/actors.py
+2abe7a5c60842667a2982cdb445c790d91f4efc5e1f8d4c6f23b02f52e6992fa  work/benchmarks/stage-1.6/contract.py
+1b96a0aad6adb49fd3f0787b243bb78e24853968a813a6b208367c5cb10638be  work/benchmarks/stage-1.6/observer.py
+2fc9060acb97dba7e5d87f9169e6d66d8bbdc02495652b43485cf4a6eded0d64  work/benchmarks/stage-1.6/public_evidence.py
+7127588f68f099934300ec45c8540aaf0a6c7215586013988151e982633d6c1b  work/benchmarks/stage-1.6/tests/test_live.py
+5f40470027a572ef14a023bd1c3810758fad9eb5e06a5647998ae7cc937adbf2  work/benchmarks/stage-1.6/tests/test_witness.py
+351f4928d1308c0cb63e953f643223ca2cbe4b30236823441bb244316ded2a71  work/benchmarks/stage-1.6/win.py
+52e238f2ce9369c3c88630de235b4a885aa695e704a12c46abf25c4f68dccfd1  work/benchmarks/stage-1.6/witness.py

@@ -1,0 +1,376 @@
+{
+  "authorized_now": 0,
+  "baseline": "b6366372f3a6e877db48616c115d24c6cd05558c",
+  "constitution": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "fixture": {
+    "calls_per_case": 1,
+    "dataset_sha256": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8",
+    "facts": 12,
+    "operation": "repo_health_v1",
+    "package_sha256": "9063cd629145fee025a6330dd969a6bb608bc2571cca72dde5860947652a3686",
+    "protocol": "2026-07-28"
+  },
+  "historical_files_verified": 97,
+  "live_provider_sessions": 0,
+  "native_provider_qualified": false,
+  "scenarios": {
+    "duplicate_writer": {
+      "ReadFile_terminal_status": {
+        "fixture_request": 109,
+        "fixture_response": 109,
+        "front_request": 109,
+        "front_response": 109,
+        "split_request": 109,
+        "split_response": 109
+      },
+      "duplicate_writer_window_ms": 120,
+      "exit_codes": {
+        "owner": 0,
+        "relay": 0,
+        "root": 0,
+        "server": 0
+      },
+      "force_isolation_probe": null,
+      "job_accounting": {
+        "fixture_final": {
+          "active": 0,
+          "members": [],
+          "total": 1
+        },
+        "fixture_startup": {
+          "active": 1,
+          "members": [
+            "server"
+          ],
+          "total": 1
+        },
+        "subject_final": {
+          "active": 0,
+          "members": [],
+          "total": 2
+        },
+        "subject_startup": {
+          "active": 2,
+          "members": [
+            "relay",
+            "root"
+          ],
+          "total": 2
+        }
+      },
+      "lifecycle": "observed_success",
+      "observer_finalized": true,
+      "qualification": "pass",
+      "server_empty_read_attested": true,
+      "unavailable_reads": {},
+      "wire": {
+        "request": {
+          "bytes": 248,
+          "sha256": "73e23193e5512dc620cb42a50fca93b74dc3b81a4aeb96348b1e96f23128b97f"
+        },
+        "response": {
+          "bytes": 6953,
+          "sha256": "bf90f56726d19364d908a2cf1bc90269ee81e5beffc8c9f41525a30c80f50226"
+        }
+      },
+      "writer_closes": [
+        {
+          "channel": "front_request",
+          "method": "CloseHandle",
+          "writer": "root"
+        },
+        {
+          "channel": "split_request",
+          "method": "CloseHandle",
+          "writer": "relay"
+        },
+        {
+          "channel": "split_response",
+          "method": "CloseHandle",
+          "writer": "owner"
+        },
+        {
+          "channel": "front_response",
+          "method": "CloseHandle",
+          "writer": "relay"
+        },
+        {
+          "channel": "fixture_request",
+          "method": "CloseHandle",
+          "writer": "owner_primary"
+        },
+        {
+          "channel": "fixture_request",
+          "method": "CloseHandle",
+          "writer": "owner_duplicate"
+        },
+        {
+          "channel": "fixture_response",
+          "method": "CRT_close",
+          "writer": "server"
+        }
+      ]
+    },
+    "external_termination": {
+      "ReadFile_terminal_status": {
+        "fixture_request": 109,
+        "fixture_response": 109,
+        "split_request": 109
+      },
+      "duplicate_writer_window_ms": null,
+      "exit_codes": {
+        "force": 0,
+        "owner": 0,
+        "relay": 124,
+        "root": 124,
+        "server": 0
+      },
+      "force_isolation_probe": "read_and_write_denied",
+      "job_accounting": {
+        "fixture_after_subject_force": {
+          "active": 1,
+          "members": [
+            "server"
+          ],
+          "total": 1
+        },
+        "fixture_final": {
+          "active": 0,
+          "members": [],
+          "total": 1
+        },
+        "fixture_startup": {
+          "active": 1,
+          "members": [
+            "server"
+          ],
+          "total": 1
+        },
+        "subject_final": {
+          "active": 0,
+          "members": [],
+          "total": 2
+        },
+        "subject_startup": {
+          "active": 2,
+          "members": [
+            "relay",
+            "root"
+          ],
+          "total": 2
+        }
+      },
+      "lifecycle": "observed_failure",
+      "observer_finalized": true,
+      "qualification": "pass",
+      "server_empty_read_attested": true,
+      "unavailable_reads": {
+        "front_request": "reader_terminated",
+        "front_response": "reader_terminated",
+        "split_response": "reader_terminated"
+      },
+      "wire": {
+        "request": {
+          "bytes": 248,
+          "sha256": "73e23193e5512dc620cb42a50fca93b74dc3b81a4aeb96348b1e96f23128b97f"
+        },
+        "response": {
+          "bytes": 6953,
+          "sha256": "bf90f56726d19364d908a2cf1bc90269ee81e5beffc8c9f41525a30c80f50226"
+        }
+      },
+      "writer_closes": [
+        {
+          "channel": "split_request",
+          "method": "process_terminated",
+          "writer": "relay"
+        },
+        {
+          "channel": "split_response",
+          "method": "CloseHandle",
+          "writer": "owner"
+        },
+        {
+          "channel": "fixture_request",
+          "method": "CloseHandle",
+          "writer": "owner_primary"
+        },
+        {
+          "channel": "fixture_response",
+          "method": "CRT_close",
+          "writer": "server"
+        }
+      ]
+    },
+    "normal": {
+      "ReadFile_terminal_status": {
+        "fixture_request": 109,
+        "fixture_response": 109,
+        "front_request": 109,
+        "front_response": 109,
+        "split_request": 109,
+        "split_response": 109
+      },
+      "duplicate_writer_window_ms": null,
+      "exit_codes": {
+        "owner": 0,
+        "relay": 0,
+        "root": 0,
+        "server": 0
+      },
+      "force_isolation_probe": null,
+      "job_accounting": {
+        "fixture_final": {
+          "active": 0,
+          "members": [],
+          "total": 1
+        },
+        "fixture_startup": {
+          "active": 1,
+          "members": [
+            "server"
+          ],
+          "total": 1
+        },
+        "subject_final": {
+          "active": 0,
+          "members": [],
+          "total": 2
+        },
+        "subject_startup": {
+          "active": 2,
+          "members": [
+            "relay",
+            "root"
+          ],
+          "total": 2
+        }
+      },
+      "lifecycle": "observed_success",
+      "observer_finalized": true,
+      "qualification": "pass",
+      "server_empty_read_attested": true,
+      "unavailable_reads": {},
+      "wire": {
+        "request": {
+          "bytes": 248,
+          "sha256": "73e23193e5512dc620cb42a50fca93b74dc3b81a4aeb96348b1e96f23128b97f"
+        },
+        "response": {
+          "bytes": 6953,
+          "sha256": "bf90f56726d19364d908a2cf1bc90269ee81e5beffc8c9f41525a30c80f50226"
+        }
+      },
+      "writer_closes": [
+        {
+          "channel": "front_request",
+          "method": "CloseHandle",
+          "writer": "root"
+        },
+        {
+          "channel": "split_request",
+          "method": "CloseHandle",
+          "writer": "relay"
+        },
+        {
+          "channel": "split_response",
+          "method": "CloseHandle",
+          "writer": "owner"
+        },
+        {
+          "channel": "front_response",
+          "method": "CloseHandle",
+          "writer": "relay"
+        },
+        {
+          "channel": "fixture_request",
+          "method": "CloseHandle",
+          "writer": "owner_primary"
+        },
+        {
+          "channel": "fixture_response",
+          "method": "CRT_close",
+          "writer": "server"
+        }
+      ]
+    },
+    "owner_loss": {
+      "ReadFile_terminal_status": {
+        "owner_control": 109
+      },
+      "duplicate_writer_window_ms": null,
+      "exit_codes": {
+        "owner": 125,
+        "relay": 124,
+        "root": 124,
+        "server": 124
+      },
+      "force_isolation_probe": null,
+      "job_accounting": {
+        "fixture_after_owner_loss": {
+          "active": 1,
+          "members": [
+            "server"
+          ],
+          "total": 1
+        },
+        "fixture_final": {
+          "active": 0,
+          "members": [],
+          "total": 1
+        },
+        "fixture_startup": {
+          "active": 1,
+          "members": [
+            "server"
+          ],
+          "total": 1
+        },
+        "subject_final": {
+          "active": 0,
+          "members": [],
+          "total": 2
+        },
+        "subject_startup": {
+          "active": 2,
+          "members": [
+            "relay",
+            "root"
+          ],
+          "total": 2
+        }
+      },
+      "lifecycle": "incomplete",
+      "observer_finalized": true,
+      "qualification": "fail_closed",
+      "server_empty_read_attested": false,
+      "unavailable_reads": {
+        "fixture_request": "reader_terminated",
+        "fixture_response": "reader_terminated",
+        "front_request": "reader_terminated",
+        "front_response": "reader_terminated",
+        "split_request": "reader_terminated",
+        "split_response": "reader_terminated"
+      },
+      "wire": {
+        "request": {
+          "bytes": 248,
+          "sha256": "73e23193e5512dc620cb42a50fca93b74dc3b81a4aeb96348b1e96f23128b97f"
+        },
+        "response": {
+          "bytes": 6953,
+          "sha256": "bf90f56726d19364d908a2cf1bc90269ee81e5beffc8c9f41525a30c80f50226"
+        }
+      },
+      "writer_closes": [
+        {
+          "channel": "fixture_request",
+          "method": "CloseHandle",
+          "writer": "observer_guard"
+        }
+      ]
+    }
+  },
+  "schema": "wpai.benchmark.synthetic-split-route-evidence.v1",
+  "witness_schema": "wpai.benchmark.split-route-witness.v1"
+}
