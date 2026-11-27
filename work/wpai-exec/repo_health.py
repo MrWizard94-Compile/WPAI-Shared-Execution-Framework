@@ -26,6 +26,9 @@ OPERATION_SECONDS = 24
 FAILURES = {"failure", "timed_out", "startup_failure", "action_required", "cancelled", "stale"}
 DIRECT_CAUSES = {"timed_out", "startup_failure", "action_required", "cancelled", "stale"}
 SHA = re.compile(r"[a-f0-9]{40}\Z")
+TERMINAL_SEQUENCE = re.compile(r"(?:\x1b\[|\x9b)[0-?]*[ -/]*[@-~]|"
+                               r"(?:\x1b\]|\x9d)[^\x07\x1b\x9c]*(?:\x07|\x1b\\|\x9c|$)")
+LINE_SPACING = str.maketrans({char: " " for char in "\t\r\n\u2028\u2029"})
 
 
 class Unavailable(Exception):
@@ -40,10 +43,20 @@ def compact(value):
     return json.dumps(value, ensure_ascii=True, separators=(",", ":"), allow_nan=False)
 
 
-def label(value, limit=112):
-    if not isinstance(value, str):
-        return None
-    return "".join(c for c in value if c.isprintable())[:limit]
+def display_text(value):
+    value = TERMINAL_SEQUENCE.sub("", value).translate(LINE_SPACING)
+    return "".join(char for char in value if char.isprintable())
+
+
+def display_facts(value):
+    # Keep real identifiers for comparisons and GitHub lookups. Normalize only the report projection.
+    if isinstance(value, dict):
+        return {key: display_facts(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [display_facts(item) for item in value]
+    if isinstance(value, str):
+        return display_text(value)
+    return value
 
 
 def checked_sha(value):
@@ -216,7 +229,7 @@ def remote_identity(reader):
 
 def local_head(reader):
     sha = checked_sha(decoded(reader.git("rev-parse", "--verify", "HEAD")).strip())
-    branch = decoded(reader.git("symbolic-ref", "--quiet", "--short", "HEAD", empty_code=1)).strip()
+    branch = decoded(reader.git("symbolic-ref", "--quiet", "--short", "HEAD", empty_code=1)).rstrip("\r\n")
     return {"branch": branch or None, "sha": sha}
 
 
@@ -269,7 +282,7 @@ def local_inventory(reader):
     data = reader.git("for-each-ref", f"--count={REF_LIMIT + 1}", "--sort=refname",
                       "--format=%(refname)%09%(objectname)%09%(symref)", "refs/heads", "refs/remotes")
     refs = []
-    for row in decoded(data).splitlines():
+    for row in decoded(data).rstrip("\r\n").split("\n") if data else ():
         name, sha, symref = row.split("\t")
         refs.append({"name": name, "sha": checked_sha(sha), "symbolic_target": symref or None})
     return {"items": refs[:REF_LIMIT], "truncated": len(refs) > REF_LIMIT}
@@ -307,9 +320,9 @@ def divergence(reader, local, remote):
 def local_commits(reader, sha):
     rows = decoded(reader.git("log", "-5", "--no-show-signature", "--format=%H%x09%cI%x09%s", sha, "--"))
     commits = []
-    for row in rows.splitlines():
+    for row in rows.rstrip("\r\n").split("\n") if rows else ():
         commit, date, subject = row.split("\t", 2)
-        commits.append({"sha": checked_sha(commit), "date": date, "subject": label(subject)})
+        commits.append({"sha": checked_sha(commit), "date": date, "subject": display_text(subject)[:112]})
     return commits
 
 
@@ -317,7 +330,7 @@ def remote_commits(reader, sha):
     rows = reader.github("/commits", query={"sha": sha, "per_page": 5},
                          jq='map({sha, date: .commit.committer.date, subject: (.commit.message | split("\n")[0])})')
     return [{"sha": checked_sha(row["sha"]), "date": row["date"],
-             "subject": label(row["subject"])} for row in rows]
+             "subject": display_text(row["subject"])[:112] if isinstance(row["subject"], str) else None} for row in rows]
 
 
 def pulls(reader):
@@ -567,7 +580,7 @@ def health(arguments, cancellation=None):
         "12_discrepancies": discrepancies(head, main, base["local_refs"].get("value"), live_refs, working),
     }
     return {"contract": CONTRACT, "status": "OK", "project": PROJECT, "opened_at": opened_at,
-            "closed_at": utc_now(), "facts": facts,
+            "closed_at": utc_now(), "facts": display_facts(facts),
             "measurements": {"elapsed_ms": round((time.monotonic() - reader.started) * 1000, 1),
                              "git_process_attempts": reader.events.count("git"),
                              "github_get_process_attempts": reader.events.count("github_get"),

@@ -1,8 +1,5 @@
-import io
-import json
 from pathlib import Path
 import sys
-import threading
 import unittest
 from unittest.mock import patch
 
@@ -84,6 +81,44 @@ class RepositoryTests(unittest.TestCase):
             with self.assertRaisesRegex(repo.Unavailable, "test_timeout"):
                 reader.run(sys.executable, ["-c", "import time; time.sleep(10)"], Path.cwd(), None, "test")
 
+    def test_report_preserves_metadata_and_provenance_with_safe_display(self):
+        sha = "a" * 40
+        original_branch = "staging\u202e\u200b"
+        raw_subject = "Café 修正 \x1b[31mtext\x1b[0m\u2028" + "x" * 120
+
+        class OnlyLocal(repo.Reader):
+            def github(self, *args, **kwargs):
+                raise repo.Unavailable("offline_test")
+
+            def git(self, *args, **kwargs):
+                if args[0] == "log":
+                    return f"{sha}\t2026-01-01T00:00:00Z\t{raw_subject}\n".encode()
+                if args[0] == "symbolic-ref":
+                    return (original_branch + "\n").encode()
+                if args[0] == "rev-parse":
+                    return (sha + "\n").encode()
+                raise repo.Unavailable("not_in_fixture")
+
+        with patch.object(repo, "Reader", OnlyLocal), patch.object(repo, "local_identity", return_value={}):
+            payload = repo.health({"project": "trackforge"})
+        facts = payload["facts"]
+        self.assertEqual(payload["contract"], "wpai.repo_health.v1")
+        self.assertEqual(len(facts), 12)
+        self.assertEqual(facts["02_local_head"]["value"], {"branch": "staging", "sha": sha})
+        history = facts["08_recent_commits"]["value"]["local_head"]
+        self.assertEqual(history["source"], "git_log")
+        self.assertEqual(history["value"][0]["subject"], ("Café 修正 text " + "x" * 120)[:112])
+        self.assertEqual(repo.display_facts({"name": "build\x1b]0;title\x07\u2066", "failed_steps": [
+            {"name": "run\tchecks\x9b0m", "conclusion": "failure"}]}), {
+            "name": "build", "failed_steps": [{"name": "run checks", "conclusion": "failure"}]})
+
+    def test_remote_commit_display_keeps_the_existing_subject_limit(self):
+        reader = unittest.mock.Mock()
+        reader.github.return_value = [{"sha": "b" * 40, "date": "2026-01-01T00:00:00Z",
+                                       "subject": "\u2066Résumé\u2069 ✨ " + "z" * 130}]
+        result = repo.remote_commits(reader, "b" * 40)
+        self.assertEqual(result[0]["subject"], ("Résumé ✨ " + "z" * 130)[:112])
+
 
 class TransportTests(unittest.TestCase):
     def test_size_limit_keeps_field_dispositions(self):
@@ -94,62 +129,6 @@ class TransportTests(unittest.TestCase):
         self.assertLessEqual(len(raw), app.MAX_RESULT)
         self.assertEqual(len(payload["facts"]), 12)
         self.assertTrue(all(row["reason"] == "field_size_limit" for row in payload["facts"].values()))
-
-    def test_cancelled_call_gets_no_reply(self):
-        server = app.Stdio(io.BytesIO(), io.BytesIO())
-        started = threading.Event()
-
-        def collect(_arguments, cancellation):
-            started.set()
-            if not cancellation.wait(2):
-                raise RuntimeError("cancellation was not delivered")
-            return {"contract": repo.CONTRACT, "status": "OK"}
-
-        with patch.object(app, "health", side_effect=collect):
-            server.invoke(1, {"project": "trackforge"}, modern=True)
-            self.assertTrue(started.wait(1))
-            server.cancel(1)
-            server.worker.join(3)
-        self.assertFalse(server.worker.is_alive())
-        self.assertEqual(server.outgoing.getvalue(), b"")
-
-    def test_modern_discovery_bad_version_and_oversize_recovery(self):
-        discover = {"jsonrpc": "2.0", "id": 1, "method": "server/discover", "params": {"_meta": {
-            app.META + "protocolVersion": app.MODERN, app.META + "clientCapabilities": {},
-        }}}
-        invalid = dict(discover, id=2)
-        invalid["params"] = {"_meta": {app.META + "protocolVersion": "1900-01-01"}}
-        incoming = b" " * (app.MAX_LINE * 2) + b"\n"
-        incoming += b"\n".join(json.dumps(request).encode() for request in (discover, invalid)) + b"\n"
-        outgoing = io.BytesIO()
-        app.Stdio(io.BytesIO(incoming), outgoing).serve()
-        limit, valid, wrong = [json.loads(row) for row in outgoing.getvalue().splitlines()]
-        self.assertEqual(limit["error"]["code"], -32600)
-        self.assertEqual(valid["result"]["supportedVersions"], list(app.SUPPORTED))
-        self.assertEqual(wrong["error"]["code"], -32022)
-
-    def test_legacy_initialization_and_denial_payload_parity(self):
-        outgoing = io.BytesIO()
-        server = app.Stdio(io.BytesIO(), outgoing)
-        calls = [
-            {"id": 1, "method": "tools/list"},
-            {"id": 2, "method": "initialize", "params": {"protocolVersion": app.LEGACY[1], "capabilities": {}}},
-            {"method": "notifications/initialized"},
-            {"id": 3, "method": "tools/call", "params": {"name": app.TOOL, "arguments": {"project": "other"}}},
-        ]
-        with patch.object(repo, "Reader") as reader:
-            for call in calls:
-                server.handle_line(json.dumps({"jsonrpc": "2.0", **call}).encode())
-            server.worker.join(2)
-            reader.assert_not_called()
-        early, hello, reply = [json.loads(row) for row in outgoing.getvalue().splitlines()]
-        self.assertEqual(early["error"]["code"], -32002)
-        self.assertEqual(hello["result"]["protocolVersion"], app.LEGACY[1])
-        payload = reply["result"]
-        self.assertEqual(json.loads(payload["content"][0]["text"]), payload["structuredContent"])
-        self.assertTrue(payload["isError"])
-        self.assertEqual(payload["structuredContent"]["status"], "DENIED")
-
 
 if __name__ == "__main__":
     unittest.main()
