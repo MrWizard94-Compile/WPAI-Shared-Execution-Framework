@@ -1,6 +1,6 @@
 ec54158a8611beace6955dd5fa447ddc6c2bc0ea9a278a4d4966e180ec93d61c  outputs/stage-1.6/architecture.md
 af1566fd240aa1a58f8835d80f62d71204e661886d13c0bfea61197a4dc55a45  outputs/stage-1.6/evidence.json
-a519370e48a3d84b7a1ec4093c151f5573c5b5ed38d5021662c855bbee8ac97b  outputs/stage-1.6/handoff.md
+6b175b236c94d6772da3ca950cb81b8b6cceed941cad97c14cca7ea913ef0928  outputs/stage-1.6/handoff.md
 7212ea93f88a1bfb702826d0976694eb6891567bef87e8eefed9817cb3281337  outputs/stage-1.6/historical.sha256
 ae727f7837de525cfc27a7892913378765b89f8370912000b58a718cf49f9334  work/benchmarks/stage-1.6/README.md
 c8f6260e07dab5ca22b922748c82cb0e6d9a4d642997091106ee086745b4fbdd  work/benchmarks/stage-1.6/actors.py

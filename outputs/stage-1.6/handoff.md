@@ -29,9 +29,15 @@ Windows processes exchanged the exact frozen synthetic response through the spli
 | A14 | PASS | 97 earlier-stage source and evidence files verified against baseline bytes. [Historical hashes](historical.sha256) |
 | A15 | PASS | Deterministic evidence and complete SHA-256 inventory verified. [Stage manifest](manifest.sha256) |
 | A16 | PASS | All existing and Stage 1.6 checks passed locally on Windows with Python 3.10.11 and 3.14.3. |
-| A17 | PENDING | Exact hosted Windows implementation result will be recorded here after success. |
-| A18 | PENDING | Exact hosted closeout result is verified independently after publication. |
+| A17 | PASS | Both hosted Windows jobs passed against the exact implementation SHA. See the run below. |
+| A18 | EXTERNAL CHECK | The final publication report verifies the separate hosted run for the exact closeout SHA. |
 | A19 | PASS | Verified starting inventory of one branch (`main`) and zero pull requests. Direct publication and final inventory are checked against GitHub. |
 | A20 | PASS | Scope is synthetic. Native qualification and the paired resource study remain open. |
 
 The Stage 1.3 five-pair plan and all historical authorization values remain frozen. The fixture-owner loss case preserves its unobserved pipe outcomes. The forced-subject case preserves its provider-facing observation gaps separately from successful fixture cleanup.
+
+## Hosted verification
+
+GitHub Actions **Windows tests** run `46037604515` matched implementation head `78acac89880be02b82ef282b57ab7a929f81c4ac`, ran on a push to `main`, and concluded `success`. Both **Python 3.10.11** and **Python 3.14.3** passed the Stage 1.6 verification step and every preceding check. [Hosted implementation run](https://github.com/MrWizard94-Compile/WPAI-Shared-Execution-Framework/actions/runs/46037604515)
+
+The closeout changes this handoff and its manifest checksum. The closeout commit triggers its own Windows verification run.
