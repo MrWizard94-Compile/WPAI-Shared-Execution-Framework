@@ -1,0 +1,954 @@
+{
+  "provider": "antigravity",
+  "arm": "control",
+  "auth_category": "existing signed-in Google Antigravity session",
+  "model_prompt_started": true,
+  "usage": {
+    "inputTokens": 40703,
+    "outputTokens": 4316,
+    "cachedReadTokens": 141459,
+    "cachedWriteTokens": 0,
+    "thoughtTokens": 2526,
+    "totalTokens": 186478
+  },
+  "model_calls": "unavailable",
+  "agent_turns": 1,
+  "model": "gemini-4-neon-high",
+  "reasoning_setting": "unavailable",
+  "quota_delta": "unavailable",
+  "actual_billable_api_charge": "unavailable",
+  "prompt_sha256": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+  "started_at": "2026-11-27T07:13:17.477+00:00",
+  "client_version": "1.5.18",
+  "acp_version": 1,
+  "model_identity_source": "ACP session current model",
+  "isolation": {
+    "only_mcp_server": "wpai_benchmark",
+    "only_mcp_tool": "fixture_read_field_v1",
+    "terminal_sandbox": true,
+    "customizations_disabled": true,
+    "host_methods_denied": true,
+    "permission_decisions": [
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      },
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      }
+    ]
+  },
+  "prompt_elapsed_seconds": 83.219,
+  "stop_reason": "end_turn",
+  "client_tool_starts": [
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    }
+  ],
+  "client_tool_results": [
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    },
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    }
+  ],
+  "out_of_scope_tool_events": [],
+  "client_process": {
+    "exit_code": 0,
+    "forced": false
+  },
+  "normal_settings_unchanged": true,
+  "isolated_app_data_removed": true,
+  "finished_at": "2026-11-27T07:14:42.608+00:00",
+  "run_elapsed_seconds": 85.131,
+  "server_trace": [
+    {
+      "event": "start",
+      "ms_from_server_start": 0.0092,
+      "arm": "control"
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 1.2491,
+      "method": "server/discover"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 1.3593,
+      "scope": "envelope",
+      "serialization_ms": 0.0154
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 1.4598,
+      "method": "server/discover",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.2023,
+      "wire_bytes": 287,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 2.3065,
+      "method": "tools/list"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 2.4083,
+      "scope": "envelope",
+      "serialization_ms": 0.0211
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 2.652,
+      "method": "tools/list",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.343,
+      "wire_bytes": 817,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 6718.8357,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 6719.0769,
+      "tool": "fixture_read_field_v1",
+      "field": "01_identity",
+      "status": "OK",
+      "acquisition_ms": 0.0079,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 6719.1455,
+      "scope": "payload",
+      "serialization_ms": 0.0179
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 6719.1951,
+      "scope": "envelope",
+      "serialization_ms": 0.0172
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 6719.3642,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.4846,
+      "wire_bytes": 929,
+      "report_json_bytes": 332,
+      "report_sha256": "947817497bc098735225c1ab9fc637ee71a9767f02dd4a5144be75433ad48c4c",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 13940.9611,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 13941.3577,
+      "tool": "fixture_read_field_v1",
+      "field": "02_local_head",
+      "status": "OK",
+      "acquisition_ms": 0.01,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 13941.4435,
+      "scope": "payload",
+      "serialization_ms": 0.0187
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 13941.4976,
+      "scope": "envelope",
+      "serialization_ms": 0.0184
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 13941.6876,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.6943,
+      "wire_bytes": 845,
+      "report_json_bytes": 292,
+      "report_sha256": "1808a76f2a96229ffdb0bff88557baded4625585b3621924c90c0125aac40bb3",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 18921.6418,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 18921.9005,
+      "tool": "fixture_read_field_v1",
+      "field": "03_remote_main",
+      "status": "OK",
+      "acquisition_ms": 0.006,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 18921.9691,
+      "scope": "payload",
+      "serialization_ms": 0.0156
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 18922.0149,
+      "scope": "envelope",
+      "serialization_ms": 0.0158
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 18922.1514,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.4916,
+      "wire_bytes": 743,
+      "report_json_bytes": 244,
+      "report_sha256": "1025a91df67a8300e241fccee40ac1d083e202d536136587ee6392d1d645bc47",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 22888.1742,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 22888.4337,
+      "tool": "fixture_read_field_v1",
+      "field": "04_working_tree",
+      "status": "OK",
+      "acquisition_ms": 0.0063,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 22888.5058,
+      "scope": "payload",
+      "serialization_ms": 0.0151
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 22888.5517,
+      "scope": "envelope",
+      "serialization_ms": 0.0164
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 22888.6913,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.4985,
+      "wire_bytes": 719,
+      "report_json_bytes": 232,
+      "report_sha256": "a733627c3ae6d414d12a9294328d1cd1d533896cf0d4df79bb7a68caad8850b1",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 26581.1597,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 26581.487,
+      "tool": "fixture_read_field_v1",
+      "field": "05_change_counts",
+      "status": "OK",
+      "acquisition_ms": 0.0076,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 26581.5831,
+      "scope": "payload",
+      "serialization_ms": 0.0147
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 26581.6261,
+      "scope": "envelope",
+      "serialization_ms": 0.017
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 26581.7697,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.5905,
+      "wire_bytes": 821,
+      "report_json_bytes": 280,
+      "report_sha256": "471e0dc57d2f927bf554a3adaaae269c2b9f1e3f969c618ef09ecfe8e4f40e7e",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 30365.6228,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 30365.8805,
+      "tool": "fixture_read_field_v1",
+      "field": "06_branch_inventory",
+      "status": "OK",
+      "acquisition_ms": 0.0058,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 30365.9529,
+      "scope": "payload",
+      "serialization_ms": 0.0202
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 30366.0019,
+      "scope": "envelope",
+      "serialization_ms": 0.0195
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 30366.1533,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.5073,
+      "wire_bytes": 1171,
+      "report_json_bytes": 445,
+      "report_sha256": "ce5ec2a662ba938535bc6c921b4a570687a3260d2415268c2ebbaefe6ac0dc37",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 34497.3528,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 34497.6582,
+      "tool": "fixture_read_field_v1",
+      "field": "07_main_divergence",
+      "status": "OK",
+      "acquisition_ms": 0.0082,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 34497.7332,
+      "scope": "payload",
+      "serialization_ms": 0.0188
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 34497.782,
+      "scope": "envelope",
+      "serialization_ms": 0.0171
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 34497.961,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.559,
+      "wire_bytes": 717,
+      "report_json_bytes": 230,
+      "report_sha256": "f1fe076ce9ce14dd47e7aec3368cf89d718ba173ac0445bc69e98145bdca2453",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 44415.9146,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 44416.1744,
+      "tool": "fixture_read_field_v1",
+      "field": "08_recent_commits",
+      "status": "OK",
+      "acquisition_ms": 0.0099,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 44416.2213,
+      "scope": "payload",
+      "serialization_ms": 0.0159
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 44416.3024,
+      "scope": "envelope",
+      "serialization_ms": 0.0263
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 44416.4452,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.5092,
+      "wire_bytes": 1168,
+      "report_json_bytes": 445,
+      "report_sha256": "10e73f5e13417d4516e4faeabf23b6fccfce70284afd2d45b7f5e36e2c7f9140",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 48338.45,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 48338.6938,
+      "tool": "fixture_read_field_v1",
+      "field": "09_open_pull_requests",
+      "status": "OK",
+      "acquisition_ms": 0.0059,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 48338.764,
+      "scope": "payload",
+      "serialization_ms": 0.0158
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 48338.8094,
+      "scope": "envelope",
+      "serialization_ms": 0.0159
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 48338.9482,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.4751,
+      "wire_bytes": 748,
+      "report_json_bytes": 246,
+      "report_sha256": "21e43dec9db14e4c29c3577012b05c98a6a9ad171938cfd6abc766d156e9f13d",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 52816.0099,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 52816.2704,
+      "tool": "fixture_read_field_v1",
+      "field": "10_applicable_actions",
+      "status": "OK",
+      "acquisition_ms": 0.0061,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 52816.3463,
+      "scope": "payload",
+      "serialization_ms": 0.0186
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 52816.4381,
+      "scope": "envelope",
+      "serialization_ms": 0.0194
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 52816.6221,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.5487,
+      "wire_bytes": 964,
+      "report_json_bytes": 346,
+      "report_sha256": "71e987ab8e2547b102d47546ea7b9dc1591cd24b1a05e98f6b9a14e6188feebb",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 57049.3816,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 57049.6378,
+      "tool": "fixture_read_field_v1",
+      "field": "11_failed_checks",
+      "status": "OK",
+      "acquisition_ms": 0.0065,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 57049.7074,
+      "scope": "payload",
+      "serialization_ms": 0.0155
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 57049.7529,
+      "scope": "envelope",
+      "serialization_ms": 0.0161
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 57049.8736,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.4731,
+      "wire_bytes": 772,
+      "report_json_bytes": 258,
+      "report_sha256": "042b5c3980856886a0b5a171c3972cb0bff200cc48c837adef290635fdaba2ce",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 61788.4031,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 61788.6522,
+      "tool": "fixture_read_field_v1",
+      "field": "12_discrepancies",
+      "status": "OK",
+      "acquisition_ms": 0.0061,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 61788.7275,
+      "scope": "payload",
+      "serialization_ms": 0.0168
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 61788.776,
+      "scope": "envelope",
+      "serialization_ms": 0.0177
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 61788.9641,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.4979,
+      "wire_bytes": 920,
+      "report_json_bytes": 329,
+      "report_sha256": "3e489e684de95c82f1fce2d5b441f8c5c8658259f79ecd855836018e00d49842",
+      "parity": true
+    },
+    {
+      "event": "stop",
+      "ms_from_server_start": 83322.2322,
+      "code": 0,
+      "worker_alive": false
+    }
+  ],
+  "server_processes": [
+    "gone"
+  ],
+  "server_protocols": [
+    "2026-07-28"
+  ],
+  "final_response_received": true,
+  "answer_score": {
+    "valid_json": true,
+    "passed": true,
+    "exact_fields": 12,
+    "extra_field_count": 0,
+    "fields": {
+      "01_identity": "exact",
+      "02_local_head": "exact",
+      "03_remote_main": "exact",
+      "04_working_tree": "exact",
+      "05_change_counts": "exact",
+      "06_branch_inventory": "exact",
+      "07_main_divergence": "exact",
+      "08_recent_commits": "exact",
+      "09_open_pull_requests": "exact",
+      "10_applicable_actions": "exact",
+      "11_failed_checks": "exact",
+      "12_discrepancies": "exact"
+    }
+  },
+  "validated_answer": {
+    "schema": "wpai.benchmark.answer.v1",
+    "facts": {
+      "01_identity": {
+        "status": "observed",
+        "source": "fixture/identity",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "name": "Fictional Clockwork Museum",
+          "repository": "clockwork-museum.invalid/paper-gear",
+          "visibility": "synthetic"
+        }
+      },
+      "02_local_head": {
+        "status": "observed",
+        "source": "fixture/git-head",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "branch": "rehearsal",
+          "sha": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+        }
+      },
+      "03_remote_main": {
+        "status": "observed",
+        "source": "fixture/remote-ref",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+      },
+      "04_working_tree": {
+        "status": "observed",
+        "source": "fixture/git-status",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": "dirty"
+      },
+      "05_change_counts": {
+        "status": "observed",
+        "source": "fixture/git-status",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "staged": 2,
+          "unstaged": 1,
+          "untracked": 0,
+          "conflicted": 0
+        }
+      },
+      "06_branch_inventory": {
+        "status": "observed",
+        "source": "fixture/refs",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "local": [
+            {
+              "name": "rehearsal",
+              "sha": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+            },
+            {
+              "name": "main",
+              "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+            }
+          ],
+          "remote": [
+            {
+              "name": "main",
+              "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+            }
+          ]
+        }
+      },
+      "07_main_divergence": {
+        "status": "observed",
+        "source": "fixture/commit-graph",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "ahead": 1,
+          "behind": 2
+        }
+      },
+      "08_recent_commits": {
+        "status": "observed",
+        "source": "fixture/commit-history",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": [
+          {
+            "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+            "subject": "Tune cardboard pendulum",
+            "date": "2034-06-18T11:00:00.000Z"
+          },
+          {
+            "sha": "c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3",
+            "subject": "Paint paper gear",
+            "date": "2034-06-17T09:00:00.000Z"
+          }
+        ]
+      },
+      "09_open_pull_requests": {
+        "status": "observed",
+        "source": "fixture/pull-requests",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "items": []
+        }
+      },
+      "10_applicable_actions": {
+        "status": "observed",
+        "source": "fixture/ci",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "workflow": "Paper Gear Check",
+          "run_number": 17,
+          "head_sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+          "status": "completed",
+          "conclusion": "failure"
+        }
+      },
+      "11_failed_checks": {
+        "status": "unavailable",
+        "source": "fixture/check-annotations",
+        "target": "Paper Gear Check",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "reason": "annotation_source_unavailable"
+      },
+      "12_discrepancies": {
+        "status": "observed",
+        "source": "fixture/ref-comparison",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "observations": [
+            "rehearsal differs from main",
+            "local working tree has three tracked changes"
+          ],
+          "stale_remote_refs": false
+        }
+      }
+    }
+  },
+  "server_metrics": {
+    "operations": 12,
+    "statuses": {
+      "OK": 12
+    },
+    "process_attempts": 0,
+    "json_bytes": 3679,
+    "rpc_wire_bytes": 10517,
+    "acquisition_ms": 0.0863,
+    "round_trip_ms": 6.3298,
+    "serialization_ms": 0.4569
+  },
+  "temporary_directory_removed": true
+}

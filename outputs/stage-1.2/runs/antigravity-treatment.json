@@ -1,0 +1,349 @@
+{
+  "provider": "antigravity",
+  "arm": "treatment",
+  "auth_category": "existing signed-in Google Antigravity session",
+  "model_prompt_started": true,
+  "usage": {
+    "inputTokens": 13614,
+    "outputTokens": 3229,
+    "cachedReadTokens": 11019,
+    "cachedWriteTokens": 0,
+    "thoughtTokens": 1945,
+    "totalTokens": 27862
+  },
+  "model_calls": "unavailable",
+  "agent_turns": 1,
+  "model": "gemini-4-neon-high",
+  "reasoning_setting": "unavailable",
+  "quota_delta": "unavailable",
+  "actual_billable_api_charge": "unavailable",
+  "prompt_sha256": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325",
+  "started_at": "2026-11-27T07:08:29.678+00:00",
+  "client_version": "1.5.18",
+  "acp_version": 1,
+  "model_identity_source": "ACP session current model",
+  "isolation": {
+    "only_mcp_server": "wpai_benchmark",
+    "only_mcp_tool": "repo_health_v1",
+    "terminal_sandbox": true,
+    "customizations_disabled": true,
+    "host_methods_denied": true,
+    "permission_decisions": [
+      {
+        "fixture_match": true,
+        "allow_once_available": true,
+        "decision": "allow_once",
+        "kind": "other",
+        "server_label_present": true
+      }
+    ]
+  },
+  "prompt_elapsed_seconds": 26.279,
+  "stop_reason": "end_turn",
+  "client_tool_starts": [
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    }
+  ],
+  "client_tool_results": [
+    {
+      "is_fixture": true,
+      "status": "completed",
+      "has_result": false
+    }
+  ],
+  "out_of_scope_tool_events": [],
+  "client_process": {
+    "exit_code": 0,
+    "forced": false
+  },
+  "normal_settings_unchanged": true,
+  "isolated_app_data_removed": true,
+  "finished_at": "2026-11-27T07:08:57.686+00:00",
+  "run_elapsed_seconds": 28.008,
+  "server_trace": [
+    {
+      "event": "start",
+      "ms_from_server_start": 0.0079,
+      "arm": "treatment"
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 1.2167,
+      "method": "server/discover"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 1.3292,
+      "scope": "envelope",
+      "serialization_ms": 0.0155
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 1.4144,
+      "method": "server/discover",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.197,
+      "wire_bytes": 287,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 2.1446,
+      "method": "tools/list"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 2.2614,
+      "scope": "envelope",
+      "serialization_ms": 0.0387
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 2.8554,
+      "method": "tools/list",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.7081,
+      "wire_bytes": 959,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 6795.9703,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 6796.2436,
+      "tool": "repo_health_v1",
+      "field": null,
+      "status": "OK",
+      "acquisition_ms": 0.0085,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 6796.3417,
+      "scope": "payload",
+      "serialization_ms": 0.0451
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 6796.429,
+      "scope": "envelope",
+      "serialization_ms": 0.0544
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 6796.7805,
+      "method": "tools/call",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.7285,
+      "wire_bytes": 6953,
+      "report_json_bytes": 3170,
+      "report_sha256": "55584e87f8e65119faf2a42af6f7f1530bd08803ac616c27a19f3b3d316de13b",
+      "parity": true
+    },
+    {
+      "event": "stop",
+      "ms_from_server_start": 26376.7685,
+      "code": 0,
+      "worker_alive": false
+    }
+  ],
+  "server_processes": [
+    "gone"
+  ],
+  "server_protocols": [
+    "2026-07-28"
+  ],
+  "final_response_received": true,
+  "answer_score": {
+    "valid_json": true,
+    "passed": true,
+    "exact_fields": 12,
+    "extra_field_count": 0,
+    "fields": {
+      "01_identity": "exact",
+      "02_local_head": "exact",
+      "03_remote_main": "exact",
+      "04_working_tree": "exact",
+      "05_change_counts": "exact",
+      "06_branch_inventory": "exact",
+      "07_main_divergence": "exact",
+      "08_recent_commits": "exact",
+      "09_open_pull_requests": "exact",
+      "10_applicable_actions": "exact",
+      "11_failed_checks": "exact",
+      "12_discrepancies": "exact"
+    }
+  },
+  "validated_answer": {
+    "schema": "wpai.benchmark.answer.v1",
+    "facts": {
+      "01_identity": {
+        "status": "observed",
+        "source": "fixture/identity",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "name": "Fictional Clockwork Museum",
+          "repository": "clockwork-museum.invalid/paper-gear",
+          "visibility": "synthetic"
+        }
+      },
+      "02_local_head": {
+        "status": "observed",
+        "source": "fixture/git-head",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "branch": "rehearsal",
+          "sha": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+        }
+      },
+      "03_remote_main": {
+        "status": "observed",
+        "source": "fixture/remote-ref",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+      },
+      "04_working_tree": {
+        "status": "observed",
+        "source": "fixture/git-status",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": "dirty"
+      },
+      "05_change_counts": {
+        "status": "observed",
+        "source": "fixture/git-status",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "staged": 2,
+          "unstaged": 1,
+          "untracked": 0,
+          "conflicted": 0
+        }
+      },
+      "06_branch_inventory": {
+        "status": "observed",
+        "source": "fixture/refs",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "local": [
+            {
+              "name": "rehearsal",
+              "sha": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+            },
+            {
+              "name": "main",
+              "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+            }
+          ],
+          "remote": [
+            {
+              "name": "main",
+              "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+            }
+          ]
+        }
+      },
+      "07_main_divergence": {
+        "status": "observed",
+        "source": "fixture/commit-graph",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "ahead": 1,
+          "behind": 2
+        }
+      },
+      "08_recent_commits": {
+        "status": "observed",
+        "source": "fixture/commit-history",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": [
+          {
+            "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+            "subject": "Tune cardboard pendulum",
+            "date": "2034-06-18T11:00:00.000Z"
+          },
+          {
+            "sha": "c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3",
+            "subject": "Paint paper gear",
+            "date": "2034-06-17T09:00:00.000Z"
+          }
+        ]
+      },
+      "09_open_pull_requests": {
+        "status": "observed",
+        "source": "fixture/pull-requests",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "items": []
+        }
+      },
+      "10_applicable_actions": {
+        "status": "observed",
+        "source": "fixture/ci",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "workflow": "Paper Gear Check",
+          "run_number": 17,
+          "head_sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+          "status": "completed",
+          "conclusion": "failure"
+        }
+      },
+      "11_failed_checks": {
+        "status": "unavailable",
+        "source": "fixture/check-annotations",
+        "target": "Paper Gear Check",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "reason": "annotation_source_unavailable"
+      },
+      "12_discrepancies": {
+        "status": "observed",
+        "source": "fixture/ref-comparison",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "observations": [
+            "rehearsal differs from main",
+            "local working tree has three tracked changes"
+          ],
+          "stale_remote_refs": false
+        }
+      }
+    }
+  },
+  "server_metrics": {
+    "operations": 1,
+    "statuses": {
+      "OK": 1
+    },
+    "process_attempts": 0,
+    "json_bytes": 3170,
+    "rpc_wire_bytes": 6953,
+    "acquisition_ms": 0.0085,
+    "round_trip_ms": 0.7285,
+    "serialization_ms": 0.1537
+  },
+  "temporary_directory_removed": true
+}

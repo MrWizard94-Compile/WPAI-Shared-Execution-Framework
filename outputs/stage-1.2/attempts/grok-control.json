@@ -1,0 +1,129 @@
+{
+  "provider": "grok",
+  "arm": "control",
+  "auth_category": "existing xAI OAuth subscription session",
+  "model_prompt_started": true,
+  "usage": {
+    "input_tokens": 4350,
+    "cache_read_input_tokens": 8960,
+    "cache_creation_input_tokens": 0,
+    "output_tokens": 211,
+    "reasoning_tokens": 152,
+    "total_tokens": 13521
+  },
+  "model_calls": 2,
+  "agent_turns": 2,
+  "model": "grok-4.7-build",
+  "reasoning_setting": "low",
+  "quota_delta": "unavailable",
+  "actual_billable_api_charge": "unavailable",
+  "prompt_sha256": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+  "started_at": "2026-11-27T07:04:44.931+00:00",
+  "isolation": {
+    "only_mcp_server": "wpai_benchmark",
+    "only_mcp_tool": "fixture_read_field_v1",
+    "permissions": "exact allow with dontAsk",
+    "no_hooks_or_enabled_plugins": true,
+    "credentials_source_referenced_not_copied": true
+  },
+  "client_version": "grok 1.0.92 (b06756fd6256)",
+  "requested_model": "grok-4.7",
+  "models": {
+    "grok-4.7-build": {
+      "inputTokens": 4350,
+      "outputTokens": 211,
+      "cacheReadInputTokens": 8960,
+      "cacheCreationInputTokens": 0,
+      "modelCalls": 2,
+      "costUSD": 0.014446
+    }
+  },
+  "model_identity_source": "Grok modelUsage",
+  "provider_reported_cost_usd": 0.014446,
+  "stop_reason": "cancelled",
+  "prompt_elapsed_seconds": 7.915,
+  "client_tool_starts": [],
+  "client_tool_results": [],
+  "out_of_scope_tool_events": [
+    "non_fixture_tool_event",
+    "non_fixture_tool_event"
+  ],
+  "client_process": {
+    "exit_code": 0,
+    "forced": false
+  },
+  "normal_auth_file_unchanged": true,
+  "finished_at": "2026-11-27T07:04:56.528+00:00",
+  "run_elapsed_seconds": 11.597,
+  "server_trace": [
+    {
+      "event": "start",
+      "ms_from_server_start": 0.007,
+      "arm": "control"
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 1.2023,
+      "method": "initialize"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 1.3046,
+      "scope": "envelope",
+      "serialization_ms": 0.0128
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 1.3939,
+      "method": "initialize",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.186,
+      "wire_bytes": 166,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 1.7399,
+      "method": "tools/list"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 1.8228,
+      "scope": "envelope",
+      "serialization_ms": 0.0194
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 2.4027,
+      "method": "tools/list",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.6601,
+      "wire_bytes": 674,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    }
+  ],
+  "server_processes": [
+    "gone"
+  ],
+  "server_protocols": [
+    "2025-11-25"
+  ],
+  "final_response_received": false,
+  "server_metrics": {
+    "operations": 0,
+    "statuses": {},
+    "process_attempts": 0,
+    "json_bytes": 0,
+    "rpc_wire_bytes": 0,
+    "acquisition_ms": 0,
+    "round_trip_ms": 0,
+    "serialization_ms": 0.0322
+  },
+  "temporary_directory_removed": true
+}

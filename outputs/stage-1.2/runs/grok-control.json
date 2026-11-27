@@ -1,0 +1,851 @@
+{
+  "provider": "grok",
+  "arm": "control",
+  "auth_category": "existing xAI OAuth subscription session",
+  "model_prompt_started": true,
+  "usage": {
+    "input_tokens": 14261,
+    "cache_read_input_tokens": 98560,
+    "cache_creation_input_tokens": 0,
+    "output_tokens": 2184,
+    "reasoning_tokens": 442,
+    "total_tokens": 115005
+  },
+  "model_calls": 14,
+  "agent_turns": 14,
+  "model": "grok-4.7-build",
+  "reasoning_setting": "low",
+  "quota_delta": "unavailable",
+  "actual_billable_api_charge": "unavailable",
+  "prompt_sha256": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+  "started_at": "2026-11-27T07:06:13.310+00:00",
+  "isolation": {
+    "only_mcp_server": "wpai_benchmark",
+    "only_mcp_tool": "fixture_read_field_v1",
+    "permissions": "exact allow with dontAsk",
+    "no_hooks_or_enabled_plugins": true,
+    "credentials_source_referenced_not_copied": true
+  },
+  "client_version": "grok 1.0.92 (b06756fd6256)",
+  "requested_model": "grok-4.7",
+  "client_routing_hint_sha256": "fc1d1ae76fe7f61ce61ba74c3f42651c002ddb8d0d7bc8a94c2756b333dd56d9",
+  "models": {
+    "grok-4.7-build": {
+      "inputTokens": 14261,
+      "outputTokens": 2184,
+      "cacheReadInputTokens": 98560,
+      "cacheCreationInputTokens": 0,
+      "modelCalls": 14,
+      "costUSD": 0.090906
+    }
+  },
+  "model_identity_source": "Grok modelUsage",
+  "provider_reported_cost_usd": 0.090906,
+  "stop_reason": "end_turn",
+  "prompt_elapsed_seconds": 33.371,
+  "client_tool_starts": [
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    },
+    {
+      "is_fixture": true
+    }
+  ],
+  "client_tool_results": [
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    },
+    {
+      "is_fixture": true,
+      "has_result": true,
+      "status": "completed"
+    }
+  ],
+  "out_of_scope_tool_events": [
+    "unqualified_or_unapproved_search_tool"
+  ],
+  "client_process": {
+    "exit_code": 0,
+    "forced": false
+  },
+  "normal_auth_file_unchanged": true,
+  "finished_at": "2026-11-27T07:06:49.393+00:00",
+  "run_elapsed_seconds": 36.084,
+  "server_trace": [
+    {
+      "event": "start",
+      "ms_from_server_start": 0.0089,
+      "arm": "control"
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 1.3308,
+      "method": "initialize"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 1.4562,
+      "scope": "envelope",
+      "serialization_ms": 0.0134
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 1.5425,
+      "method": "initialize",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.2117,
+      "wire_bytes": 166,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 1.8983,
+      "method": "tools/list"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 1.9856,
+      "scope": "envelope",
+      "serialization_ms": 0.0219
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 2.5736,
+      "method": "tools/list",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.6728,
+      "wire_bytes": 674,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 5615.3776,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 5616.1605,
+      "tool": "fixture_read_field_v1",
+      "field": "01_identity",
+      "status": "OK",
+      "acquisition_ms": 0.0183,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 5616.503,
+      "scope": "payload",
+      "serialization_ms": 0.2638
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 5616.6175,
+      "scope": "envelope",
+      "serialization_ms": 0.0259
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 5616.8559,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 1.4219,
+      "wire_bytes": 819,
+      "report_json_bytes": 332,
+      "report_sha256": "947817497bc098735225c1ab9fc637ee71a9767f02dd4a5144be75433ad48c4c",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 6956.4303,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 6956.6972,
+      "tool": "fixture_read_field_v1",
+      "field": "02_local_head",
+      "status": "OK",
+      "acquisition_ms": 0.0136,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 6956.7442,
+      "scope": "payload",
+      "serialization_ms": 0.0133
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 6956.8226,
+      "scope": "envelope",
+      "serialization_ms": 0.0169
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 6957.012,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.5418,
+      "wire_bytes": 735,
+      "report_json_bytes": 292,
+      "report_sha256": "1808a76f2a96229ffdb0bff88557baded4625585b3621924c90c0125aac40bb3",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 8778.0792,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 8778.4194,
+      "tool": "fixture_read_field_v1",
+      "field": "03_remote_main",
+      "status": "OK",
+      "acquisition_ms": 0.0283,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 8778.5069,
+      "scope": "payload",
+      "serialization_ms": 0.0326
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 8778.6231,
+      "scope": "envelope",
+      "serialization_ms": 0.0401
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 8778.8802,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.7775,
+      "wire_bytes": 633,
+      "report_json_bytes": 244,
+      "report_sha256": "1025a91df67a8300e241fccee40ac1d083e202d536136587ee6392d1d645bc47",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 10915.574,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 10915.934,
+      "tool": "fixture_read_field_v1",
+      "field": "04_working_tree",
+      "status": "OK",
+      "acquisition_ms": 0.0069,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 10916.0577,
+      "scope": "payload",
+      "serialization_ms": 0.0509
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 10916.1201,
+      "scope": "envelope",
+      "serialization_ms": 0.0318
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 10916.3528,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.7379,
+      "wire_bytes": 609,
+      "report_json_bytes": 232,
+      "report_sha256": "a733627c3ae6d414d12a9294328d1cd1d533896cf0d4df79bb7a68caad8850b1",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 12717.1096,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 12717.4208,
+      "tool": "fixture_read_field_v1",
+      "field": "05_change_counts",
+      "status": "OK",
+      "acquisition_ms": 0.0071,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 12717.504,
+      "scope": "payload",
+      "serialization_ms": 0.0152
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 12717.5441,
+      "scope": "envelope",
+      "serialization_ms": 0.0164
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 12717.7167,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.5686,
+      "wire_bytes": 711,
+      "report_json_bytes": 280,
+      "report_sha256": "471e0dc57d2f927bf554a3adaaae269c2b9f1e3f969c618ef09ecfe8e4f40e7e",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 13750.9132,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 13751.1701,
+      "tool": "fixture_read_field_v1",
+      "field": "06_branch_inventory",
+      "status": "OK",
+      "acquisition_ms": 0.0068,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 13751.2215,
+      "scope": "payload",
+      "serialization_ms": 0.0177
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 13751.3004,
+      "scope": "envelope",
+      "serialization_ms": 0.024
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 13751.5091,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.5691,
+      "wire_bytes": 1061,
+      "report_json_bytes": 445,
+      "report_sha256": "ce5ec2a662ba938535bc6c921b4a570687a3260d2415268c2ebbaefe6ac0dc37",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 15677.1768,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 15677.4316,
+      "tool": "fixture_read_field_v1",
+      "field": "07_main_divergence",
+      "status": "OK",
+      "acquisition_ms": 0.0061,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 15677.4975,
+      "scope": "payload",
+      "serialization_ms": 0.0149
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 15677.536,
+      "scope": "envelope",
+      "serialization_ms": 0.0144
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 15677.724,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.5028,
+      "wire_bytes": 607,
+      "report_json_bytes": 230,
+      "report_sha256": "f1fe076ce9ce14dd47e7aec3368cf89d718ba173ac0445bc69e98145bdca2453",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 17514.3309,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 17514.6508,
+      "tool": "fixture_read_field_v1",
+      "field": "08_recent_commits",
+      "status": "OK",
+      "acquisition_ms": 0.0068,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 17514.7309,
+      "scope": "payload",
+      "serialization_ms": 0.0206
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 17514.7803,
+      "scope": "envelope",
+      "serialization_ms": 0.0193
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 17515.0028,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.6347,
+      "wire_bytes": 1057,
+      "report_json_bytes": 445,
+      "report_sha256": "10e73f5e13417d4516e4faeabf23b6fccfce70284afd2d45b7f5e36e2c7f9140",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 19332.3967,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 19332.7116,
+      "tool": "fixture_read_field_v1",
+      "field": "09_open_pull_requests",
+      "status": "OK",
+      "acquisition_ms": 0.0073,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 19332.785,
+      "scope": "payload",
+      "serialization_ms": 0.0165
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 19332.8295,
+      "scope": "envelope",
+      "serialization_ms": 0.0157
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 19333.0069,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.5878,
+      "wire_bytes": 638,
+      "report_json_bytes": 246,
+      "report_sha256": "21e43dec9db14e4c29c3577012b05c98a6a9ad171938cfd6abc766d156e9f13d",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 20233.5527,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 20233.8127,
+      "tool": "fixture_read_field_v1",
+      "field": "10_applicable_actions",
+      "status": "OK",
+      "acquisition_ms": 0.0064,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 20233.8589,
+      "scope": "payload",
+      "serialization_ms": 0.0156
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 20233.936,
+      "scope": "envelope",
+      "serialization_ms": 0.0166
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 20234.1674,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.5907,
+      "wire_bytes": 854,
+      "report_json_bytes": 346,
+      "report_sha256": "71e987ab8e2547b102d47546ea7b9dc1591cd24b1a05e98f6b9a14e6188feebb",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 21482.0574,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 21482.4778,
+      "tool": "fixture_read_field_v1",
+      "field": "11_failed_checks",
+      "status": "OK",
+      "acquisition_ms": 0.0279,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 21482.5236,
+      "scope": "payload",
+      "serialization_ms": 0.013
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 21482.594,
+      "scope": "envelope",
+      "serialization_ms": 0.0195
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 21482.7581,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.6778,
+      "wire_bytes": 662,
+      "report_json_bytes": 258,
+      "report_sha256": "042b5c3980856886a0b5a171c3972cb0bff200cc48c837adef290635fdaba2ce",
+      "parity": true
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 22843.2095,
+      "method": "tools/call"
+    },
+    {
+      "event": "acquisition",
+      "ms_from_server_start": 22843.4649,
+      "tool": "fixture_read_field_v1",
+      "field": "12_discrepancies",
+      "status": "OK",
+      "acquisition_ms": 0.0071,
+      "process_attempts": 0
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 22843.5359,
+      "scope": "payload",
+      "serialization_ms": 0.0166
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 22843.5811,
+      "scope": "envelope",
+      "serialization_ms": 0.0166
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 22843.7924,
+      "method": "tools/call",
+      "protocol": "2025-11-25",
+      "ok": true,
+      "round_trip_ms": 0.5455,
+      "wire_bytes": 810,
+      "report_json_bytes": 329,
+      "report_sha256": "3e489e684de95c82f1fce2d5b441f8c5c8658259f79ecd855836018e00d49842",
+      "parity": true
+    }
+  ],
+  "server_processes": [
+    "gone"
+  ],
+  "server_protocols": [
+    "2025-11-25"
+  ],
+  "final_response_received": true,
+  "answer_score": {
+    "valid_json": true,
+    "passed": true,
+    "exact_fields": 12,
+    "extra_field_count": 0,
+    "fields": {
+      "01_identity": "exact",
+      "02_local_head": "exact",
+      "03_remote_main": "exact",
+      "04_working_tree": "exact",
+      "05_change_counts": "exact",
+      "06_branch_inventory": "exact",
+      "07_main_divergence": "exact",
+      "08_recent_commits": "exact",
+      "09_open_pull_requests": "exact",
+      "10_applicable_actions": "exact",
+      "11_failed_checks": "exact",
+      "12_discrepancies": "exact"
+    }
+  },
+  "validated_answer": {
+    "schema": "wpai.benchmark.answer.v1",
+    "facts": {
+      "01_identity": {
+        "status": "observed",
+        "source": "fixture/identity",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "name": "Fictional Clockwork Museum",
+          "repository": "clockwork-museum.invalid/paper-gear",
+          "visibility": "synthetic"
+        }
+      },
+      "02_local_head": {
+        "status": "observed",
+        "source": "fixture/git-head",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "branch": "rehearsal",
+          "sha": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+        }
+      },
+      "03_remote_main": {
+        "status": "observed",
+        "source": "fixture/remote-ref",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+      },
+      "04_working_tree": {
+        "status": "observed",
+        "source": "fixture/git-status",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": "dirty"
+      },
+      "05_change_counts": {
+        "status": "observed",
+        "source": "fixture/git-status",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "staged": 2,
+          "unstaged": 1,
+          "untracked": 0,
+          "conflicted": 0
+        }
+      },
+      "06_branch_inventory": {
+        "status": "observed",
+        "source": "fixture/refs",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "local": [
+            {
+              "name": "rehearsal",
+              "sha": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+            },
+            {
+              "name": "main",
+              "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+            }
+          ],
+          "remote": [
+            {
+              "name": "main",
+              "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+            }
+          ]
+        }
+      },
+      "07_main_divergence": {
+        "status": "observed",
+        "source": "fixture/commit-graph",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "ahead": 1,
+          "behind": 2
+        }
+      },
+      "08_recent_commits": {
+        "status": "observed",
+        "source": "fixture/commit-history",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": [
+          {
+            "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+            "subject": "Tune cardboard pendulum",
+            "date": "2034-06-18T11:00:00.000Z"
+          },
+          {
+            "sha": "c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3",
+            "subject": "Paint paper gear",
+            "date": "2034-06-17T09:00:00.000Z"
+          }
+        ]
+      },
+      "09_open_pull_requests": {
+        "status": "observed",
+        "source": "fixture/pull-requests",
+        "target": "fictional-clockwork-museum",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "items": []
+        }
+      },
+      "10_applicable_actions": {
+        "status": "observed",
+        "source": "fixture/ci",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "workflow": "Paper Gear Check",
+          "run_number": 17,
+          "head_sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+          "status": "completed",
+          "conclusion": "failure"
+        }
+      },
+      "11_failed_checks": {
+        "status": "unavailable",
+        "source": "fixture/check-annotations",
+        "target": "Paper Gear Check",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "reason": "annotation_source_unavailable"
+      },
+      "12_discrepancies": {
+        "status": "observed",
+        "source": "fixture/ref-comparison",
+        "target": "main",
+        "observed_at": "2034-06-18T12:00:00.000Z",
+        "value": {
+          "observations": [
+            "rehearsal differs from main",
+            "local working tree has three tracked changes"
+          ],
+          "stale_remote_refs": false
+        }
+      }
+    }
+  },
+  "server_metrics": {
+    "operations": 12,
+    "statuses": {
+      "OK": 12
+    },
+    "process_attempts": 0,
+    "json_bytes": 3679,
+    "rpc_wire_bytes": 9196,
+    "acquisition_ms": 0.1426,
+    "round_trip_ms": 8.1561,
+    "serialization_ms": 0.7832
+  },
+  "temporary_directory_removed": true
+}

@@ -1,0 +1,7 @@
+{
+  "stage_1_1_package": "9063cd629145fee025a6330dd969a6bb608bc2571cca72dde5860947652a3686",
+  "ground_truth.json": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8",
+  "response_schema.json": "66760159677ef20e42b112a317b2fff28947c9994bb347b6361dcc4a9568448e",
+  "control-prompt.txt": "df1ebe1690b16b813970a5c42f60e94878dbc128b64fd73580c91ca2d869a9cf",
+  "treatment-prompt.txt": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325"
+}

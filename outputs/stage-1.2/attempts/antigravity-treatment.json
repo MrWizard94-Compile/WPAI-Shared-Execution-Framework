@@ -1,0 +1,143 @@
+{
+  "provider": "antigravity",
+  "arm": "treatment",
+  "auth_category": "existing signed-in Google Antigravity session",
+  "model_prompt_started": true,
+  "usage": {
+    "inputTokens": 11384,
+    "outputTokens": 386,
+    "cachedReadTokens": 0,
+    "cachedWriteTokens": 0,
+    "thoughtTokens": 341,
+    "totalTokens": 11770
+  },
+  "model_calls": "unavailable",
+  "agent_turns": 1,
+  "model": "gemini-4-neon-high",
+  "reasoning_setting": "unavailable",
+  "quota_delta": "unavailable",
+  "actual_billable_api_charge": "unavailable",
+  "prompt_sha256": "965066611983e57d7206a09100fe84fe91aa669b769d9284ecf1d7e1d103b325",
+  "started_at": "2026-11-27T07:07:51.162+00:00",
+  "client_version": "1.5.18",
+  "acp_version": 1,
+  "model_identity_source": "ACP session current model",
+  "isolation": {
+    "only_mcp_server": "wpai_benchmark",
+    "only_mcp_tool": "repo_health_v1",
+    "terminal_sandbox": true,
+    "customizations_disabled": true,
+    "host_methods_denied": true,
+    "permission_decisions": [
+      {
+        "fixture_match": false,
+        "allow_once_available": true,
+        "decision": "cancelled",
+        "kind": "other",
+        "server_label_present": true
+      }
+    ]
+  },
+  "prompt_elapsed_seconds": 7.186,
+  "stop_reason": "end_turn",
+  "client_tool_starts": [
+    {
+      "is_fixture": false,
+      "status": "failed",
+      "has_result": true
+    }
+  ],
+  "client_tool_results": [
+    {
+      "is_fixture": false,
+      "status": "failed",
+      "has_result": true
+    }
+  ],
+  "out_of_scope_tool_events": [],
+  "client_process": {
+    "exit_code": 0,
+    "forced": false
+  },
+  "normal_settings_unchanged": true,
+  "isolated_app_data_removed": true,
+  "finished_at": "2026-11-27T07:08:00.239+00:00",
+  "run_elapsed_seconds": 9.077,
+  "server_trace": [
+    {
+      "event": "start",
+      "ms_from_server_start": 0.0079,
+      "arm": "treatment"
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 1.2306,
+      "method": "server/discover"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 1.3422,
+      "scope": "envelope",
+      "serialization_ms": 0.015
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 1.4476,
+      "method": "server/discover",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.2074,
+      "wire_bytes": 287,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    },
+    {
+      "event": "received",
+      "ms_from_server_start": 2.2339,
+      "method": "tools/list"
+    },
+    {
+      "event": "serialization",
+      "ms_from_server_start": 2.3759,
+      "scope": "envelope",
+      "serialization_ms": 0.0386
+    },
+    {
+      "event": "sent",
+      "ms_from_server_start": 2.7393,
+      "method": "tools/list",
+      "protocol": "2026-07-28",
+      "ok": true,
+      "round_trip_ms": 0.4992,
+      "wire_bytes": 959,
+      "report_json_bytes": 0,
+      "report_sha256": null,
+      "parity": null
+    },
+    {
+      "event": "stop",
+      "ms_from_server_start": 7312.4458,
+      "code": 0,
+      "worker_alive": false
+    }
+  ],
+  "server_processes": [
+    "gone"
+  ],
+  "server_protocols": [
+    "2026-07-28"
+  ],
+  "final_response_received": false,
+  "server_metrics": {
+    "operations": 0,
+    "statuses": {},
+    "process_attempts": 0,
+    "json_bytes": 0,
+    "rpc_wire_bytes": 0,
+    "acquisition_ms": 0,
+    "round_trip_ms": 0,
+    "serialization_ms": 0.0536
+  },
+  "temporary_directory_removed": true
+}

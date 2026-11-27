@@ -1,0 +1,1 @@
+Call fixture_read_field_v1 separately for each of the twelve listed keys, in order, with one argument named field. Wait for each reply before issuing the next call. Each reply contains that one field and its fact. Assemble the facts from all twelve replies.

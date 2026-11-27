@@ -1,0 +1,371 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage 1.2 benchmark answer",
+  "type": "object",
+  "required": [
+    "schema",
+    "facts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "wpai.benchmark.answer.v1"
+    },
+    "facts": {
+      "type": "object",
+      "required": [
+        "01_identity",
+        "02_local_head",
+        "03_remote_main",
+        "04_working_tree",
+        "05_change_counts",
+        "06_branch_inventory",
+        "07_main_divergence",
+        "08_recent_commits",
+        "09_open_pull_requests",
+        "10_applicable_actions",
+        "11_failed_checks",
+        "12_discrepancies"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "01_identity": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "02_local_head": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "03_remote_main": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        },
+        "04_working_tree": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        },
+        "05_change_counts": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "06_branch_inventory": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "07_main_divergence": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "08_recent_commits": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "array"
+            }
+          }
+        },
+        "09_open_pull_requests": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "10_applicable_actions": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "11_failed_checks": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "reason"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "12_discrepancies": {
+          "type": "object",
+          "required": [
+            "status",
+            "source",
+            "target",
+            "observed_at",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "target": {
+              "type": "string"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  }
+}

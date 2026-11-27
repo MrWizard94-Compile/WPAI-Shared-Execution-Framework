@@ -1,0 +1,146 @@
+{
+  "schema": "wpai.benchmark.answer.v1",
+  "facts": {
+    "01_identity": {
+      "status": "observed",
+      "source": "fixture/identity",
+      "target": "fictional-clockwork-museum",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": {
+        "name": "Fictional Clockwork Museum",
+        "repository": "clockwork-museum.invalid/paper-gear",
+        "visibility": "synthetic"
+      }
+    },
+    "02_local_head": {
+      "status": "observed",
+      "source": "fixture/git-head",
+      "target": "fictional-clockwork-museum",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": {
+        "branch": "rehearsal",
+        "sha": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+      }
+    },
+    "03_remote_main": {
+      "status": "observed",
+      "source": "fixture/remote-ref",
+      "target": "main",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+    },
+    "04_working_tree": {
+      "status": "observed",
+      "source": "fixture/git-status",
+      "target": "fictional-clockwork-museum",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": "dirty"
+    },
+    "05_change_counts": {
+      "status": "observed",
+      "source": "fixture/git-status",
+      "target": "fictional-clockwork-museum",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": {
+        "staged": 2,
+        "unstaged": 1,
+        "untracked": 0,
+        "conflicted": 0
+      }
+    },
+    "06_branch_inventory": {
+      "status": "observed",
+      "source": "fixture/refs",
+      "target": "fictional-clockwork-museum",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": {
+        "local": [
+          {
+            "name": "rehearsal",
+            "sha": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+          },
+          {
+            "name": "main",
+            "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+          }
+        ],
+        "remote": [
+          {
+            "name": "main",
+            "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+          }
+        ]
+      }
+    },
+    "07_main_divergence": {
+      "status": "observed",
+      "source": "fixture/commit-graph",
+      "target": "main",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": {
+        "ahead": 1,
+        "behind": 2
+      }
+    },
+    "08_recent_commits": {
+      "status": "observed",
+      "source": "fixture/commit-history",
+      "target": "main",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": [
+        {
+          "sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+          "subject": "Tune cardboard pendulum",
+          "date": "2034-06-18T11:00:00.000Z"
+        },
+        {
+          "sha": "c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3",
+          "subject": "Paint paper gear",
+          "date": "2034-06-17T09:00:00.000Z"
+        }
+      ]
+    },
+    "09_open_pull_requests": {
+      "status": "observed",
+      "source": "fixture/pull-requests",
+      "target": "fictional-clockwork-museum",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": {
+        "items": []
+      }
+    },
+    "10_applicable_actions": {
+      "status": "observed",
+      "source": "fixture/ci",
+      "target": "main",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": {
+        "workflow": "Paper Gear Check",
+        "run_number": 17,
+        "head_sha": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+        "status": "completed",
+        "conclusion": "failure"
+      }
+    },
+    "11_failed_checks": {
+      "status": "unavailable",
+      "source": "fixture/check-annotations",
+      "target": "Paper Gear Check",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "reason": "annotation_source_unavailable"
+    },
+    "12_discrepancies": {
+      "status": "observed",
+      "source": "fixture/ref-comparison",
+      "target": "main",
+      "observed_at": "2034-06-18T12:00:00.000Z",
+      "value": {
+        "observations": [
+          "rehearsal differs from main",
+          "local working tree has three tracked changes"
+        ],
+        "stale_remote_refs": false
+      }
+    }
+  }
+}
