@@ -28,7 +28,13 @@ The project baseline was `948d7692d4787a6f04e853177e5ff3f11c7c7efb`. The canonic
 | A14 | PASS | 111 protected historical source and evidence files matched baseline bytes. [Historical inventory](historical.sha256) |
 | A15 | PASS | Deterministic matrix and publication manifest verified offline. [Stage manifest](manifest.sha256) |
 | A16 | PASS | Prior and new checks passed locally on Python 3.10.11 and 3.14.3 with warnings as errors. |
-| A17 | PENDING | The hosted implementation run is recorded here after both jobs pass. |
-| A18 | PENDING | The exact closeout workflow is verified separately after publication. |
+| A17 | PASS | The hosted implementation run passed both jobs against the exact implementation SHA. |
+| A18 | EXTERNAL CHECK | The final publication report identifies and verifies the independent closeout run against its own SHA. |
 | A19 | PASS | Starting inventory was only `main` with zero pull requests. Publication target is direct `main`. |
 | A20 | PASS | Future decision records identify provider-specific gaps without granting new authority. |
+
+## Hosted verification
+
+GitHub Actions **Windows tests** run `46044601450` was triggered by a push to `main` at head `02628a19dc786bf406fe2f18248ede958daa4bcf` and concluded `success`. Both **Python 3.10.11** and **Python 3.14.3** passed Stage 1.7 static provider account-state isolation and every preceding verification step. [Hosted implementation run](https://github.com/MrWizard94-Compile/WPAI-Shared-Execution-Framework/actions/runs/46044601450)
+
+The closeout changes this handoff and its manifest checksum. Its push triggers a separate Windows workflow run.
