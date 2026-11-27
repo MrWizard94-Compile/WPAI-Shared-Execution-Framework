@@ -35,5 +35,5 @@ PASS means the scoped check was verified. FAIL means evidence contradicted the c
 | A21 Evidence reproducibility | PASS | Both Python versions regenerated identical Stage 1.3 and Stage 1.3.1 evidence. |
 | A22 Scope and inference | PASS | Local synthetic fixtures only. Zero provider sessions and no unauthorized private data. |
 | A23 Final acceptance accounting | PASS | Scoped checks and qualification boundaries recorded here. |
-| Hosted check for the final commit | OPEN | The stage authorizes a local commit and read-only remote inspection. There is no observed hosted run for the corrective candidate. |
+| Hosted check for the final commit | PASS | [Windows tests run `45989981185`](https://github.com/MrWizard94-Compile/WPAI-Shared-Execution-Framework/actions/runs/45989981185) was triggered by a push to `main` at head SHA `eac62f37116383cbb65b50415b7056b44340613c` and concluded `success`. The Python 3.10.11 and Python 3.14.3 jobs both concluded `success`. The `Verify Stage 1.3.1 offline corrective tests and evidence` step concluded `success` in both jobs. |
 | Native lifecycle and paired study | OPEN | Existing provider qualifications remain separate from offline synthetic validation. |
