@@ -1,0 +1,347 @@
+{
+  "account_or_config_changes": 0,
+  "authorized_now": 0,
+  "baseline": "59978aae05bd062e9ab93a4dea56a9498a88845f",
+  "constitution": "0adf5ecee5f7f96ce3749944dc097a003731a6e9",
+  "fixture": {
+    "dataset_sha256": "1eb47cd4ebc554a490b3cc439440f927fced1cc052aa3d634cdd2e97941092f8",
+    "operation": "repo_health_v1",
+    "package_sha256": "9063cd629145fee025a6330dd969a6bb608bc2571cca72dde5860947652a3686"
+  },
+  "historical_files_verified": 123,
+  "journal_schema": "wpai.benchmark.independent-controller-witness.v1",
+  "live_provider_sessions": 0,
+  "measured_windows_reference": {
+    "cases": {
+      "actors_verified": {
+        "actor_terminal_ReadFile": {},
+        "controller_ReadFile": 109,
+        "exit_codes": {
+          "controller": 93,
+          "owner": 124,
+          "relay": 124,
+          "root": 124,
+          "server": 124
+        },
+        "recovery_elapsed_ns": 28435700
+      },
+      "before_launch": {
+        "actor_terminal_ReadFile": {},
+        "controller_ReadFile": 109,
+        "exit_codes": {
+          "controller": 93
+        },
+        "recovery_elapsed_ns": 11986500
+      },
+      "in_flight": {
+        "actor_terminal_ReadFile": {},
+        "controller_ReadFile": 109,
+        "exit_codes": {
+          "controller": 93,
+          "owner": 124,
+          "relay": 124,
+          "root": 124,
+          "server": 124
+        },
+        "recovery_elapsed_ns": 32791700
+      },
+      "normal": {
+        "actor_terminal_ReadFile": {
+          "fixture_request": 109,
+          "fixture_response": 109,
+          "front_request": 109,
+          "front_response": 109,
+          "split_request": 109,
+          "split_response": 109
+        },
+        "controller_ReadFile": 109,
+        "exit_codes": {
+          "controller": 0,
+          "owner": 0,
+          "relay": 0,
+          "root": 0,
+          "server": 0
+        },
+        "recovery_elapsed_ns": null
+      },
+      "response_verified": {
+        "actor_terminal_ReadFile": {},
+        "controller_ReadFile": 109,
+        "exit_codes": {
+          "controller": 93,
+          "owner": 124,
+          "relay": 124,
+          "root": 124,
+          "server": 124
+        },
+        "recovery_elapsed_ns": 32363200
+      }
+    },
+    "python": "3.14.3"
+  },
+  "native_qualification_started": false,
+  "native_routes": {
+    "antigravity": "NO-GO",
+    "codex": "NO-GO",
+    "grok": "NO-GO"
+  },
+  "provider_api_calls": 0,
+  "provider_processes_started": 0,
+  "recovery_deadline_ms": 8000,
+  "scenarios": {
+    "actors_verified": {
+      "actor_terminal_channels": [],
+      "case": "actors_verified",
+      "checkpoint": "actors_verified",
+      "controller_exit": 93,
+      "controller_lost": true,
+      "controller_terminal_observed": true,
+      "exit_roles": [
+        "controller",
+        "owner",
+        "relay",
+        "root",
+        "server"
+      ],
+      "final_job_accounting": {
+        "fixture": {
+          "active": 0,
+          "members": [],
+          "total": 1
+        },
+        "guard": {
+          "active": 0,
+          "members": [],
+          "total": 5
+        },
+        "subject": {
+          "active": 0,
+          "members": [],
+          "total": 2
+        }
+      },
+      "fixture_eof": "unavailable",
+      "fixture_gate_held": false,
+      "outcome": "incomplete",
+      "request_hops_before_loss": 0,
+      "unavailable": [
+        "front_request",
+        "front_response",
+        "split_request",
+        "split_response",
+        "fixture_request",
+        "fixture_response"
+      ],
+      "valid": true,
+      "wire": {},
+      "witness_finalized": true
+    },
+    "before_launch": {
+      "actor_terminal_channels": [],
+      "case": "before_launch",
+      "checkpoint": "before_launch",
+      "controller_exit": 93,
+      "controller_lost": true,
+      "controller_terminal_observed": true,
+      "exit_roles": [
+        "controller"
+      ],
+      "final_job_accounting": {
+        "fixture": {
+          "active": 0,
+          "members": [],
+          "total": 0
+        },
+        "guard": {
+          "active": 0,
+          "members": [],
+          "total": 1
+        },
+        "subject": {
+          "active": 0,
+          "members": [],
+          "total": 0
+        }
+      },
+      "fixture_eof": "unavailable",
+      "fixture_gate_held": false,
+      "outcome": "incomplete",
+      "request_hops_before_loss": 0,
+      "unavailable": [
+        "front_request",
+        "front_response",
+        "split_request",
+        "split_response",
+        "fixture_request",
+        "fixture_response"
+      ],
+      "valid": true,
+      "wire": {},
+      "witness_finalized": true
+    },
+    "in_flight": {
+      "actor_terminal_channels": [],
+      "case": "in_flight",
+      "checkpoint": "in_flight",
+      "controller_exit": 93,
+      "controller_lost": true,
+      "controller_terminal_observed": true,
+      "exit_roles": [
+        "controller",
+        "owner",
+        "relay",
+        "root",
+        "server"
+      ],
+      "final_job_accounting": {
+        "fixture": {
+          "active": 0,
+          "members": [],
+          "total": 1
+        },
+        "guard": {
+          "active": 0,
+          "members": [],
+          "total": 5
+        },
+        "subject": {
+          "active": 0,
+          "members": [],
+          "total": 2
+        }
+      },
+      "fixture_eof": "unavailable",
+      "fixture_gate_held": true,
+      "outcome": "incomplete",
+      "request_hops_before_loss": 3,
+      "unavailable": [
+        "front_request",
+        "front_response",
+        "split_request",
+        "split_response",
+        "fixture_request",
+        "fixture_response"
+      ],
+      "valid": true,
+      "wire": {
+        "request": {
+          "bytes": 248,
+          "sha256": "73e23193e5512dc620cb42a50fca93b74dc3b81a4aeb96348b1e96f23128b97f"
+        }
+      },
+      "witness_finalized": true
+    },
+    "normal": {
+      "actor_terminal_channels": [
+        "fixture_request",
+        "fixture_response",
+        "front_request",
+        "front_response",
+        "split_request",
+        "split_response"
+      ],
+      "case": "normal",
+      "controller_exit": 0,
+      "controller_lost": false,
+      "controller_terminal_observed": true,
+      "exit_roles": [
+        "controller",
+        "owner",
+        "relay",
+        "root",
+        "server"
+      ],
+      "final_job_accounting": {
+        "fixture": {
+          "active": 0,
+          "members": [],
+          "total": 1
+        },
+        "guard": {
+          "active": 0,
+          "members": [],
+          "total": 5
+        },
+        "subject": {
+          "active": 0,
+          "members": [],
+          "total": 2
+        }
+      },
+      "fixture_eof": "observed",
+      "outcome": "observed_success",
+      "unavailable": [],
+      "valid": true,
+      "wire": {
+        "request": {
+          "bytes": 248,
+          "sha256": "73e23193e5512dc620cb42a50fca93b74dc3b81a4aeb96348b1e96f23128b97f"
+        },
+        "response": {
+          "bytes": 6953,
+          "sha256": "bf90f56726d19364d908a2cf1bc90269ee81e5beffc8c9f41525a30c80f50226"
+        }
+      },
+      "witness_finalized": true
+    },
+    "response_verified": {
+      "actor_terminal_channels": [],
+      "case": "response_verified",
+      "checkpoint": "response_verified",
+      "controller_exit": 93,
+      "controller_lost": true,
+      "controller_terminal_observed": true,
+      "exit_roles": [
+        "controller",
+        "owner",
+        "relay",
+        "root",
+        "server"
+      ],
+      "final_job_accounting": {
+        "fixture": {
+          "active": 0,
+          "members": [],
+          "total": 1
+        },
+        "guard": {
+          "active": 0,
+          "members": [],
+          "total": 5
+        },
+        "subject": {
+          "active": 0,
+          "members": [],
+          "total": 2
+        }
+      },
+      "fixture_eof": "unavailable",
+      "fixture_gate_held": false,
+      "outcome": "incomplete",
+      "request_hops_before_loss": 6,
+      "unavailable": [
+        "front_request",
+        "front_response",
+        "split_request",
+        "split_response",
+        "fixture_request",
+        "fixture_response"
+      ],
+      "valid": true,
+      "wire": {
+        "request": {
+          "bytes": 248,
+          "sha256": "73e23193e5512dc620cb42a50fca93b74dc3b81a4aeb96348b1e96f23128b97f"
+        },
+        "response": {
+          "bytes": 6953,
+          "sha256": "bf90f56726d19364d908a2cf1bc90269ee81e5beffc8c9f41525a30c80f50226"
+        }
+      },
+      "witness_finalized": true
+    }
+  },
+  "schema": "wpai.benchmark.independent-controller-evidence.v1",
+  "stage_1_7_matrix_sha256": "9b9f7e9ffa4e8bb7d9a34c251ff9aac3df797396a7383827a3365e881b8f0559",
+  "validation": "witness_then_driver"
+}

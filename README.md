@@ -32,6 +32,7 @@ The same `wpai.repo_health.v1` operation is available over MCP stdio as `2025-06
 | 1.5 | [Native provider readiness handoff](outputs/stage-1.5/handoff.md), [process and transport assessment](outputs/stage-1.5/route-assessment.md), [future qualification plan](outputs/stage-1.5/qualification-plan.md), [offline verification](work/benchmarks/stage-1.5/README.md) |
 | 1.6 | [Synthetic split-route lifecycle preflight](outputs/stage-1.6/handoff.md), [Windows process and witness design](outputs/stage-1.6/architecture.md), [offline reproduction](work/benchmarks/stage-1.6/README.md) |
 | 1.7 | [Provider account-state isolation handoff](outputs/stage-1.7/handoff.md), [route assessment](outputs/stage-1.7/route-assessment.md), [future preflight decisions](outputs/stage-1.7/future-preflight-decisions.md), [offline verification](work/benchmarks/stage-1.7/README.md) |
+| 1.8 | [Independent controller-failure witness](outputs/stage-1.8/handoff.md), [architecture](outputs/stage-1.8/architecture.md), [offline reproduction](work/benchmarks/stage-1.8/README.md) |
 
 Stage 0C has an approved Claude Code exception. Stage 1 verified the twelve W1 fields against independent Git and GitHub reads across three repeatability trials. Follow the existing authorization limits for model-driven tests against private repository data.
 
