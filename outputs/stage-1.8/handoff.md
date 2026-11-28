@@ -31,8 +31,8 @@ The baseline was `59978aae05bd062e9ab93a4dea56a9498a88845f`. The accepted WPAI C
 | A15 | PASS | Strict hash chain, schema, ordering and mutation controls passed, including unscripted controller-loss recovery. |
 | A16 | PASS | Verified 123 frozen historical source and evidence files against the starting bytes. [Historical inventory](historical.sha256) |
 | A17 | PASS | Offline replay reproduced stable evidence and the publication manifest. [Manifest](manifest.sha256) |
-| A18 | PENDING | Exact hosted implementation evidence is recorded after both Windows jobs pass. |
-| A19 | PENDING | The closeout SHA has a separate hosted verification gate. |
+| A18 | PASS | The `Windows tests` workflow ran on the push to `main` at `f81e4af12cdab9bf2da24dc71f7733edad81584c` and concluded `success`. Python 3.10.11 and 3.14.3 each passed all verification steps, including Stage 1.8 independent witness and controller recovery. [Run 46094842014](https://github.com/MrWizard94-Compile/WPAI-Shared-Execution-Framework/actions/runs/46094842014) |
+| A19 | EXTERNAL CHECK | The closeout push has a separate `Windows tests` run. Final acceptance requires both Python jobs and every verification step to pass at the exact final `main` SHA. |
 | A20 | PASS | Exact starting inventory was only `main` with zero pull requests. Native NO-GO is unchanged. |
 
 Local Windows checks ran with warnings treated as errors on Python 3.10.11 and 3.14.3. Remaining scope limits include native provider isolation and lifecycle, witness loss, power loss, kernel failure and arbitrary OS failure.
